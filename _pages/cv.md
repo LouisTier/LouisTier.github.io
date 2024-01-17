@@ -9,7 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+<iframe src="/files/pdf/CV_LouisBERTHIER.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+
+You can download a PDF copy of my CV [here](/files/pdf/CV_LouisBERTHIER.pdf).
+
+<!-- Education
 ======
 * B.S. in GitHub, GitHub University, 2012
 * M.S. in Jekyll, GitHub University, 2014
@@ -56,4 +60,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
