@@ -255,7 +255,7 @@ sass:
 permalink: pretty
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Europe/France # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: CET # Europe/Paris doesn't work, Europe/London does, http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
