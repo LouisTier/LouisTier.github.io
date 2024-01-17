@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-TO UPDATE.
+I am an MSc Student in Computer Science and Mathematics.
