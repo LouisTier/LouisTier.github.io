@@ -15,7 +15,7 @@ Many areas of research interest me:
 - **Machine & Deep Learning** , specifically using model-based algorithms and generative models (VAE, GAN, Diffusion, Flow) to better exploit their latent space
 - **Optimization** using optimization algorithms to solve performance problems in different ways 
 
-I had the chance to tackle these topics through my thesis at Imperial College London in the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Dr Antoine Cully](https://www.imperial.ac.uk/people/a.cully). You can find my work via this [GitHub repository](https://github.com/LouisTier/Model-Based_Quality-Diversity) as well as my thesis via this [PDF](/files/pdf/IRP_LouisBERTHIER.pdf).
+I had the chance to tackle these topics through my thesis at Imperial College London in the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Dr Antoine Cully](https://www.imperial.ac.uk/people/a.cully). You can find my work in this [GitHub repository](https://github.com/LouisTier/Model-Based_Quality-Diversity) as well as my thesis in this [PDF](/files/pdf/IRP_LouisBERTHIER.pdf).
 
 After my PhD, I will be looking to join industry rather than stay in academia, so I am keenly interested in an **industrial collaboration** during this thesis.  
 This collaboration could take the form of condensed internship blocks, or distributed days of work each week to meet the company's needs.  
