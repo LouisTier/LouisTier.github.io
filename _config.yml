@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Louis Berthier"
 title_separator          : "-"
 name                     : &name "Louis Berthier"
-description              : &description "Professional website of Louis Berthier"
+description              : &description "PhD Student in Applied Mathematics and Machine Learning at École Polytechnique"
 url                      : https://LouisTier.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "LouisTier/LouisTier.github.io"
@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Louis Berthier"
   avatar           : "profile.png"
-  bio              : "MSc Student in Computer Science and Mathematics"
+  bio              : "PhD Student in Applied Mathematics and Machine Learning at École Polytechnique"
   location         : "Paris, France"
-  employer         :
+  employer         : "École Polytechnique"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=cFVpOmcAAAAJ&hl=fr&oi=ao"
   email            : "louis_tier@outlook.com"
@@ -255,7 +255,7 @@ sass:
 permalink: pretty
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: CET # Europe/Paris doesn't work, Europe/London does, http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Europe/Paris" # Europe/Paris doesn't work, Europe/London does, http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

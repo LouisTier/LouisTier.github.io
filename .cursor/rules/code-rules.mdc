@@ -1,0 +1,51 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Personal Website Development Rules
+
+## 1. Content Clarity & Structure
+
+- Keep all sections concise. Avoid verbose paragraphs.
+- Prioritize above-the-fold content. Place your name, role, and primary CTA (e.g., CV or contact) at the top.
+- Use headings strategically: one unique `H1`, followed by hierarchical `H2`/`H3` as needed.
+- Add descriptive `alt` text to all images for accessibility and SEO.
+- Limit external links in the main navigation; prefer internal anchor links.
+
+## 2. Design & UX
+
+- Apply consistent spacing: uniform padding and margins across components.
+- Use 1–2 font families. Prioritize readability over aesthetic variety.
+- Define and apply a consistent, high-contrast color palette (dark-on-light or light-on-dark).
+- Implement hover/tap feedback on all interactive elements (e.g., links, buttons).
+- Use `cursor: pointer` only on clickable elements.
+- Ensure mobile responsiveness with media queries (e.g., `max-width: 768px`) and layout tools like Flexbox or Grid.
+
+## 3. Performance
+
+- Minimize image sizes; prefer WebP or compressed PNG formats.
+- Load JavaScript and CSS asynchronously or use `defer` attributes where appropriate.
+- Use a static site generator (e.g., Jekyll, Hugo, Gatsby) if scalability or templating becomes necessary.
+- Enable Gzip or Brotli compression during deployment.
+- Host fonts locally for improved performance and privacy.
+
+## 4. SEO & Metadata
+
+- Add essential meta tags: `title`, `description`, `og:title`, `og:image`, etc.
+- Use semantic HTML5 elements: `<main>`, `<article>`, `<nav>`, `<footer>`.
+- Create and include a `sitemap.xml` and `robots.txt`.
+- Set `lang="en"` in the root `<html>` tag.
+
+## 5. Version Control & CI/CD
+
+- Use feature branches for all development work.
+- Enable GitHub Pages previews or deploy previews for non-main branches.
+- Integrate HTML/CSS linting with GitHub Actions or another CI system.
+- Include `.nvmrc` or `.node-version` if Node.js tooling is used.
+
+## 6. Privacy & Analytics
+
+- Include a GDPR-compliant cookie banner if using tracking/analytics.
+- Use privacy-focused analytics tools (e.g., Plausible, Fathom).
+- Remove or avoid unnecessary third-party scripts and trackers.

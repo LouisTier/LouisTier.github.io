@@ -8,14 +8,29 @@ redirect_from:
   - /about.html
 ---
 
-I am an MSc Student in Computer Science and Mathematics who recently graduated from [Imperial College London](https://www.imperial.ac.uk/). I am looking for PhD opportunities in Computer Science.  
+I am a PhD Student in Applied Mathematics and Machine Learning at [École Polytechnique](https://www.polytechnique.edu/). My research focuses on advancing the field of machine learning through mathematical foundations and innovative applications.
 
-Many areas of research interest me:
-- **Bayesian & Probabilistic Learning** in non-deterministic environments to quantify and exploit the uncertainty
-- **Machine & Deep Learning** , specifically using model-based algorithms and generative models (VAE, GAN, Diffusion, Flow) to better exploit their latent space
-- **Optimization** using optimization algorithms to solve performance problems in different ways 
+My research interests include:
+- **Applied Mathematics & Machine Learning** - Developing theoretical frameworks and practical applications
+- **Bayesian & Probabilistic Learning** - Quantifying and exploiting uncertainty in non-deterministic environments
+- **Machine & Deep Learning** - Focusing on model-based algorithms and generative models (VAE, GAN, Diffusion, Flow)
+- **Optimization** - Developing and applying optimization algorithms to solve complex problems
 
-I had the chance to tackle these topics through my thesis at Imperial College London in the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Dr Antoine Cully](https://www.imperial.ac.uk/people/a.cully). You can find my work in this [GitHub repository](https://github.com/LouisTier/Model-Based_Quality-Diversity) as well as my thesis in this [PDF](/files/pdf/IRP_LouisBERTHIER.pdf).
+Prior to my PhD, I completed my MSc in Computer Science and Mathematics at [Imperial College London](https://www.imperial.ac.uk/), where I worked in the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Dr Antoine Cully](https://www.imperial.ac.uk/people/a.cully). My master's thesis work is available in this [GitHub repository](https://github.com/LouisTier/Model-Based_Quality-Diversity) and the complete thesis can be found [here](/files/pdf/IRP_LouisBERTHIER.pdf).
+
+## Research Focus
+My current research at École Polytechnique combines rigorous mathematical foundations with practical machine learning applications. I am particularly interested in:
+- Theoretical foundations of machine learning
+- Advanced optimization techniques
+- Applications in scientific computing and data analysis
+
+## Application Areas
+My research has potential applications in various domains:
+- Scientific Computing & Simulation
+- Finance & Risk Analysis
+- Control Systems & Robotics
+- (Quantum) Physics
+- Complex Systems Modeling
 
 After my PhD, I will be looking to join the industry rather than stay in academia, so I am keenly interested in an **industrial collaboration** during this thesis.  
 This collaboration could take the form of condensed internship blocks, or distributed days of work each week to meet the company's needs.  
