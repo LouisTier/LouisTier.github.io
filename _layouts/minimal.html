@@ -56,32 +56,30 @@ layout: compress
           <p>{{ site.author.bio }}</p>
           
           {% if site.author.location %}
-            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ site.author.location }}</p>
+            <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ site.author.location }}</p>
           {% endif %}
-          
-          {% if site.author.employer %}
-            <p class="affiliation"><i class="fa fa-university" aria-hidden="true"></i> {{ site.author.employer }}</p>
-          {% endif %}
+          <p class="affiliation"><i class="fas fa-building" aria-hidden="true"></i> Michelin</p>
+          <p class="affiliation"><i class="fas fa-university" aria-hidden="true"></i> École Polytechnique, Centre de Mathématiques Appliquées (CMAP)</p>
         </div>
         
         <div class="contact-container">
           {% if site.author.email %}
-            <p><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> <span>Email</span></a></p>
+            <p><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> <span>louis_tier@outlook.com</span></a></p>
           {% endif %}
           
           {% if site.author.github %}
-            <p><a href="https://github.com/{{ site.author.github }}"><i class="fa fa-github fa-lg" aria-hidden="true"></i> <span>GitHub</span></a></p>
+            <p><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> <span>LouisTier</span></a></p>
           {% endif %}
           
           {% if site.author.linkedin %}
-            <p><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> <span>LinkedIn</span></a></p>
+            <p><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i> <span>louis-tier</span></a></p>
           {% endif %}
           
           {% if site.author.googlescholar %}
-            <p><a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar fa-lg" aria-hidden="true"></i> <span>Google Scholar</span></a></p>
+            <p><a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i> <span>Louis Berthier</span></a></p>
           {% endif %}
           
-          <p><a href="{{ base_path }}/files/pdf/CV_LouisBERTHIER.pdf"><i class="fa fa-file-pdf-o fa-lg" aria-hidden="true"></i> <span>CV</span></a></p>
+          <p><a href="{{ base_path }}/files/pdf/CV_LouisBERTHIER.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> <span>Curriculum Vitae</span></a></p>
         </div>
       </aside>
 

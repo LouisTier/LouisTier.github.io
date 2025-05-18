@@ -206,15 +206,15 @@
 
 /* Profile Image Optimization */
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
-  border: 2px solid var(--border-color);
+  object-position: center 30%; /* Move focus point slightly above center to focus on face */
+  margin: 0 auto 20px;
+  /* border: 2px solid var(--secondary-color); */
   display: block;
-  /* Add loading behavior */
-  loading: lazy;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar h2 {
@@ -230,37 +230,55 @@
 }
 
 .contact-container {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .contact-container p {
-  margin: 10px 0;
+  margin: 0 0 12px;
 }
 
+/* Enhance contact links with more visual appeal */
 .contact-container a {
   display: flex;
   align-items: center;
-  color: var(--primary-color);
+  color: var(--text-color);
   text-decoration: none;
-  transition: color 0.2s;
-  margin-bottom: 15px;
-}
-
-.contact-container a i {
-  margin-right: 10px;
-  width: 25px;
-  text-align: center;
-  font-size: 22px;
-  color: var(--primary-color);
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: var(--light-gray);
+  border: 1px solid var(--border-color);
 }
 
 .contact-container a:hover {
-  color: var(--primary-light);
+  background-color: var(--primary-light);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.contact-container a:hover i {
-  transform: scale(1.2);
+/* Make social media icons more prominent and ensure compatibility with Font Awesome 5 */
+.contact-container a i,
+.contact-container a .fa,
+.contact-container a .fas, 
+.contact-container a .fab,
+.contact-container a .ai {
+  font-size: 24px;
+  margin-right: 12px;
+  color: var(--primary-color);
+  transition: all 0.2s ease;
+  display: inline-block;
+  width: 28px;
+  text-align: center;
+}
+
+.contact-container a:hover i,
+.contact-container a:hover .fa,
+.contact-container a:hover .fas,
+.contact-container a:hover .fab,
+.contact-container a:hover .ai {
+  color: white;
 }
 
 /* Main Content Area */
@@ -660,20 +678,44 @@ footer {
   }
 }
 
-/* Make social media icons more prominent */
-.contact-container a i {
-  font-size: 24px;
-  margin-right: 10px;
+/* Icon styles - ensure they're always visible */
+.fa, .fas, .fab, .ai {
+  display: inline-block !important;
+  font-size: 18px;
+  width: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Affiliation styling */
+.affiliation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+.affiliation i {
   color: var(--primary-color);
-  transition: transform 0.2s ease;
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+  font-size: 18px;
 }
 
-.contact-container a:hover i {
-  transform: scale(1.2);
+.location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+  font-size: 16px;
 }
 
-/* Make sure icons are visible and properly aligned */
-.fa, .ai {
-  display: inline-block;
-  margin-right: 8px;
+.location i {
+  color: var(--primary-color);
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+  font-size: 18px;
 } 

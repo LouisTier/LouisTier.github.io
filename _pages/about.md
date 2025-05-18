@@ -2,7 +2,7 @@
 permalink: /
 title: "Louis Berthier"
 layout: minimal
-excerpt: "PhD Student in Applied Mathematics and Machine Learning | Data Scientist at Michelin"
+excerpt: "PhD Candidate in Applied Mathematics and Machine Learning | Data Scientist at Michelin"
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,24 +10,30 @@ redirect_from:
 ---
 
 <div class="hero-section">
-  <h1 class="hero-title">Louis Berthier</h1>
-  <p class="hero-subtitle">PhD Student in Applied Mathematics and Machine Learning | Data Scientist at Michelin</p>
+  <h1 class="hero-title">About Me</h1>
+  <!-- <p class="hero-subtitle">PhD Student in Applied Mathematics and Machine Learning | Data Scientist at Michelin</p> -->
+
+  <p> I am passionate about combining rigorous mathematical principles with innovative machine learning approaches to solve complex problems. My research focuses on mathematical foundations of machine learning, with particular interests in Bayesian methods, generative models, and optimization techniques. </p>
+
+  <p> Prior to my PhD, I completed my MSc in Computer Science and Mathematics at <a href="https://www.imperial.ac.uk/">Imperial College London</a>, where I worked in the <a href="https://www.imperial.ac.uk/adaptive-intelligent-robotics/">Adaptive & Intelligent Robotics Lab</a> under the supervision of <a href="https://www.imperial.ac.uk/people/a.cully">Pr. Antoine Cully</a>. My master's thesis explored novel approaches for Quality-Diversity optimization using model-based techniques. </p>
+
+  <p> I also hold a BSc in Applied Mathematics from <a href="https://www.polytechnique.edu/">École Polytechnique</a>, where I developed a strong foundation in mathematical modeling and computational methods. </p>
   
-  <p>I'm working at the intersection of mathematics and machine learning at <a href="https://www.polytechnique.edu/">École Polytechnique</a> in Paris, while also applying these skills as a Data Scientist at <a href="https://www.michelin.com/">Michelin</a>.</p>
-  
+  <!-- <p>I'm working at the intersection of mathematics and machine learning at <a href="https://www.polytechnique.edu/">École Polytechnique</a> in Paris, while also applying these skills as a Data Scientist at <a href="https://www.michelin.com/">Michelin</a>.</p>
   <div style="margin: 30px 0;">
     <a href="/research/" class="btn btn-primary">Research Interests</a>
-    <a href="/files/pdf/CV_LouisBERTHIER.pdf" class="btn btn-secondary">Download CV</a>
-  </div>
+    <a href="/files/pdf/CV_LouisBERTHIER.pdf" class="btn btn-primary">Download CV</a>
+  </div> -->
+
 </div>
 
-## About Me
+<!-- ## About Me
 
 I am passionate about combining rigorous mathematical principles with innovative machine learning approaches to solve complex problems. My research focuses on mathematical foundations of machine learning, with particular interests in Bayesian methods, generative models, and optimization techniques.
 
 Prior to my PhD, I completed my MSc in Computer Science and Mathematics at [Imperial College London](https://www.imperial.ac.uk/), where I worked in the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Dr. Antoine Cully](https://www.imperial.ac.uk/people/a.cully). My master's thesis explored novel approaches for Quality-Diversity optimization using model-based techniques.
 
-I also hold a BSc in Applied Mathematics from [École Polytechnique](https://www.polytechnique.edu/), where I developed a strong foundation in mathematical modeling and computational methods.
+I also hold a BSc in Applied Mathematics from [École Polytechnique](https://www.polytechnique.edu/), where I developed a strong foundation in mathematical modeling and computational methods. -->
 
 ## Research Focus
 
