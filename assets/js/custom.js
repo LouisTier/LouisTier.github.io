@@ -1,6 +1,76 @@
 // Custom JavaScript for the minimal theme
 
 document.addEventListener('DOMContentLoaded', function() {
+  /******************************************
+   * THEME TOGGLE FUNCTIONALITY
+   ******************************************/
+  function initThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+    
+    if (!themeToggle && !mobileThemeToggle) {
+      console.error('Theme toggle buttons not found');
+      return;
+    }
+    
+    // Make sure we update the icon according to current theme
+    function updateIcons() {
+      const isDark = document.documentElement.classList.contains('dark-mode');
+      const allIcons = document.querySelectorAll('#theme-toggle i, #mobile-theme-toggle i');
+      
+      allIcons.forEach(icon => {
+        if (isDark) {
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+        } else {
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+        }
+      });
+    }
+    
+    // Update icons on init
+    updateIcons();
+    
+    // Toggle Theme Function
+    function toggleTheme(e) {
+      if (e) e.preventDefault();
+      
+      const html = document.documentElement;
+      const isDark = html.classList.contains('dark-mode');
+      
+      if (isDark) {
+        // Switch to light mode
+        html.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+        console.log('Switched to light mode');
+      } else {
+        // Switch to dark mode
+        html.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+        console.log('Switched to dark mode');
+      }
+      
+      // Update icons
+      updateIcons();
+    }
+    
+    // Add click listeners
+    if (themeToggle) {
+      themeToggle.addEventListener('click', toggleTheme);
+    }
+    
+    if (mobileThemeToggle) {
+      mobileThemeToggle.addEventListener('click', toggleTheme);
+    }
+  }
+  
+  // Initialize theme toggle
+  initThemeToggle();
+  
+  /******************************************
+   * NAVIGATION FUNCTIONALITY
+   ******************************************/
   // Ensure navigation is visible
   const navLinks = document.querySelector('.nav-links');
   const navLinkItems = document.querySelectorAll('.nav-links a');
@@ -75,6 +145,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
+  /******************************************
+   * PUBLICATION PAGE FUNCTIONALITY
+   ******************************************/
   // Citation toggle functionality
   const citationToggles = document.querySelectorAll('.citation-toggle');
   
@@ -97,6 +170,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  /******************************************
+   * GENERAL UI FUNCTIONALITY
+   ******************************************/
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

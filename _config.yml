@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Louis Berthier"
+title                    : "Home"
 title_separator          : "|"
 name                     : &name "Louis Berthier"
 description              : &description "PhD Candidate in Applied Mathematics and Machine Learning at École Polytechnique and Data Scientist at Michelin"
@@ -314,8 +314,6 @@ github: [metadata]
 
 # Navigation settings
 navbar:
-  - title: "Home"
-    url: /
   - title: "Research"
     url: /research/
   - title: "Publications"
