@@ -7,42 +7,52 @@ author_profile: true
 
 <h1>Teaching Experience</h1>
 
-<div class="pub-grid">
-  {% for post in site.teaching reversed %}
-    <div class="pub-card">
-      <h3 class="pub-card-title">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h3>
-      <p class="pub-card-journal">{{ post.venue }}, {{ post.date | date: "%Y" }}</p>
-      <p>{{ post.excerpt }}</p>
+<div class="teaching-grid">
+
+  <div class="teaching-card">
+    <div class="teaching-icon">
+      <i class="fas fa-chalkboard-teacher"></i>
     </div>
-  {% endfor %}
+    <div class="teaching-content">
+      <h3>Introduction to Machine Learning and Data Science</h3>
+      <div class="teaching-institution">ENSTA Paris</div>
+      <div class="teaching-role">Teacher Assistant</div>
+      <div class="teaching-period">September 2025 - October 2025 (Upcoming)</div>
+      <div class="teaching-location"><i class="fas fa-map-marker-alt"></i> Paris, France</div>
+      <div class="teaching-details">
+        <p>Course for 3rd year BSc students in mathematics (20 hours)</p>
+        <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
+      </div>
+    </div>
 </div>
 
-{% if site.teaching.size == 0 %}
-<div class="empty-message">
-  <p>No teaching experience listed yet. Check back soon for updates!</p>
-  
-  <h2>Teaching Interests</h2>
-  <p>I'm interested in teaching courses related to:</p>
-  <ul>
-    <li>Machine Learning Fundamentals</li>
-    <li>Deep Learning</li>
-    <li>Scientific Computing</li>
-    <li>Optimization</li>
-    <li>Applied Mathematics</li>
-  </ul>
-</div>
-{% endif %}
-
-<h2>Past Teaching Assistant Positions</h2>
-
-<div class="pub-grid">
-  <div class="pub-card">
-    <h3 class="pub-card-title">Advanced Machine Learning</h3>
-    <p class="pub-card-journal">École Polytechnique, 2023</p>
-    <p>Teaching assistant for graduate-level course covering advanced machine learning topics including deep learning, reinforcement learning, and Bayesian methods.</p>
+  <div class="teaching-card">
+    <div class="teaching-icon">
+      <i class="fas fa-chalkboard-teacher"></i>
+    </div>
+    <div class="teaching-content">
+        <h3>Introduction to Machine Learning and Data Science</h3>
+        <div class="teaching-institution">ENSTA Paris</div>
+        <div class="teaching-role">Teacher Assistant</div>
+        <div class="teaching-period">September 2024 - October 2024</div>
+        <div class="teaching-location"><i class="fas fa-map-marker-alt"></i> Paris, France</div>
+        <div class="teaching-details">
+          <p>Course for 3rd year BSc students in mathematics (20 hours)</p>
+          <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  
-  <!-- Add more teaching experience as needed -->
+
+<h2>Teaching Interests</h2>
+
+<div class="interests-container">
+  <div class="interest-tag"><i class="fas fa-brain"></i> Machine Learning</div>
+  <div class="interest-tag"><i class="fas fa-project-diagram"></i> Deep Learning</div>
+  <div class="interest-tag"><i class="fas fa-calculator"></i> Applied Mathematics</div>
+  <div class="interest-tag"><i class="fas fa-chart-line"></i> Data Science</div>
+  <div class="interest-tag"><i class="fas fa-laptop-code"></i> Scientific Computing</div>
+  <div class="interest-tag"><i class="fas fa-robot"></i> Reinforcement Learning</div>
+  <div class="interest-tag"><i class="fas fa-infinity"></i> Optimization</div>
+  <div class="interest-tag"><i class="fas fa-eye"></i> Computer Vision</div>
 </div>

@@ -1,6 +1,7 @@
 /* Dark Mode Styles */
 html.dark-mode {
   color-scheme: dark;
+  --primary-color-rgb: 88, 166, 255; /* Dark mode RGB values for primary color */
 }
 
 /* Base Colors */
@@ -227,4 +228,217 @@ html.dark-mode .cv-item-date {
 html.dark-mode .research-highlight {
   background-color: #161b22;
   border-left: 4px solid #58a6ff;
+}
+
+/* CV Page Styles */
+html.dark-mode .cv-nav-item {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+}
+
+html.dark-mode .cv-nav-item:hover {
+  background-color: #21262d;
+}
+
+html.dark-mode .cv-nav-item.active {
+  background-color: #58a6ff;
+  color: #ffffff;
+  border-color: #58a6ff;
+}
+
+html.dark-mode .cv-item {
+  border-left: 3px solid #58a6ff;
+}
+
+html.dark-mode .cv-item-title {
+  color: #c9d1d9;
+}
+
+html.dark-mode .cv-item-subtitle {
+  color: #58a6ff;
+}
+
+html.dark-mode .cv-item-date {
+  color: #8b949e;
+}
+
+html.dark-mode .award-item,
+html.dark-mode .volunteer-item {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+html.dark-mode .award-item:hover,
+html.dark-mode .volunteer-item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .award-icon,
+html.dark-mode .volunteer-icon {
+  color: #58a6ff;
+}
+
+html.dark-mode .volunteer-content h4 {
+  color: #58a6ff;
+}
+
+html.dark-mode .volunteer-period {
+  color: #8b949e;
+}
+
+/* Achievement list styles */
+html.dark-mode .achievement-list > li:before {
+  color: #58a6ff;
+}
+
+html.dark-mode .achievement-list ul li {
+  color: #8b949e;
+}
+
+html.dark-mode .achievement-list ul li:before {
+  color: #58a6ff;
+}
+
+/* Achievement items with icons */
+html.dark-mode .achievement-icon {
+  background-color: #161b22;
+  border-color: #58a6ff;
+  color: #58a6ff;
+}
+
+html.dark-mode .achievement-item:hover .achievement-icon {
+  background-color: #58a6ff;
+  color: #0d1117;
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.2);
+}
+
+html.dark-mode .achievement-content h3 {
+  color: #c9d1d9;
+}
+
+/* Project cards with icons */
+html.dark-mode .project-card {
+  background-color: #161b22;
+  border-color: #30363d;
+}
+
+html.dark-mode .project-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .project-icon {
+  color: #58a6ff;
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
+html.dark-mode .project-card:hover .project-icon {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+html.dark-mode .project-content h3 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .project-period {
+  color: #8b949e;
+}
+
+/* Education and Work cards */
+html.dark-mode .education-card,
+html.dark-mode .work-card {
+  background-color: #161b22;
+  border-color: #30363d;
+}
+
+html.dark-mode .education-card:hover,
+html.dark-mode .work-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .education-icon,
+html.dark-mode .work-icon {
+  color: #58a6ff;
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
+html.dark-mode .education-card:hover .education-icon,
+html.dark-mode .work-card:hover .work-icon {
+  background-color: #58a6ff;
+  color: #0d1117;
+  border-color: rgba(88, 166, 255, 0.3);
+}
+
+html.dark-mode .education-content h3,
+html.dark-mode .work-content h3 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .education-institution,
+html.dark-mode .work-company {
+  color: #58a6ff;
+}
+
+html.dark-mode .education-period,
+html.dark-mode .work-period {
+  color: #8b949e;
+}
+
+/* Teaching cards and interests */
+html.dark-mode .teaching-card {
+  background-color: #161b22;
+  border-color: #30363d;
+}
+
+html.dark-mode .teaching-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .teaching-icon {
+  color: #58a6ff;
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
+html.dark-mode .teaching-card:hover .teaching-icon {
+  background-color: #58a6ff;
+  color: #0d1117;
+  border-color: rgba(88, 166, 255, 0.3);
+}
+
+html.dark-mode .teaching-content h3 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .teaching-institution {
+  color: #58a6ff;
+}
+
+html.dark-mode .teaching-period,
+html.dark-mode .teaching-location {
+  color: #8b949e;
+}
+
+html.dark-mode .teaching-location i {
+  color: #58a6ff;
+}
+
+html.dark-mode .interest-tag {
+  background-color: #161b22;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+html.dark-mode .interest-tag i {
+  color: #58a6ff;
+}
+
+html.dark-mode .interest-tag:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+  box-shadow: 0 5px 15px rgba(88, 166, 255, 0.2);
+}
+
+html.dark-mode .interest-tag:hover i {
+  color: #0d1117;
 } 

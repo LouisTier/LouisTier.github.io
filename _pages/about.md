@@ -10,115 +10,117 @@ redirect_from:
 ---
 
 <div class="hero-section">
-  <h1 class="hero-title">About Me</h1>
-  <!-- <p class="hero-subtitle">PhD Student in Applied Mathematics and Machine Learning | Data Scientist at Michelin</p> -->
-
-  <p> I am passionate about combining rigorous mathematical principles with innovative machine learning approaches to solve complex problems. My research focuses on mathematical foundations of machine learning, with particular interests in Bayesian methods, generative models, and optimization techniques. </p>
-
-  <p> Prior to my PhD, I completed my MSc in Computer Science and Mathematics at <a href="https://www.imperial.ac.uk/">Imperial College London</a>, where I worked in the <a href="https://www.imperial.ac.uk/adaptive-intelligent-robotics/">Adaptive & Intelligent Robotics Lab</a> under the supervision of <a href="https://www.imperial.ac.uk/people/a.cully">Pr. Antoine Cully</a>. My master's thesis explored novel approaches for Quality-Diversity optimization using model-based techniques. </p>
-
-  <p> I also hold a BSc in Applied Mathematics from <a href="https://www.polytechnique.edu/">École Polytechnique</a>, where I developed a strong foundation in mathematical modeling and computational methods. </p>
+<h1 class="hero-title">About Me</h1>
   
-  <!-- <p>I'm working at the intersection of mathematics and machine learning at <a href="https://www.polytechnique.edu/">École Polytechnique</a> in Paris, while also applying these skills as a Data Scientist at <a href="https://www.michelin.com/">Michelin</a>.</p>
-  <div style="margin: 30px 0;">
-    <a href="/research/" class="btn btn-primary">Research Interests</a>
-    <a href="/files/pdf/CV_LouisBERTHIER.pdf" class="btn btn-primary">Download CV</a>
-  </div> -->
+  <h2 class="hero-subtitle">Introduction</h2>
+  <hr class="section-divider">
+
+  <p>
+      I am a CIFRE PhD student in Applied Mathematics & Machine Learning at <a href="https://www.polytechnique.edu/">École Polytechnique</a>, affiliated with the <a href="https://cmap.ip-paris.fr/">Centre de Mathématiques Appliquées (CMAP)</a> and the <a href="https://cmap.ip-paris.fr/recherche/decision-et-donnees/simpas">SIMPAS</a> team. My work is conducted in collaboration with <a href="https://www.michelin.com/">Michelin</a>, under the academic supervision of <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a> and <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>.
+  </p>
+
+  <p>
+    My research focuses on the development of data-driven soft sensors for real-time quality monitoring in rubber production lines. The objective is to overcome the limitations of expensive and offline quality measurements by building predictive systems that provide reliable, online estimations of product quality. This involves the integration of machine learning, uncertainty quantification (notably via conformal prediction), and explainability to ensure robust deployment in complex industrial environments.
+  </p>
+
+  <p>
+    I hold a double master's degree: an MSc in Advanced Computing from <a href="https://www.imperial.ac.uk/">Imperial College London</a>, and a Diplôme d’ingénieur in Artificial Intelligence & Data Science from <a href="https://www.imt-mines-ales.fr/">IMT Mines Alès</a>. My training is rooted in applied mathematics, machine learning, and statistical modeling.
+  </p>
+
+  <p>
+    I previously conducted research at the <a href="https://www.imperial.ac.uk/adaptive-intelligent-robotics/">Adaptive & Intelligent Robotics Lab</a> at Imperial College, exploring model-based techniques for Quality-Diversity optimization in uncertain environments. Prior to that, I worked at the <a href="https://cerco.cnrs.fr/">CNRS CerCo</a> in Toulouse on pathological oscillation detection using CNNs in neurophysiological data. I also contributed to image processing research in collaboration with EuroMov DHM while studying at IMT Mines Alès.
+  </p>
+
+  <p>
+    My broader research interests include machine and deep learning, generative modeling, uncertainty quantification, online sensing, and domain adaptation for real-world systems.
+  </p>
+
+  <h2 class="hero-subtitle">Industrial Collaboration Interest</h2>
+  <hr class="section-divider">
+
+  <p>
+    I am keenly interested in forming industrial collaborations during my thesis. As I plan to join industry after my PhD, I'm looking for opportunities to apply my research in practical, real-world settings.
+  </p>
+  
+  <p>
+  These collaborations could be structured as:
+  </p>
+  <ul class="feature-list">
+    <li>Condensed internship blocks</li>
+    <li>Distributed working days each week</li>
+    <li>Project-based collaborations</li>
+  </ul>
+
+  <p>
+  Areas of particular interest include:
+  </p>
+  <ul class="feature-list">
+    <li>Manufacturing</li>
+    <li>Finance</li>
+    <li>Supply Chain</li>
+    <li>Neuroscience</li>
+    <li>Robotics</li>
+  </ul>
+
+  <p> 
+    If you're interested in collaborating or discussing potential applications of my research, please <a href="mailto:louis_tier@outlook.com" class="highlight-link">contact me</a>.
+  </p>
 
 </div>
 
-<!-- ## About Me
-
-I am passionate about combining rigorous mathematical principles with innovative machine learning approaches to solve complex problems. My research focuses on mathematical foundations of machine learning, with particular interests in Bayesian methods, generative models, and optimization techniques.
-
-Prior to my PhD, I completed my MSc in Computer Science and Mathematics at [Imperial College London](https://www.imperial.ac.uk/), where I worked in the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Dr. Antoine Cully](https://www.imperial.ac.uk/people/a.cully). My master's thesis explored novel approaches for Quality-Diversity optimization using model-based techniques.
-
-I also hold a BSc in Applied Mathematics from [École Polytechnique](https://www.polytechnique.edu/), where I developed a strong foundation in mathematical modeling and computational methods. -->
-
-## Research Focus
-
-My current research at École Polytechnique combines mathematical foundations with practical machine learning applications, focusing on:
-
-<div class="research-areas">
-  <div class="research-area">
-    <h3>Mathematical Foundations</h3>
-    <p>Developing theoretical frameworks to understand and improve machine learning algorithms, with a focus on probabilistic approaches and statistical learning theory.</p>
-  </div>
+<style>
+  .section-divider {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(var(--primary-color-rgb), 0.5), rgba(0, 0, 0, 0));
+  }
   
-  <div class="research-area">
-    <h3>Generative Models</h3>
-    <p>Working with Variational Autoencoders (VAEs), Generative Adversarial Networks (GANs), Diffusion Models, and Normalizing Flows for various applications.</p>
-  </div>
+  .feature-list {
+    list-style-type: none;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
   
-  <div class="research-area">
-    <h3>Bayesian Methods</h3>
-    <p>Exploring probabilistic approaches to quantify and leverage uncertainty in learning systems, particularly for decision-making in uncertain environments.</p>
-  </div>
+  .feature-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+  }
   
-  <div class="research-area">
-    <h3>Optimization</h3>
-    <p>Developing novel optimization techniques for complex machine learning problems, including evolutionary methods and gradient-based approaches.</p>
-  </div>
-</div>
-
-## Technical Skills
-
-<div class="skills-container">
-  <div class="skill-tag">Python</div>
-  <div class="skill-tag">PyTorch</div>
-  <div class="skill-tag">TensorFlow</div>
-  <div class="skill-tag">Deep Learning</div>
-  <div class="skill-tag">Probabilistic Modeling</div>
-  <div class="skill-tag">Bayesian Statistics</div>
-  <div class="skill-tag">Optimization</div>
-  <div class="skill-tag">Mathematical Modeling</div>
-  <div class="skill-tag">Data Visualization</div>
-  <div class="skill-tag">Reinforcement Learning</div>
-  <div class="skill-tag">Scientific Computing</div>
-  <div class="skill-tag">Git</div>
-</div>
-
-## Recent Projects
-
-<div class="pub-grid">
-  <div class="pub-card">
-    <h3 class="pub-card-title">Model-Based Quality-Diversity</h3>
-    <p>Developed novel approaches for Quality-Diversity optimization using surrogate models, improving efficiency in exploring high-dimensional parameter spaces.</p>
-    <div class="pub-card-links">
-      <a href="https://github.com/LouisTier/Model-Based_Quality-Diversity" class="btn btn-sm">GitHub</a>
-      <a href="/files/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-sm">Thesis</a>
-    </div>
-  </div>
+  .feature-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 18px;
+  }
   
-  <div class="pub-card">
-    <h3 class="pub-card-title">Fast-Ripple Detection in Epilepsy</h3>
-    <p>Collaborated on developing a Fourier Analysis-based Scalogram detector (FAST) for detecting fast-ripples in epilepsy patients using advanced signal processing techniques.</p>
-  </div>
+  .highlight-link {
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
+    transition: all 0.2s ease;
+  }
   
-  <div class="pub-card">
-    <h3 class="pub-card-title">Line Feature Detection with 2DSBG</h3>
-    <p>Contributed to the development of a 2D Semi Bi-Gaussian filter for detecting adjacent and multi-scale line features in images.</p>
-    <div class="pub-card-links">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10095570" class="btn btn-sm">Paper</a>
-    </div>
-  </div>
-</div>
-
-## Industrial Collaboration Interest
-
-I am keenly interested in forming **industrial collaborations** during my thesis. As I plan to join industry after my PhD, I'm looking for opportunities to apply my research in practical, real-world settings.
-
-These collaborations could be structured as:
-- Condensed internship blocks
-- Distributed working days each week
-- Project-based collaborations
-
-Areas of particular interest include:
-- Finance & Risk Analysis
-- Supply Chain & Operations Management
-- Neuroscience
-- Control & Robotics
-- (Quantum) Physics
-- Video Games
-
-If you're interested in collaborating or discussing potential applications of my research, please [contact me](/cv/).
+  .highlight-link:hover {
+    background-color: var(--primary-light);
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+  
+  .cta-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .hero-section h2.hero-subtitle {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+</style>
