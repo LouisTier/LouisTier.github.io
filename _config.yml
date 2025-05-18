@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Louis Berthier"
-title_separator          : "-"
+title                    : "Louis Berthier | PhD Student"
+title_separator          : "|"
 name                     : &name "Louis Berthier"
-description              : &description "PhD Student in Applied Mathematics and Machine Learning at École Polytechnique"
+description              : &description "PhD Student in Applied Mathematics and Machine Learning at École Polytechnique and Data Scientist at Michelin"
 url                      : https://LouisTier.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "LouisTier/LouisTier.github.io"
@@ -81,10 +81,10 @@ analytics:
 # Site Author
 author:
   name             : "Louis Berthier"
-  avatar           : "profile.png"
-  bio              : "PhD Student in Applied Mathematics and Machine Learning at École Polytechnique"
+  avatar           : "profile.jpg"
+  bio              : "PhD Student in Applied Mathematics and Machine Learning at École Polytechnique and Data Scientist at Michelin"
   location         : "Paris, France"
-  employer         : "École Polytechnique"
+  employer         : "École Polytechnique & Michelin"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=cFVpOmcAAAAJ&hl=fr&oi=ao"
   email            : "louis_tier@outlook.com"
@@ -311,3 +311,18 @@ compress_html:
     envs: development
 
 github: [metadata]
+
+# Navigation settings
+navbar:
+  - title: "Home"
+    url: /
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Talks"
+    url: /talks/
+  - title: "CV"
+    url: /cv/

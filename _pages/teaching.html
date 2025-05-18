@@ -1,12 +1,48 @@
 ---
-layout: archive
+layout: minimal
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<h1>Teaching Experience</h1>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="pub-grid">
+  {% for post in site.teaching reversed %}
+    <div class="pub-card">
+      <h3 class="pub-card-title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h3>
+      <p class="pub-card-journal">{{ post.venue }}, {{ post.date | date: "%Y" }}</p>
+      <p>{{ post.excerpt }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+{% if site.teaching.size == 0 %}
+<div class="empty-message">
+  <p>No teaching experience listed yet. Check back soon for updates!</p>
+  
+  <h2>Teaching Interests</h2>
+  <p>I'm interested in teaching courses related to:</p>
+  <ul>
+    <li>Machine Learning Fundamentals</li>
+    <li>Deep Learning</li>
+    <li>Scientific Computing</li>
+    <li>Optimization</li>
+    <li>Applied Mathematics</li>
+  </ul>
+</div>
+{% endif %}
+
+<h2>Past Teaching Assistant Positions</h2>
+
+<div class="pub-grid">
+  <div class="pub-card">
+    <h3 class="pub-card-title">Advanced Machine Learning</h3>
+    <p class="pub-card-journal">École Polytechnique, 2023</p>
+    <p>Teaching assistant for graduate-level course covering advanced machine learning topics including deep learning, reinforcement learning, and Bayesian methods.</p>
+  </div>
+  
+  <!-- Add more teaching experience as needed -->
+</div>

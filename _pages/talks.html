@@ -1,16 +1,51 @@
 ---
-layout: archive
-title: "Talks and presentations"
+layout: minimal
+title: "Talks & Presentations"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+<h1>Talks & Presentations</h1>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<div class="pub-grid">
+  {% for post in site.talks reversed %}
+    <div class="pub-card">
+      <h3 class="pub-card-title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h3>
+      <p class="pub-card-journal">{{ post.venue }}, {{ post.date | date: "%B %Y" }}</p>
+      <p>{{ post.excerpt }}</p>
+      {% if post.slides %}
+        <a href="{{ post.slides }}" class="btn btn-sm">Slides</a>
+      {% endif %}
+      {% if post.video %}
+        <a href="{{ post.video }}" class="btn btn-sm">Video</a>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
 
+{% if site.talks.size == 0 %}
+<div class="empty-message">
+  <p>No talks listed yet. Check back soon for updates!</p>
+  
+  <h2>Upcoming Talks</h2>
+  <p>I'm planning to present my research at various venues in the future. This section will be updated with details as they become available.</p>
+</div>
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<h2>Recent & Upcoming Presentations</h2>
+
+<div class="pub-grid">
+  <div class="pub-card">
+    <h3 class="pub-card-title">Model-Based Approaches for Quality-Diversity Optimization</h3>
+    <p class="pub-card-journal">Research Seminar, École Polytechnique, October 2022</p>
+    <p>Presented my master's thesis research on improving Quality-Diversity optimization using surrogate models, discussing techniques for enhanced sample efficiency.</p>
+  </div>
+  
+  <div class="pub-card">
+    <h3 class="pub-card-title">2DSBG: A 2d Semi Bi-Gaussian Filter for Line Feature Detection</h3>
+    <p class="pub-card-journal">ICASSP 2023, Rhodes, Greece, June 2023</p>
+    <p>Co-presented our paper on a novel approach to line feature detection in images using 2D Semi Bi-Gaussian filters.</p>
+  </div>
+</div>
