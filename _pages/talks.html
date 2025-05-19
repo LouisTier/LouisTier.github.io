@@ -5,47 +5,448 @@ permalink: /talks/
 author_profile: true
 ---
 
-<h1>Talks & Presentations</h1>
+<h1 class="section-title">Talks & Presentations</h1>
 
-<div class="pub-grid">
-  {% for post in site.talks reversed %}
-    <div class="pub-card">
-      <h3 class="pub-card-title">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h3>
-      <p class="pub-card-journal">{{ post.venue }}, {{ post.date | date: "%B %Y" }}</p>
-      <p>{{ post.excerpt }}</p>
-      {% if post.slides %}
-        <a href="{{ post.slides }}" class="btn btn-sm">Slides</a>
-      {% endif %}
-      {% if post.video %}
-        <a href="{{ post.video }}" class="btn btn-sm">Video</a>
-      {% endif %}
+<p class="section-intro">
+  I regularly present my research at academic conferences, seminars, and science communication events. Below you'll find highlights of my presentations organized by type.
+</p>
+
+<!-- MT180 Feature Spotlight Section -->
+<section id="mt180">
+  <h2 class="with-decoration"><i class="fas fa-trophy"></i> Science Communication</h2>
+  
+  <div class="feature-spotlight">
+    <div class="feature-badge pulse-animation"><i class="fas fa-trophy"></i> MT180</div>
+    <div class="feature-content">
+      <div class="feature-header">
+        <div class="feature-title-group">
+          <h3>Ma Thèse en 180 secondes</h3>
+          <div class="feature-subtitle">National science communication competition for PhD students</div>
+        </div>
+        <div class="feature-icon">
+          <i class="fas fa-stopwatch"></i>
+        </div>
+      </div>
+      
+      <div class="mt180-container">
+        <div class="feature-details">
+          <div class="feature-description">
+            <p><strong>"Ma Thèse en 180 secondes"</strong> challenges PhD students to present their research in just 180 seconds to a non-specialist audience. This competition showcases the ability to explain complex scientific concepts in an engaging and accessible way.</p>
+          </div>
+          
+          <blockquote class="mt180-title">
+            <i class="fas fa-quote-left"></i> Robust real-time quality monitoring and reliable adaptation of manufacturing processes in the tire industry
+          </blockquote>
+          
+          <div class="achievement-row">
+            <div class="achievement-item">
+              <div class="circle-icon finalist-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <p><strong>Finalist</strong></p>
+              <p>Top 25 among 120+ participants</p>
+            </div>
+            
+            <div class="achievement-item">
+              <div class="circle-icon award-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <p><strong>Public's Choice Award</strong></p>
+              <p>Selected by audience vote</p>
+            </div>
+            
+            <div class="achievement-item">
+              <div class="circle-icon national-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <p><strong>National Finalist</strong></p>
+              <p>Represented my institution</p>
+            </div>
+          </div>
+          
+          <div class="link-row">
+            <a href="https://www.ip-paris.fr/actualites/10-finalistes-au-concours-ma-these-en-180-secondes-dip-paris-2025" class="link-button" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Competition Details
+            </a>
+            <a href="https://www.polytechnique.edu/actualites/les-doctorantes-et-doctorants-des-laboratoires-de-lx-lhonneur-pour-mt180" class="link-button" target="_blank">
+              <i class="fas fa-trophy"></i> Results
+            </a>
+          </div>
+        </div>
+        
+        <div class="video-container">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/VjbWHeqfhMk" title="MT180 Presentation by Louis Berthier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="MT180 Presentation by Louis Berthier"></iframe>
+        </div>
+      </div>
     </div>
-  {% endfor %}
-</div>
-
-{% if site.talks.size == 0 %}
-<div class="empty-message">
-  <p>No talks listed yet. Check back soon for updates!</p>
-  
-  <h2>Upcoming Talks</h2>
-  <p>I'm planning to present my research at various venues in the future. This section will be updated with details as they become available.</p>
-</div>
-{% endif %}
-
-<h2>Recent & Upcoming Presentations</h2>
-
-<div class="pub-grid">
-  <div class="pub-card">
-    <h3 class="pub-card-title">Model-Based Approaches for Quality-Diversity Optimization</h3>
-    <p class="pub-card-journal">Research Seminar, École Polytechnique, October 2022</p>
-    <p>Presented my master's thesis research on improving Quality-Diversity optimization using surrogate models, discussing techniques for enhanced sample efficiency.</p>
   </div>
+</section>
+
+<!-- Academic Talks Section -->
+<section id="academic-talks">
+  <h2 class="with-decoration"><i class="fas fa-chalkboard-teacher"></i> Academic Presentations</h2>
   
-  <div class="pub-card">
-    <h3 class="pub-card-title">2DSBG: A 2d Semi Bi-Gaussian Filter for Line Feature Detection</h3>
-    <p class="pub-card-journal">ICASSP 2023, Rhodes, Greece, June 2023</p>
-    <p>Co-presented our paper on a novel approach to line feature detection in images using 2D Semi Bi-Gaussian filters.</p>
+  <div class="talks-grid">
+    <div class="talk-card">
+      <div class="card-header">
+        <div class="header-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <h3>ESCAPE 35 Conference</h3>
+        <div class="badge-container">
+          <span class="badge"><i class="fas fa-star"></i> Oral Presentation</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="date-venue">
+          <i class="fas fa-calendar-day"></i> July 2025
+          <i class="fas fa-map-marker-alt ml-3"></i> Ghent, Belgium
+        </div>
+        <p>Selected to deliver an <strong>oral presentation</strong> at the European Symposium on Computer Aided Process Engineering, one of the premier European conferences in process engineering.</p>
+        <p class="special-recognition">Selected from among numerous submissions for the more prestigious oral presentation format instead of the standard poster session.</p>
+      </div>
+    </div>
+    
+    <div class="talk-card">
+      <div class="card-header">
+        <div class="header-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h3>Model-Based Approaches for Quality-Diversity Optimization</h3>
+      </div>
+      <div class="card-body">
+        <div class="date-venue">
+          <i class="fas fa-calendar-day"></i> October 2022
+          <i class="fas fa-map-marker-alt ml-3"></i> École Polytechnique, Paris, France
+        </div>
+        <p>Presented my master's thesis research on improving Quality-Diversity optimization using surrogate models, discussing techniques for enhanced sample efficiency.</p>
+      </div>
+    </div>
+    
+    <div class="talk-card">
+      <div class="card-header">
+        <div class="header-icon">
+          <i class="fas fa-microphone"></i>
+        </div>
+        <h3>2DSBG: A 2d Semi Bi-Gaussian Filter for Line Feature Detection</h3>
+      </div>
+      <div class="card-body">
+        <div class="date-venue">
+          <i class="fas fa-calendar-day"></i> June 2023
+          <i class="fas fa-map-marker-alt ml-3"></i> ICASSP 2023, Rhodes, Greece
+        </div>
+        <p>Co-presented our paper on a novel approach to line feature detection in images using 2D Semi Bi-Gaussian filters.</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- Seminars & Paper Presentations -->
+<section id="paper-presentations">
+  <h2 class="with-decoration"><i class="fas fa-users"></i> Seminars & Paper Presentations</h2>
+  
+  <div class="seminar-card talk-card">
+    <div class="card-header">
+      <div class="header-icon">
+        <i class="fas fa-users"></i>
+      </div>
+      <h3>Research Seminar Founder & Organizer</h3>
+      <div class="badge-container">
+        <span class="badge"><i class="fas fa-calendar-check"></i> Weekly</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="date-venue">
+        <i class="fas fa-calendar-alt"></i> April 2024 - Present
+        <i class="fas fa-building ml-3"></i> Michelin Research Center, Clermont-Ferrand, France
+      </div>
+      <p>Founded and currently lead a weekly research seminar bringing together researchers and data scientists from various teams within Michelin. This initiative fosters knowledge sharing and collaboration across departments, creating a vibrant research community.</p>
+      
+      <h4 class="paper-heading"><i class="fas fa-file-alt"></i> Recent Paper Presentations</h4>
+      <ul class="paper-list">
+        <li>
+          <a href="https://arxiv.org/abs/2002.07018" class="paper-item" target="_blank">
+            <div class="paper-info">
+              <h5>ConformalLab: A Tool for Conformal Prediction and Calibration</h5>
+              <div class="paper-meta">Angelopoulos & Bates (2023)</div>
+            </div>
+            <div class="paper-icon">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/f987e192c7c370723a9f25297e2a1e14-Abstract-Conference.html" class="paper-item" target="_blank">
+            <div class="paper-info">
+              <h5>Conformal Risk Control</h5>
+              <div class="paper-meta">Bai et al. (2022), NeurIPS</div>
+            </div>
+            <div class="paper-icon">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/LouisTier/Model-Based_Quality-Diversity" class="paper-item github-item" target="_blank">
+            <div class="paper-info">
+              <h5>Model-Based Quality-Diversity Optimization</h5>
+              <div class="paper-meta">My Master's Thesis Research (2023)</div>
+            </div>
+            <div class="paper-icon">
+              <i class="fab fa-github"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Add some custom styles for this page only -->
+<style>
+  .ml-3 {
+    margin-left: 15px;
+  }
+  
+  section {
+    margin-bottom: 60px;
+  }
+  
+  h2.with-decoration {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+  }
+  
+  h2.with-decoration i {
+    margin-right: 12px;
+    color: var(--primary-color);
+  }
+  
+  h2.with-decoration::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, var(--border-color) 50%, transparent);
+  }
+  
+  .section-intro {
+    font-size: 17px;
+    color: var(--secondary-color);
+    max-width: 800px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .header-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 18px;
+    color: var(--primary-color);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .card-header h3 {
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .badge-container {
+    margin-left: 10px;
+  }
+  
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .badge i {
+    margin-right: 5px;
+  }
+  
+  .date-venue {
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+    font-size: 14px;
+  }
+  
+  .special-recognition {
+    background-color: rgba(var(--primary-color-rgb), 0.05);
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+  
+  .talk-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 25px;
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--primary-color);
+  }
+  
+  .talk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .seminar-card {
+    border-left: 5px solid #6c5ce7;
+  }
+  
+  .seminar-card .header-icon {
+    color: #6c5ce7;
+  }
+  
+  .seminar-card .badge {
+    background-color: rgba(108, 92, 231, 0.1);
+    color: #6c5ce7;
+  }
+  
+  .card-body {
+    padding: 0 20px 20px;
+  }
+  
+  .paper-heading {
+    margin-top: 30px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    color: var(--text-color);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .paper-heading i {
+    color: #6c5ce7;
+    margin-right: 8px;
+  }
+  
+  .paper-list {
+    margin-top: 15px;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .paper-list li {
+    margin-bottom: 10px;
+  }
+  
+  .paper-item {
+    padding: 12px 15px;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+  }
+  
+  .paper-item:hover {
+    background-color: var(--light-gray);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  }
+  
+  .paper-info h5 {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    color: var(--text-color);
+  }
+  
+  .paper-meta {
+    font-size: 13px;
+    color: var(--secondary-color);
+  }
+  
+  .paper-icon {
+    margin-left: 15px;
+  }
+  
+  .paper-icon i {
+    color: var(--primary-color);
+    font-size: 16px;
+    transition: transform 0.3s ease;
+  }
+  
+  .paper-item:hover .paper-icon i {
+    transform: rotate(45deg);
+  }
+  
+  .github-item:hover .paper-icon i {
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .mt180-container {
+      flex-direction: column-reverse;
+    }
+    
+    .video-container {
+      margin-bottom: 20px;
+    }
+    
+    .feature-header {
+      flex-direction: column;
+    }
+    
+    .feature-icon {
+      margin: 15px 0;
+    }
+    
+    .achievement-row {
+      flex-direction: column;
+    }
+    
+    .achievement-item {
+      margin-bottom: 15px;
+    }
+    
+    .card-header {
+      flex-wrap: wrap;
+    }
+    
+    .badge-container {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+</style>

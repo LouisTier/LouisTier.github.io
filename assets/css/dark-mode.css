@@ -441,4 +441,349 @@ html.dark-mode .interest-tag:hover {
 
 html.dark-mode .interest-tag:hover i {
   color: #0d1117;
+}
+
+/* MT180 Section Dark Mode */
+html.dark-mode .mt180-section {
+  background-color: #161b22;
+  border-color: #30363d;
+}
+
+html.dark-mode .mt180-section h2 {
+  color: #58a6ff;
+}
+
+html.dark-mode .mt180-title {
+  background-color: rgba(88, 166, 255, 0.05);
+  border-left-color: #58a6ff;
+}
+
+html.dark-mode .mt180-title i {
+  color: #58a6ff;
+}
+
+html.dark-mode .video-container {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .resource-link {
+  background-color: #1c2128;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+html.dark-mode .resource-link:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .resource-link i {
+  color: #58a6ff;
+}
+
+html.dark-mode .resource-link:hover i {
+  color: #0d1117;
+}
+
+/* Talks Section Dark Mode */
+html.dark-mode .talks-section h2 {
+  color: #58a6ff;
+}
+
+html.dark-mode .talk-item {
+  background-color: #1c2128;
+  border-color: #30363d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+html.dark-mode .talk-item:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+html.dark-mode .talk-header i {
+  color: #58a6ff;
+}
+
+html.dark-mode .seminar-item .talk-header i {
+  color: #8a63d2;
+}
+
+html.dark-mode .talk-badge {
+  background-color: rgba(88, 166, 255, 0.1);
+  color: #58a6ff;
+}
+
+html.dark-mode .seminar-badge {
+  background-color: rgba(138, 99, 210, 0.1);
+  color: #8a63d2;
+}
+
+html.dark-mode .talk-item h3 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .talk-meta {
+  color: #8b949e;
+}
+
+html.dark-mode .talk-item p {
+  color: #8b949e;
+}
+
+html.dark-mode .talk-highlight {
+  background-color: rgba(88, 166, 255, 0.1);
+  color: #58a6ff;
+}
+
+/* Papers Section Dark Mode */
+html.dark-mode .papers-section h2 {
+  color: #58a6ff;
+}
+
+html.dark-mode .paper-link {
+  background-color: #1c2128;
+  border-color: #30363d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+html.dark-mode .paper-info h3 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .paper-info p {
+  color: #8b949e;
+}
+
+html.dark-mode .paper-link i {
+  color: #58a6ff;
+}
+
+html.dark-mode .paper-link:hover {
+  border-color: #58a6ff;
+  background-color: #161b22;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .github-link i {
+  color: #d1d5da;
+}
+
+html.dark-mode .github-link:hover {
+  border-color: #d1d5da;
+}
+
+/* Academic Talks Dark Mode Styles */
+html.dark-mode .academic-talks h2 {
+  color: #58a6ff;
+}
+
+html.dark-mode .talk-icon {
+  color: #58a6ff;
+}
+
+html.dark-mode .talk-badge {
+  background-color: rgba(88, 166, 255, 0.1);
+  color: #58a6ff;
+}
+
+/* Research Seminar Section Dark Mode */
+html.dark-mode .seminar-section h2 {
+  color: #58a6ff;
+}
+
+html.dark-mode .seminar-info {
+  background-color: #161b22;
+  border-color: #30363d;
+}
+
+html.dark-mode .seminar-period {
+  color: #8b949e;
+}
+
+html.dark-mode .my-presentations h3 {
+  color: #58a6ff;
+}
+
+html.dark-mode .paper-list li a {
+  background-color: #161b22;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+html.dark-mode .paper-list li a:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+html.dark-mode .paper-icon i {
+  color: #58a6ff;
+}
+
+html.dark-mode .paper-list li a:hover .paper-icon i {
+  color: #0d1117;
+}
+
+/* New dark mode styles for the redesigned talks page */
+
+/* Feature Spotlight - Dark Mode */
+html.dark-mode .feature-spotlight {
+  background-color: #161b22;
+  border-color: #30363d;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+html.dark-mode .feature-badge {
+  background-color: #58a6ff;
+}
+
+html.dark-mode .feature-title-group h2 {
+  color: #58a6ff;
+}
+
+html.dark-mode .feature-subtitle {
+  color: #8b949e;
+}
+
+html.dark-mode .feature-icon {
+  background-color: rgba(88, 166, 255, 0.1);
+}
+
+html.dark-mode .feature-description {
+  background-color: #1c2128;
+  border-color: #30363d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+html.dark-mode .pill {
+  background-color: #1c2128;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+html.dark-mode .resource-button {
+  background-color: #1c2128;
+  color: #58a6ff;
+  border-color: #58a6ff;
+}
+
+html.dark-mode .resource-button:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+/* Talk Cards - Dark Mode */
+html.dark-mode .talk-card {
+  background-color: #1c2128;
+  border-color: #30363d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+html.dark-mode .highlight-card {
+  border-left-color: #58a6ff;
+}
+
+html.dark-mode .seminar-card {
+  border-left-color: #8a63d2;
+}
+
+html.dark-mode .card-header {
+  background-color: #161b22;
+  border-bottom-color: #30363d;
+}
+
+html.dark-mode .header-icon {
+  background-color: #0d1117;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+html.dark-mode .highlight-card .header-icon {
+  color: #58a6ff;
+}
+
+html.dark-mode .seminar-card .header-icon {
+  color: #8a63d2;
+}
+
+html.dark-mode .highlight-card .badge {
+  background-color: rgba(88, 166, 255, 0.1);
+  color: #58a6ff;
+}
+
+html.dark-mode .seminar-card .badge {
+  background-color: rgba(138, 99, 210, 0.1);
+  color: #8a63d2;
+}
+
+html.dark-mode .date-venue {
+  color: #8b949e;
+}
+
+html.dark-mode .card-body h3 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .card-body p {
+  color: #8b949e;
+}
+
+html.dark-mode .special-recognition {
+  background-color: rgba(88, 166, 255, 0.05);
+  color: #58a6ff;
+}
+
+/* Presentations Section - Dark Mode */
+html.dark-mode h2.with-decoration {
+  color: #c9d1d9;
+}
+
+html.dark-mode h2.with-decoration i {
+  color: #58a6ff;
+}
+
+html.dark-mode h2.with-decoration::after {
+  background: linear-gradient(to right, #30363d 50%, transparent);
+}
+
+html.dark-mode .section-intro {
+  color: #8b949e;
+}
+
+html.dark-mode .paper-item {
+  background-color: #1c2128;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+html.dark-mode .paper-item:hover {
+  border-color: #58a6ff;
+  background-color: #161b22;
+}
+
+html.dark-mode .paper-meta {
+  color: #8b949e;
+}
+
+html.dark-mode .paper-icon {
+  background-color: #161b22;
+  color: #58a6ff;
+}
+
+html.dark-mode .paper-item:hover .paper-icon {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+html.dark-mode .github-item:hover .paper-icon {
+  background-color: #333;
+}
+
+/* Section Title - Dark Mode */
+html.dark-mode .section-title {
+  color: #58a6ff;
+}
+
+html.dark-mode .section-title::after {
+  background-color: #58a6ff;
 } 
