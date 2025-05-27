@@ -75,13 +75,13 @@ _includes/
 
 #### **Media & Downloads**
 ```
-images/
-├── profile.jpg        # ✅ Author profile photo
-└── manifest.json      # ✅ PWA manifest file
-
-files/pdf/
-├── CV_LouisBERTHIER.pdf    # ✅ Downloadable CV
-└── IRP_LouisBERTHIER.pdf   # ✅ Research project report
+assets/
+├── images/
+│   ├── profile.jpg        # ✅ Author profile photo
+│   └── manifest.json      # ✅ PWA manifest file
+└── pdf/
+    ├── CV_LouisBERTHIER.pdf    # ✅ Downloadable CV
+    └── IRP_LouisBERTHIER.pdf   # ✅ Research project report
 ```
 
 ### ❌ **Unused Files & Directories (Can be Removed)**
@@ -270,17 +270,50 @@ jekyll serve -l -H localhost
 ## 🧹 **Cleanup Recommendations**
 
 ### **Safe to Remove**
-1. **Template Collections**: `_talks/`, `_teaching/`, `_publications/`, `_posts/`
-2. **Unused Pages**: Most files in `_pages/` except `about.md`, `publications.md`, `cv.md`, `404.md`
-3. **Development Tools**: `markdown_generator/`, `talkmap/`, `talkmap.ipynb`, `talkmap.py`
-4. **Unused Templates**: Most files in `_includes/` and `_layouts/` that aren't referenced
+
+#### **1. Template Collections**
+- `_talks/`, `_teaching/`, `_publications/`, `_posts/` - Example content replaced by integrated pages
+
+#### **2. Unused Pages** 
+- Most files in `_pages/` except: `about.md`, `publications.md`, `cv.md`, `teaching.md`, `portfolio.md`, `talks.md`, `404.md`
+
+#### **3. Development Tools**
+- `markdown_generator/`, `talkmap/`, `talkmap.ipynb`, `talkmap.py` - Development utilities
+
+#### **4. Unused Layout Files**
+- `_layouts/archive-taxonomy.html` - No taxonomy used
+- `_layouts/archive.html` - No archive pages
+- `_layouts/single.html` - No blog posts
+- `_layouts/splash.html` - No splash pages
+- `_layouts/talk.html` - Talks integrated into publications.md
+
+#### **5. Unused Include Files**
+**Archive Components:**
+- `_includes/archive-single*.html` (all variants) - No collections
+- `_includes/category-list.html`, `_includes/tag-list.html` - No taxonomy
+- `_includes/paginator.html`, `_includes/post_pagination.html` - No pagination
+
+**Navigation (replaced by minimal.html):**
+- `_includes/masthead.html`, `_includes/sidebar.html`, `_includes/author-profile.html`
+- `_includes/breadcrumbs.html`, `_includes/nav_list`
+
+**Social/Comments:**
+- `_includes/comments.html`, `_includes/comments-providers/` - Comments disabled
+- `_includes/social-share.html` - Not implemented
+
+**UI Components:**
+- `_includes/feature_row`, `_includes/gallery`, `_includes/page__hero.html`
+- `_includes/toc`, `_includes/read-time.html`
+
+**Utilities:**
+- `_includes/group-by-array`, `_includes/comment.html`, `_includes/page__taxonomy.html`
 
 ### **Keep for Future Use**
 - All configuration files (`_config.yml`, `Gemfile`, etc.)
 - All active assets (`assets/css/`, `assets/js/`, `assets/fonts/`)
 - Core templates (`_layouts/minimal.html`, `_layouts/default.html`)
 - Essential includes (`_includes/author-profile.html`, etc.)
-- User files (`images/profile.jpg`, `files/pdf/`)
+- User files (`assets/images/`, `assets/pdf/`)
 
 ## 📋 **File Format Consistency**
 
