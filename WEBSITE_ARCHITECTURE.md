@@ -24,6 +24,9 @@ _pages/
 ├── about.md            # ✅ Home page (permalink: /)
 ├── publications.md     # ✅ Publications with talks section (permalink: /publications/)
 ├── cv.md               # ✅ Comprehensive CV (permalink: /cv/)
+├── teaching.md         # ✅ Teaching experience (permalink: /teaching/)
+├── portfolio.md        # ✅ Portfolio showcase (permalink: /portfolio/)
+├── talks.md            # ✅ Standalone talks page (permalink: /talks/)
 └── 404.md              # ✅ Error page (permalink: /404.html)
 ```
 
@@ -117,13 +120,10 @@ _pages/
 ├── markdown.md                       # ❌ Commented out in navigation
 ├── non-menu-page.md                  # ❌ Test page, not linked
 ├── page-archive.html                 # ❌ Not linked
-├── portfolio.html                    # ❌ Commented out in navigation  
 ├── research.md                       # ❌ Separate research page not used
 ├── sitemap.md                        # ❌ Not linked
 ├── tag-archive.html                  # ❌ No tags used
-├── talks.html                        # ❌ Replaced by talks section in publications
 ├── talkmap.html                      # ❌ Geographic talk mapping (talkmap_link: false)
-├── teaching.html                     # ❌ Commented out in navigation
 ├── terms.md                          # ❌ Not linked
 └── year-archive.html                 # ❌ Commented out in navigation
 ```
@@ -265,6 +265,7 @@ jekyll serve -l -H localhost
 - **CV** - Edit `_pages/cv.md`
 - **Profile** - Edit `_pages/about.md`
 - **Site Settings** - Edit `_config.yml`
+- **New Pages** - Use `_pages/TEMPLATE.md` as template (always use `.md` format)
 
 ## 🧹 **Cleanup Recommendations**
 
@@ -280,6 +281,21 @@ jekyll serve -l -H localhost
 - Core templates (`_layouts/minimal.html`, `_layouts/default.html`)
 - Essential includes (`_includes/author-profile.html`, etc.)
 - User files (`images/profile.jpg`, `files/pdf/`)
+
+## 📋 **File Format Consistency**
+
+### **Standardized on Markdown (.md)**
+All content pages use Markdown format for consistency and maintainability:
+- ✅ **Easy Content Editing** - Natural, readable syntax
+- ✅ **Version Control Friendly** - Clear diffs in Git
+- ✅ **Consistent Experience** - Same editing workflow across all pages
+- ✅ **Future-Proofing** - Portable format across platforms
+
+### **Format Guidelines**
+- **Content Pages**: Always use `.md` (about.md, publications.md, cv.md)
+- **Page Template**: Use `_pages/TEMPLATE.md` for new pages
+- **Layout**: All content pages use `layout: minimal`
+- **HTML Files**: Only for complex dynamic functionality (currently none in active use)
 
 ## 📊 **Site Performance**
 

@@ -5,10 +5,9 @@ permalink: /teaching/
 author_profile: true
 ---
 
-<h1>Teaching Experience</h1>
+# Teaching Experience
 
 <div class="pub-grid">
-
   <div class="pub-card">
     <div class="teaching-icon">
       <i class="fas fa-chalkboard-teacher"></i>
@@ -36,10 +35,9 @@ author_profile: true
       <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
     </div>
   </div>
-
 </div>
 
-<h2>Teaching Interests</h2>
+## Teaching Interests
 
 <div class="interests-container">
   <div class="interest-tag"><i class="fas fa-brain"></i> Machine Learning</div>
@@ -50,4 +48,4 @@ author_profile: true
   <div class="interest-tag"><i class="fas fa-robot"></i> Reinforcement Learning</div>
   <div class="interest-tag"><i class="fas fa-infinity"></i> Optimization</div>
   <div class="interest-tag"><i class="fas fa-eye"></i> Computer Vision</div>
-</div>
+</div> 
