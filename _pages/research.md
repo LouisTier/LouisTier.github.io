@@ -82,7 +82,7 @@ Quality-Diversity (QD) optimization is a branch of evolutionary algorithms that 
 
 <div style="text-align: center; margin: 30px 0;">
   <a href="https://github.com/LouisTier/Model-Based_Quality-Diversity" class="btn btn-primary">View Project on GitHub</a>
-  <a href="/files/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-secondary">Read Thesis (PDF)</a>
+          <a href="/assets/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-secondary">Read Thesis (PDF)</a>
 </div>
 
 ## Potential Application Areas

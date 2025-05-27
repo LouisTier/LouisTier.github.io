@@ -303,7 +303,7 @@ author_profile: true
         <p class="pub-card-journal">Imperial College London Research Showcase (2022)</p>
         <p>Presented research on improving the sample efficiency of Quality-Diversity optimization algorithms using surrogate models.</p>
         <div class="pub-card-links">
-          <a href="/files/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-sm">Download</a>
+                          <a href="/assets/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-sm">Download</a>
         </div>
       </div>
     </div>

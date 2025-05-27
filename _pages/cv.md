@@ -11,7 +11,7 @@ redirect_from:
   <div class="cv-header">
     <h1>Curriculum Vitae</h1>
     <div class="cv-actions">
-      <a href="/files/pdf/CV_LouisBERTHIER.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Download Full CV</a>
+      <a href="/assets/pdf/CV_LouisBERTHIER.pdf" class="btn btn-primary"><i class="fas fa-download"></i> Download Full CV</a>
     </div>
   </div>
 
@@ -209,7 +209,7 @@ redirect_from:
           <p>Developed novel approaches for Quality-Diversity optimization using surrogate models, improving efficiency in exploring high-dimensional parameter spaces.</p>
           <div class="pub-card-links">
             <a href="https://github.com/LouisTier/Model-Based_Quality-Diversity" class="btn btn-sm" target="_blank">GitHub</a>
-            <a href="/files/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-sm" target="_blank">Thesis</a>
+                          <a href="/assets/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-sm" target="_blank">Thesis</a>
           </div>
         </div>
       </div>
