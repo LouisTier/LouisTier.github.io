@@ -279,6 +279,38 @@ html.dark-mode .volunteer-icon {
   color: #58a6ff;
 }
 
+/* Award text elements dark mode styles */
+html.dark-mode .award-title {
+  color: #c9d1d9;
+}
+
+html.dark-mode .award-institution {
+  color: #58a6ff;
+}
+
+html.dark-mode .award-value {
+  color: #c9d1d9;
+  background-color: #21262d;
+}
+
+html.dark-mode .award-note {
+  color: #8b949e;
+  border-left-color: #30363d;
+}
+
+/* Additional award content elements */
+html.dark-mode .award-content h3 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .award-details .award-item {
+  color: #c9d1d9;
+}
+
+html.dark-mode .pub-card-title {
+  color: #c9d1d9;
+}
+
 html.dark-mode .volunteer-content h4 {
   color: #58a6ff;
 }
@@ -761,8 +793,37 @@ html.dark-mode .paper-item:hover {
   background-color: #161b22;
 }
 
+html.dark-mode .paper-info h5 {
+  color: #c9d1d9 !important;
+}
+
 html.dark-mode .paper-meta {
   color: #8b949e;
+}
+
+/* Additional paper presentation elements */
+html.dark-mode .paper-heading {
+  color: #c9d1d9;
+}
+
+html.dark-mode .paper-list li a h5 {
+  color: #c9d1d9 !important;
+}
+
+html.dark-mode .seminar-card h3 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .seminar-card h4 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .card-body h3 {
+  color: #c9d1d9;
+}
+
+html.dark-mode .card-body h4 {
+  color: #c9d1d9;
 }
 
 html.dark-mode .paper-icon {

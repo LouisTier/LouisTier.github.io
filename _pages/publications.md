@@ -141,9 +141,10 @@ author_profile: true
               <a href="https://www.polytechnique.edu/actualites/les-doctorantes-et-doctorants-des-laboratoires-de-lx-lhonneur-pour-mt180" class="resource-button" target="_blank"><i class="fas fa-award"></i> Award Results</a>
             </div>
           </div>
-          <div class="video-wrapper">
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/VjbWHeqfhMk" title="MT180 Presentation by Louis Berthier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="MT180 Presentation by Louis Berthier"></iframe>
-          </div>
+        </div>
+        <div class="video-wrapper mt180-video-full-width">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/VjbWHeqfhMk" title="MT180 Presentation by Louis Berthier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="MT180 Presentation by Louis Berthier"></iframe>
+        </div>
         </div>
       </div>
     </div>
@@ -657,6 +658,34 @@ author_profile: true
     margin: 5px 0;
     font-size: 14px;
     line-height: 1.4;
+  }
+  
+  /* MT180 Video Full Width Styling */
+  .mt180-video-full-width {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .mt180-video-full-width iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  /* Override mt180-container flex direction */
+  .mt180-container {
+    flex-direction: column;
   }
   
   /* Responsive adjustments */

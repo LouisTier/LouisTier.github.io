@@ -760,6 +760,20 @@ footer {
   margin-top: 20px;
 }
 
+/* CV Page Navigation Styles */
+.cv-wrapper .pub-nav {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cv-wrapper .pub-nav-item {
+  cursor: pointer;
+}
+
+.cv-wrapper .pub-section {
+  margin-top: 20px;
+}
+
 .pub-nav {
   margin-bottom: 30px;
   border-bottom: 1px solid var(--border-color);
@@ -792,23 +806,27 @@ footer {
 }
 
 .pub-nav-item:hover {
-  background-color: var(--primary-light);
-  color: white;
+  background-color: var(--primary-light) !important;
+  color: white !important;
   text-decoration: none;
+  cursor: pointer;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .pub-nav-item.active {
-  background-color: var(--primary-color);
-  color: white;
-  border-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border-color: var(--primary-color) !important;
+  font-weight: 600;
 }
 
 .pub-section {
-  display: none;
+  display: none !important;
 }
 
 .pub-section.active {
-  display: block;
+  display: block !important;
 }
 
 .citation-content {
@@ -1336,11 +1354,16 @@ footer {
 }
 
 .video-wrapper {
-  flex: 1;
-  min-width: 300px;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* When video wrapper is in mt180-container, it should flex */
+.mt180-container .video-wrapper {
+  flex: 1;
+  min-width: 300px;
 }
 
 .feature-details {
@@ -1704,5 +1727,816 @@ footer {
   
   .card-header i {
     margin-bottom: 10px;
+  }
+}
+
+/* ========================================
+   COMPREHENSIVE CARD SYSTEM
+   ======================================== */
+
+/* CV Page Styling */
+.cv-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.cv-header h1 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.cv-actions .btn {
+  transition: all 0.3s ease;
+}
+
+/* CV Navigation */
+.cv-nav {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cv-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-nav-item {
+  padding: 12px 24px;
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-nav-item:hover,
+.cv-nav-item.active {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(var(--primary-color-rgb), 0.3);
+}
+
+/* CV Sections */
+.cv-section {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.cv-section.active {
+  display: block;
+}
+
+.cv-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv-section h2::before {
+  content: '';
+  width: 4px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  border-radius: 2px;
+}
+
+/* Base Card Styles */
+.education-grid,
+.work-grid,
+.project-grid {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.education-card,
+.work-card,
+.project-card,
+.teaching-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+
+.education-card::before,
+.work-card::before,
+.project-card::before,
+.teaching-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover,
+.work-card:hover,
+.project-card:hover,
+.teaching-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.education-card:hover::before,
+.work-card:hover::before,
+.project-card:hover::before,
+.teaching-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Card Icons */
+.education-icon,
+.work-icon,
+.project-icon,
+.teaching-icon {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(var(--primary-color-rgb), 0.3);
+}
+
+.education-card:hover .education-icon,
+.work-card:hover .work-icon,
+.project-card:hover .project-icon,
+.teaching-card:hover .teaching-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(var(--primary-color-rgb), 0.4);
+}
+
+/* Card Content */
+.education-content,
+.work-content,
+.project-content,
+.teaching-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.education-content h3,
+.work-content h3,
+.project-content h3,
+.teaching-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.3;
+}
+
+.education-institution,
+.work-company,
+.project-tech,
+.teaching-institution {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 6px;
+}
+
+.education-period,
+.work-period,
+.project-period,
+.teaching-period {
+  font-size: 0.95em;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.education-period::before,
+.work-period::before,
+.project-period::before,
+.teaching-period::before {
+  content: '📅';
+  font-size: 0.9em;
+}
+
+.education-details,
+.work-details,
+.project-details,
+.teaching-details {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.education-details p,
+.work-details p,
+.project-details p,
+.teaching-details p {
+  margin: 8px 0;
+  font-size: 0.95em;
+}
+
+.education-details p:last-child,
+.work-details p:last-child,
+.project-details p:last-child,
+.teaching-details p:last-child {
+  margin-bottom: 0;
+}
+
+/* Teaching Page Specific Styles */
+.teaching-grid {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Awards Section Styles */
+.awards-grid {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.award-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+
+.award-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.award-card:hover::before {
+  transform: scaleX(1);
+}
+
+.award-icon {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(var(--primary-color-rgb), 0.3);
+}
+
+.award-card:hover .award-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(var(--primary-color-rgb), 0.4);
+}
+
+.award-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.award-content h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.3;
+}
+
+.award-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.award-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.award-item:last-child {
+  border-bottom: none;
+}
+
+.award-title {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+.award-institution {
+  font-size: 0.9em;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.award-value {
+  font-size: 0.9em;
+  color: var(--secondary-color);
+  font-weight: 600;
+  background: var(--light-gray);
+  padding: 2px 8px;
+  border-radius: 12px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.award-note {
+  font-size: 0.85em;
+  color: var(--secondary-color);
+  font-style: italic;
+  padding-left: 10px;
+  border-left: 3px solid var(--border-color);
+}
+
+/* Volunteer Section Styles */
+.volunteer-grid {
+  display: grid;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.volunteer-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+}
+
+.volunteer-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.volunteer-card:hover::before {
+  transform: scaleX(1);
+}
+
+.volunteer-icon {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(var(--primary-color-rgb), 0.3);
+}
+
+.volunteer-card:hover .volunteer-icon {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(var(--primary-color-rgb), 0.4);
+}
+
+.volunteer-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.volunteer-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.3;
+}
+
+.volunteer-organization {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 6px;
+}
+
+.volunteer-period {
+  font-size: 0.95em;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.volunteer-period::before {
+  content: '📅';
+  font-size: 0.9em;
+}
+
+.volunteer-details {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.volunteer-details p {
+  margin: 8px 0;
+  font-size: 0.95em;
+}
+
+.volunteer-details p:last-child {
+  margin-bottom: 0;
+}
+
+.teaching-role {
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 6px;
+}
+
+.teaching-location {
+  font-size: 0.9em;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.teaching-location i {
+  color: var(--primary-color);
+}
+
+/* Skills Section */
+.skills-wrapper {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.skills-category {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skills-category h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.3em;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skills-category h3::before {
+  content: '🚀';
+  font-size: 1.2em;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: var(--light-gray);
+  color: var(--text-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.skill-tag:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--primary-color-rgb), 0.3);
+}
+
+/* Project Cards Enhancement */
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--light-gray);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Enhanced Interest Tags */
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.interest-tag {
+  background: white;
+  color: var(--text-color);
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 0.95em;
+  font-weight: 500;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.interest-tag i {
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.interest-tag:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(var(--primary-color-rgb), 0.3);
+}
+
+.interest-tag:hover i {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Ripple Effect for Interactive Elements */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cv-wrapper {
+    padding: 15px;
+  }
+  
+  .cv-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .cv-nav ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-card,
+  .work-card,
+  .project-card,
+  .teaching-card,
+  .award-card,
+  .volunteer-card {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .education-icon,
+  .work-icon,
+  .project-icon,
+  .teaching-icon,
+  .award-icon,
+  .volunteer-icon {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    align-self: flex-start;
+  }
+  
+  .cv-nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .cv-nav-item {
+    text-align: center;
+  }
+  
+  .cv-header h1 {
+    font-size: 2em;
+  }
+  
+  .skills-wrapper {
+    gap: 20px;
+  }
+  
+  .skills-category {
+    padding: 20px;
+  }
+  
+  .interests-container {
+    gap: 8px;
+  }
+  
+  .interest-tag {
+    padding: 10px 16px;
+    font-size: 0.9em;
+  }
+  
+  .teaching-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-wrapper {
+    padding: 10px;
+  }
+  
+  .education-card,
+  .work-card,
+  .project-card,
+  .teaching-card,
+  .award-card,
+  .volunteer-card {
+    padding: 15px;
+  }
+  
+  .skill-tag {
+    padding: 6px 12px;
+    font-size: 0.85em;
+  }
+  
+  .interest-tag {
+    padding: 8px 14px;
+    font-size: 0.85em;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .cv-nav,
+  .cv-actions {
+    display: none;
+  }
+  
+  .cv-section {
+    display: block !important;
+    page-break-before: auto;
+    page-break-inside: avoid;
+  }
+  
+  .education-card,
+  .work-card,
+  .project-card,
+  .teaching-card,
+  .award-card,
+  .volunteer-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    page-break-inside: avoid;
   }
 }

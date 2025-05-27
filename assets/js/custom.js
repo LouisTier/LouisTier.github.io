@@ -200,4 +200,298 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  /******************************************
+   * PUBLICATION/CV PAGE FUNCTIONALITY
+   ******************************************/
+  // Publication/CV Section Navigation (unified system)
+  function initSectionNavigation() {
+    const navItems = document.querySelectorAll('.pub-nav-item');
+    const sections = document.querySelectorAll('.pub-section');
+    
+    console.log('Navigation initialization:', {
+      navItems: navItems.length,
+      sections: sections.length,
+      navItemsList: Array.from(navItems).map(item => ({
+        text: item.textContent,
+        target: item.getAttribute('data-target')
+      })),
+      sectionsList: Array.from(sections).map(section => section.id)
+    });
+    
+    if (navItems.length === 0 || sections.length === 0) {
+      console.log('Skipping navigation init - no nav items or sections found');
+      return; // Not on a page with this navigation
+    }
+    
+    // Function to show a specific section
+    function showSection(targetId) {
+      console.log('Showing section:', targetId);
+      
+      // Hide all sections
+      sections.forEach(section => {
+        section.classList.remove('active');
+        console.log('Hiding section:', section.id);
+      });
+      
+      // Remove active class from all nav items
+      navItems.forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Show target section
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.classList.add('active');
+        console.log('Showing section:', targetSection.id);
+      } else {
+        console.error('Target section not found:', targetId);
+      }
+      
+      // Add active class to clicked nav item
+      const activeNavItem = document.querySelector(`[data-target="${targetId}"]`);
+      if (activeNavItem) {
+        activeNavItem.classList.add('active');
+        console.log('Activated nav item:', activeNavItem.textContent);
+      }
+      
+      // Update URL hash without scrolling
+      if (history.replaceState) {
+        history.replaceState(null, null, `#${targetId}`);
+      }
+    }
+    
+    // Add click listeners to nav items
+    navItems.forEach((item, index) => {
+      console.log(`Adding click listener to nav item ${index}:`, item.textContent, item.getAttribute('data-target'));
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        console.log('Nav item clicked:', this.textContent);
+        const targetId = this.getAttribute('data-target');
+        if (targetId) {
+          console.log('Target ID:', targetId);
+          showSection(targetId);
+        } else {
+          console.error('No data-target attribute found on:', this);
+        }
+      });
+    });
+    
+    // Handle initial hash in URL
+    function handleInitialHash() {
+      const hash = window.location.hash.substring(1);
+      console.log('Handling initial hash:', hash);
+      if (hash && document.getElementById(hash)) {
+        showSection(hash);
+      } else {
+        // Show first section by default
+        const firstNavItem = navItems[0];
+        if (firstNavItem) {
+          const firstTarget = firstNavItem.getAttribute('data-target');
+          if (firstTarget) {
+            console.log('Showing first section by default:', firstTarget);
+            showSection(firstTarget);
+          }
+        }
+      }
+    }
+    
+    // Initialize on page load
+    handleInitialHash();
+    
+    // Handle browser back/forward
+    window.addEventListener('hashchange', handleInitialHash);
+  }
+  
+  // Initialize section navigation with delay to ensure DOM is ready
+  setTimeout(() => {
+    initSectionNavigation();
+  }, 100);
+  
+  // Backup CV navigation initialization
+  function initCVNavigation() {
+    // Direct approach for CV page navigation
+    const cvNavItems = document.querySelectorAll('.pub-nav-item');
+    const cvSections = document.querySelectorAll('.pub-section');
+    
+    if (cvNavItems.length > 0 && cvSections.length > 0) {
+      console.log('Initializing CV navigation backup');
+      
+      // Add event listeners directly
+      cvNavItems.forEach((navItem) => {
+        navItem.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('data-target');
+          if (!targetId) return;
+          
+          // Hide all sections
+          cvSections.forEach(section => {
+            section.style.display = 'none';
+            section.classList.remove('active');
+          });
+          
+          // Remove active from all nav items
+          cvNavItems.forEach(item => {
+            item.classList.remove('active');
+          });
+          
+          // Show target section
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.style.display = 'block';
+            targetSection.classList.add('active');
+          }
+          
+          // Add active to clicked nav item
+          this.classList.add('active');
+          
+          console.log('CV navigation: switched to', targetId);
+        });
+      });
+      
+      // Initialize first section
+      if (cvSections.length > 0) {
+        cvSections.forEach((section, index) => {
+          if (index === 0) {
+            section.style.display = 'block';
+            section.classList.add('active');
+          } else {
+            section.style.display = 'none';
+            section.classList.remove('active');
+          }
+        });
+      }
+    }
+  }
+  
+  // Initialize CV navigation as backup
+  setTimeout(() => {
+    initCVNavigation();
+  }, 200);
+  
+  // Additional initialization for talks page navigation if it exists
+  function initTalksNavigation() {
+    const talksNavItems = document.querySelectorAll('.talks-nav-item');
+    const talksContentSections = document.querySelectorAll('.talks-content-section');
+    
+    if (talksNavItems.length === 0 || talksContentSections.length === 0) {
+      return; // Not on talks page
+    }
+    
+    // Function to show a specific talks section
+    function showTalksSection(targetId) {
+      // Hide all talks content sections
+      talksContentSections.forEach(section => {
+        section.classList.remove('active');
+      });
+      
+      // Remove active class from all talks nav items
+      talksNavItems.forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Show target talks section
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.classList.add('active');
+      }
+      
+      // Add active class to clicked nav item
+      const activeNavItem = document.querySelector(`[data-target="${targetId}"]`);
+      if (activeNavItem) {
+        activeNavItem.classList.add('active');
+      }
+    }
+    
+    // Add click listeners to talks nav items
+    talksNavItems.forEach(item => {
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        if (targetId) {
+          showTalksSection(targetId);
+        }
+      });
+    });
+  }
+  
+  // Initialize talks navigation
+  initTalksNavigation();
+  
+  /******************************************
+   * CARD ANIMATIONS AND INTERACTIONS
+   ******************************************/
+  // Add staggered animation to cards
+  function initCardAnimations() {
+    const cards = document.querySelectorAll('.education-card, .work-card, .project-card, .teaching-card, .award-card, .volunteer-card, .pub-card');
+    
+    if (cards.length === 0) return;
+    
+    // Create intersection observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '50px 0px -50px 0px'
+    };
+    
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Add small delay for staggered effect
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, index * 100);
+          
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    // Set initial state and observe cards
+    cards.forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      cardObserver.observe(card);
+    });
+  }
+  
+  // Initialize card animations after a short delay
+  setTimeout(initCardAnimations, 100);
+  
+  /******************************************
+   * ENHANCED SKILL INTERACTIONS
+   ******************************************/
+  // Add progressive skill tag animations
+  function initSkillAnimations() {
+    const skillTags = document.querySelectorAll('.skill-tag, .interest-tag');
+    
+    if (skillTags.length === 0) return;
+    
+    // Add hover sound effect simulation through haptic feedback
+    skillTags.forEach(tag => {
+      tag.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-2px) scale(1.02)';
+      });
+      
+      tag.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+      
+      tag.addEventListener('click', function(e) {
+        // Add ripple effect
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        this.appendChild(ripple);
+        
+        setTimeout(() => {
+          ripple.remove();
+        }, 600);
+      });
+    });
+  }
+  
+  // Initialize skill animations
+  initSkillAnimations();
 }); 
