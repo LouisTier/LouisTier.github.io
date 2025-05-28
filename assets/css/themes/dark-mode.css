@@ -1,0 +1,529 @@
+/* ==========================================================================
+   DARK MODE THEME
+   Complete dark mode implementation with theme switching and overrides
+   ========================================================================== */
+
+/* ==========================================================================
+   DARK MODE ROOT VARIABLES
+   ========================================================================== */
+
+html.dark-mode {
+  /* Color System Overrides */
+  --primary-color: #58a6ff;
+  --primary-light: #79c0ff;
+  --primary-color-rgb: 88, 166, 255;
+  
+  /* Background & Surface Colors */
+  --background-color: #0d1117;
+  --surface-color: #161b22;
+  --light-gray: #21262d;
+  
+  /* Text Colors */
+  --text-color: #e6edf3;
+  --text-secondary: #8d96a0;
+  --text-muted: #656d76;
+  
+  /* Border & Divider Colors */
+  --border-color: #30363d;
+  --border-light: #21262d;
+  
+  /* Status Colors */
+  --success-color: #3fb950;
+  --warning-color: #d29922;
+  --error-color: #f85149;
+  --info-color: #58a6ff;
+  
+  /* Component Tokens */
+  --nav-background: #161b22;
+  --nav-border: #30363d;
+  
+  --card-background: #1c2128;
+  --card-border: #30363d;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.4);
+  
+  /* Form Elements */
+  --input-border: #30363d;
+  --input-focus-border: var(--primary-color);
+}
+
+/* ==========================================================================
+   THEME TOGGLE BUTTON
+   ========================================================================== */
+
+.theme-toggle {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(var(--primary-color-rgb), 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all var(--duration-normal) ease;
+}
+
+.theme-toggle:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/* Theme icon transitions */
+.theme-toggle .fa-sun {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: all var(--duration-normal) ease;
+}
+
+.theme-toggle .fa-moon {
+  opacity: 0;
+  transform: rotate(180deg);
+  transition: all var(--duration-normal) ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+html.dark-mode .theme-toggle .fa-sun {
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+
+html.dark-mode .theme-toggle .fa-moon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* ==========================================================================
+   NAVIGATION DARK MODE
+   ========================================================================== */
+
+html.dark-mode .top-nav.scrolled {
+  background-color: rgba(22, 27, 34, 0.95);
+  border-bottom-color: var(--border-color);
+}
+
+html.dark-mode .mobile-nav {
+  background-color: var(--surface-color);
+  border-bottom-color: var(--border-color);
+}
+
+/* ==========================================================================
+   SIDEBAR DARK MODE
+   ========================================================================== */
+
+html.dark-mode .profile-img {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+html.dark-mode .contact-container a {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+html.dark-mode .contact-container a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 6px 15px rgba(var(--primary-color-rgb), 0.3);
+}
+
+html.dark-mode .interest-tag {
+  background: var(--surface-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .interest-tag:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 15px rgba(var(--primary-color-rgb), 0.3);
+}
+
+/* ==========================================================================
+   CARDS DARK MODE
+   ========================================================================== */
+
+html.dark-mode .card,
+html.dark-mode .pub-card,
+html.dark-mode .research-card,
+html.dark-mode .contact-card {
+  background-color: var(--card-background);
+  border-color: var(--card-border);
+}
+
+html.dark-mode .card:hover,
+html.dark-mode .pub-card:hover,
+html.dark-mode .research-card:hover,
+html.dark-mode .contact-card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+html.dark-mode .card-header,
+html.dark-mode .card-footer {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+/* ==========================================================================
+   BUTTONS DARK MODE
+   ========================================================================== */
+
+html.dark-mode .btn-secondary {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .btn-secondary:hover {
+  background-color: var(--light-gray);
+  border-color: var(--text-secondary);
+}
+
+html.dark-mode .btn-ghost:hover {
+  background-color: var(--surface-color);
+}
+
+html.dark-mode .pub-links a {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .pub-links a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* ==========================================================================
+   FORMS DARK MODE
+   ========================================================================== */
+
+html.dark-mode .form-control {
+  background-color: var(--surface-color);
+  border-color: var(--input-border);
+  color: var(--text-color);
+}
+
+html.dark-mode .form-control:focus {
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.2);
+}
+
+html.dark-mode .form-control::placeholder {
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   TABS DARK MODE
+   ========================================================================== */
+
+html.dark-mode .nav-tabs {
+  border-bottom-color: var(--border-color);
+}
+
+html.dark-mode .nav-tab:hover {
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+}
+
+html.dark-mode .nav-pills .nav-tab {
+  background-color: var(--surface-color);
+  color: var(--text-secondary);
+}
+
+html.dark-mode .nav-pills .nav-tab:hover {
+  background-color: rgba(var(--primary-color-rgb), 0.2);
+}
+
+html.dark-mode .nav-boxed {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .nav-boxed .nav-tab.active {
+  background-color: var(--card-background);
+  border-color: var(--border-color);
+}
+
+/* ==========================================================================
+   CODE ELEMENTS DARK MODE
+   ========================================================================== */
+
+html.dark-mode code {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+html.dark-mode pre {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+html.dark-mode blockquote {
+  background-color: var(--surface-color);
+  border-left-color: var(--primary-color);
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   TABLES DARK MODE
+   ========================================================================== */
+
+html.dark-mode th {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+}
+
+html.dark-mode td,
+html.dark-mode th {
+  border-bottom-color: var(--border-color);
+}
+
+/* ==========================================================================
+   PAGE SPECIFIC DARK MODE
+   ========================================================================== */
+
+/* Home Page */
+html.dark-mode .stats-section,
+html.dark-mode .cta-section,
+html.dark-mode .testimonial {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .intro-highlight {
+  background: linear-gradient(
+    120deg,
+    rgba(var(--primary-color-rgb), 0.15) 0%,
+    rgba(var(--primary-color-rgb), 0.08) 100%
+  );
+  border-left-color: var(--primary-color);
+}
+
+/* About Page */
+html.dark-mode .timeline::before {
+  background: var(--border-color);
+}
+
+html.dark-mode .timeline-item::before {
+  background: var(--primary-color);
+  border-color: var(--background-color);
+}
+
+html.dark-mode .personal-info {
+  background-color: var(--surface-color);
+}
+
+html.dark-mode .info-item {
+  background: var(--card-background);
+  border-color: var(--border-color);
+}
+
+/* Publications Page */
+html.dark-mode .pub-filters {
+  background: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .filter-btn {
+  background: var(--card-background);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .filter-btn:hover,
+html.dark-mode .filter-btn.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+html.dark-mode .pub-search input {
+  background: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+html.dark-mode .pub-sort select {
+  background: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+html.dark-mode .pub-tag {
+  background: var(--surface-color);
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .pub-tag:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+html.dark-mode .pub-stats {
+  background: var(--surface-color);
+}
+
+/* Contact Page */
+html.dark-mode .contact-form-section {
+  background: var(--card-background);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .contact-info-card {
+  background: var(--card-background);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .contact-info-card::before {
+  background: var(--primary-color);
+}
+
+html.dark-mode .contact-detail {
+  background: var(--surface-color);
+  color: var(--text-color);
+}
+
+html.dark-mode .availability-section {
+  background: var(--surface-color);
+}
+
+html.dark-mode .hours-card {
+  background: var(--card-background);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .hours-list li {
+  border-bottom-color: var(--border-color);
+}
+
+html.dark-mode .availability-note {
+  background: rgba(var(--primary-color-rgb), 0.15);
+  border-color: rgba(var(--primary-color-rgb), 0.3);
+}
+
+html.dark-mode .social-link {
+  background: var(--card-background);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+html.dark-mode .location-info {
+  background: var(--card-background);
+  border-color: var(--border-color);
+}
+
+html.dark-mode .address {
+  background: var(--surface-color);
+  color: var(--text-color);
+}
+
+html.dark-mode .map-container {
+  background: var(--surface-color);
+  border-color: var(--border-color);
+}
+
+/* ==========================================================================
+   THEME TRANSITION ANIMATIONS
+   ========================================================================== */
+
+/* Smooth theme transitions */
+*,
+*::before,
+*::after {
+  transition: background-color var(--duration-normal) ease,
+              color var(--duration-normal) ease,
+              border-color var(--duration-normal) ease,
+              box-shadow var(--duration-normal) ease;
+}
+
+/* Exclude specific elements from transitions */
+.nav-tab,
+.btn,
+.form-control,
+.card,
+.pub-card,
+.research-card,
+.contact-card {
+  transition: all var(--duration-normal) ease;
+}
+
+/* ==========================================================================
+   THEME PERSISTENCE
+   ========================================================================== */
+
+/* Ensure theme state is maintained */
+html.dark-mode {
+  color-scheme: dark;
+}
+
+html:not(.dark-mode) {
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   ACCESSIBILITY IN DARK MODE
+   ========================================================================== */
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+  html.dark-mode {
+    --border-color: #ffffff;
+    --text-color: #ffffff;
+    --background-color: #000000;
+    --card-background: #1a1a1a;
+  }
+}
+
+/* Respect user's color scheme preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Apply dark mode variables if user prefers dark */
+    --primary-color: #58a6ff;
+    --primary-light: #79c0ff;
+    --primary-color-rgb: 88, 166, 255;
+    
+    --background-color: #0d1117;
+    --surface-color: #161b22;
+    --light-gray: #21262d;
+    
+    --text-color: #e6edf3;
+    --text-secondary: #8d96a0;
+    --text-muted: #656d76;
+    
+    --border-color: #30363d;
+    --border-light: #21262d;
+    
+    --nav-background: #161b22;
+    --card-background: #1c2128;
+    --card-border: #30363d;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* ==========================================================================
+   PRINT STYLES FOR DARK MODE
+   ========================================================================== */
+
+@media print {
+  html.dark-mode * {
+    background: white !important;
+    color: black !important;
+    border-color: #ccc !important;
+    box-shadow: none !important;
+  }
+} 

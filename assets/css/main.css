@@ -1,0 +1,274 @@
+/* ==========================================================================
+   MAIN STYLESHEET
+   Entry point that imports all modular CSS files in dependency order
+   ========================================================================== */
+
+/* ==========================================================================
+   BASE LAYER - Foundation and global styles
+   ========================================================================== */
+
+/* Core variables must be loaded first */
+@import url('base/variables.css');
+
+/* CSS reset and normalization */
+@import url('base/reset.css');
+
+/* Typography system */
+@import url('base/typography.css');
+
+/* ==========================================================================
+   LAYOUT LAYER - Structural components and layout systems
+   ========================================================================== */
+
+/* Navigation system */
+@import url('layout/navigation.css');
+
+/* Grid and layout utilities */
+@import url('layout/grid.css');
+
+/* Sidebar layout */
+@import url('layout/sidebar.css');
+
+/* ==========================================================================
+   COMPONENTS LAYER - Reusable UI components
+   ========================================================================== */
+
+/* Button components */
+@import url('components/buttons.css');
+
+/* Card components */
+@import url('components/cards.css');
+
+/* Navigation tabs */
+@import url('components/nav-tabs.css');
+
+/* ==========================================================================
+   PAGES LAYER - Page-specific styles
+   ========================================================================== */
+
+/* Home page styles */
+@import url('pages/home.css');
+
+/* About page styles */
+@import url('pages/about.css');
+
+/* Publications page styles */
+@import url('pages/publications.css');
+
+/* Contact page styles */
+@import url('pages/contact.css');
+
+/* ==========================================================================
+   THEMES LAYER - Theme variations and customizations
+   ========================================================================== */
+
+/* Dark mode theme */
+@import url('themes/dark-mode.css');
+
+/* ==========================================================================
+   UTILITIES LAYER - Helper classes and utilities
+   ========================================================================== */
+
+/* Animation utilities */
+@import url('utilities/animations.css');
+
+/* Responsive utilities */
+@import url('utilities/responsive.css');
+
+/* ==========================================================================
+   GLOBAL OVERRIDES
+   Final adjustments and compatibility fixes
+   ========================================================================== */
+
+/* Ensure proper theme application */
+.minimal-theme {
+  /* This class ensures the theme is properly applied */
+  --current-theme: 'minimal';
+}
+
+/* Fallback styles for older browsers */
+@supports not (display: grid) {
+  .grid,
+  .pub-grid,
+  .research-areas,
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .grid > *,
+  .pub-grid > *,
+  .research-areas > *,
+  .contact-grid > * {
+    flex: 1 1 300px;
+    margin: var(--spacing-sm);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    outline-width: 2px !important;
+  }
+}
+
+/* Print optimizations */
+@media print {
+  /* Ensure proper page breaks */
+  .section,
+  .pub-card,
+  .research-card,
+  .contact-card {
+    break-inside: avoid;
+  }
+  
+  /* Hide interactive elements */
+  .nav-tabs,
+  .theme-toggle,
+  .mobile-menu-toggle,
+  .btn-fab {
+    display: none !important;
+  }
+  
+  /* Ensure readable text */
+  * {
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  /* Show all links */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus management for keyboard users */
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+/* Ensure content is accessible with JavaScript disabled */
+.no-js .mobile-nav {
+  display: block;
+  position: static;
+  transform: none;
+  opacity: 1;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.no-js .mobile-menu-toggle {
+  display: none;
+}
+
+.no-js .nav-links {
+  display: none;
+}
+
+/* Loading states */
+.loading * {
+  pointer-events: none;
+}
+
+.loading .main-content {
+  opacity: 0.6;
+  transition: opacity var(--duration-normal) ease;
+}
+
+/* Error states */
+.error-state {
+  color: var(--error-color);
+  border-color: var(--error-color);
+}
+
+/* Success states */
+.success-state {
+  color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+/* ==========================================================================
+   PERFORMANCE OPTIMIZATIONS
+   ========================================================================== */
+
+/* GPU acceleration for smooth animations */
+.card,
+.pub-card,
+.research-card,
+.contact-card,
+.btn {
+  will-change: transform;
+}
+
+/* Contain layout shifts */
+.profile-img,
+.card-img,
+.card-img-top {
+  contain: layout style paint;
+}
+
+/* Optimize font loading */
+@font-face {
+  font-family: 'SystemFont';
+  src: local('-apple-system'), 
+       local('BlinkMacSystemFont'), 
+       local('Segoe UI'), 
+       local('Roboto'), 
+       local('Helvetica'), 
+       local('Arial');
+  font-display: swap;
+}
+
+/* ==========================================================================
+   BROWSER COMPATIBILITY
+   ========================================================================== */
+
+/* Internet Explorer 11 fixes */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .flex {
+    display: -ms-flexbox;
+  }
+  
+  .grid {
+    display: -ms-grid;
+  }
+}
+
+/* Safari fixes */
+@supports (-webkit-appearance: none) {
+  .btn {
+    -webkit-appearance: none;
+  }
+}
+
+/* ==========================================================================
+   DEBUG UTILITIES (Remove in production)
+   ========================================================================== */
+
+/*
+.debug * {
+  outline: 1px solid red;
+}
+
+.debug .grid {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.debug .flex {
+  background: rgba(0, 255, 0, 0.1);
+}
+*/ 
