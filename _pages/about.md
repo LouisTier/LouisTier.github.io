@@ -57,6 +57,7 @@ redirect_from:
   <ul class="feature-list">
     <li>Manufacturing</li>
     <li>Finance</li>
+    <li>BioAI</li>
     <li>Supply Chain</li>
     <li>Neuroscience</li>
     <li>Robotics</li>
