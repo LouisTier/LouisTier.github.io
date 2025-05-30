@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: minimal
 title: "Talks & Presentations"
 permalink: /talks/
@@ -446,4 +446,4 @@ I regularly present my research at academic conferences, seminars, and science c
       width: 100%;
     }
   }
-</style> 
+</style>  -->

@@ -15,284 +15,323 @@ author_profile: true
     </ul>
   </nav>
 
+  <!-- Journals Section -->
   <div class="pub-section active" id="journals">
     <h1>Journal Publications</h1>
     
-    <div class="pub-grid">
-      <div class="pub-card">
-        <h3 class="pub-card-title"><a href="https://arxiv.org/abs/..." target="_blank">Detecting fast-ripples on both micro- and macro-electrodes in epilepsy: a Fourier Analysis-based Scalogram based detector (FAST)</a></h3>
-        <p class="pub-card-authors">L. Gardy*, E. J. Barbeau, J. Curot, L. Valton, C. Hurter and L. Berthier</p>
-        <p class="pub-card-journal">Submitted to Journal of Neuroscience Methods</p>
-        <p>We present a novel approach for detecting fast-ripples in epilepsy patients using Fourier Analysis-based Scalogram techniques, potentially improving the diagnosis and treatment of epilepsy.</p>
-        <div class="pub-card-links">
-          <a href="#" class="btn btn-sm citation-toggle">Cite</a>
-          <div class="citation-content" style="display: none;">
-            <pre>@article{gardy2023detecting,
+  <div class="pub-grid">
+
+  <div class="pub-card">
+    <h3 class="pub-card-title">
+      <a href="https://arxiv.org/abs/..." target="_blank"> Detecting fast-ripples on both micro- and macro-electrodes in epilepsy: a Fourier Analysis-based Scalogram based detector (FAST)</a>
+    </h3>
+    <p class="pub-card-authors">L. Gardy*, E. J. Barbeau, J. Curot, L. Valton, C. Hurter and L. Berthier</p>
+    <p class="pub-card-journal">Submitted to Journal of Neuroscience Methods</p>
+    <p>We present a novel approach for detecting fast-ripples in epilepsy patients using Fourier Analysis-based Scalogram techniques, potentially improving the diagnosis and treatment of epilepsy.</p>
+    <div class="pub-card-links">
+      <a href="#" class="btn btn-sm citation-toggle">Cite</a>
+      <div class="citation-content" style="display: none;">
+        <pre>
+@article{gardy2023detecting,
   title={Detecting fast-ripples on both micro- and macro-electrodes in epilepsy: a Fourier Analysis-based Scalogram based detector (FAST)},
   author={Gardy, L. and Barbeau, E. J. and Curot, J. and Valton, L. and Hurter, C. and Berthier, L.},
   journal={Journal of Neuroscience Methods},
   note={Under review},
   year={2023}
-}</pre>
-          </div>
-        </div>
+}
+        </pre>
       </div>
     </div>
   </div>
 
+</div> <!-- Close pub-grid -->
+</div> <!-- Close pub-section -->
+
+  <!-- Conferences Section -->
   <div class="pub-section" id="conferences">
     <h1>Conference Proceedings</h1>
     
-    <div class="pub-grid">
-      <div class="pub-card">
-        <h3 class="pub-card-title"><a href="https://ieeexplore.ieee.org/abstract/document/10095570" target="_blank">2DSBG: A 2d Semi Bi-Gaussian Filter Adapted for Adjacent and Multi-Scale Line Feature Detection</a></h3>
-        <p class="pub-card-authors">B. Magnier, G. Sakhi Shokouh, L. Berthier, M. Pie and A. Ruggiero</p>
-        <p class="pub-card-journal">ICASSP 2023 - IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</p>
-        <p>We developed a novel 2D Semi Bi-Gaussian (2DSBG) filter for detecting adjacent and multi-scale line features in images, with applications in computer vision and image processing.</p>
-        <div class="pub-card-links">
-          <a href="https://ieeexplore.ieee.org/abstract/document/10095570" class="btn btn-sm" target="_blank">Paper</a>
-          <a href="#" class="btn btn-sm citation-toggle">Cite</a>
-          <div class="citation-content" style="display: none;">
-            <pre>@inproceedings{magnier20232dsbg,
+  <div class="pub-grid">
+
+  <div class="pub-card">
+    <h3 class="pub-card-title">
+      <a href="https://ieeexplore.ieee.org/abstract/document/10095570" target="_blank">2DSBG: A 2d Semi Bi-Gaussian Filter Adapted for Adjacent and Multi-Scale Line Feature Detection</a>
+    </h3>
+    <p class="pub-card-authors">B. Magnier, G. Sakhi Shokouh, L. Berthier, M. Pie and A. Ruggiero</p>
+    <p class="pub-card-journal">ICASSP 2023 - IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</p>
+    <p>We developed a novel 2D Semi Bi-Gaussian (2DSBG) filter for detecting adjacent and multi-scale line features in images, with applications in computer vision and image processing.</p>
+    <div class="pub-card-links">
+      <a href="https://ieeexplore.ieee.org/abstract/document/10095570" class="btn btn-sm" target="_blank">Paper</a>
+      <a href="#" class="btn btn-sm citation-toggle">Cite</a>
+      <div class="citation-content" style="display: none;">
+        <pre>
+@inproceedings{magnier20232dsbg,
   title={2DSBG: A 2d Semi Bi-Gaussian Filter Adapted for Adjacent and Multi-Scale Line Feature Detection},
   author={Magnier, B. and Sakhi Shokouh, G. and Berthier, L. and Pie, M. and Ruggiero, A.},
   booktitle={ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   pages={1--5},
   year={2023},
   organization={IEEE}
-}</pre>
-          </div>
-        </div>
+}
+        </pre>
       </div>
     </div>
   </div>
 
+</div> <!-- Close pub-grid -->
+</div> <!-- Close pub-section -->
+
+  <!-- Talks Section -->
   <div class="pub-section" id="talks">
     <h1 class="section-title">Science Communication & Talks</h1>
     
-    <p class="section-intro">
-      I regularly present my research at academic conferences, seminars, and science communication events. This page highlights my presentations organized by type.
-    </p>
+  <p class="section-intro">
+    I regularly present my research at academic conferences, seminars, and science communication events. This page highlights my presentations organized by type.
+  </p>
     
-    <!-- Talks Navigation -->
-    <div class="talks-navigation">
-      <a href="#mt180" class="talks-nav-item active" data-target="mt180-section">
-        <i class="fas fa-trophy"></i>
-        <span>MT180 Competition</span>
-      </a>
-      <a href="#academic" class="talks-nav-item" data-target="academic-section">
-        <i class="fas fa-chalkboard-teacher"></i>
-        <span>Academic Talks</span>
-      </a>
-      <a href="#seminars" class="talks-nav-item" data-target="seminars-section">
-        <i class="fas fa-users"></i>
-        <span>Seminars & Papers</span>
-      </a>
-    </div>
+  <!-- Talks Navigation -->
+  <div class="talks-navigation">
+    <a href="#mt180" class="talks-nav-item active" data-target="mt180-section">
+      <i class="fas fa-trophy"></i>
+      <span>MT180 Competition</span>
+    </a>
+    <a href="#academic" class="talks-nav-item" data-target="academic-section">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <span>Academic Talks</span>
+    </a>
+    <a href="#seminars" class="talks-nav-item" data-target="seminars-section">
+      <i class="fas fa-users"></i>
+      <span>Seminars & Papers</span>
+    </a>
+  </div>
 
-    <!-- MT180 Feature Spotlight Card -->
-    <div class="talks-content-section active" id="mt180-section">
-      <div class="feature-spotlight mt180-section">
-        <div class="feature-badge pulse-animation"><i class="fas fa-trophy"></i> MT180</div>
-        <div class="feature-content mt180-container">
-          <div class="feature-details">
-            <div class="feature-header">
-              <div class="feature-title-group">
-                <h2><i class="fas fa-trophy"></i> Ma Thèse en 180 secondes</h2>
-                <div class="feature-subtitle">National science communication competition for PhD students</div>
-              </div>
-              <div class="feature-icon">
-                <i class="fas fa-stopwatch"></i>
-              </div>
-            </div>
-            <div class="feature-description competition-description">
-              <p><strong>"Ma Thèse en 180 secondes"</strong> challenges PhD students to present their research in just 180 seconds to a non-specialist audience. This competition showcases the ability to explain complex scientific concepts in an engaging and accessible way.</p>
-            </div>
-            <blockquote class="mt180-title">
-              <i class="fas fa-quote-left"></i> Robust real-time quality monitoring and reliable adaptation of manufacturing processes in the tire industry
-            </blockquote>
-            <div class="achievement-row">
-              <div class="achievement-item">
-                <div class="circle-icon finalist-icon">
-                  <i class="fas fa-star"></i>
-                </div>
-                <p><strong>Finalist</strong></p>
-                <p>Top 25 among 120+ participants</p>
-              </div>
-              
-              <div class="achievement-item">
-                <div class="circle-icon award-icon">
-                  <i class="fas fa-award"></i>
-                </div>
-                <p><strong>Public's Choice Award</strong></p>
-                <p>Selected by audience vote</p>
-              </div>
-              
-              <div class="achievement-item">
-                <div class="circle-icon national-icon">
-                  <i class="fas fa-medal"></i>
-                </div>
-                <p><strong>National Finalist</strong></p>
-                <p>Represented my institution</p>
-              </div>
-            </div>
-            <div class="resource-buttons">
-              <a href="https://www.ip-paris.fr/actualites/10-finalistes-au-concours-ma-these-en-180-secondes-dip-paris-2025" class="resource-button" target="_blank"><i class="fas fa-users"></i> Competition Details</a>
-              <a href="https://www.polytechnique.edu/actualites/les-doctorantes-et-doctorants-des-laboratoires-de-lx-lhonneur-pour-mt180" class="resource-button" target="_blank"><i class="fas fa-award"></i> Award Results</a>
-            </div>
-          </div>
-        </div>
-        <div class="video-wrapper mt180-video-full-width">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/VjbWHeqfhMk" title="MT180 Presentation by Louis Berthier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="MT180 Presentation by Louis Berthier"></iframe>
-        </div>
+  <!-- MT180 Competition Section -->
+  <div class="talks-content-section active" id="mt180-section">
+  <div class="feature-spotlight mt180-section">
+  <div class="feature-badge pulse-animation"><i class="fas fa-trophy"></i> MT180</div>
+
+  <div class="feature-content mt180-container">
+  <div class="feature-details">
+
+  <div class="feature-header">
+    <div class="feature-title-group">
+      <h2><i class="fas fa-trophy"></i> Ma Thèse en 180 secondes</h2>
+      <div class="feature-subtitle">
+        National science communication competition for PhD students
       </div>
     </div>
-
-    <!-- Academic Presentations Section -->
-    <div class="talks-content-section" id="academic-section">
-      <h2 class="with-decoration"><i class="fas fa-chalkboard-teacher"></i> Academic Presentations</h2>
-      
-      <div class="talks-grid">
-        <div class="talk-card highlight-card">
-          <div class="card-header">
-            <div class="header-icon">
-              <i class="fas fa-university"></i>
-            </div>
-            <h3>ESCAPE 35 Conference Talk</h3>
-            <div class="badge-container">
-              <span class="badge"><i class="fas fa-star"></i> Oral Presentation</span>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="date-venue">
-              <i class="fas fa-calendar-day"></i> July 2025
-              <i class="fas fa-map-marker-alt ml-3"></i> Ghent, Belgium
-            </div>
-            <p>Selected to deliver an <strong>oral presentation</strong> at the European Symposium on Computer Aided Process Engineering, one of the premier European conferences in process engineering.</p>
-            <p class="special-recognition">Selected from among numerous submissions for the more prestigious oral presentation format instead of the standard poster session.</p>
-          </div>
-        </div>
-        
-        <div class="talk-card">
-          <div class="card-header">
-            <div class="header-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <h3>Model-Based Approaches for Quality-Diversity Optimization</h3>
-          </div>
-          <div class="card-body">
-            <div class="date-venue">
-              <i class="fas fa-calendar-day"></i> October 2022
-              <i class="fas fa-map-marker-alt ml-3"></i> École Polytechnique, Paris, France
-            </div>
-            <p>Presented my master's thesis research on improving Quality-Diversity optimization using surrogate models, discussing techniques for enhanced sample efficiency.</p>
-          </div>
-        </div>
-        
-        <div class="talk-card">
-          <div class="card-header">
-            <div class="header-icon">
-              <i class="fas fa-microphone"></i>
-            </div>
-            <h3>2DSBG: A 2d Semi Bi-Gaussian Filter for Line Feature Detection</h3>
-          </div>
-          <div class="card-body">
-            <div class="date-venue">
-              <i class="fas fa-calendar-day"></i> June 2023
-              <i class="fas fa-map-marker-alt ml-3"></i> ICASSP 2023, Rhodes, Greece
-            </div>
-            <p>Co-presented our paper on a novel approach to line feature detection in images using 2D Semi Bi-Gaussian filters.</p>
-          </div>
-        </div>
-      </div>
+    <div class="feature-icon">
+      <i class="fas fa-stopwatch"></i>
     </div>
-
-    <!-- Seminars & Paper Presentations Section -->
-    <div class="talks-content-section" id="seminars-section">
-      <h2 class="with-decoration"><i class="fas fa-users"></i> Seminars & Paper Presentations</h2>
-      
-      <div class="seminar-card talk-card">
-        <div class="card-header">
-          <div class="header-icon">
-            <i class="fas fa-users"></i>
-          </div>
-          <h3>Research Seminar Founder & Organizer</h3>
-          <div class="badge-container">
-            <span class="badge"><i class="fas fa-calendar-check"></i> Weekly Seminar</span>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="date-venue">
-            <i class="fas fa-calendar-alt"></i> April 2024 - Present
-            <i class="fas fa-building ml-3"></i> Michelin Research Center, Clermont-Ferrand, France
-          </div>
-          <p>Founded and currently lead a weekly research seminar bringing together researchers and data scientists from various teams within Michelin. This initiative fosters knowledge sharing and collaboration across departments, creating a vibrant research community.</p>
-          <p>The seminar focuses on cutting-edge papers in machine learning, computer vision, natural language processing, and uncertainty quantification, with direct applications to industrial challenges in the tire manufacturing domain.</p>
+  </div>
           
-          <h4 class="paper-heading"><i class="fas fa-file-alt"></i> Selected Paper Presentations</h4>
-          <ul class="paper-list">
-            <li>
-              <a href="https://arxiv.org/abs/2012.04322" class="paper-item" target="_blank">
-                <div class="paper-info">
-                  <h5>Quality-Diversity Optimization <span class="special-badge">★ Featured</span></h5>
-                  <div class="paper-meta">arXiv (2020) · Optimization, Machine Learning</div>
-                </div>
-                <div class="paper-icon">
-                  <i class="fas fa-external-link-alt"></i>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://arxiv.org/abs/1706.03762" class="paper-item" target="_blank">
-                <div class="paper-info">
-                  <h5>Attention Is All You Need <span class="special-badge">★ Featured</span></h5>
-                  <div class="paper-meta">NeurIPS (2017) · Deep Learning, Transformers</div>
-                </div>
-                <div class="paper-icon">
-                  <i class="fas fa-external-link-alt"></i>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://arxiv.org/abs/2306.15794" class="paper-item" target="_blank">
-                <div class="paper-info">
-                  <h5>HyenaDNA: Long-Range Genomic Sequence Modeling</h5>
-                  <div class="paper-meta">arXiv (2023) · Sequence Modeling, Genomics</div>
-                </div>
-                <div class="paper-icon">
-                  <i class="fas fa-external-link-alt"></i>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://arxiv.org/abs/2107.07511" class="paper-item" target="_blank">
-                <div class="paper-info">
-                  <h5>A Gentle Introduction to Conformal Prediction</h5>
-                  <div class="paper-meta">arXiv (2021) · Uncertainty Quantification</div>
-                </div>
-                <div class="paper-icon">
-                  <i class="fas fa-external-link-alt"></i>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/LouisTier/TorchSOM" class="paper-item github-item" target="_blank">
-                <div class="paper-info">
-                  <h5>TorchSOM: PyTorch Library for Self-Organizing Maps</h5>
-                  <div class="paper-meta">GitHub Project · Open Source, Unsupervised Learning</div>
-                </div>
-                <div class="paper-icon">
-                  <i class="fab fa-github"></i>
-                </div>
-              </a>
-            </li>
-          </ul>
+  <div class="feature-description competition-description">
+    <p><strong>"Ma Thèse en 180 secondes"</strong> challenges PhD students to present their research in just 180 seconds to a non-specialist audience. This competition showcases the ability to explain complex scientific concepts in an engaging and accessible way.</p>
+  </div>
+
+  <blockquote class="mt180-title">
+    <i class="fas fa-quote-left"></i> Robust real-time quality monitoring and reliable adaptation of manufacturing processes in the tire industry
+  </blockquote>
+
+  <div class="achievement-row">
+    <div class="achievement-item">
+      <div class="circle-icon finalist-icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <p><strong>Finalist</strong></p>
+      <p>Top 25 among 120+ participants</p>
+    </div>
+    
+  <div class="achievement-item">
+    <div class="circle-icon award-icon">
+      <i class="fas fa-award"></i>
+    </div>
+    <p><strong>Public's Choice Award</strong></p>
+    <p>Selected by audience vote</p>
+  </div>
+    
+  <div class="achievement-item">
+    <div class="circle-icon national-icon">
+      <i class="fas fa-medal"></i>
+    </div>
+    <p><strong>National Finalist</strong></p>
+    <p>Represented my institution</p>
+  </div>
+
+  </div> <!-- Close achievement-row -->
+
+  <div class="resource-buttons">
+    <a href="https://www.ip-paris.fr/actualites/10-finalistes-au-concours-ma-these-en-180-secondes-dip-paris-2025" class="resource-button" target="_blank"><i class="fas fa-users"></i> Competition Details</a>
+    <a href="https://www.polytechnique.edu/actualites/les-doctorantes-et-doctorants-des-laboratoires-de-lx-lhonneur-pour-mt180" class="resource-button" target="_blank"><i class="fas fa-award"></i> Award Results</a>
+  </div>
+
+  </div> <!-- Close feature-details -->
+  </div> <!-- Close feature-content mt180-container -->
+
+  <div class="video-wrapper mt180-video-full-width">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/VjbWHeqfhMk" title="MT180 Presentation by Louis Berthier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="MT180 Presentation by Louis Berthier"></iframe>
+  </div>
+
+  </div>
+  </div>
+
+  <!-- Academic Presentations Section -->
+  <div class="talks-content-section" id="academic-section">
+    <h2 class="with-decoration"><i class="fas fa-chalkboard-teacher"></i> Academic Presentations</h2>
+      
+  <div class="talks-grid">
+    <div class="talk-card highlight-card">
+      <div class="card-header">
+        <div class="header-icon">
+          <i class="fas fa-university"></i>
+        </div>
+        <h3>ESCAPE 35 Conference Talk</h3>
+        <div class="badge-container">
+          <span class="badge"><i class="fas fa-star"></i> Oral Presentation</span>
         </div>
       </div>
+      <div class="card-body">
+        <div class="date-venue">
+          <i class="fas fa-calendar-day"></i> July 2025
+          <i class="fas fa-map-marker-alt ml-3"></i> Ghent, Belgium
+        </div>
+        <p>Selected to deliver an <strong>oral presentation</strong> at the European Symposium on Computer Aided Process Engineering, one of the premier European conferences in process engineering.</p>
+        <p class="special-recognition">Selected from among numerous submissions for the more prestigious oral presentation format instead of the standard poster session.</p>
+      </div>
+    </div>
+        
+  <div class="talk-card">
+    <div class="card-header">
+      <div class="header-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <h3>Model-Based Approaches for Quality-Diversity Optimization</h3>
+    </div>
+    <div class="card-body">
+      <div class="date-venue">
+        <i class="fas fa-calendar-day"></i> October 2022
+        <i class="fas fa-map-marker-alt ml-3"></i> École Polytechnique, Paris, France
+      </div>
+      <p>Presented my master's thesis research on improving Quality-Diversity optimization using surrogate models, discussing techniques for enhanced sample efficiency.</p>
+    </div>
+  </div>
+  
+  <div class="talk-card">
+    <div class="card-header">
+      <div class="header-icon">
+        <i class="fas fa-microphone"></i>
+      </div>
+      <h3>2DSBG: A 2d Semi Bi-Gaussian Filter for Line Feature Detection</h3>
+    </div>
+    <div class="card-body">
+      <div class="date-venue">
+        <i class="fas fa-calendar-day"></i> June 2023
+        <i class="fas fa-map-marker-alt ml-3"></i> ICASSP 2023, Rhodes, Greece
+      </div>
+      <p>Co-presented our paper on a novel approach to line feature detection in images using 2D Semi Bi-Gaussian filters.</p>
     </div>
   </div>
 
-  <div class="pub-section" id="posters">
+</div>
+</div>
+
+  <!-- Seminars & Paper Presentations Section -->
+  <div class="talks-content-section" id="seminars-section">
+    <h2 class="with-decoration"><i class="fas fa-users"></i> Seminars & Paper Presentations</h2>
+      
+  <div class="seminar-card talk-card">
+
+  <div class="card-header">
+    <div class="header-icon">
+      <i class="fas fa-users"></i>
+    </div>
+
+  <h3>Research Seminar Founder & Organizer</h3>
+  <div class="badge-container">
+    <span class="badge"><i class="fas fa-calendar-check"></i> Weekly Seminar</span>
+  </div>
+
+  </div>
+  <div class="card-body">
+    <div class="date-venue">
+      <i class="fas fa-calendar-alt"></i> April 2024 - Present
+      <i class="fas fa-building ml-3"></i> Michelin Research Center, Clermont-Ferrand, France
+    </div>
+    <p>Founded and currently lead a weekly research seminar bringing together researchers and data scientists from various teams within Michelin. This initiative fosters knowledge sharing and collaboration across departments, creating a vibrant research community.</p>
+    <p>The seminar focuses on cutting-edge papers in machine learning, computer vision, natural language processing, and uncertainty quantification, with direct applications to industrial challenges in the tire manufacturing domain.</p>
+  
+  <h4 class="paper-heading"><i class="fas fa-file-alt"></i> Selected Paper Presentations</h4>
+  
+  <ul class="paper-list">
+
+  <li>
+    <a href="https://arxiv.org/abs/2012.04322" class="paper-item" target="_blank">
+      <div class="paper-info">
+        <h5>Quality-Diversity Optimization <span class="special-badge">★ Featured</span></h5>
+        <div class="paper-meta">arXiv (2020) · Optimization, Machine Learning</div>
+      </div>
+      <div class="paper-icon">
+        <i class="fas fa-external-link-alt"></i>
+      </div>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://arxiv.org/abs/1706.03762" class="paper-item" target="_blank">
+      <div class="paper-info">
+        <h5>Attention Is All You Need <span class="special-badge">★ Featured</span></h5>
+        <div class="paper-meta">NeurIPS (2017) · Deep Learning, Transformers</div>
+      </div>
+      <div class="paper-icon">
+        <i class="fas fa-external-link-alt"></i>
+      </div>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://arxiv.org/abs/2306.15794" class="paper-item" target="_blank">
+      <div class="paper-info">
+        <h5>HyenaDNA: Long-Range Genomic Sequence Modeling</h5>
+        <div class="paper-meta">arXiv (2023) · Sequence Modeling, Genomics</div>
+      </div>
+      <div class="paper-icon">
+        <i class="fas fa-external-link-alt"></i>
+      </div>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://arxiv.org/abs/2107.07511" class="paper-item" target="_blank">
+      <div class="paper-info">
+        <h5>A Gentle Introduction to Conformal Prediction</h5>
+        <div class="paper-meta">arXiv (2021) · Uncertainty Quantification</div>
+      </div>
+      <div class="paper-icon">
+        <i class="fas fa-external-link-alt"></i>
+      </div>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://github.com/LouisTier/TorchSOM" class="paper-item github-item" target="_blank">
+      <div class="paper-info">
+        <h5>TorchSOM: PyTorch Library for Self-Organizing Maps</h5>
+        <div class="paper-meta">GitHub Project · Open Source, Unsupervised Learning</div>
+      </div>
+      <div class="paper-icon">
+        <i class="fab fa-github"></i>
+      </div>
+    </a>
+  </li>
+  
+  </ul>
+
+</div>
+</div>
+</div>
+</div>
+
+  <!-- <div class="pub-section" id="posters">
     <h1>Posters</h1>
     
     <div class="pub-grid">
@@ -307,7 +346,7 @@ author_profile: true
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Comprehensive CSS Styles -->
 <style>
