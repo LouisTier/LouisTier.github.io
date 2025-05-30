@@ -10,13 +10,13 @@ redirect_from:
 ---
 
 <div class="hero-section">
-<h1 class="hero-title">About Me</h1>
+  <h1 class="hero-title">About Me</h1>
   
   <h2 class="hero-subtitle">Introduction</h2>
   <hr class="section-divider">
 
   <p>
-      I am a CIFRE PhD student in Applied Mathematics & Machine Learning at <a href="https://www.polytechnique.edu/">École Polytechnique</a>, affiliated with the <a href="https://cmap.ip-paris.fr/">Centre de Mathématiques Appliquées (CMAP)</a> and the <a href="https://cmap.ip-paris.fr/recherche/decision-et-donnees/simpas">SIMPAS</a> team. My work is conducted in collaboration with <a href="https://www.michelin.com/">Michelin</a>, under the academic supervision of <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a> and <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>.
+    I am a CIFRE PhD student in Applied Mathematics & Machine Learning at <a href="https://www.polytechnique.edu/">École Polytechnique</a>, affiliated with the <a href="https://cmap.ip-paris.fr/">Centre de Mathématiques Appliquées (CMAP)</a> and the <a href="https://cmap.ip-paris.fr/recherche/decision-et-donnees/simpas">SIMPAS</a> team. My work is conducted in collaboration with <a href="https://www.michelin.com/">Michelin</a>, under the academic supervision of <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a> and <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>.
   </p>
 
   <p>
@@ -24,7 +24,7 @@ redirect_from:
   </p>
 
   <p>
-    I hold a double master's degree: an MSc in Advanced Computing from <a href="https://www.imperial.ac.uk/">Imperial College London</a>, and a Diplôme d’ingénieur in Artificial Intelligence & Data Science from <a href="https://www.imt-mines-ales.fr/">IMT Mines Alès</a>. My training is rooted in applied mathematics, machine learning, and statistical modeling.
+    I hold a double master's degree: an MSc in Advanced Computing from <a href="https://www.imperial.ac.uk/">Imperial College London</a>, and a Diplôme d'ingénieur in Artificial Intelligence & Data Science from <a href="https://www.imt-mines-ales.fr/">IMT Mines Alès</a>. My training is rooted in applied mathematics, machine learning, and statistical modeling.
   </p>
 
   <p>
@@ -43,7 +43,7 @@ redirect_from:
   </p>
   
   <p>
-  These collaborations could be structured as:
+    These collaborations could be structured as:
   </p>
   <ul class="feature-list">
     <li>Condensed internship blocks</li>
@@ -52,7 +52,7 @@ redirect_from:
   </ul>
 
   <p>
-  Areas of particular interest include:
+    Areas of particular interest include:
   </p>
   <ul class="feature-list">
     <li>Manufacturing</li>
@@ -66,7 +66,6 @@ redirect_from:
   <p> 
     If you're interested in collaborating or discussing potential applications of my research, please <a href="mailto:louis_tier@outlook.com" class="highlight-link">contact me</a>.
   </p>
-
 </div>
 
 <style>

@@ -194,10 +194,12 @@ I regularly present my research at academic conferences, seminars, and science c
 </div>
 
 <style>
+  /* Common Utilities */
   .ml-3 {
     margin-left: 15px;
   }
   
+  /* Section Styling */
   section {
     margin-bottom: 60px;
   }
@@ -234,6 +236,7 @@ I regularly present my research at academic conferences, seminars, and science c
     line-height: 1.6;
   }
   
+  /* Card Header Styling */
   .header-icon {
     width: 40px;
     height: 40px;
@@ -245,7 +248,7 @@ I regularly present my research at academic conferences, seminars, and science c
     margin-right: 15px;
     font-size: 18px;
     color: var(--primary-color);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   }
   
   .card-header {
@@ -280,6 +283,7 @@ I regularly present my research at academic conferences, seminars, and science c
     margin-right: 5px;
   }
   
+  /* Card Content */
   .date-venue {
     margin-bottom: 15px;
     color: var(--secondary-color);
@@ -296,6 +300,7 @@ I regularly present my research at academic conferences, seminars, and science c
     font-weight: 500;
   }
   
+  /* Talk Cards */
   .talk-card {
     background-color: white;
     border-radius: 10px;
@@ -329,6 +334,7 @@ I regularly present my research at academic conferences, seminars, and science c
     padding: 0 20px 20px;
   }
   
+  /* Paper Presentations */
   .paper-heading {
     margin-top: 30px;
     border-bottom: 1px solid var(--border-color);
@@ -362,7 +368,7 @@ I regularly present my research at academic conferences, seminars, and science c
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
     border: 1px solid var(--border-color);
     color: var(--text-color);
@@ -372,7 +378,7 @@ I regularly present my research at academic conferences, seminars, and science c
     background-color: var(--light-gray);
     text-decoration: none;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   }
   
   .paper-info h5 {
@@ -404,6 +410,7 @@ I regularly present my research at academic conferences, seminars, and science c
     transform: scale(1.2);
   }
   
+  /* Responsive Design */
   @media (max-width: 768px) {
     .mt180-container {
       flex-direction: column-reverse;

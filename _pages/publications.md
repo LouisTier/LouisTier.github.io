@@ -145,7 +145,6 @@ author_profile: true
         <div class="video-wrapper mt180-video-full-width">
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/VjbWHeqfhMk" title="MT180 Presentation by Louis Berthier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="MT180 Presentation by Louis Berthier"></iframe>
         </div>
-        </div>
       </div>
     </div>
 
@@ -303,16 +302,18 @@ author_profile: true
         <p class="pub-card-journal">Imperial College London Research Showcase (2022)</p>
         <p>Presented research on improving the sample efficiency of Quality-Diversity optimization algorithms using surrogate models.</p>
         <div class="pub-card-links">
-                          <a href="/assets/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-sm">Download</a>
+          <a href="/assets/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-sm">Download</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Add styles for enhanced talks section -->
+<!-- Comprehensive CSS Styles -->
 <style>
-  /* Talks Navigation */
+  /* =================================
+     TALKS NAVIGATION & SECTIONS
+     ================================= */
   .talks-navigation {
     display: flex;
     flex-wrap: wrap;
@@ -366,7 +367,9 @@ author_profile: true
     to { opacity: 1; transform: translateY(0); }
   }
   
-  /* Section Title and Intro */
+  /* =================================
+     SECTION STYLING
+     ================================= */
   .section-title {
     margin-bottom: 20px;
   }
@@ -378,7 +381,6 @@ author_profile: true
     line-height: 1.6;
   }
   
-  /* Decorated Headings */
   h2.with-decoration {
     position: relative;
     padding-bottom: 15px;
@@ -403,14 +405,15 @@ author_profile: true
     background: linear-gradient(to right, var(--border-color) 50%, transparent);
   }
   
-  /* Talk Cards Grid */
+  /* =================================
+     TALK CARDS & GRIDS
+     ================================= */
   .talks-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
   }
   
-  /* Talk Cards */
   .talk-card {
     background-color: white;
     border-radius: 10px;
@@ -442,7 +445,9 @@ author_profile: true
     color: #6c5ce7;
   }
   
-  /* Card Header */
+  /* =================================
+     CARD HEADERS & CONTENT
+     ================================= */
   .card-header {
     display: flex;
     align-items: center;
@@ -462,7 +467,7 @@ author_profile: true
     margin-right: 15px;
     font-size: 16px;
     color: var(--primary-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
   }
   
@@ -472,7 +477,6 @@ author_profile: true
     flex-grow: 1;
   }
   
-  /* Badge Container */
   .badge-container {
     margin-left: 10px;
     flex-shrink: 0;
@@ -494,7 +498,6 @@ author_profile: true
     margin-right: 5px;
   }
   
-  /* Card Body */
   .card-body {
     padding: 20px;
   }
@@ -519,7 +522,9 @@ author_profile: true
     font-weight: 500;
   }
   
-  /* Paper Presentations */
+  /* =================================
+     PAPER PRESENTATIONS
+     ================================= */
   .paper-heading {
     margin-top: 30px;
     border-bottom: 1px solid var(--border-color);
@@ -553,7 +558,7 @@ author_profile: true
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
     border: 1px solid var(--border-color);
     color: var(--text-color);
@@ -563,7 +568,7 @@ author_profile: true
     background-color: var(--light-gray);
     text-decoration: none;
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   }
   
   .paper-info {
@@ -613,7 +618,9 @@ author_profile: true
     transform: scale(1.2);
   }
   
-  /* Achievement Items */
+  /* =================================
+     ACHIEVEMENT ITEMS
+     ================================= */
   .achievement-row {
     display: flex;
     gap: 15px;
@@ -628,7 +635,7 @@ author_profile: true
     padding: 15px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   }
   
   .circle-icon {
@@ -660,7 +667,9 @@ author_profile: true
     line-height: 1.4;
   }
   
-  /* MT180 Video Full Width Styling */
+  /* =================================
+     MT180 VIDEO & FULL WIDTH
+     ================================= */
   .mt180-video-full-width {
     width: 100%;
     margin-top: 30px;
@@ -688,7 +697,9 @@ author_profile: true
     flex-direction: column;
   }
   
-  /* Responsive adjustments */
+  /* =================================
+     RESPONSIVE DESIGN
+     ================================= */
   @media (max-width: 768px) {
     .achievement-row {
       flex-direction: column;

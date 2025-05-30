@@ -34,12 +34,15 @@ My research lies at the intersection of applied mathematics and machine learning
 ## Current Research Projects
 
 ### Mathematical Foundations of Deep Learning
+
 I am exploring the theoretical underpinnings of deep learning models, focusing on understanding their generalization capabilities, expressivity, and optimization landscapes. This research combines techniques from approximation theory, statistical learning theory, and dynamical systems.
 
 ### Uncertainty Quantification in Machine Learning
+
 This project focuses on developing principled approaches to quantify uncertainty in machine learning predictions, with applications in risk-sensitive domains. I'm particularly interested in Bayesian approaches and ensemble methods that provide robust uncertainty estimates.
 
 ### Model-Based Optimization Techniques
+
 Building on my previous work in model-based quality-diversity optimization, I'm developing surrogate-assisted optimization techniques for complex optimization problems, with a focus on improved sample efficiency and exploration capabilities.
 
 ## Publications and Preprints
@@ -82,7 +85,7 @@ Quality-Diversity (QD) optimization is a branch of evolutionary algorithms that 
 
 <div style="text-align: center; margin: 30px 0;">
   <a href="https://github.com/LouisTier/Model-Based_Quality-Diversity" class="btn btn-primary">View Project on GitHub</a>
-          <a href="/assets/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-secondary">Read Thesis (PDF)</a>
+  <a href="/assets/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-secondary">Read Thesis (PDF)</a>
 </div>
 
 ## Potential Application Areas
@@ -101,6 +104,7 @@ My research has potential applications in various domains:
 I am actively seeking industrial collaboration opportunities during my PhD. As I plan to transition to industry after completing my doctorate, I'm particularly interested in research projects with practical applications.
 
 Collaboration options include:
+
 - Focused internship periods
 - Regular part-time engagement (e.g., 1-2 days per week)
 - Joint research projects with specific deliverables
