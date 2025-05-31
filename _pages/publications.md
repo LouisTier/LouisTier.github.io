@@ -172,8 +172,8 @@ author_profile: true
     <iframe width="100%" height="315" src="https://www.youtube.com/embed/VjbWHeqfhMk" title="MT180 Presentation by Louis Berthier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen aria-label="MT180 Presentation by Louis Berthier"></iframe>
   </div>
 
-  </div>
-  </div>
+  </div> <!-- Close mt180-container -->
+  </div> <!-- Close talks-section -->
 
   <!-- Academic Presentations Section -->
   <div class="talks-content-section" id="academic-section">
@@ -251,7 +251,8 @@ author_profile: true
     <span class="badge"><i class="fas fa-calendar-check"></i> Weekly Seminar</span>
   </div>
 
-  </div>
+  </div> <!-- Close card-header -->
+  
   <div class="card-body">
     <div class="date-venue">
       <i class="fas fa-calendar-alt"></i> April 2024 - Present
@@ -324,29 +325,32 @@ author_profile: true
     </a>
   </li>
   
-  </ul>
+  </ul> <!-- Close paper-list -->
 
-</div>
-</div>
-</div>
+</div> <!-- Close card-body -->
+</div> <!-- Close seminar-card talk-card -->
+</div> <!-- Close talks-content-section seminars-section -->
 </div>
 
-  <!-- <div class="pub-section" id="posters">
+<div class="pub-section" id="posters">
     <h1>Posters</h1>
     
-    <div class="pub-grid">
-      <div class="pub-card">
-        <h3 class="pub-card-title">Model-Based Quality-Diversity Optimization</h3>
-        <p class="pub-card-authors">L. Berthier, A. Cully</p>
-        <p class="pub-card-journal">Imperial College London Research Showcase (2022)</p>
-        <p>Presented research on improving the sample efficiency of Quality-Diversity optimization algorithms using surrogate models.</p>
-        <div class="pub-card-links">
-          <a href="/assets/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-sm">Download</a>
-        </div>
-      </div>
+  <div class="pub-grid">
+
+  <div class="pub-card">
+    <h3 class="pub-card-title">Model-Based Quality-Diversity Optimization</h3>
+    <p class="pub-card-authors">L. Berthier, A. Cully</p>
+    <p class="pub-card-journal">Imperial College London Research Showcase (2022)</p>
+    <p>Presented research on improving the sample efficiency of Quality-Diversity optimization algorithms using surrogate models.</p>
+    <div class="pub-card-links">
+      <a href="/assets/pdf/IRP_LouisBERTHIER.pdf" class="btn btn-sm">Download</a>
     </div>
   </div>
-</div> -->
+
+  </div> <!-- Close pub-grid -->
+  
+</div> <!-- Close pub-section -->
+</div> <!-- Close publications-wrapper -->
 
 <!-- Comprehensive CSS Styles -->
 <style>

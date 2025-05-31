@@ -8,6 +8,7 @@ author_profile: true
 # Teaching Experience
 
 <div class="pub-grid">
+
   <div class="pub-card">
     <div class="teaching-icon">
       <i class="fas fa-chalkboard-teacher"></i>
@@ -35,7 +36,8 @@ author_profile: true
       <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
     </div>
   </div>
-</div>
+
+</div> <!-- Close pub-grid -->
 
 ## Teaching Interests
 
