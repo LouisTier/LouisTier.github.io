@@ -16,7 +16,7 @@ redirect_from:
   <hr class="section-divider">
 
   <p>
-    I am a CIFRE PhD student in Applied Mathematics & Machine Learning at <a href="https://www.polytechnique.edu/">École Polytechnique</a>, affiliated with the <a href="https://cmap.ip-paris.fr/">Centre de Mathématiques Appliquées (CMAP)</a> and the <a href="https://cmap.ip-paris.fr/recherche/decision-et-donnees/simpas">SIMPAS</a> team. My work is conducted in collaboration with <a href="https://www.michelin.com/">Michelin</a>, under the academic supervision of <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a> and <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>.
+    I am a CIFRE PhD student in Applied Mathematics & Machine Learning at <a href="https://www.polytechnique.edu/">École Polytechnique</a>, affiliated with the <a href="https://cmap.ip-paris.fr/">Centre de Mathématiques Appliquées (CMAP)</a> and the <a href="https://cmap.ip-paris.fr/recherche/decision-et-donnees/simpas">SIMPAS</a> team. My work is conducted in collaboration with <a href="https://www.michelin.com/">Michelin</a>, under the academic supervision of <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a> and <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>, and the industrial supervision of <a href="https://www.linkedin.com/in/desroziers/">Dr. Sylvain Desroziers</a>, <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a> and <a href="https://www.linkedin.com/in/guillaume-ramelet-7696081/">Guillaume Ramelet</a>.
   </p>
 
   <p>
@@ -46,9 +46,9 @@ redirect_from:
     These collaborations could be structured as:
   </p>
   <ul class="feature-list">
-    <li>Condensed internship blocks</li>
-    <li>Distributed working days each week</li>
-    <li>Project-based collaborations</li>
+    <li>Focused internship periods</li>
+    <li>Regular part-time engagement (e.g., 1-2 days per week)</li>
+    <li>Joint research projects with specific deliverables</li>
   </ul>
 
   <p>
