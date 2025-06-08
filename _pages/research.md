@@ -20,7 +20,7 @@ I focus on developing reliable uncertainty quantification methods for machine le
 
 ### Self-Organizing Maps (SOMs)
 
-I proposed <a href="https://github.com/michelin/TorchSOM" target="_blank">TorchSOM</a>, an innovative package for dimensionality reduction and data visualization. As an alternative to traditional methods like UMAP and t-SNE, TorchSOM offers unique advantages for industrial applications, particularly in Just-in-Time Learning strategies. The package provides efficient representations of high-dimensional data, making it valuable for process monitoring and quality control.
+I proposed <a href="https://github.com/michelin/TorchSOM" target="_blank" rel="noopener noreferrer">TorchSOM</a>, an innovative package for dimensionality reduction and data visualization. As an alternative to traditional methods like UMAP and t-SNE, TorchSOM offers unique advantages for industrial applications, particularly in Just-in-Time Learning strategies. The package provides efficient representations of high-dimensional data, making it valuable for process monitoring and quality control.
 
 <!-- Add a space between the two sections -->
 <p>&nbsp;</p> 
