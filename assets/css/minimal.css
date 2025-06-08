@@ -217,9 +217,25 @@
 .sidebar h2,
 .sidebar p,
 .affiliation,
-.location {
+.location,
+.profile-container .location,
+.profile-container .affiliation {
   text-align: left !important;
 }
+
+/* Override any center alignment for mobile
+@media (max-width: 900px) {
+  .sidebar,
+  .sidebar *,
+  .profile-container,
+  .profile-container *,
+  .location,
+  .affiliation {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+} */
 
 /* Additional specificity for bio text */
 .sidebar p:not(.contact-container p) {
@@ -302,6 +318,16 @@
 .contact-container a:hover .fab,
 .contact-container a:hover .ai {
   color: white;
+}
+
+/* Ensure contact link text is always visible */
+.contact-container a span {
+  color: var(--text-color) !important;
+  font-weight: 500 !important;
+}
+
+.contact-container a:hover span {
+  color: white !important;
 }
 
 /* Main Content Area */

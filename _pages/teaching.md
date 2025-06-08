@@ -22,6 +22,7 @@ author_profile: true
         <br>
         <i class="fas fa-user-tie"></i> Teacher Assistant
       </div>
+      <br>
       <p>20-hour course for engineering students in their first year - equivalent to Bachelor 3 - after intensive preparatory classes and national exams, proposed and supervised by <a href="https://perso.ensta-paris.fr/~philippe.xu/" target="_blank" rel="noopener noreferrer">Pr. Philippe XU</a></p>
       <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
     </div>
@@ -40,6 +41,7 @@ author_profile: true
         <br>
         <i class="fas fa-user-tie"></i> Teacher Assistant
       </div>
+      <br>
       <p>20-hour course for engineering students in their first year - equivalent to Bachelor 3 - after intensive preparatory classes and national exams, proposed and supervised by <a href="https://perso.ensta-paris.fr/~philippe.xu/" target="_blank" rel="noopener noreferrer">Pr. Philippe XU</a></p>
       <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
     </div>
