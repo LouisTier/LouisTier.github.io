@@ -12,7 +12,7 @@ redirect_from:
   <div class="cv-header">
     <h1>Curriculum Vitae</h1>
     <div class="cv-actions">
-      <a href="/assets/pdf/CV_LouisBERTHIER.pdf" class="btn btn-primary">
+      <a href="/assets/documents/pdf/CV_LouisBERTHIER.pdf" class="btn btn-primary">
         <i class="fas fa-download"></i> Download Full CV
       </a>
     </div>
