@@ -16,9 +16,9 @@ author_profile: true
     <div class="teaching-content">
       <h3 class="pub-card-title">Introduction to Machine Learning and Data Science</h3>
       <p class="pub-card-authors">ENSTA Paris</p>
-      <p class="pub-card-journal">Teacher Assistant | September 2025 - October 2025 (Upcoming)</p>
+      <p class="pub-card-journal">Teacher Assistant | September 2025 - October 2025</p>
       <div class="teaching-location"><i class="fas fa-map-marker-alt"></i> Paris, France</div>
-      <p>Course for 3rd year BSc students in mathematics (20 hours)</p>
+      <p>20-hour course for engineering students in their first year - equivalent to Bachelor 3 - after intensive preparatory classes and national exams, proposed and supervised by <a href="https://perso.ensta-paris.fr/~philippe.xu/" target="_blank">Pr. Philippe XU</a></p>
       <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
     </div>
   </div>
@@ -32,7 +32,7 @@ author_profile: true
       <p class="pub-card-authors">ENSTA Paris</p>
       <p class="pub-card-journal">Teacher Assistant | September 2024 - October 2024</p>
       <div class="teaching-location"><i class="fas fa-map-marker-alt"></i> Paris, France</div>
-      <p>Course for 3rd year BSc students in mathematics (20 hours)</p>
+      <p>20-hour course for engineering students in their first year - equivalent to Bachelor 3 - after intensive preparatory classes and national exams, proposed and supervised by <a href="https://perso.ensta-paris.fr/~philippe.xu/" target="_blank">Pr. Philippe XU</a></p>
       <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
     </div>
   </div>
