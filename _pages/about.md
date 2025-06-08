@@ -69,6 +69,11 @@ redirect_from:
 </div>
 
 <style>
+  /* Override the center alignment from home.css */
+  .hero-section {
+    text-align: left !important;
+  }
+  
   .section-divider {
     margin: 20px 0;
     border: 0;

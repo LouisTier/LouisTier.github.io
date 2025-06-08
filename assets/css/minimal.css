@@ -207,6 +207,11 @@
   margin-bottom: 30px;
 }
 
+.profile-container h2,
+.profile-container p {
+  text-align: left !important;
+}
+
 /* Profile Image Optimization */
 .profile-img {
   width: 240px;
@@ -613,7 +618,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
+    text-align: left; /* Keep text left-aligned even on mobile for better readability */
   }
   
   .profile-container {
@@ -621,6 +626,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  
+  /* Ensure profile text stays left-aligned on mobile */
+  .profile-container h2,
+  .profile-container p,
+  .profile-container .affiliation,
+  .profile-container .location {
+    text-align: left !important;
+    width: 100%;
   }
   
   .profile-img {
@@ -690,13 +704,23 @@ footer {
   vertical-align: middle;
 }
 
+/* Ensure Google Scholar (Academicons) icon is properly displayed */
+.ai-google-scholar {
+  font-family: 'Academicons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  display: inline-block !important;
+}
+
 /* Affiliation styling */
 .affiliation {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align to top for better text wrapping */
   margin-bottom: 8px;
   color: var(--secondary-color);
   font-size: 16px;
+  text-align: left !important; /* Force left alignment */
 }
 
 .affiliation i {
