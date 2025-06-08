@@ -9,7 +9,7 @@ layout: compress
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-    <link rel="stylesheet" href="{{ base_path }}/assets/css/minimal.css">
+    <link rel="stylesheet" href="{{ base_path }}/assets/css/minimal.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
   </head>
 
   <body class="minimal-theme">

@@ -74,6 +74,18 @@ redirect_from:
     text-align: left !important;
   }
   
+  /* Force sidebar to be left-aligned on this page */
+  .sidebar,
+  .sidebar *,
+  .profile-container,
+  .profile-container *,
+  .sidebar h2,
+  .sidebar p,
+  .affiliation,
+  .location {
+    text-align: left !important;
+  }
+  
   .section-divider {
     margin: 20px 0;
     border: 0;

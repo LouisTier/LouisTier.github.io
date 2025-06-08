@@ -207,9 +207,24 @@
   margin-bottom: 30px;
 }
 
+/* Force all sidebar content to be left-aligned */
+.sidebar,
+.sidebar *,
+.profile-container,
+.profile-container *,
 .profile-container h2,
-.profile-container p {
+.profile-container p,
+.sidebar h2,
+.sidebar p,
+.affiliation,
+.location {
   text-align: left !important;
+}
+
+/* Additional specificity for bio text */
+.sidebar p:not(.contact-container p) {
+  text-align: left !important;
+  margin-left: 0 !important;
 }
 
 /* Profile Image Optimization */
@@ -634,7 +649,9 @@ footer {
   .profile-container .affiliation,
   .profile-container .location {
     text-align: left !important;
-    width: 100%;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   
   .profile-img {
@@ -705,12 +722,22 @@ footer {
 }
 
 /* Ensure Google Scholar (Academicons) icon is properly displayed */
-.ai-google-scholar {
-  font-family: 'Academicons';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
+.ai-google-scholar:before {
+  content: "\e828" !important; /* Correct Google Scholar Unicode */
+}
+
+/* Force visibility of all academic icons - override any conflicting styles */
+.ai {
+  font-family: 'Academicons' !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1 !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
   display: inline-block !important;
+  font-size: inherit !important;
 }
 
 /* Affiliation styling */
