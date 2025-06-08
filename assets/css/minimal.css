@@ -441,9 +441,11 @@ footer {
 }
 
 .btn-primary:hover {
-  background-color: transparent;
-  color: var(--primary-color) !important;
+  background-color: var(--primary-light) !important;
+  color: white !important;
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--primary-color-rgb), 0.3);
 }
 
 /* Ensure button text and icons are always visible */
@@ -453,7 +455,38 @@ footer {
 }
 
 .btn-primary:hover i {
-  color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Force CV button text visibility */
+.btn-primary,
+.btn-primary *,
+a.btn-primary,
+a.btn-primary * {
+  color: white !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.btn-primary:hover,
+.btn-primary:hover *,
+a.btn-primary:hover,
+a.btn-primary:hover * {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Specific fix for CV download button */
+.cv-actions .btn-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border: 1px solid var(--primary-color) !important;
+  font-weight: 600 !important;
+  padding: 12px 20px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  text-shadow: none !important;
 }
 
 .btn-secondary {
