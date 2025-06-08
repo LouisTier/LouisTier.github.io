@@ -7,8 +7,7 @@ author_profile: true
 
 # Ongoing Research Interests
 
-My research lies at the intersection of applied mathematics and machine learning, focusing on developing robust theoretical frameworks with practical applications. 
-Below are my current research areas:
+My research lies at the intersection of applied mathematics and machine learning, focusing on developing robust theoretical frameworks with practical applications. As part of my PhD thesis at [Centre de Mathématiques Appliquées](https://www.cmap.polytechnique.fr/) — CMAP — of [École Polytechnique](https://www.polytechnique.edu/), in collaboration with [Michelin](https://www.michelin.com/), I work on the following research areas:
 
 ### Online Sensors
 
@@ -20,7 +19,11 @@ I focus on developing reliable uncertainty quantification methods for machine le
 
 ### Self-Organizing Maps (SOMs)
 
-I proposed <a href="https://github.com/michelin/TorchSOM" target="_blank" rel="noopener noreferrer">TorchSOM</a>, an innovative package for dimensionality reduction and data visualization. As an alternative to traditional methods like UMAP and t-SNE, TorchSOM offers unique advantages for industrial applications, particularly in Just-in-Time Learning strategies. The package provides efficient representations of high-dimensional data, making it valuable for process monitoring and quality control.
+I developed <a href="https://github.com/michelin/TorchSOM" target="_blank" rel="noopener noreferrer">TorchSOM</a>, an innovative package for dimensionality reduction and data visualization. As an alternative to traditional methods like UMAP and t-SNE, TorchSOM offers unique advantages for industrial applications, particularly in Just-in-Time Learning strategies. The package provides efficient representations of high-dimensional data, making it valuable for process monitoring and quality control.
+
+### Hybrid Modeling (Future Direction)
+
+I am interested in exploring hybrid modeling approaches that would combine physics-based knowledge with data-driven methods to enhance predictive performance in industrial applications. This research direction would focus on integrating synthetic data generated from physical models with real-world measurements to improve model robustness and generalization. By leveraging uncertainty quantification techniques, we could effectively weight and combine these different sources of information, leading to more reliable predictions. This approach would be particularly valuable in scenarios with limited real data or when physical constraints must be respected.
 
 <!-- Add a space between the two sections -->
 <p>&nbsp;</p> 
@@ -29,7 +32,7 @@ I proposed <a href="https://github.com/michelin/TorchSOM" target="_blank" rel="n
 
 ### Model-Based Quality-Diversity Optimization
 
-During my MSc at Imperial College London, I worked in the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Dr. Antoine Cully](https://www.imperial.ac.uk/people/a.cully). My research focused on:
+During my MSc at [Imperial College London](https://www.imperial.ac.uk/), I worked in the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Pr. Antoine Cully](https://www.imperial.ac.uk/people/a.cully). My research focused on:
 
 Quality-Diversity (QD) optimization is a branch of evolutionary algorithms that aims to find a collection of diverse and high-performing solutions to a problem. Traditional QD algorithms require many evaluations, which can be expensive in real-world applications.
 
@@ -50,7 +53,7 @@ Eight algorithmic variants combining repertoire resets, model architectures, and
 
 ### Detection of Pathological Oscillations in Epilepsy
 
-During my MSc at IMT Mines Alès, I conducted research at the [CerCo Laboratory](https://cerco.cnrs.fr/) under the supervision of [Dr. Ludovic Gardy](https://www.linkedin.com/in/ludovic-gardy/) and [Pr. Christophe Hurter](https://www.linkedin.com/in/christophe-hurter-2514393/).
+During my MSc at [IMT Mines Alès](https://www.imt-mines-ales.fr/), I conducted research at the [CerCo Laboratory](https://cerco.cnrs.fr/) under the supervision of [Dr. Ludovic Gardy](https://www.linkedin.com/in/ludovic-gardy/) and [Pr. Christophe Hurter](https://www.linkedin.com/in/christophe-hurter-2514393/).
 
 My work focused on the detection of pathological oscillations in epilepsy — specifically fast-ripples — using signal processing and convolutional neural networks — CNNs. 
 

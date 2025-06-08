@@ -15,9 +15,13 @@ author_profile: true
     </div>
     <div class="teaching-content">
       <h3 class="pub-card-title">Introduction to Machine Learning and Data Science</h3>
-      <p class="pub-card-authors">ENSTA Paris</p>
-      <p class="pub-card-journal">Teacher Assistant | September 2025 - October 2025</p>
-      <div class="teaching-location"><i class="fas fa-map-marker-alt"></i> Paris, France</div>
+      <div class="date-venue">
+        <i class="fas fa-map-marker-alt"></i> <a href="https://www.ensta-paris.fr/">ENSTA Paris</a>, Paris (FR)
+        <br>
+        <i class="fas fa-calendar-day"></i> September 2025 - October 2025
+        <br>
+        <i class="fas fa-user-tie"></i> Teacher Assistant
+      </div>
       <p>20-hour course for engineering students in their first year - equivalent to Bachelor 3 - after intensive preparatory classes and national exams, proposed and supervised by <a href="https://perso.ensta-paris.fr/~philippe.xu/" target="_blank" rel="noopener noreferrer">Pr. Philippe XU</a></p>
       <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
     </div>
@@ -29,9 +33,13 @@ author_profile: true
     </div>
     <div class="teaching-content">
       <h3 class="pub-card-title">Introduction to Machine Learning and Data Science</h3>
-      <p class="pub-card-authors">ENSTA Paris</p>
-      <p class="pub-card-journal">Teacher Assistant | September 2024 - October 2024</p>
-      <div class="teaching-location"><i class="fas fa-map-marker-alt"></i> Paris, France</div>
+      <div class="date-venue">
+        <i class="fas fa-map-marker-alt"></i> <a href="https://www.ensta-paris.fr/">ENSTA Paris</a>, Paris (FR)
+        <br>
+        <i class="fas fa-calendar-day"></i> September 2024 - October 2024
+        <br>
+        <i class="fas fa-user-tie"></i> Teacher Assistant
+      </div>
       <p>20-hour course for engineering students in their first year - equivalent to Bachelor 3 - after intensive preparatory classes and national exams, proposed and supervised by <a href="https://perso.ensta-paris.fr/~philippe.xu/" target="_blank" rel="noopener noreferrer">Pr. Philippe XU</a></p>
       <p>Topics covered include fundamental machine learning algorithms, data preprocessing, and evaluation methods.</p>
     </div>

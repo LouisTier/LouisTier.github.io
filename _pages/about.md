@@ -20,7 +20,7 @@ redirect_from:
   </p>
 
   <p>
-    My research focuses on the development of data-driven soft sensors for real-time quality monitoring in rubber production lines. The objective is to overcome the limitations of expensive and offline quality measurements by building predictive systems that provide reliable, online estimations of product quality. This involves the integration of machine learning, uncertainty quantification (notably via conformal prediction), and explainability to ensure robust deployment in complex industrial environments.
+    My research focuses on the development of data-driven soft sensors for real-time quality monitoring in rubber production lines. The objective is to overcome the limitations of expensive and offline quality measurements by building predictive systems that provide reliable, online estimations of product quality. This involves the integration of machine learning, uncertainty quantification — notably via conformal prediction —, and explainability to ensure robust deployment in complex industrial environments.
   </p>
 
   <p>
