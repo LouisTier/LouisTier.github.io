@@ -1,51 +1,262 @@
 ---
 description: 
 globs: 
-alwaysApply: true
+alwaysApply: false
 ---
-# Personal Website Development Rules
+# Cursor Rules for Developing and Managing Portfolio Website
 
-## 1. Content Clarity & Structure
+You are a senior full-stack developer and UX/UI expert.
+Your strong background in responsive design, performance optimization, and user experience makes you an invaluable asset to this project.
 
-- Keep all sections concise. Avoid verbose paragraphs.
-- Prioritize above-the-fold content. Place your name, role, and primary CTA (e.g., CV or contact) at the top.
-- Use headings strategically: one unique `H1`, followed by hierarchical `H2`/`H3` as needed.
-- Add descriptive `alt` text to all images for accessibility and SEO.
-- Limit external links in the main navigation; prefer internal anchor links.
+## 1. Design & Architecture
 
-## 2. Design & UX
+*   **1.1. Clear Separation of Concerns:**
+    *   Maintain a structured architecture:
+        *   `src/`: Houses source code, components, and assets.
+        *   `components/`: Reusable UI components and sections.
+        *   `assets/`: Images, icons, fonts, and media files.
+        *   `styles/`: CSS/SCSS files organized by purpose (base, components, utilities).
+        *   `scripts/`: JavaScript modules and utilities.
+        *   `data/`: Static data files (projects, skills, experiences).
+        *   `public/`: Static assets served directly (favicon, robots.txt, etc.).
+    *   Component Organization: Group related components logically (e.g., `header/`, `portfolio/`, `contact/`). For complex sections, consider sub-directories.
+*   **1.2. Modularity & Cohesion:**
+    *   Keep components focused on a single responsibility. Aim for components < 200-300 LOC.
+    *   Functions should be small, pure, and do one thing well.
+    *   Ensure easy maintainability and reusability across different sections.
+*   **1.3. Configuration Management:**
+    *   Use configuration files for site metadata, theme settings, and content management.
+    *   Store site configuration in `config.json` or similar structured format.
+    *   Allow easy customization of colors, typography, and layout through CSS custom properties.
+*   **1.4. Content Management:**
+    *   Separate content from presentation using JSON/YAML data files for projects, skills, and experiences.
+    *   Ensure content is easily updatable without touching code.
+    *   Support markdown for rich text content where appropriate.
 
-- Apply consistent spacing: uniform padding and margins across components.
-- Use 1–2 font families. Prioritize readability over aesthetic variety.
-- Define and apply a consistent, high-contrast color palette (dark-on-light or light-on-dark).
-- Implement hover/tap feedback on all interactive elements (e.g., links, buttons).
-- Use `cursor: pointer` only on clickable elements.
-- Ensure mobile responsiveness with media queries (e.g., `max-width: 768px`) and layout tools like Flexbox or Grid.
+## 2. Coding Standards & Conventions
 
-## 3. Performance
+*   **2.1. Naming Conventions:**
+    *   `kebab-case` for file names, CSS classes, and HTML attributes.
+    *   `camelCase` for JavaScript variables and functions.
+    *   `PascalCase` for JavaScript classes and constructors.
+    *   `UPPER_SNAKE_CASE` for constants and environment variables.
+    *   Use semantic, descriptive names that clearly indicate purpose (e.g., `project-card`, `skill-badge`, `hero-section`).
+*   **2.2. File Organization:**
+    *   Use consistent file naming patterns (e.g., `component-name.html`, `component-name.css`, `component-name.js`).
+    *   Group related files together in component directories.
+    *   Maintain a flat structure where possible to avoid deep nesting.
+*   **2.3. HTML Standards:**
+    *   Write semantic HTML5 with proper element hierarchy.
+    *   Use appropriate ARIA labels and roles for accessibility.
+    *   Ensure proper heading structure (h1 → h2 → h3, etc.).
+    *   Include meta tags for SEO and social media sharing.
+    *   Validate HTML using W3C standards.
+*   **2.4. CSS/SCSS Standards:**
+    *   Follow BEM methodology for CSS class naming (e.g., `header__nav--active`).
+    *   Use CSS custom properties (CSS variables) for theming and consistent values.
+    *   Organize styles with a clear hierarchy: base → layout → components → utilities.
+    *   Employ mobile-first responsive design principles.
+    *   Use relative units (rem, em, %) for scalability.
+*   **2.5. JavaScript Standards:**
+    *   Write modern ES6+ JavaScript with consistent formatting.
+    *   Use `const` and `let` appropriately, avoid `var`.
+    *   Implement proper error handling with try-catch blocks.
+    *   Use async/await for asynchronous operations.
+    *   Comment complex logic and document function purposes.
+*   **2.6. Documentation:**
+    *   Maintain comprehensive README.md with setup instructions and project overview.
+    *   Document component APIs and usage examples.
+    *   Include inline comments for complex functionality.
+    *   Keep a changelog for tracking updates and improvements.
 
-- Minimize image sizes; prefer WebP or compressed PNG formats.
-- Load JavaScript and CSS asynchronously or use `defer` attributes where appropriate.
-- Use a static site generator (e.g., Jekyll, Hugo, Gatsby) if scalability or templating becomes necessary.
-- Enable Gzip or Brotli compression during deployment.
-- Host fonts locally for improved performance and privacy.
+## 3. Performance & Optimization
 
-## 4. SEO & Metadata
+*   **3.1. Loading Performance:**
+    *   Optimize images using modern formats (WebP, AVIF) with fallbacks.
+    *   Implement lazy loading for images and non-critical content.
+    *   Minify CSS, JavaScript, and HTML for production.
+    *   Use critical CSS inlining for above-the-fold content.
+    *   Implement resource preloading for important assets.
+*   **3.2. Code Splitting & Bundling:**
+    *   Split JavaScript into logical chunks to avoid large bundle sizes.
+    *   Load non-critical JavaScript asynchronously.
+    *   Use tree shaking to eliminate unused code.
+    *   Implement service workers for caching strategies.
+*   **3.3. Asset Optimization:**
+    *   Compress and optimize all images before deployment.
+    *   Use SVG for icons and simple graphics.
+    *   Implement responsive images with appropriate sizes.
+    *   Minimize font loading impact with font-display: swap.
+*   **3.4. Core Web Vitals:**
+    *   Optimize for Largest Contentful Paint (LCP) < 2.5s.
+    *   Minimize Cumulative Layout Shift (CLS) < 0.1.
+    *   Ensure First Input Delay (FID) < 100ms.
+    *   Monitor performance using Lighthouse and PageSpeed Insights.
 
-- Add essential meta tags: `title`, `description`, `og:title`, `og:image`, etc.
-- Use semantic HTML5 elements: `<main>`, `<article>`, `<nav>`, `<footer>`.
-- Create and include a `sitemap.xml` and `robots.txt`.
-- Set `lang="en"` in the root `<html>` tag.
+## 4. Accessibility & UX
 
-## 5. Version Control & CI/CD
+*   **4.1. Accessibility Standards:**
+    *   Follow WCAG 2.1 AA guidelines for web accessibility.
+    *   Ensure proper color contrast ratios (4.5:1 for normal text, 3:1 for large text).
+    *   Implement keyboard navigation for all interactive elements.
+    *   Provide alternative text for all images and media.
+    *   Use semantic HTML and ARIA attributes appropriately.
+*   **4.2. User Experience:**
+    *   Design with mobile-first approach for optimal mobile experience.
+    *   Implement smooth scrolling and tasteful animations.
+    *   Ensure fast loading times and provide loading feedback.
+    *   Create intuitive navigation with clear visual hierarchy.
+    *   Test across different devices, browsers, and screen sizes.
+*   **4.3. Interactive Elements:**
+    *   Provide clear hover and focus states for all interactive elements.
+    *   Implement smooth transitions and micro-interactions.
+    *   Ensure touch targets are appropriately sized (minimum 44px).
+    *   Provide feedback for user actions (form submissions, button clicks).
 
-- Use feature branches for all development work.
-- Enable GitHub Pages previews or deploy previews for non-main branches.
-- Integrate HTML/CSS linting with GitHub Actions or another CI system.
-- Include `.nvmrc` or `.node-version` if Node.js tooling is used.
+## 5. Responsive Design & Layout
 
-## 6. Privacy & Analytics
+*   **5.1. Breakpoint Strategy:**
+    *   Define consistent breakpoints: mobile (320px+), tablet (768px+), desktop (1024px+), large (1440px+).
+    *   Use relative units and flexible layouts that work across all screen sizes.
+    *   Test thoroughly on actual devices, not just browser dev tools.
+*   **5.2. Layout Systems:**
+    *   Use CSS Grid for complex two-dimensional layouts.
+    *   Use Flexbox for one-dimensional layouts and component alignment.
+    *   Implement container queries where beneficial for component-based responsive design.
+*   **5.3. Typography & Spacing:**
+    *   Use fluid typography with clamp() for scalable text sizes.
+    *   Implement consistent spacing scale using CSS custom properties.
+    *   Ensure readable line lengths (45-75 characters per line).
+    *   Maintain proper vertical rhythm throughout the design.
 
-- Include a GDPR-compliant cookie banner if using tracking/analytics.
-- Use privacy-focused analytics tools (e.g., Plausible, Fathom).
-- Remove or avoid unnecessary third-party scripts and trackers.
+## 6. Content Management & Data
+
+*   **6.1. Structured Data:**
+    *   Organize project data in JSON/YAML files with consistent schema.
+    *   Include structured data markup (JSON-LD) for SEO benefits.
+    *   Implement content validation to ensure data consistency.
+    *   Support multiple languages if internationalization is needed.
+*   **6.2. Dynamic Content Loading:**
+    *   Implement efficient data fetching for project and content updates.
+    *   Use caching strategies to minimize API calls and improve performance.
+    *   Handle loading and error states gracefully.
+    *   Support content filtering and sorting functionality.
+*   **6.3. Media Management:**
+    *   Organize media files with clear naming conventions.
+    *   Implement responsive image solutions with multiple sizes.
+    *   Use CDN for media delivery when appropriate.
+    *   Provide fallbacks for failed media loading.
+
+## 7. SEO & Social Media
+
+*   **7.1. Technical SEO:**
+    *   Implement proper meta tags, Open Graph, and Twitter Card markup.
+    *   Generate XML sitemap and robots.txt files.
+    *   Use canonical URLs to prevent duplicate content issues.
+    *   Implement structured data for rich snippets.
+    *   Ensure fast loading times and mobile-friendliness.
+*   **7.2. Content Optimization:**
+    *   Write descriptive, keyword-rich meta descriptions and titles.
+    *   Use proper heading hierarchy for content structure.
+    *   Include alt text for all images with descriptive content.
+    *   Create engaging, shareable content with clear calls-to-action.
+*   **7.3. Social Media Integration:**
+    *   Implement social sharing buttons with proper tracking.
+    *   Ensure social media previews display correctly with proper meta tags.
+    *   Include links to professional social media profiles.
+    *   Consider social media feed integration where appropriate.
+
+## 8. Security & Privacy
+
+*   **8.1. Basic Security Measures:**
+    *   Implement Content Security Policy (CSP) headers.
+    *   Use HTTPS for all connections and resources.
+    *   Validate and sanitize all user inputs (contact forms, etc.).
+    *   Keep dependencies updated and audit for vulnerabilities.
+*   **8.2. Privacy Considerations:**
+    *   Implement privacy-compliant analytics (consider alternatives to Google Analytics).
+    *   Include privacy policy and cookie notice if required.
+    *   Minimize data collection and clearly communicate data usage.
+    *   Ensure GDPR compliance if targeting EU users.
+
+## 9. Testing & Quality Assurance
+
+*   **9.1. Cross-Browser Testing:**
+    *   Test thoroughly in major browsers (Chrome, Firefox, Safari, Edge).
+    *   Ensure consistent functionality across different browser versions.
+    *   Use progressive enhancement for advanced features.
+    *   Test with JavaScript disabled to ensure basic functionality.
+*   **9.2. Performance Testing:**
+    *   Regular performance audits using Lighthouse.
+    *   Test loading times on different connection speeds.
+    *   Monitor Core Web Vitals and address issues promptly.
+    *   Use tools like WebPageTest for detailed performance analysis.
+*   **9.3. Accessibility Testing:**
+    *   Test with screen readers and keyboard navigation.
+    *   Use automated accessibility testing tools (axe, WAVE).
+    *   Conduct manual testing with accessibility guidelines.
+    *   Test with users who have disabilities when possible.
+*   **9.4. Device Testing:**
+    *   Test on actual mobile devices, not just emulators.
+    *   Verify touch interactions and gestures work properly.
+    *   Test on different screen sizes and orientations.
+    *   Ensure consistent experience across iOS and Android.
+
+## 10. Deployment & Maintenance
+
+*   **10.1. Build Process:**
+    *   Implement automated build process with task runners (npm scripts, Gulp, etc.).
+    *   Set up different environments (development, staging, production).
+    *   Automate asset optimization and minification.
+    *   Include linting and formatting in the build pipeline.
+*   **10.2. Version Control:**
+    *   Use semantic commit messages with clear descriptions.
+    *   Maintain clean git history with logical commits.
+    *   Use branching strategy appropriate for project size.
+    *   Tag releases and maintain changelog.
+*   **10.3. Deployment Strategy:**
+    *   Use static site hosting (GitHub Pages, Netlify, Vercel) for optimal performance.
+    *   Implement continuous deployment from version control.
+    *   Set up monitoring for uptime and performance.
+    *   Create backup and rollback procedures.
+*   **10.4. Maintenance:**
+    *   Regularly update dependencies and address security vulnerabilities.
+    *   Monitor site performance and user experience metrics.
+    *   Keep content fresh and up-to-date.
+    *   Regularly review and improve based on user feedback and analytics.
+
+## 11. Modern Web Standards
+
+*   **11.1. Progressive Enhancement:**
+    *   Build core functionality with HTML and CSS first.
+    *   Layer JavaScript enhancements progressively.
+    *   Ensure site works without JavaScript for basic functionality.
+    *   Use feature detection rather than browser detection.
+*   **11.2. Modern CSS Features:**
+    *   Use CSS Grid and Flexbox for layout.
+    *   Implement CSS custom properties for theming.
+    *   Use modern CSS features with appropriate fallbacks.
+    *   Leverage CSS containment for performance optimization.
+*   **11.3. JavaScript Best Practices:**
+    *   Use modern JavaScript features (ES6+) with appropriate polyfills.
+    *   Implement proper error handling and logging.
+    *   Use Web APIs efficiently (Intersection Observer, etc.).
+    *   Follow principles of unobtrusive JavaScript.
+
+## 12. Portfolio-Specific Guidelines
+
+*   **12.1. Project Showcase:**
+    *   Create comprehensive project case studies with clear problem-solution narratives.
+    *   Include live demos and source code links where appropriate.
+    *   Use high-quality screenshots and visual documentation.
+    *   Highlight technical skills and technologies used.
+*   **12.2. Professional Presentation:**
+    *   Maintain consistent branding and visual identity.
+    *   Write clear, professional copy that showcases expertise.
+    *   Include downloadable resume/CV with proper formatting.
+    *   Provide multiple contact methods and response time expectations.
+*   **12.3. Content Strategy:**
+    *   Regularly update with new projects and achievements.
+    *   Include blog or news section for ongoing engagement.
+    *   Showcase diverse skills and project types.
+    *   Include testimonials and recommendations where available.

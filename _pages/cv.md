@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: minimal
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -7,57 +7,68 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<div class="cv-wrapper">
 
-<iframe src="/files/pdf/CV_LouisBERTHIER.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+  <div class="cv-header">
+    <h1>Curriculum Vitae</h1>
+    <div class="cv-actions">
+      <a href="/assets/pdf/CV_LouisBERTHIER.pdf" class="btn btn-primary">
+        <i class="fas fa-download"></i> Download Full CV
+      </a>
+    </div>
+  </div>
 
-You can download a PDF copy of my CV [here](/files/pdf/CV_LouisBERTHIER.pdf).
-
-<!-- Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  <nav class="pub-nav">
+    <ul>
+      <li><a href="#education" class="pub-nav-item active" data-target="education">Education</a></li>
+      <li><a href="#experience" class="pub-nav-item" data-target="experience">Work</a></li>
+      <li><a href="#skills" class="pub-nav-item" data-target="skills">Skills</a></li>
+      <li><a href="#projects" class="pub-nav-item" data-target="projects">Projects</a></li>
+      <li><a href="#awards" class="pub-nav-item" data-target="awards">Awards</a></li>
+      <li><a href="#voluntary" class="pub-nav-item" data-target="voluntary">Volunteering</a></li>
+    </ul>
+  </nav>
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  <!-- Include Education Section from _includes -->
+  {% include cv/education.html %}
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
+  <!-- Include Work Experience Section -->
+  {% include cv/work-experience.html %}
+
+  <!-- Include Technical Skills Section -->
+  {% include cv/technical-skills.html %}
+
+  <!-- Include Projects Section -->
+  {% include cv/projects.html %}
+
+  <!-- Include Awards Section -->
+  {% include cv/awards.html %}
+
+  <!-- Include Volunteering Section -->
+  {% include cv/volunteering.html %}
+
+</div> <!-- Close cv-wrapper -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navItems = document.querySelectorAll('.pub-nav-item');
+    const sections = document.querySelectorAll('.pub-section');
+    
+    navItems.forEach(item => {
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Remove active class from all nav items and sections
+        navItems.forEach(i => i.classList.remove('active'));
+        sections.forEach(s => s.classList.remove('active'));
+        
+        // Add active class to clicked item
+        this.classList.add('active');
+        
+        // Show the appropriate section
+        const targetId = this.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  });
+</script> 

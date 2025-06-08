@@ -1,0 +1,356 @@
+/* ==========================================================================
+   NAVIGATION SYSTEM
+   Top navigation bar, mobile menu, and navigation interactions
+   ========================================================================== */
+
+/* ==========================================================================
+   TOP NAVIGATION BAR
+   ========================================================================== */
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--nav-background);
+  border-bottom: 1px solid var(--nav-border);
+  z-index: var(--z-fixed);
+  box-shadow: var(--nav-shadow);
+  transition: all var(--duration-normal) ease;
+  display: block !important;
+}
+
+.top-nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(10px);
+}
+
+/* ==========================================================================
+   NAVIGATION WRAPPER
+   ========================================================================== */
+
+.nav-wrapper {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 var(--spacing-lg);
+}
+
+/* ==========================================================================
+   NAVIGATION BRAND/TITLE
+   ========================================================================== */
+
+.nav-title {
+  flex: 0 0 auto;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.nav-title a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color var(--duration-fast) ease;
+}
+
+.nav-title a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   DESKTOP NAVIGATION LINKS
+   ========================================================================== */
+
+.desktop-only {
+  display: flex !important;
+}
+
+.nav-links {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  visibility: visible !important;
+  opacity: 1 !important;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  margin: 0 0 0 var(--spacing-lg);
+  padding: var(--spacing-xs) 0;
+  position: relative;
+  transition: color var(--duration-fast) ease;
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.nav-links a:first-child {
+  margin-left: 0;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Navigation link underline animation */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width var(--duration-normal) ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* ==========================================================================
+   THEME TOGGLE BUTTON
+   ========================================================================== */
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: var(--spacing-lg);
+  padding: 0;
+  color: var(--text-color);
+  font-size: var(--font-size-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+  transition: all var(--duration-normal) ease;
+  outline: none;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.1);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle i {
+  transition: transform var(--duration-slow) ease;
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   MOBILE MENU TOGGLE
+   ========================================================================== */
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  z-index: calc(var(--z-fixed) + 1);
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  transition: all var(--duration-normal) ease;
+  border-radius: 2px;
+}
+
+/* Hamburger to X animation */
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   MOBILE NAVIGATION MENU
+   ========================================================================== */
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  width: 100%;
+  background-color: var(--nav-background);
+  border-bottom: 1px solid var(--nav-border);
+  z-index: calc(var(--z-fixed) - 1);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(10px);
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all var(--duration-normal) ease;
+}
+
+.mobile-nav.visible {
+  display: block;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: var(--spacing-md) var(--spacing-lg);
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+  margin: 0;
+  transition: all var(--duration-fast) ease;
+}
+
+.mobile-nav a:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav a:hover,
+.mobile-nav a.active {
+  background-color: var(--light-gray);
+  color: var(--primary-color);
+}
+
+.mobile-nav a:active {
+  background-color: var(--border-color);
+}
+
+/* ==========================================================================
+   RESPONSIVE NAVIGATION
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none !important;
+  }
+  
+  .theme-toggle {
+    margin-left: var(--spacing-md);
+  }
+  
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .nav-wrapper {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .nav-wrapper {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .mobile-nav a {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+}
+
+/* ==========================================================================
+   NAVIGATION ACCESSIBILITY
+   ========================================================================== */
+
+/* Skip navigation link */
+.skip-nav {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: var(--z-tooltip);
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-weight-medium);
+  transition: top var(--duration-fast) ease;
+}
+
+.skip-nav:focus {
+  top: 6px;
+}
+
+/* Focus indicators for keyboard navigation */
+.nav-links a:focus,
+.mobile-nav a:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .nav-links a::after,
+  .mobile-menu-toggle span,
+  .mobile-nav,
+  .theme-toggle i {
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   NAVIGATION STATES
+   ========================================================================== */
+
+/* Navigation when page is scrolled */
+.nav-scrolled .top-nav {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Navigation during page load */
+.nav-loading .top-nav {
+  transform: translateY(-100%);
+}
+
+.nav-loaded .top-nav {
+  transform: translateY(0);
+  transition: transform var(--duration-slow) ease;
+} 

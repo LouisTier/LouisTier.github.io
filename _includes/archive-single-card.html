@@ -1,0 +1,47 @@
+{% include base_path %}
+
+<div class="pub-card">
+  <h3 class="pub-card-title">
+    {% if post.link %}
+      <a href="{{ post.link }}">{{ post.title }}</a>
+    {% else %}
+      <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
+  </h3>
+  
+  {% if post.authors %}
+    <p class="pub-card-authors">{{ post.authors }}</p>
+  {% endif %}
+  
+  {% if post.venue %}
+    <p class="pub-card-journal">{{ post.venue }}</p>
+  {% endif %}
+  
+  {% if post.excerpt %}
+    <p>{{ post.excerpt }}</p>
+  {% endif %}
+  
+  <div class="pub-card-links">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" class="btn btn-sm">Paper</a>
+    {% endif %}
+    
+    {% if post.code %}
+      <a href="{{ post.code }}" class="btn btn-sm">Code</a>
+    {% endif %}
+    
+    {% if post.dataset %}
+      <a href="{{ post.dataset }}" class="btn btn-sm">Dataset</a>
+    {% endif %}
+    
+    {% if post.citation %}
+      <a href="#" class="btn btn-sm citation-toggle" data-citation="{{ post.citation | escape }}">Cite</a>
+    {% endif %}
+  </div>
+  
+  {% if post.citation %}
+    <div class="citation-content" style="display: none;">
+      <pre><code>{{ post.citation }}</code></pre>
+    </div>
+  {% endif %}
+</div> 
