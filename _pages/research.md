@@ -7,7 +7,7 @@ author_profile: true
 
 # Ongoing Research Interests
 
-My research lies at the intersection of applied mathematics and machine learning, focusing on developing robust theoretical frameworks with practical applications. As part of my PhD thesis at [Centre de Mathématiques Appliquées](https://www.cmap.polytechnique.fr/) — CMAP — of [École Polytechnique](https://www.polytechnique.edu/), in collaboration with [Michelin](https://www.michelin.com/), I work on the following research areas:
+My research lies at the intersection of applied mathematics and machine learning, focusing on developing robust theoretical frameworks with practical applications. As part of my PhD thesis at [Centre de Mathématiques Appliquées](https://cmap.ip-paris.fr/) — CMAP — of [École Polytechnique](https://www.polytechnique.edu/), in collaboration with [Michelin](https://www.michelin.com/), I work on the following research areas:
 
 ### Online Sensors
 
