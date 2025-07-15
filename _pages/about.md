@@ -64,7 +64,7 @@ redirect_from:
   </ul>
 
   <p> 
-    If you're interested in collaborating or discussing potential applications of my research, please <a href="mailto:louis_tier@outlook.com" class="highlight-link">contact me</a>.
+    If you're interested in collaborating or discussing applications of my research, please <a href="mailto:louis_tier@outlook.com" class="highlight-link">contact me</a>.
   </p>
 </div>
 

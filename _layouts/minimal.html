@@ -69,17 +69,21 @@ layout: compress
           {% if site.author.email %}
             <p><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> <span>louis_tier@outlook.com</span></a></p>
           {% endif %}
+
+          {% if site.author.linkedin %}
+            <p><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i> <span>louis-tier</span></a></p>
+          {% endif %}
           
           {% if site.author.github %}
             <p><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> <span>LouisTier</span></a></p>
           {% endif %}
           
-          {% if site.author.linkedin %}
-            <p><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i> <span>louis-tier</span></a></p>
-          {% endif %}
-          
           {% if site.author.googlescholar %}
             <p><a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i> <span>Louis Berthier</span></a></p>
+          {% endif %}
+
+          {% if site.author.leetcode %}
+            <p><a href="https://leetcode.com/u/{{ site.author.leetcode }}"><i class="fas fa-code" aria-hidden="true"></i> <span>Louis_Brthr</span></a></p>
           {% endif %}
           
           <p><a href="{{ base_path }}/assets/documents/pdf/CV_LouisBERTHIER.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> <span>Curriculum Vitae</span></a></p>
