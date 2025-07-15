@@ -146,6 +146,8 @@ html.dark-mode .interest-tag:hover {
 
 html.dark-mode .card,
 html.dark-mode .pub-card,
+html.dark-mode .talk-card,
+html.dark-mode .card-body,
 html.dark-mode .research-card,
 html.dark-mode .contact-card {
   background-color: var(--card-background);
@@ -154,15 +156,106 @@ html.dark-mode .contact-card {
 
 html.dark-mode .card:hover,
 html.dark-mode .pub-card:hover,
+html.dark-mode .talk-card:hover,
+html.dark-mode .card-body:hover,
 html.dark-mode .research-card:hover,
 html.dark-mode .contact-card:hover {
   box-shadow: var(--card-shadow-hover);
 }
 
 html.dark-mode .card-header,
+html.dark-mode .card-body,
 html.dark-mode .card-footer {
   background-color: var(--surface-color);
   border-color: var(--border-color);
+}
+
+/* ==========================================================================
+   TALKS SECTION DARK MODE - FORCE OVERRIDES
+   ========================================================================== */
+
+/* MT180 Feature Section */
+html.dark-mode .feature-spotlight {
+  background-color: var(--card-background) !important;
+  border-color: var(--card-border) !important;
+}
+
+html.dark-mode .feature-content {
+  background-color: var(--card-background) !important;
+}
+
+html.dark-mode .feature-header {
+  background-color: var(--card-background) !important;
+}
+
+html.dark-mode .feature-title-group {
+  background-color: var(--card-background) !important;
+}
+
+html.dark-mode .feature-description,
+html.dark-mode .competition-description {
+  background-color: var(--card-background) !important;
+}
+
+html.dark-mode .feature-description p,
+html.dark-mode .competition-description p {
+  color: var(--text-color) !important;
+}
+
+html.dark-mode .feature-title-group h2 {
+  color: var(--text-color) !important;
+}
+
+html.dark-mode .feature-subtitle {
+  color: var(--text-secondary) !important;
+}
+
+html.dark-mode .resource-buttons {
+  background-color: var(--card-background) !important;
+}
+
+html.dark-mode .resource-button {
+  background-color: var(--surface-color) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark-mode .resource-button:hover {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Talk Cards - Override white backgrounds from talks-styles.html */
+html.dark-mode .talk-card {
+  background-color: var(--card-background) !important;
+}
+
+html.dark-mode .talk-card .card-body {
+  background-color: var(--card-background) !important;
+}
+
+html.dark-mode .talk-card .card-body p {
+  color: var(--text-color) !important;
+}
+
+html.dark-mode .talk-card .card-header h3 {
+  color: var(--text-color) !important;
+}
+
+/* Paper Items */
+html.dark-mode .paper-item {
+  background-color: var(--card-background) !important;
+  border-color: var(--card-border) !important;
+  color: var(--text-color) !important;
+}
+
+html.dark-mode .paper-item:hover {
+  background-color: var(--surface-color) !important;
+}
+
+/* Achievement Items */
+html.dark-mode .achievement-item {
+  background-color: var(--card-background) !important;
 }
 
 /* ==========================================================================
