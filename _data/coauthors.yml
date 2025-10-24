@@ -1,34 +1,60 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# TODO (LouisTier): Update coauthors in _data/coauthors.yml
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"berthier":
+  - firstname: ["Louis"]
+    url: https://www.linkedin.com/in/louis-tier/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"shokry":
+  - firstname: ["Ahmed"]
+    url: https://www.linkedin.com/in/ahmed-shokry-aa705075/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"moreaud":
+  - firstname: ["Maxime"]
+    url: https://www.linkedin.com/in/moreaudmaxime/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"ramelet":
+  - firstname: ["Guillaume"]
+    url: https://www.linkedin.com/in/guillaume-ramelet-7696081/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"moulines":
+  - firstname: ["Eric"]
+    url: https://www.linkedin.com/in/eric-moulines-61512860/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"dieuleveut":
+  - firstname: ["Aymeric"]
+    url: https://www.linkedin.com/in/aymeric-dieuleveut-007211207/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+# "adams":
+#   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
+#     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+# "podolsky":
+#   - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+#     url: https://en.wikipedia.org/wiki/Boris_Podolsky
+
+# "rosen":
+#   - firstname: ["Nathan", "N."]
+#     url: https://en.wikipedia.org/wiki/Nathan_Rosen
+
+# "bach":
+#   - firstname: ["Johann Sebastian", "J. S."]
+#     url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+
+#   - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+#     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+
+# "przibram":
+#   - firstname: ["Karl"]
+#     url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+
+# "schrodinger":
+#   - firstname: ["Erwin"]
+#     url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+
+# "lorentz":
+#   - firstname: ["Hendrik Antoon"]
+#     url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+
+# "planck":
+#   - firstname: ["Max"]
+#     url: https://en.wikipedia.org/wiki/Max_Planck

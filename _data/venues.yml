@@ -1,3 +1,4 @@
+# TODO (LouisTier): Update color and URL for venues in _data/venues.yml
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"
@@ -7,3 +8,10 @@
 
 "Vision":
   color: "#009f36"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#9e0e40"
+
+"Software":
+  color: "#1dadc0"

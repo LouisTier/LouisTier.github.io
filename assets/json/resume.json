@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Louis Berthier",
+    "label": "PhD Candidate in Applied Mathematics and Machine Learning",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "louis.berthier@polytechnique.edu",
+    "phone": "+33 6 47 53 53 57",
+    "url": "https://LouisTier.github.io/",
+    "summary": "PhD Candidate in Applied Mathematics and Machine Learning at École Polytechnique.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
