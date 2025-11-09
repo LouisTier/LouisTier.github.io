@@ -50,3 +50,31 @@ $back-to-top-right: 30px;
 $back-to-top-diameter: 40px;
 $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
+
+// --------------------------------------
+// DARK THEME COLOR OPTIONS (replace cyan)
+// --------------------------------------
+$dark-teal-blue-color:   #00acc1; // modern teal-blue
+$dark-emerald-color:     #00c853; // balanced emerald
+$dark-amber-color:       #ffa000; // warm amber
+$dark-soft-lime-color:   #aeea00; // energetic lime
+$dark-magenta-color:     #d81b60; // vivid magenta highlight
+$dark-sky-blue-color:    #40c4ff; // clean sky tone
+$dark-coral-color:       #ff7043; // strong orange-red accent
+$dark-violet-color:      #7e57c2; // soft purple variant
+$dark-turquoise-color:   #26a69a; // gentle cyan-green mix
+$dark-gold-color:        #ffca28; // rich, elegant highlight
+
+// --------------------------------------
+// LIGHT THEME COLOR OPTIONS (replace purple)
+// --------------------------------------
+$light-deep-blue-color:  #1565c0; // bold blue
+$light-crimson-color:    #d32f2f; // strong red accent
+$light-forest-color:     #2e7d32; // calm natural green
+$light-indigo-color:     #3f51b5; // elegant indigo
+$light-orange-color:     #fb8c00; // vibrant orange
+$light-sea-green-color:  #009688; // balanced teal-green
+$light-rose-color:       #e91e63; // vivid pink accent
+$light-amber-color:      #ffb300 !default; // warm and clean yellow
+$light-cobalt-color:     #1e88e5; // medium vivid blue
+$light-slate-color:      #5e35b1; // soft purple-gray
