@@ -24,6 +24,42 @@
   - firstname: ["Aymeric"]
     url: https://www.linkedin.com/in/aymeric-dieuleveut-007211207/
 
+"gardy":
+  - firstname: ["Ludovic"]
+    url: https://www.linkedin.com/in/ludovic-gardy/
+
+"hurter":
+  - firstname: ["Christophe"]
+    url: https://www.linkedin.com/in/christophe-hurter-2514393/
+
+"barbeau":
+  - firstname: ["Emmanuel"]
+    url: https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/
+
+"valton":
+  - firstname: ["Luc"]
+    url: https://cerco.cnrs.fr/page-perso-luc-valton/
+
+"curot":
+  - firstname: ["Jonathan"]
+    url: https://scholar.google.com/citations?user=uXHPPAkAAAAJ&hl=fr
+
+"pie":
+  - firstname: ["Marcel"]
+    url: https://www.linkedin.com/in/marcel-pie/
+
+"ruggiero":
+  - firstname: ["Adrien"]
+    url: https://www.linkedin.com/in/adrien-ruggiero/
+
+"shokouh":
+  - firstname: ["Ghulam Sakhi"]
+    url: https://scholar.google.com/citations?user=ZXGACc0AAAAJ&hl=en
+
+"magnier":
+  - firstname: ["Baptiste"]
+    url: https://www.researchgate.net/profile/Magnier-Baptiste
+
 # "adams":
 #   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
 #     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams

@@ -1,4 +1,5 @@
 # TODO (LouisTier): Update color and URL for venues in _data/venues.yml
+# https://htmlcolorcodes.com/
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"
@@ -15,3 +16,11 @@
 
 "Software":
   color: "#1dadc0"
+
+"J. Neurosci. Methods":
+  url: https://www.sciencedirect.com/journal/journal-of-neuroscience-methods
+  color: "#178243"
+
+"ICASSP":
+  url: https://ieeexplore.ieee.org/xpl/conhome/1000002/all-proceedings
+  color: "#291782"

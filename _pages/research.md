@@ -1,5 +1,5 @@
 ---
-# TODO (LouisTier): Update Resarch's page
+# TODO (LouisTier): Update Research page
 layout: page
 title: "Research"
 permalink: /research/
@@ -10,43 +10,58 @@ nav_order: 1
 
 ## Ongoing Research Interests
 
-My research lies at the intersection of applied mathematics and machine learning, focusing on developing robust theoretical frameworks with practical applications. As part of my PhD thesis at [Centre de Mathématiques Appliquées](https://cmap.ip-paris.fr/) — CMAP — of [École Polytechnique](https://www.polytechnique.edu/), in collaboration with [Michelin](https://www.michelin.com/), I work on the following research areas:
+My research lies at the intersection of **applied mathematics** and **machine learning**, with a focus on developing **reliable theoretical frameworks** for **real-world industrial applications**.  
+As part of my PhD at the [Centre de Mathématiques Appliquées (CMAP)](https://cmap.ip-paris.fr/) — [École Polytechnique](https://www.polytechnique.edu/) — in collaboration with [Michelin](https://www.michelin.com/), I work on the following research directions:
 
-### Online Sensors
+### Online Sensing
 
-I develop machine learning and deep learning approaches to monitor the quality of rubber production lines in real-time. My work explores three main strategies: Moving Window — MW — techniques for temporal data analysis, Just-in-Time Learning — JITL — for adaptive modeling, and Ensemble — ENS — methods for improved prediction robustness. These approaches aim to provide accurate quality assessments while maintaining computational efficiency in industrial settings.
+I design machine learning and deep learning methods to enable **real-time quality monitoring** in rubber manufacturing processes.  
+My research explores three complementary strategies:
+
+- **Moving Window (MW)** approaches for temporal pattern analysis,  
+- **Just-in-Time Learning (JITL)** for adaptive, sample-specific modeling, and  
+- **Ensemble (ENS)** techniques for enhanced robustness and stability.  
+
+These methods aim to deliver **accurate and computationally efficient** quality assessments under dynamic industrial conditions.
 
 ### Uncertainty Quantification
 
-I focus on developing reliable uncertainty quantification methods for machine learning predictions, with a particular emphasis on conformal prediction — CP. This research is crucial for industrial applications where prediction reliability directly impacts decision-making. The long-term goal is to enable dynamic adjustment of production line settings and refinement of laboratory samples based on both predictions and their associated uncertainties, leading to more robust and efficient manufacturing processes.
+I develop **uncertainty-aware learning frameworks** for predictive modeling in industrial systems, with a particular focus on **conformal prediction (CP)**.
+This work seeks to provide **statistically valid confidence measures** alongside predictions, enabling safer and more interpretable decision-making.  
+In the long term, these methods will support **autonomous process control**, dynamically adjusting production parameters and refining laboratory sampling based on both predicted outcomes and their associated uncertainties.
 
-### Self-Organizing Maps (SOMs)
+### Unsupervised settings
 
-I developed <a href="https://github.com/michelin/TorchSOM" target="_blank" rel="noopener noreferrer">TorchSOM</a>, an innovative package for dimensionality reduction and data visualization. As an alternative to traditional methods like UMAP and t-SNE, TorchSOM offers unique advantages for industrial applications, particularly in Just-in-Time Learning strategies. The package provides efficient representations of high-dimensional data, making it valuable for process monitoring and quality control.
+I developed [torchsom](https://github.com/michelin/TorchSOM), a PyTorch-based package for **dimensionality reduction** and **data visualization** using Self-Organizing Maps (SOMs), designed for **industrial scalability** and efficient integration into online sensing pipelines.  
+As an alternative to UMAP and t-SNE, TorchSOM provides a **topology-preserving**, interpretable representation of high-dimensional data, particularly suited for **JITL** and **process monitoring**.  
+<!-- The package has been designed for **industrial scalability** and efficient integration into online sensing pipelines. -->
 
-### Hybrid Modeling (Future Direction)
+<!-- ### Hybrid Modeling *(Future Direction)*
 
-I am interested in exploring hybrid modeling approaches that would combine physics-based knowledge with data-driven methods to enhance predictive performance in industrial applications. This research direction would focus on integrating synthetic data generated from physical models with real-world measurements to improve model robustness and generalization. By leveraging uncertainty quantification techniques, we could effectively weight and combine these different sources of information, leading to more reliable predictions. This approach would be particularly valuable in scenarios with limited real data or when physical constraints must be respected.
+A future research direction involves **hybrid modeling**, integrating **physics-based models** with **data-driven methods** to enhance predictive accuracy and generalization.  
+This includes leveraging **synthetic data** generated from physical simulators and combining it with **real measurements** through **uncertainty-aware weighting**.  
+Such approaches are particularly valuable when **real data is scarce** or when **physical constraints** must be strictly respected, offering a promising path toward **trustworthy AI in manufacturing**. -->
 
-<!-- Add a space between the two sections -->
 <p>&nbsp;</p>
 
 ## Previous Research Applications
 
 ### Model-Based Quality-Diversity Optimization
 
-During my MSc at [Imperial College London](https://www.imperial.ac.uk/), I worked in the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Pr. Antoine Cully](https://www.imperial.ac.uk/people/a.cully). My research focused on:
+During my MSc at [Imperial College London](https://www.imperial.ac.uk/), I conducted research at the [Adaptive & Intelligent Robotics Lab](https://www.imperial.ac.uk/adaptive-intelligent-robotics/) under the supervision of [Pr. Antoine Cully](https://www.imperial.ac.uk/people/a.cully).  
 
-Quality-Diversity (QD) optimization is a branch of evolutionary algorithms that aims to find a collection of diverse and high-performing solutions to a problem. Traditional QD algorithms require many evaluations, which can be expensive in real-world applications.
-
-In uncertain and noisy environments, QD algorithms may return unreliable solutions and suffer from low data efficiency. My work addresses this by integrating surrogate models and sampling strategies into QD algorithms, enabling them to produce robust and diverse solutions with fewer evaluations.
-
-Eight algorithmic variants combining repertoire resets, model architectures, and sampling methods were tested on a robotic arm task.
+My work focused on **Quality-Diversity (QD) optimization**, a branch of evolutionary computation that aims to discover **diverse and high-performing** solutions.  
+Traditional QD algorithms are data-hungry and computationally expensive, making them impractical for real-world robotics.  
+I addressed these limitations by integrating **surrogate models** and **active sampling strategies** into QD algorithms, improving both **robustness** and **data efficiency**.  
+Eight algorithmic variants combining model architectures, sampling strategies, and repertoire reset mechanisms were tested on a **robotic arm control task**.
 
 ### Detection of Pathological Oscillations in Epilepsy
 
-During my MSc at [IMT Mines Alès](https://www.imt-mines-ales.fr/), I conducted research at the [CerCo Laboratory](https://cerco.cnrs.fr/) under the supervision of [Dr. Ludovic Gardy](https://www.linkedin.com/in/ludovic-gardy/) and [Pr. Christophe Hurter](https://www.linkedin.com/in/christophe-hurter-2514393/).
+During my MSc at [IMT Mines Alès](https://www.imt-mines-ales.fr/), I worked at the [CNRS CerCo Laboratory](https://cerco.cnrs.fr/) under the supervision of [Dr. Ludovic Gardy](https://www.linkedin.com/in/ludovic-gardy/), [Pr. Christophe Hurter](https://www.linkedin.com/in/christophe-hurter-2514393/) and [Pr. Emmanuel Barbeau](https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/)
 
-My work focused on the detection of pathological oscillations in epilepsy — specifically fast-ripples — using signal processing and convolutional neural networks — CNNs.  
+My research addressed the **detection of pathological oscillations** (fast ripples) in **epileptic EEG signals** using **signal processing** and **convolutional neural networks (CNNs)**.  
+I transformed 1D EEG signals into 2D **time–frequency scalograms** via **Morlet-based continuous wavelet transform (CWT)** for efficient CNN learning.  
+To enhance interpretability, I used **Grad-CAM** to visualize activation regions and trace feature relevance across network layers.  
+I further optimized the pipeline with **Cython**, achieving a **15% reduction in computation time** and improved **cross-biomarker generalization**.
 
-I transformed 1D EEG signals into 2D time-frequency scalograms via Morlet-based continuous wavelet transform — CWT —, enabling efficient CNN processing. To enhance model interpretability, I applied Grad-CAM to trace key activation regions across CNN layers. I also optimized the processing pipeline with Cython, reducing computation time by 15%, and improved model generalization to multiple biomarkers.
+<p>&nbsp;</p>

@@ -18,7 +18,6 @@
 % - `website`: Adds a "Website" button redirecting to the specified link
 ---
 
-% TODO (LouisTier): Add a preview image for the preprint
 @misc{berthier2025torchsom,
     bibtex_show={true},
     title={torchsom: The Reference PyTorch Library for Self-Organizing Maps},
@@ -51,3 +50,47 @@
     preview={torchsom_logo.png},
 }
 % note = {Documentation available at \url{https://opensource.michelin.io/TorchSOM/}},
+
+@article{gardy2025fast_ripples,
+    bibtex_show={true},
+    title={Detecting fast-ripples on both micro- and macro-electrodes in epilepsy: A wavelet-based CNN detector},
+    author={Gardy, Ludovic and Curot, Jonathan and Valton, Luc and Berthier, Louis and Barbeau, Emmanuel J. and Hurter, Christophe},
+    journal={Journal of Neuroscience Methods},
+    volume={415},
+    pages={110350},
+    year={2025},
+    publisher={Elsevier},
+    doi={10.1016/j.jneumeth.2024.110350},
+    abbr={J. Neurosci. Methods},
+    abstract={Background: Fast-ripples (FR) are short (~10 ms) high-frequency oscillations (HFO) between 200 and 600 Hz that
+    are helpful in epilepsy to identify the epileptogenic zone. Our aim is to propose a new method to detect FR that
+    had to be efficient for intracerebral EEG (iEEG) recorded from both usual clinical macro-contacts (millimeter
+    scale) and microwires (micrometer scale).
+    New Method: Step 1 of the detection method is based on a convolutional neural network (CNN) trained using a
+    large database of > 11,000 FR recorded from the iEEG of 38 patients with epilepsy from both macro-contacts and
+    microwires. The FR and non-FR events were fed to the CNN as normalized time-frequency maps. Step 2 is based
+    on feature-based control techniques in order to reject false positives. In step 3, the human is reinstated in the
+    decision-making process for final validation using a graphical user interface.
+    Results: WALFRID achieved high performance on the realistically simulated data with sensitivity up to 99.95 %
+    and precision up to 96.51 %. The detector was able to adapt to both macro and micro-EEG recordings. The real
+    data was used without any pre-processing step such as artefact rejection. The precision of the automatic detection
+    was of 57.5. Step 3 helped eliminating remaining false positives in a few minutes per subject.
+    Comparison with Existing Methods: WALFRID performed as well or better than 6 other existing methods.
+    Conclusion: Since WALFRID was created to mimic the work-up of the neurologist, clinicians can easily use, understand, interpret and, if necessary, correct the output.},
+    preview={neuroscience.png},
+}
+% abstract={This paper presents a convolutional neural network (CNN)-based method for detecting fast ripples, a biomarker of epileptogenic zones, from both micro- and macro-electrode recordings. The approach combines a Morlet-based continuous wavelet transform with a CNN architecture to enable robust and interpretable oscillation detection across scales.},
+
+@inproceedings{magnier2023_2dsbg,
+    bibtex_show={true},
+    title={2DSBG: A 2D Semi Bi-Gaussian Filter Adapted for Adjacent and Multi-Scale Line Feature Detection},
+    author={Magnier, Baptiste and Shokouh, Ghulam Sakhi and Berthier, Louis and Pie, Marcel and Ruggiero, Adrien},
+    booktitle={ICASSP 2023–2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    pages={1--5},
+    year={2023},
+    organization={IEEE},
+    doi={10.1109/ICASSP49357.2023.10095570},
+    abbr={ICASSP},
+    abstract={Existing filtering techniques fail to precisely detect adjacent line features in multi-scale applications. In this paper, a new filter composed of a bi-Gaussian and a semi-Gaussian kernel is proposed, capable of highlighting complex linear structures such as ridges and valleys of different widths, with noise robustness. Experiments have been performed on a set of both synthetic and real images containing adjacent line features. The obtained results show the performance of the new technique in comparison to the main existing filtering methods.},
+    preview={icassp.png},
+}
