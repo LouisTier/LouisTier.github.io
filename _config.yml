@@ -47,7 +47,7 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true # TODO (LouisTier): set to true if you want to enable search
+search_enabled: false # TODO (LouisTier): set to true if you want to enable search
 socials_in_search: true
 posts_in_search: true
 bib_search: true
