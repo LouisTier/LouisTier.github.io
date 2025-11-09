@@ -24,3 +24,7 @@
 "ICASSP":
   url: https://ieeexplore.ieee.org/xpl/conhome/1000002/all-proceedings
   color: "#291782"
+
+"Systems & Control T.":
+  url: https://psecommunity.org/sct
+  color: "#E07D0D"
