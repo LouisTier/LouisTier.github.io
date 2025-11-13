@@ -59,7 +59,7 @@ Possible collaboration formats include:
 - **Part-time collaborations** (20 hours/week)
 - **Joint research projects** with defined milestones and deliverables
 
-Domains of interest include **Neuroscience**, **BioAI**, **Manufacturing**, **Finance**, **Robotics** and **Supply Chain**.
+Domains of interest include **Neuroscience**, **BioAI**, **Retail**, **Marketing**, **Manufacturing**, **Finance**, **Robotics** and **Supply Chain**.
 
 If you are interested in collaboration or wish to discuss potential applications of my research, please [contact me](mailto:louis.berthier@polytechnique.edu).
 

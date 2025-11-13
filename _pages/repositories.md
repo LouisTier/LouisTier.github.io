@@ -1,12 +1,10 @@
 ---
-# TODO (LouisTier): Update Repositories' page
 layout: page
 permalink: /repositories/
 title: Repositories
 description: 
 # Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
-nav: true
-nav_order: 3
+nav: false
 ---
 
 {% if site.data.repositories.github_users %}
