@@ -82,6 +82,18 @@ nav: false
                     Presented research on explainability for knowledge discovery in large-scale batch processes with a focus on uncertainty quantification.<br>
                     <strong>Awarded Best Poster in the "Mathematics" category.</strong>
                 </p>
+                <div class="row justify-content-sm-center mt-4 mb-3">
+                    <div class="col-md-10 text-center">
+                        {%  
+                        include figure.liquid  
+                        path="assets/img/talks/Welcome_Day_Poster_Award.jpg"  
+                        title="IP Paris Welcome PhD Day - Poster Award"  
+                        class="img-fluid rounded z-depth-1"  
+                        zoomable=true  
+                        width="100%"  
+                        %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
