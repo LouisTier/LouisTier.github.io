@@ -11,3 +11,6 @@ assets/libs/
 node_modules/
 vendor
 .idea
+
+# ! Previous in robots.txt
+# Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
