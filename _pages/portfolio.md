@@ -2,7 +2,7 @@
 layout: page
 title: "Portfolio"
 permalink: /portfolio/
-description: My academic portfolio including publications, code repositories, and teaching activities.
+description: Publications, projects, repositories, and teaching.
 nav: true
 nav_order: 2
 dropdown: true
@@ -20,6 +20,5 @@ children:
     permalink: /teaching/
 ---
 
-My academic portfolio showcases my research contributions, projects, open-source repositories, and teaching activities.
-Use the navigation menu above to explore my **Publications**, **Projects**, **Repositories**, and **Teaching** work.
+Research contributions, projects, open-source repositories, and teaching activities.
 

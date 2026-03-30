@@ -2,7 +2,7 @@
 layout: page
 title: "Engagements"
 permalink: /engagements/
-description: I present my research at academic conferences, seminars, and science outreach events. Below is a selection of my talks, organized by type.
+description: Conference presentations, seminars, and outreach activities.
 nav: true
 nav_order: 5
 dropdown: true
