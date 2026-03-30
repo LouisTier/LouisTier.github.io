@@ -10,6 +10,9 @@ children:
   - title: Publications
     permalink: /publications/
   - title: divider
+  - title: Projects
+    permalink: /projects/
+  - title: divider
   - title: Repositories
     permalink: /repositories/
   - title: divider
@@ -17,6 +20,6 @@ children:
     permalink: /teaching/
 ---
 
-My academic portfolio showcases my research contributions, open-source projects, and teaching activities.  
-Use the navigation menu above to explore my **Publications**, **Repositories**, and **Teaching** work.
+My academic portfolio showcases my research contributions, projects, open-source repositories, and teaching activities.
+Use the navigation menu above to explore my **Publications**, **Projects**, **Repositories**, and **Teaching** work.
 

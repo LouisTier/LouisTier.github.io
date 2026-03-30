@@ -56,6 +56,40 @@ nav: false
 
 <p>&nbsp;</p>
 
+### Michelin DoctoBib'Day 2026
+
+<div class="row justify-content-sm-center mt-3">
+    <div class="col-md-10 mt-3 mt-md-0">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <h3 class="card-title mb-0"><i class="fa-solid fa-industry me-2"></i> Michelin DoctoBib'Day 2026</h3>
+                    <span class="badge bg-primary"><i class="fa-solid fa-star me-1"></i> Oral Presentation</span>
+                </div>
+                <p class="card-text lead">
+                    <strong>A Unified Online Framework for Adaptive Soft Sensing in High-Dimensional Batch Processes</strong>
+                </p>
+                <p class="text-muted mb-2">
+                    <i class="fa-solid fa-calendar me-2"></i><strong> Date:</strong> 2026 (TBD)<br>
+                    <i class="fa-solid fa-map-marker-alt me-2"></i><strong> Location:</strong> Clermont-Ferrand, France<br>
+                    <i class="fa-solid fa-users me-2"></i><strong> Authors:</strong> L. Berthier<sup>1,2</sup>, A. Shokry<sup>1</sup>, M. Moreaud<sup>2</sup>, G. Ramelet<sup>2</sup>, E. Moulines<sup>1</sup><br>
+                    <small class="text-muted">
+                        <sup>1</sup> Centre de Mathématiques Appliquées, École Polytechnique, Palaiseau, France<br>
+                        <sup>2</sup> Manufacture Française des Pneumatiques Michelin, Clermont-Ferrand, France
+                    </small>
+                </p>
+                <p class="card-text">
+                    Presented at the Michelin PhD Day, a showcase for Michelin-affiliated doctoral students.
+                    Introduced a unified online framework comparing five adaptive soft sensing strategies — temporal, similarity-based, and hybrid — sharing a common SOM backbone with SHAP-based feature selection,
+                    validated on a Michelin rubber-mixing process with 35,125 batches and 167 input features.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+
 ***
 
 <p>&nbsp;</p>
@@ -129,6 +163,45 @@ nav: false
                 </p>
                 <p class="card-text small">
                     Presented research on a novel approach to line feature detection in images using 2D Semi Bi-Gaussian filters.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h6 class="card-title mb-0"><i class="fa-solid fa-chart-area me-2"></i> Local Dynamic Calibration via JiT-CP</h6>
+                    <span class="badge bg-warning text-dark"><i class="fa-solid fa-thumbtack me-1"></i> Upcoming</span>
+                </div>
+                <p class="text-muted small mb-2">
+                    <i class="fa-solid fa-calendar me-1"></i> March 22–25, 2026 · <i class="fa-solid fa-map-marker-alt me-1"></i> Minneapolis, USA<br>
+                    <i class="fa-solid fa-microphone me-1"></i> SIAM Conference on Uncertainty Quantification (UQ26)<br>
+                    <i class="fa-solid fa-users me-1"></i> L. Berthier, A. Shokry, M. Moreaud, G. Ramelet, A. Dieuleveut
+                </p>
+                <p class="text-muted small mb-2">
+                    <i class="fa-solid fa-shield-halved me-1"></i> Conformal Prediction · <i class="fa-solid fa-chart-line me-1"></i> Uncertainty Quantification · <i class="fa-solid fa-brain me-1"></i> Just-in-Time Learning · <i class="fa-solid fa-border-all me-1"></i> Self-Organizing Maps
+                </p>
+                <p class="card-text small">
+                    Poster on <strong>JiT-CP</strong> (Just-in-Time Conformal Prediction), a framework targeting group conditional coverage by combining Split Conformal Prediction with Just-in-Time Learning in a SOM-constructed latent space, yielding per-point adaptive thresholds without retraining.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h6 class="card-title"><i class="fa-solid fa-industry me-2"></i> Local Dynamic Calibration via JiT-CP</h6>
+                <p class="text-muted small mb-2">
+                    <i class="fa-solid fa-calendar me-1"></i> 2026 (TBD) · <i class="fa-solid fa-map-marker-alt me-1"></i> Clermont-Ferrand, France<br>
+                    <i class="fa-solid fa-microphone me-1"></i> Michelin DoctoBib'Day 2026<br>
+                    <i class="fa-solid fa-users me-1"></i> L. Berthier, A. Shokry, M. Moreaud, G. Ramelet, A. Dieuleveut
+                </p>
+                <p class="text-muted small mb-2">
+                    <i class="fa-solid fa-shield-halved me-1"></i> Conformal Prediction · <i class="fa-solid fa-chart-line me-1"></i> Uncertainty Quantification · <i class="fa-solid fa-brain me-1"></i> Just-in-Time Learning · <i class="fa-solid fa-border-all me-1"></i> Self-Organizing Maps
+                </p>
+                <p class="card-text small">
+                    Poster presented at the Michelin PhD Day on <strong>JiT-CP</strong>, a distribution-free framework for local dynamic calibration that provides adaptive prediction intervals via SOM-based similarity retrieval — no model retraining required.
                 </p>
             </div>
         </div>
