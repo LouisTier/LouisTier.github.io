@@ -27,22 +27,6 @@ nav_order: 5
                 <p class="card-text">
                     Winner of the <strong>Public's Choice Award</strong> in the local competition, earning selection to represent IP Paris at the national finals with <a href="https://www.linkedin.com/in/ameliechies/" target="_blank">Amelie Kies</a>.
                 </p>
-                <!-- <div class="row mt-3 mb-3">
-                    <div class="col-md-6">
-                        <p class="text-muted mb-2">
-                            <i class="fa-solid fa-calendar me-2"></i><strong> Date:</strong> [Year]<br>
-                            <i class="fa-solid fa-map-marker-alt me-2"></i><strong> Location:</strong> [Location]<br>
-                            <i class="fa-solid fa-users me-2"></i><strong> Audience:</strong> General public & academic jury
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="text-muted mb-2">
-                            <i class="fa-solid fa-clock me-2"></i><strong> Duration:</strong> 180 seconds<br>
-                            <i class="fa-solid fa-language me-2"></i><strong> Language:</strong> French<br>
-                            <i class="fa-solid fa-microphone me-2"></i><strong> Format:</strong> Oral presentation
-                        </p>
-                    </div>
-                </div> -->
                 <div class="row mt-3 mb-3">
                     <div class="col-md-6 text-center">
                         <p class="text-muted mb-2">
@@ -60,7 +44,6 @@ nav_order: 5
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <!-- <div class="col-md-12 d-flex gap-2"> -->
                     <div class="col-md-12 d-flex gap-2 justify-content-center">
                         <a href="https://www.ip-paris.fr/actualites/10-finalistes-au-concours-ma-these-en-180-secondes-dip-paris-2025" class="btn btn-outline-primary" target="_blank" role="button">
                             <i class="fa-solid fa-users me-1"></i> Meet the 10 Finalists
@@ -79,14 +62,13 @@ nav_order: 5
 
 <div style="width: 100%; max-width: 900px; margin: 0 auto;">
     <div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
-        <iframe 
-            src="https://www.youtube.com/embed/VjbWHeqfhMk" 
+        <iframe
+            src="https://www.youtube.com/embed/VjbWHeqfhMk"
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
             allowfullscreen>
         </iframe>
     </div>
 </div>
-
 
 <div class="row mt-4">
     <div class="col-md-6 mb-3">
@@ -119,62 +101,52 @@ nav_order: 5
 
 <div class="row mt-3">
     <div class="col-md-6 mb-3">
-        <div class="card h-100">
+        <div class="card">
             <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-3">
-                    <h5 class="card-title mb-0"><i class="fa-solid fa-snowflake me-2"></i> ECAS – SFdS 2025</h5>
-                    <span class="badge bg-info"><i class="fa-solid fa-graduation-cap me-1"></i> Winter School</span>
-                </div>
-                <p class="card-text">
-                    <strong>Towards Reliable Machine Learning</strong><br>
-                    <small class="text-muted">Transfer & Physics Informed Learning, and Conformal Prediction</small>
+                <h6 class="card-title mb-2">ECAS - SFdS 2025</h6>
+                <p class="card-text small">
+                    <strong>Towards Reliable Machine Learning</strong> — Transfer and Physics Informed Learning, and Conformal Prediction.
                 </p>
-                <p class="card-text">
-                    A five-day course organized by the French Statistical Society (SFdS) covering two pillars of reliable ML:
-                    <strong>transfer & physics-informed learning</strong> for data-efficient models under domain shift,
-                    and <strong>conformal prediction</strong> for distribution-free uncertainty quantification with finite-sample guarantees.
+                <p class="card-text small">
+                    Five-day course by the French Statistical Society (SFdS) covering transfer and physics-informed learning for data-efficient models under domain shift, and conformal prediction for distribution-free uncertainty quantification.
                 </p>
-                <div class="mt-3 mb-3 text-center">
-                    <p class="text-muted mb-2">
-                        <i class="fa-solid fa-calendar me-2"></i><strong> Date:</strong> December 1–5, 2025<br>
-                        <i class="fa-solid fa-map-marker-alt me-2"></i><strong> Location:</strong> La Villa Clythia, Fréjus, France<br>
-                        <i class="fa-solid fa-user me-2"></i><strong> Role:</strong> Participant
-                    </p>
+                <p class="text-muted small mb-2">
+                    December 1-5, 2025 — La Villa Clythia, Frejus, France — Participant
+                </p>
+                <div class="row justify-content-sm-center mt-3 mb-2">
+                    <div class="col-12 text-center">
+                        {% include figure.liquid path="assets/img/sfds-group.jpeg" title="ECAS SFdS 2025 — Group Photo" class="img-fluid rounded z-depth-1" zoomable=true %}
+                    </div>
                 </div>
                 <div class="text-center">
-                    <a href="https://www.sfds.asso.fr/fr/ecas_2025/748-home/" class="btn btn-outline-info btn-sm" target="_blank" role="button">
-                        <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Event Page
+                    <a href="https://www.sfds.asso.fr/fr/ecas_2025/748-home/" class="btn btn-sm btn-outline-secondary" target="_blank">
+                        Event Page
                     </a>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-md-6 mb-3">
-        <div class="card h-100">
+        <div class="card">
             <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-3">
-                    <h5 class="card-title mb-0"><i class="fa-solid fa-snowflake me-2"></i> MBZUAI ML Winter School 2026</h5>
-                    <span class="badge bg-info"><i class="fa-solid fa-graduation-cap me-1"></i> Winter School</span>
-                </div>
-                <p class="card-text">
-                    <strong>Representation Learning & GenAI</strong><br>
-                    <small class="text-muted">Mohamed bin Zayed University of Artificial Intelligence</small>
+                <h6 class="card-title mb-2">MBZUAI ML Winter School 2026</h6>
+                <p class="card-text small">
+                    <strong>Representation Learning and GenAI</strong> — Mohamed bin Zayed University of Artificial Intelligence.
                 </p>
-                <p class="card-text">
-                    An intensive five-day program at MBZUAI exploring recent developments in representation learning and generative AI —
-                    from large language models to diffusion models for images and videos.
-                    Lectures and hands-on sessions by world-leading researchers including Michael Bronstein, Florence Forbes, and Arthur Gretton.
+                <p class="card-text small">
+                    Intensive five-day program on representation learning and generative AI, from large language models to diffusion models. Lectures and hands-on sessions by Michael Bronstein, Florence Forbes, Arthur Gretton, among others.
                 </p>
-                <div class="mt-3 mb-3 text-center">
-                    <p class="text-muted mb-2">
-                        <i class="fa-solid fa-calendar me-2"></i><strong> Date:</strong> February 9–13, 2026<br>
-                        <i class="fa-solid fa-map-marker-alt me-2"></i><strong> Location:</strong> MBZUAI, Abu Dhabi, UAE<br>
-                        <i class="fa-solid fa-user me-2"></i><strong> Role:</strong> Participant
-                    </p>
+                <p class="text-muted small mb-2">
+                    February 9-13, 2026 — MBZUAI, Abu Dhabi, UAE — Participant
+                </p>
+                <div class="row justify-content-sm-center mt-3 mb-2">
+                    <div class="col-12 text-center">
+                        {% include figure.liquid path="assets/img/mbzuai-group.jpg" title="MBZUAI ML Winter School 2026 — Group Photo" class="img-fluid rounded z-depth-1" zoomable=true %}
+                    </div>
                 </div>
                 <div class="text-center">
-                    <a href="https://mlws.mbzuai.ac.ae/" class="btn btn-outline-info btn-sm" target="_blank" role="button">
-                        <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Event Page
+                    <a href="https://mlws.mbzuai.ac.ae/" class="btn btn-sm btn-outline-secondary" target="_blank">
+                        Event Page
                     </a>
                 </div>
             </div>
@@ -192,83 +164,30 @@ nav_order: 5
     <div class="col-md-10 mt-3 mt-md-0">
         <div class="card">
             <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-3">
-                    <h3 class="card-title mb-0"><i class="fa-solid fa-code me-2"></i> Mistral Worldwide Hackathon — Paris Edition</h3>
-                    <span class="badge bg-danger"><i class="fa-solid fa-bolt me-1"></i> Hackathon</span>
-                </div>
-                <p class="card-text lead">
-                    Mistral AI's largest hackathon ever — <strong>1,000+ participants across 7 cities worldwide</strong>, a 36-hour overnight sprint building with cutting-edge AI.
-                </p>
+                <h5 class="card-title mb-3">Mistral Worldwide Hackathon — Paris Edition</h5>
                 <p class="card-text">
-                    Alongside <strong>Saad Souilmi</strong> and <strong>Hamza Zerouali</strong>, we built <strong><a href="/projects/1_cerno/">Cerno</a></strong>,
-                    a 3-in-1 AI-powered platform redesigning tech recruitment.
-                    If others are pay-to-win, Cerno is free-to-play — focusing entirely on technical merit through
-                    voice-AI interviews, structured scoring, and bias-free candidate evaluation.
+                    Mistral AI's largest hackathon — 1,000+ participants across 7 cities worldwide, a 36-hour overnight sprint.
+                    With Saad Souilmi and Hamza Zerouali, we built <strong><a href="/projects/1_cerno/">Cerno</a></strong>,
+                    a 3-in-1 AI-powered platform redesigning tech recruitment through voice-AI interviews, structured scoring, and bias-free evaluation.
                 </p>
-                <div class="row mt-3 mb-3">
-                    <div class="col-md-6 text-center">
-                        <p class="text-muted mb-2">
-                            <i class="fa-solid fa-calendar me-2"></i><strong> Date:</strong> February 28 – March 1, 2026<br>
-                            <i class="fa-solid fa-map-marker-alt me-2"></i><strong> Location:</strong> Paris, France<br>
-                            <i class="fa-solid fa-users me-2"></i><strong> Team:</strong> 3 members
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <p class="text-muted mb-2">
-                            <i class="fa-solid fa-building me-2"></i><strong> Organizer:</strong> Mistral AI & Iterate<br>
-                            <i class="fa-solid fa-handshake me-2"></i><strong> Partners:</strong> NVIDIA, AWS, W&B<br>
-                            <i class="fa-solid fa-clock me-2"></i><strong> Duration:</strong> 36 hours
-                        </p>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-12 d-flex gap-2 justify-content-center">
-                        <a href="/projects/1_cerno/" class="btn btn-danger" role="button">
-                            <i class="fa-solid fa-rocket me-1"></i> Discover Cerno
-                        </a>
-                        <a href="https://luma.com/mistralhack-paris?tk=ADiTrW" class="btn btn-outline-primary" target="_blank" role="button">
-                            <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Event Page
-                        </a>
-                    </div>
+                <p class="text-muted small mb-3">
+                    February 28 - March 1, 2026 — Paris, France — Organized by Mistral AI and Iterate — Partners: NVIDIA, AWS, Weights and Biases
+                </p>
+                <div class="d-flex gap-2 justify-content-center mb-3">
+                    <a href="/projects/1_cerno/" class="btn btn-sm btn-outline-primary">
+                        Discover Cerno
+                    </a>
+                    <a href="https://luma.com/mistralhack-paris?tk=ADiTrW" class="btn btn-sm btn-outline-secondary" target="_blank">
+                        Event Page
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<p>&nbsp;</p>
-
-<div style="width: 100%; max-width: 900px; margin: 0 auto;">
+<div style="width: 100%; max-width: 900px; margin: 2rem auto 2rem;">
     <div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
-        <iframe
-            src="https://www.youtube.com/embed/ZDvco9Ayla8"
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-            allowfullscreen>
-        </iframe>
-    </div>
-</div>
-
-<div class="row mt-4">
-    <div class="col-md-6 mb-3">
-        <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title"><i class="fa-solid fa-lightbulb me-2"></i> The Challenge</h5>
-                <p class="card-text">
-                    Recruitment is broken — for companies drowning in unqualified applications and for candidates ghosted after lengthy processes.
-                    In 36 hours, we set out to build a platform that makes hiring faster, fairer, and more transparent for everyone.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 mb-3">
-        <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title"><i class="fa-solid fa-screwdriver-wrench me-2"></i> What We Built</h5>
-                <p class="card-text">
-                    Cerno replaces traditional screening with AI-driven voice interviews that adapt to each candidate's skills.
-                    Companies get structured insights and competency breakdowns; candidates get the feedback they deserve.
-                </p>
-            </div>
-        </div>
+        <iframe src="https://www.youtube.com/embed/ZDvco9Ayla8" title="Cerno - Hackathon Presentation" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
     </div>
 </div>

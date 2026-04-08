@@ -2,51 +2,60 @@
 layout: page
 title: "Talks"
 permalink: /talks/
-description: My conference presentations and poster sessions at academic venues.
+description: Conference presentations and poster sessions at academic venues.
 nav: false
 ---
 
-## **Conference Presentations**
-
-### ESCAPE 35
+## Conference Presentations
 
 <div class="row justify-content-sm-center mt-3">
     <div class="col-md-10 mt-3 mt-md-0">
         <div class="card">
             <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-3">
-                    <h3 class="card-title mb-0"><i class="fa-solid fa-building me-2"></i> 35th European Symposium on Computer Aided Process Engineering (ESCAPE)</h3>
-                    <span class="badge bg-primary"><i class="fa-solid fa-star me-1"></i> Oral Presentation</span>
-                </div>
-                <p class="card-text lead">
+                <h5 class="card-title mb-3">Michelin DoctoBib'Day 2026</h5>
+                <p class="card-text">
+                    <strong>A Unified Online Framework for Adaptive Soft Sensing in High-Dimensional Batch Processes</strong>
+                </p>
+                <p class="text-muted small mb-2">
+                    April 13, 2026 — Clermont-Ferrand, France<br>
+                    {% include author_link.liquid first="Louis" last="Berthier" %}<sup>1,2</sup>,
+                    {% include author_link.liquid first="Ahmed" last="Shokry" %}<sup>1</sup>,
+                    {% include author_link.liquid first="Maxime" last="Moreaud" %}<sup>2</sup>,
+                    {% include author_link.liquid first="Guillaume" last="Ramelet" %}<sup>2</sup>,
+                    {% include author_link.liquid first="Eric" last="Moulines" %}<sup>1</sup><br>
+                    <small><sup>1</sup> CMAP, Ecole Polytechnique &nbsp; <sup>2</sup> Michelin, Clermont-Ferrand</small>
+                </p>
+                <p class="card-text small">
+                    Addresses the fundamental challenge of concept drift in real-time quality prediction across high-dimensional industrial batch processes. The framework benchmarks five adaptive soft sensing strategies — spanning temporal weighting, neighborhood-based retrieval, and hybrid approaches — all sharing a unified self-organizing map (SOM) backbone with SHAP-driven feature selection. Evaluated at scale on 35,125 production batches over 167 input process variables, establishing practical guidance for online adaptation in manufacturing environments.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-sm-center mt-3">
+    <div class="col-md-10 mt-3 mt-md-0">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-3">ESCAPE 35</h5>
+                <p class="card-text">
                     <strong>Knowledge Discovery in Large-Scale Batch Processes through Explainable Boosted Models and Uncertainty Quantification: Application to Rubber Mixing</strong>
                 </p>
-                <p class="text-muted mb-2">
-                    <i class="fa-solid fa-calendar me-2"></i><strong> Date:</strong> July 9, 2025<br>
-                    <i class="fa-solid fa-map-marker-alt me-2"></i><strong> Location:</strong> Ghent, Belgium<br>
-                    <i class="fa-solid fa-users me-2"></i><strong> Authors:</strong> L. Berthier<sup>1,2</sup>, A. Shokry<sup>1,*</sup>, E. Moulines<sup>1</sup>, S. Desroziers<sup>2</sup>, G. Ramelet<sup>2</sup><br>
-                    <small class="text-muted">
-                        <sup>1</sup> Centre de Mathématiques Appliquées, CNRS, École Polytechnique, Institut Polytechnique de Paris<br>
-                        <sup>2</sup> Explore, Industry 4.0, Manufacture Française des Pneumatiques Michelin
-                    </small>
+                <p class="text-muted small mb-2">
+                    July 9, 2025 — Ghent, Belgium<br>
+                    {% include author_link.liquid first="Louis" last="Berthier" %}<sup>1,2</sup>,
+                    {% include author_link.liquid first="Ahmed" last="Shokry" %}<sup>1,*</sup>,
+                    {% include author_link.liquid first="Eric" last="Moulines" %}<sup>1</sup>,
+                    {% include author_link.liquid first="Sylvain" last="Desroziers" %}<sup>1</sup>,
+                    {% include author_link.liquid first="Guillaume" last="Ramelet" %}<sup>2</sup><br>
+                    <small><sup>1</sup> CMAP, CNRS, Ecole Polytechnique, IP Paris &nbsp; <sup>2</sup> Michelin</small>
                 </p>
-                <!-- <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-lightbulb me-1"></i> Knowledge Discovery · <i class="fa-solid fa-industry me-1"></i> Large-Scale Batch Processes · <i class="fa-solid fa-chart-line me-1"></i> Explainable Boosted Models · <i class="fa-solid fa-shield-halved me-1"></i> Uncertainty Quantification · <i class="fa-solid fa-cog me-1"></i> Rubber Mixing · <i class="fa-solid fa-microscope me-1"></i> Computer Aided Process Engineering
-                </p> -->
-                <p class="card-text">
-                    Selected to deliver an <strong>oral presentation</strong> at ESCAPE 35, one of the premier European conferences in process engineering.
-                    Presented research with practical applications to rubber mixing processes in tire manufacturing.
+                <p class="card-text small">
+                    Presents an explainability-first approach to knowledge extraction in rubber compounding — a high-dimensional, nonlinear batch process central to tire manufacturing. Gradient boosted trees are combined with SHAP-based feature attribution and conformal prediction to deliver both interpretable process insights and statistically rigorous uncertainty estimates, enabling engineers to pinpoint critical process drivers with quantified confidence. Presented at one of Europe's premier conferences in computer-aided chemical engineering.
                 </p>
-                <div class="row justify-content-sm-center mt-4 mb-3">
+                <div class="row justify-content-sm-center mt-3 mb-2">
                     <div class="col-md-10 text-center">
-                        {%  
-                        include figure.liquid  
-                        path="assets/img/talks/Presentation_ESCAPE_2025.jpg"  
-                        title="ESCAPE 35 Presentation - Knowledge Discovery in Large-Scale Batch Processes"  
-                        class="img-fluid rounded z-depth-1"  
-                        zoomable=true  
-                        width="70%"  
-                        %}
+                        {% include figure.liquid path="assets/img/talks/Presentation_ESCAPE_2025.jpg" title="ESCAPE 35 Presentation" class="img-fluid rounded z-depth-1" zoomable=true width="70%" %}
                     </div>
                 </div>
             </div>
@@ -54,78 +63,65 @@ nav: false
     </div>
 </div>
 
-<p>&nbsp;</p>
+---
 
-### Michelin DoctoBib'Day 2026
-
-<div class="row justify-content-sm-center mt-3">
-    <div class="col-md-10 mt-3 mt-md-0">
-        <div class="card">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-3">
-                    <h3 class="card-title mb-0"><i class="fa-solid fa-industry me-2"></i> Michelin DoctoBib'Day 2026</h3>
-                    <span class="badge bg-primary"><i class="fa-solid fa-star me-1"></i> Oral Presentation</span>
-                </div>
-                <p class="card-text lead">
-                    <strong>A Unified Online Framework for Adaptive Soft Sensing in High-Dimensional Batch Processes</strong>
-                </p>
-                <p class="text-muted mb-2">
-                    <i class="fa-solid fa-calendar me-2"></i><strong> Date:</strong> 2026 (TBD)<br>
-                    <i class="fa-solid fa-map-marker-alt me-2"></i><strong> Location:</strong> Clermont-Ferrand, France<br>
-                    <i class="fa-solid fa-users me-2"></i><strong> Authors:</strong> L. Berthier<sup>1,2</sup>, A. Shokry<sup>1</sup>, M. Moreaud<sup>2</sup>, G. Ramelet<sup>2</sup>, E. Moulines<sup>1</sup><br>
-                    <small class="text-muted">
-                        <sup>1</sup> Centre de Mathématiques Appliquées, École Polytechnique, Palaiseau, France<br>
-                        <sup>2</sup> Manufacture Française des Pneumatiques Michelin, Clermont-Ferrand, France
-                    </small>
-                </p>
-                <p class="card-text">
-                    Presented at the Michelin PhD Day, a showcase for Michelin-affiliated doctoral students.
-                    Introduced a unified online framework comparing five adaptive soft sensing strategies — temporal, similarity-based, and hybrid — sharing a common SOM backbone with SHAP-based feature selection,
-                    validated on a Michelin rubber-mixing process with 35,125 batches and 167 input features.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<p>&nbsp;</p>
-
-***
-
-<p>&nbsp;</p>
-
-## **Posters**
+## Posters
 
 <div class="row mt-3">
     <div class="col-md-6 mb-3">
         <div class="card h-100">
             <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h6 class="card-title mb-0"><i class="fa-solid fa-lightbulb me-2"></i> Knowledge Discovery in Large-Scale Batch Processes</h6>
-                    <span class="badge bg-success"><i class="fa-solid fa-trophy me-1"></i> Best Poster</span>
-                </div>
+                <h6 class="card-title">Local Dynamic Calibration via JiT-CP</h6>
                 <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-calendar me-1"></i> December 2024 · <i class="fa-solid fa-map-marker-alt me-1"></i> Paris, France<br>
-                    <i class="fa-solid fa-microphone me-1"></i> Welcome Day IP Paris<br>
-                    <i class="fa-solid fa-users me-1"></i> L. Berthier, A. Shokry, E. Moulines, S. Desroziers, G. Ramelet
-                </p>
-                <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-lightbulb me-1"></i> Knowledge Discovery · <i class="fa-solid fa-industry me-1"></i> Large-Scale Batch Processes · <i class="fa-solid fa-shield-halved me-1"></i> Uncertainty Quantification · <i class="fa-solid fa-chart-line me-1"></i> Explainability
+                    April 13, 2026 — Clermont-Ferrand, France — Michelin DoctoBib'Day 2026<br>
+                    {% include author_link.liquid first="Louis" last="Berthier" %},
+                    {% include author_link.liquid first="Ahmed" last="Shokry" %},
+                    {% include author_link.liquid first="Maxime" last="Moreaud" %},
+                    {% include author_link.liquid first="Guillaume" last="Ramelet" %},
+                    {% include author_link.liquid first="Aymeric" last="Dieuleveut" %}
                 </p>
                 <p class="card-text small">
-                    Presented research on explainability for knowledge discovery in large-scale batch processes with a focus on uncertainty quantification.<br>
-                    <strong>Awarded Best Poster in the "Mathematics" category.</strong>
+                    A distribution-free calibration framework for online quality monitoring under process variability. JiT-CP dynamically retrieves the most relevant historical batches through SOM-based similarity search and applies locally weighted conformal calibration, producing prediction intervals that adapt to shifting process regimes and remain reliable even under non-stationarity.
                 </p>
-                <div class="row justify-content-sm-center mt-4 mb-3">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h6 class="card-title">Local Dynamic Calibration via JiT-CP</h6>
+                <p class="text-muted small mb-2">
+                    March 22-25, 2026 — Minneapolis, USA — SIAM UQ26<br>
+                    {% include author_link.liquid first="Louis" last="Berthier" %},
+                    {% include author_link.liquid first="Ahmed" last="Shokry" %},
+                    {% include author_link.liquid first="Maxime" last="Moreaud" %},
+                    {% include author_link.liquid first="Guillaume" last="Ramelet" %},
+                    {% include author_link.liquid first="Aymeric" last="Dieuleveut" %}
+                </p>
+                <p class="card-text small">
+                    JiT-CP addresses a fundamental limitation of standard conformal prediction: marginal coverage guarantees that fail systematically for heterogeneous subpopulations. By coupling Just-in-Time Learning with a self-organizing map latent space, the method retrieves process-similar historical instances and computes locally weighted conformal scores — yielding per-instance adaptive prediction intervals with group-conditional coverage, without distributional assumptions or model retraining.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h6 class="card-title">Knowledge Discovery in Large-Scale Batch Processes</h6>
+                <p class="text-muted small mb-2">
+                    December 2024 — Paris, France — Welcome Day IP Paris<br>
+                    {% include author_link.liquid first="Louis" last="Berthier" %},
+                    {% include author_link.liquid first="Ahmed" last="Shokry" %},
+                    {% include author_link.liquid first="Eric" last="Moulines" %},
+                    {% include author_link.liquid first="Sylvain" last="Desroziers" %},
+                    {% include author_link.liquid first="Guillaume" last="Ramelet" %}
+                </p>
+                <p class="card-text small">
+                    A unified framework for interpretable quality prediction and uncertainty quantification in large-scale industrial batch processes. Gradient boosted models paired with SHAP attribution and conformal coverage guarantees translate black-box predictions into actionable, uncertainty-aware process insights — enabling data-driven knowledge discovery at production scale. Awarded Best Poster in the Mathematics category.
+                </p>
+                <div class="row justify-content-sm-center mt-3 mb-2">
                     <div class="col-md-10 text-center">
-                        {%  
-                        include figure.liquid  
-                        path="assets/img/talks/Welcome_Day_Poster_Award.jpg"  
-                        title="IP Paris Welcome PhD Day - Poster Award"  
-                        class="img-fluid rounded z-depth-1"  
-                        zoomable=true  
-                        width="100%"  
-                        %}
+                        {% include figure.liquid path="assets/img/talks/Welcome_Day_Poster_Award.jpg" title="IP Paris Welcome Day - Poster Award" class="img-fluid rounded z-depth-1" zoomable=true width="100%" %}
                     </div>
                 </div>
             </div>
@@ -134,17 +130,17 @@ nav: false
     <div class="col-md-6 mb-3">
         <div class="card h-100">
             <div class="card-body">
-                <h6 class="card-title"><i class="fa-solid fa-cog me-2"></i> A Framework for Knowledge Discovery in Rubber Mixing Processes</h6>
+                <h6 class="card-title">A Framework for Knowledge Discovery in Rubber Mixing Processes</h6>
                 <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-calendar me-1"></i> November 2024 · <i class="fa-solid fa-map-marker-alt me-1"></i> Clermont-Ferrand, France<br>
-                    <i class="fa-solid fa-microphone me-1"></i> Michelin Doctoral Day<br>
-                    <i class="fa-solid fa-users me-1"></i> L. Berthier, A. Shokry, E. Moulines, S. Desroziers, G. Ramelet
-                </p>
-                <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-lightbulb me-1"></i> Knowledge Discovery · <i class="fa-solid fa-cog me-1"></i> Rubber Mixing · <i class="fa-solid fa-chart-line me-1"></i> Explainability · <i class="fa-solid fa-shield-halved me-1"></i> Uncertainty Quantification · <i class="fa-solid fa-brain me-1"></i> Machine Learning
+                    November 2024 — Clermont-Ferrand, France — Michelin Doctoral Day<br>
+                    {% include author_link.liquid first="Louis" last="Berthier" %},
+                    {% include author_link.liquid first="Ahmed" last="Shokry" %},
+                    {% include author_link.liquid first="Eric" last="Moulines" %},
+                    {% include author_link.liquid first="Sylvain" last="Desroziers" %},
+                    {% include author_link.liquid first="Guillaume" last="Ramelet" %}
                 </p>
                 <p class="card-text small">
-                    Presented research dealing with explainability and uncertainty quantification using machine learning models considering offline batch processes.
+                    An offline knowledge discovery pipeline for rubber compounding batch processes, combining gradient boosted regression with SHAP-based feature attribution and prediction-interval calibration via conformal prediction. The framework surfaces the most influential process variables and their interaction effects, translating model predictions into interpretable, uncertainty-aware insights for industrial process engineers.
                 </p>
             </div>
         </div>
@@ -152,60 +148,19 @@ nav: false
     <div class="col-md-6 mb-3">
         <div class="card h-100">
             <div class="card-body">
-                <h6 class="card-title"><i class="fa-solid fa-eye me-2"></i> 2DSBG: A 2d Semi Bi-Gaussian Filter for Line Feature Detection</h6>
+                <h6 class="card-title">2DSBG: A 2D Semi Bi-Gaussian Filter for Line Feature Detection</h6>
                 <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-calendar me-1"></i> June 2023 · <i class="fa-solid fa-map-marker-alt me-1"></i> Rhodes, Greece<br>
-                    <i class="fa-solid fa-microphone me-1"></i> ICASSP 2023<br>
-                    <i class="fa-solid fa-users me-1"></i> L. Berthier, A. Ruggiero, M. Pie-Tapia, G. Sakhi Shokouh, B. Magnier
-                </p>
-                <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-eye me-1"></i> Computer Vision · <i class="fa-solid fa-image me-1"></i> Feature Detection · <i class="fa-solid fa-filter me-1"></i> Image Processing · <i class="fa-solid fa-signal me-1"></i> Signal Processing
+                    June 2023 — Rhodes, Greece — ICASSP 2023<br>
+                    {% include author_link.liquid first="Louis" last="Berthier" %},
+                    {% include author_link.liquid first="Adrien" last="Ruggiero" %},
+                    {% include author_link.liquid first="Marcel" last="Pie" %},
+                    {% include author_link.liquid first="Ghulam Sakhi" last="Shokouh" %},
+                    {% include author_link.liquid first="Baptiste" last="Magnier" %}
                 </p>
                 <p class="card-text small">
-                    Presented research on a novel approach to line feature detection in images using 2D Semi Bi-Gaussian filters.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 mb-3">
-        <div class="card h-100">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h6 class="card-title mb-0"><i class="fa-solid fa-chart-area me-2"></i> Local Dynamic Calibration via JiT-CP</h6>
-                    <span class="badge bg-warning text-dark"><i class="fa-solid fa-thumbtack me-1"></i> Upcoming</span>
-                </div>
-                <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-calendar me-1"></i> March 22–25, 2026 · <i class="fa-solid fa-map-marker-alt me-1"></i> Minneapolis, USA<br>
-                    <i class="fa-solid fa-microphone me-1"></i> SIAM Conference on Uncertainty Quantification (UQ26)<br>
-                    <i class="fa-solid fa-users me-1"></i> L. Berthier, A. Shokry, M. Moreaud, G. Ramelet, A. Dieuleveut
-                </p>
-                <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-shield-halved me-1"></i> Conformal Prediction · <i class="fa-solid fa-chart-line me-1"></i> Uncertainty Quantification · <i class="fa-solid fa-brain me-1"></i> Just-in-Time Learning · <i class="fa-solid fa-border-all me-1"></i> Self-Organizing Maps
-                </p>
-                <p class="card-text small">
-                    Poster on <strong>JiT-CP</strong> (Just-in-Time Conformal Prediction), a framework targeting group conditional coverage by combining Split Conformal Prediction with Just-in-Time Learning in a SOM-constructed latent space, yielding per-point adaptive thresholds without retraining.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 mb-3">
-        <div class="card h-100">
-            <div class="card-body">
-                <h6 class="card-title"><i class="fa-solid fa-industry me-2"></i> Local Dynamic Calibration via JiT-CP</h6>
-                <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-calendar me-1"></i> 2026 (TBD) · <i class="fa-solid fa-map-marker-alt me-1"></i> Clermont-Ferrand, France<br>
-                    <i class="fa-solid fa-microphone me-1"></i> Michelin DoctoBib'Day 2026<br>
-                    <i class="fa-solid fa-users me-1"></i> L. Berthier, A. Shokry, M. Moreaud, G. Ramelet, A. Dieuleveut
-                </p>
-                <p class="text-muted small mb-2">
-                    <i class="fa-solid fa-shield-halved me-1"></i> Conformal Prediction · <i class="fa-solid fa-chart-line me-1"></i> Uncertainty Quantification · <i class="fa-solid fa-brain me-1"></i> Just-in-Time Learning · <i class="fa-solid fa-border-all me-1"></i> Self-Organizing Maps
-                </p>
-                <p class="card-text small">
-                    Poster presented at the Michelin PhD Day on <strong>JiT-CP</strong>, a distribution-free framework for local dynamic calibration that provides adaptive prediction intervals via SOM-based similarity retrieval — no model retraining required.
+                    Introduces the 2D Semi Bi-Gaussian (2DSBG) filter, an anisotropic convolution kernel for sub-pixel accurate line feature detection in images. Its asymmetric Gaussian cross-section selectively enhances elongated structures while suppressing isotropic noise, improving localization precision over classical symmetric approaches such as Laplacian-of-Gaussian — demonstrated across synthetic and real-world benchmarks at ICASSP, the flagship IEEE signal processing conference.
                 </p>
             </div>
         </div>
     </div>
 </div>
-
-<p>&nbsp;</p>
