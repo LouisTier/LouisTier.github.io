@@ -20,5 +20,5 @@ children:
     permalink: /teaching/
 ---
 
-Research contributions, projects, open-source repositories, and teaching activities.
+My publications, side projects, open-source work, and teaching.
 

@@ -2,7 +2,7 @@
 layout: page
 title: "Outreach"
 permalink: /outreach/
-description: Science communication and outreach activities.
+description: Science communication, winter schools, and hackathons.
 nav: false
 nav_order: 5
 ---
@@ -18,14 +18,14 @@ nav_order: 5
                     <span class="badge bg-warning text-dark"><i class="fa-solid fa-award me-1"></i> Competition </span>
                 </div>
                 <p class="card-text lead">
-                    <strong>Ma Thèse en 180 secondes</strong> is a national science communication competition where PhD students present their research in just three minutes, making complex scientific concepts accessible to a general audience.
+                    <strong>Ma Thèse en 180 secondes</strong> is a national science communication competition where PhD students present their research — in just three minutes, to a general audience, with a single slide.
                 </p>
                 <p class="card-text">
-                    I participated in this competition to share my research on <strong>real-time quality monitoring and reliable adaptation</strong> in rubber manufacturing processes.  
-                    The challenge lies in distilling years of research into a clear, engaging, and accessible presentation that captures both the scientific rigor and practical impact of the work.
+                    I took the stage to explain how machine learning can predict tire quality in real time on the factory floor, and why knowing *when not to trust* a prediction matters just as much as the prediction itself.
+                    Distilling three years of mathematics into three minutes of storytelling was one of the most rewarding challenges of my PhD.
                 </p>
                 <p class="card-text">
-                    Winner of the <strong>Public's Choice Award</strong> in the local competition, earning selection to represent IP Paris at the national finals with <a href="https://www.linkedin.com/in/ameliechies/" target="_blank">Amelie Kies</a>.
+                    <strong>Winner of the Public's Choice Award</strong> at the IP Paris local competition, earning selection to represent IP Paris at the national finals alongside <a href="https://www.linkedin.com/in/ameliechies/" target="_blank">Amelie Kies</a>.
                 </p>
                 <div class="row mt-3 mb-3">
                     <div class="col-md-6 text-center">
@@ -76,8 +76,9 @@ nav_order: 5
             <div class="card-body">
                 <h5 class="card-title"><i class="fa-solid fa-lightbulb me-2"></i> The Challenge</h5>
                 <p class="card-text">
-                    Presenting complex research in just 180 seconds requires careful selection of key concepts, clear storytelling, and effective visual communication. <br>
-                    This competition pushes researchers to think about how to communicate their work and scientific concepts beyond academic circles in an engaging and accessible way.
+                    Soft sensors, latent spaces, conformal prediction — none of these mean anything to a general audience.
+                    The real challenge was finding the right image: a pastry chef who must consistently deliver the perfect dish, even though the recipe is unknown and the ingredients keep changing.
+                    That's rubber manufacturing at Michelin, and the heart of my research.
                 </p>
             </div>
         </div>
@@ -85,10 +86,11 @@ nav_order: 5
     <div class="col-md-6 mb-3">
         <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title"><i class="fa-solid fa-bullseye me-2"></i> Impact</h5>
+                <h5 class="card-title"><i class="fa-solid fa-bullseye me-2"></i> What I Learned</h5>
                 <p class="card-text">
-                    MT180 promotes science communication skills essential for modern researchers.<br>
-                    It helps bridge the gap between academia and the public, fostering understanding of how research contributes to solving real-world problems in industry and society.
+                    Preparing for MT180 fundamentally changed how I communicate my research: not just on stage, but in every meeting, every paper introduction, every conversation with non-specialists.
+                    Finding the right story forced me to strip away jargon and focus on what truly matters.
+                    If you can't explain it in three minutes, you probably don't understand it well enough yourself.
                 </p>
             </div>
         </div>
@@ -108,7 +110,7 @@ nav_order: 5
                     <strong>Towards Reliable Machine Learning</strong> — Transfer and Physics Informed Learning, and Conformal Prediction.
                 </p>
                 <p class="card-text small">
-                    Five-day course by the French Statistical Society (SFdS) covering transfer and physics-informed learning for data-efficient models under domain shift, and conformal prediction for distribution-free uncertainty quantification.
+                    A five-day deep dive organized by the French Statistical Society (SFdS) into two pillars of reliable ML: transfer and physics-informed learning for data-efficient models, and conformal prediction for distribution-free uncertainty quantification, both directly relevant to my PhD research.
                 </p>
                 <p class="text-muted small mb-2">
                     December 1-5, 2025 — La Villa Clythia, Frejus, France — Participant
@@ -134,7 +136,7 @@ nav_order: 5
                     <strong>Representation Learning and GenAI</strong> — Mohamed bin Zayed University of Artificial Intelligence.
                 </p>
                 <p class="card-text small">
-                    Intensive five-day program on representation learning and generative AI, from large language models to diffusion models. Lectures and hands-on sessions by Michael Bronstein, Florence Forbes, Arthur Gretton, among others.
+                    An intensive five-day program exploring the frontiers of representation learning and generative AI, from large language models to diffusion models for images and video. Lectures and hands-on sessions led by Michael Bronstein, Florence Forbes, Arthur Gretton, Eric Moulines, among others.
                 </p>
                 <p class="text-muted small mb-2">
                     February 9-13, 2026 — MBZUAI, Abu Dhabi, UAE — Participant
@@ -166,9 +168,9 @@ nav_order: 5
             <div class="card-body">
                 <h5 class="card-title mb-3">Mistral Worldwide Hackathon — Paris Edition</h5>
                 <p class="card-text">
-                    Mistral AI's largest hackathon — 1,000+ participants across 7 cities worldwide, a 36-hour overnight sprint.
-                    With Saad Souilmi and Hamza Zerouali, we built <strong><a href="/projects/1_cerno/">Cerno</a></strong>,
-                    a 3-in-1 AI-powered platform redesigning tech recruitment through voice-AI interviews, structured scoring, and bias-free evaluation.
+                    Mistral AI's largest hackathon — 1,000+ participants across 7 cities worldwide, 36 hours of building with cutting-edge AI.
+                    With <a href="https://www.linkedin.com/in/saad-souilmi-388348205/">Saad Souilmi</a> and <a href="https://www.linkedin.com/in/hamza-zerouali/">Hamza Zerouali</a>, we built <strong><a href="/projects/1_cerno/">Cerno</a></strong>:
+                    an AI-powered recruitment platform where candidates interview with a voice-AI agent, and recruiters receive structured, bias-free evaluations — no resume screening, no ghosting.
                 </p>
                 <p class="text-muted small mb-3">
                     February 28 - March 1, 2026 — Paris, France — Organized by Mistral AI and Iterate — Partners: NVIDIA, AWS, Weights and Biases

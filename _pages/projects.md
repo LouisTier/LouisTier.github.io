@@ -2,7 +2,7 @@
 layout: page
 title: "Projects"
 permalink: /projects/
-description: Side projects and hackathon builds.
+description: Side projects and hackathon builds beyond my research.
 nav: false
 nav_order: 3
 display_categories: [hackathon]

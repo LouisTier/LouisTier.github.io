@@ -8,9 +8,11 @@ category: hackathon
 giscus_comments: false
 ---
 
-Tech hiring is slow, biased, and opaque. Candidates are ghosted after lengthy processes; companies drown in unqualified applications. Cerno rethinks the pipeline end-to-end: a single AI-driven interview replaces weeks of back-and-forth, evaluating candidates on technical merit alone.
+Tech hiring is slow, biased, and opaque. Candidates are ghosted after lengthy processes; companies drown in unqualified applications. We asked: *what if the first interview was instant, fair, and gave everyone feedback?*
 
-Built in 36 hours at the [Mistral Worldwide Hackathon — Paris Edition](https://luma.com/mistralhack-paris?tk=ADiTrW) (February 28 - March 1, 2026). 100 participants selected from over 1,700 applicants in Paris alone, across 7 cities worldwide.
+Cerno rethinks recruitment end-to-end. A voice-AI agent interviews every candidate in real time, adapts questions to their actual skills, and delivers structured, bias-free evaluations to recruiters — no resume screening, no weeks of back-and-forth.
+
+Built in 36 hours at the [Mistral Worldwide Hackathon — Paris Edition](https://luma.com/mistralhack-paris?tk=ADiTrW) (February 28 - March 1, 2026), where our team was among the 100 participants selected from over 1,700 applicants in Paris alone.
 
 **Team:** Louis Berthier, [Saad Souilmi](https://www.linkedin.com/in/saad-souilmi-388348205/), and [Hamza Zerouali](https://www.linkedin.com/in/hamza-zerouali/).
 
