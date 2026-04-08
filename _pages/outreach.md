@@ -101,7 +101,7 @@ nav_order: 5
 
 <div class="row mt-3">
     <div class="col-md-6 mb-3">
-        <div class="card">
+        <div class="card h-100">
             <div class="card-body">
                 <h6 class="card-title mb-2">ECAS - SFdS 2025</h6>
                 <p class="card-text small">
@@ -127,7 +127,7 @@ nav_order: 5
         </div>
     </div>
     <div class="col-md-6 mb-3">
-        <div class="card">
+        <div class="card h-100">
             <div class="card-body">
                 <h6 class="card-title mb-2">MBZUAI ML Winter School 2026</h6>
                 <p class="card-text small">
