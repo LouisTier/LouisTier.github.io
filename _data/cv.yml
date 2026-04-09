@@ -2,96 +2,103 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Louis Berthier
+    - name: Position
+      value: PhD Candidate, Applied Mathematics & Machine Learning
+    - name: Affiliation
+      value: <a href="https://cmap.ip-paris.fr/">CMAP</a>, Ecole Polytechnique (IP Paris) — in collaboration with <a href="https://www.michelin.com/">Michelin</a>
     - name: Languages
-      value: English, German
+      value: French (native), English (fluent), Spanish (professional)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD in Applied Mathematics and Machine Learning
+      institution: Ecole Polytechnique (CMAP), Palaiseau, France — with Michelin, Clermont-Ferrand
+      year: 2024 - now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Conformal and adaptive soft sensors for real-time quality prediction in industrial batch processes."
+        - "Supervised by Pr. Eric Moulines, Dr. Ahmed Shokry, Dr. Maxime Moreaud, and Guillaume Ramelet."
+    - title: MSc Advanced Computing (Machine Learning)
+      institution: Imperial College London, UK
+      year: 2022 - 2023
       description:
-        - Description 1.
-        - Description 2.
+        - "Merit (2:1). Thesis with distinction (1st)."
+        - "Research internship at the Adaptive & Intelligent Robotics Lab (AIRL) under Pr. Antoine Cully."
+    - title: "Diplôme d'Ingénieur — MSc Artificial Intelligence & Data Science"
+      institution: IMT Mines Alès, France
+      year: 2020 - 2023
+      description:
+        - "First class honours with jury's congratulations. Ranked 2nd in CS & AI department."
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Computer Vision Scientist
+      institution: Augmodo (part-time alongside PhD)
+      year: 2025 - now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Uncertainty-aware CV models for open-world retail deployments. QC automation, empty shelf flagging, low-cost dataset relabeling.
+    - title: Research Engineer (CIFRE PhD)
+      institution: Michelin, Clermont-Ferrand
+      year: 2024 - now
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Adaptive soft sensing, online uncertainty quantification (JiT-CP, AnyhowCP), and TorchSOM for industrial quality prediction.
+    - title: Research Assistant (ML & Optimization)
+      institution: Adaptive & Intelligent Robotics Lab (AIRL), Imperial College London
+      year: 2023
       description:
+        - Model-based Quality-Diversity optimization with surrogate models and active sampling.
+    - title: Research Intern (ML & Neuroscience)
+      institution: CNRS CerCo, Toulouse
+      year: 2022
+      description:
+        - CNN-based detection of pathological oscillations (fast ripples) in epileptic EEG signals.
+    - title: Research Assistant (ML & Computer Vision)
+      institution: EuroMov DHM, Montpellier
+      year: 2022
+      description:
+        - 2D Semi Bi-Gaussian filter for line feature detection (published at IEEE ICASSP 2023).
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Open Source
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/michelin/TorchSOM">TorchSOM</a>
+      year: 2024 - now
+      description: PyTorch library for Self-Organizing Maps. 77-99% faster than MiniSom, scikit-learn API, GPU-accelerated.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - "MT180 Public's Choice Award — Institut Polytechnique de Paris"
+    - year: 2024
       items:
-        - Max Planck Medal
+        - "Best PhD Poster (Mathematics) — Institut Polytechnique de Paris"
+        - "1st place, AI'NNOV Manufacturing IT Hackathon — Michelin"
+    - year: 2022
+      items:
+        - "International Mobility Scholarship — Région Occitanie"
+        - "Excellence Scholarship — IMT Mines Alès"
+        - "Alumni Scholarship — Mines Alès Alumni"
 
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Uncertainty Quantification
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Conformal prediction (split, local, anytime)
+        - Distribution-free coverage guarantees
+    - title: Online and Adaptive Learning
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Soft sensing under concept drift
+        - Just-in-Time Learning
+    - title: Explainability and Interpretability
+      items:
+        - SHAP-based feature attribution
+        - Knowledge discovery in industrial processes
+    - title: Unsupervised Learning
+      items:
+        - Self-Organizing Maps
+        - Topology-preserving dimensionality reduction
