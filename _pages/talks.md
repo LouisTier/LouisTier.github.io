@@ -2,7 +2,7 @@
 layout: page
 title: "Talks"
 permalink: /talks/
-description: Conference presentations and poster sessions at academic venues.
+description: My conference presentations and poster sessions at academic venues.
 nav: false
 ---
 
@@ -26,7 +26,9 @@ nav: false
                     <small><sup>1</sup> CMAP, Ecole Polytechnique &nbsp; <sup>2</sup> Michelin, Clermont-Ferrand</small>
                 </p>
                 <p class="card-text small">
-                    Addresses the fundamental challenge of concept drift in real-time quality prediction across high-dimensional industrial batch processes. The framework benchmarks five adaptive soft sensing strategies — spanning temporal weighting, neighborhood-based retrieval, and hybrid approaches — all sharing a unified self-organizing map (SOM) backbone with SHAP-driven feature selection. Evaluated at scale on 35,125 production batches over 167 input process variables, establishing practical guidance for online adaptation in manufacturing environments.
+                    How do you predict product quality in real time when the manufacturing process itself keeps changing?  
+                    This work benchmarks five adaptive soft sensing strategies, from temporal weighting to neighborhood-based retrieval, leveraging self-organizings with online SHAP-driven feature selection.  
+                    Evaluated on over 35,000 production batches and 167 process variables at Michelin, it provides practical guidance for choosing the right online adaptation strategy in industrial settings.
                 </p>
             </div>
         </div>
@@ -51,11 +53,13 @@ nav: false
                     <small><sup>1</sup> CMAP, CNRS, Ecole Polytechnique, IP Paris &nbsp; <sup>2</sup> Michelin</small>
                 </p>
                 <p class="card-text small">
-                    Presents an explainability-first approach to knowledge extraction in rubber compounding — a high-dimensional, nonlinear batch process central to tire manufacturing. Gradient boosted trees are combined with SHAP-based feature attribution and conformal prediction to deliver both interpretable process insights and statistically rigorous uncertainty estimates, enabling engineers to pinpoint critical process drivers with quantified confidence. Presented at one of Europe's premier conferences in computer-aided chemical engineering.
+                    Rubber compounding involves hundreds of interacting process variables, but which ones actually drive product quality?  
+                    This work takes an explainability-first approach, combining gradient boosted trees with SHAP attribution and conformal prediction to give engineers both interpretable insights and statistically rigorous uncertainty estimates.  
+                    The result: process experts can pinpoint critical quality drivers with quantified confidence. Presented at ESCAPE 35, one of Europe's premier conferences in computer-aided chemical engineering.
                 </p>
                 <div class="row justify-content-sm-center mt-3 mb-2">
                     <div class="col-md-10 text-center">
-                        {% include figure.liquid path="assets/img/talks/Presentation_ESCAPE_2025.jpg" title="ESCAPE 35 Presentation" class="img-fluid rounded z-depth-1" zoomable=true width="70%" %}
+                        {% include figure.liquid path="assets/img/talks/Presentation_ESCAPE_2025.jpg" title="ESCAPE 35 Presentation" class="img-fluid rounded z-depth-1" zoomable=true width="60%" %}
                     </div>
                 </div>
             </div>
@@ -81,7 +85,8 @@ nav: false
                     {% include author_link.liquid first="Aymeric" last="Dieuleveut" %}
                 </p>
                 <p class="card-text small">
-                    A distribution-free calibration framework for online quality monitoring under process variability. JiT-CP dynamically retrieves the most relevant historical batches through SOM-based similarity search and applies locally weighted conformal calibration, producing prediction intervals that adapt to shifting process regimes and remain reliable even under non-stationarity.
+                    Standard conformal prediction gives you prediction intervals that are correct *on average*, but can be dangerously wrong for specific process conditions.  
+                    JiT-CP fixes this by retrieving the most similar historical batches through SOM-based similarity search and computing locally weighted conformal scores, producing prediction intervals that adapt to whichever regime the process is currently in.
                 </p>
             </div>
         </div>
@@ -99,7 +104,9 @@ nav: false
                     {% include author_link.liquid first="Aymeric" last="Dieuleveut" %}
                 </p>
                 <p class="card-text small">
-                    JiT-CP addresses a fundamental limitation of standard conformal prediction: marginal coverage guarantees that fail systematically for heterogeneous subpopulations. By coupling Just-in-Time Learning with a self-organizing map latent space, the method retrieves process-similar historical instances and computes locally weighted conformal scores — yielding per-instance adaptive prediction intervals with group-conditional coverage, without distributional assumptions or model retraining.
+                    Presented at SIAM UQ26, a leading conference on uncertainty quantification dedicated to industrial applications.  
+                    JiT-CP tackles a well-known blind spot of conformal prediction: marginal coverage guarantees can hide systematic failures for specific subpopulations.  
+                    By coupling Just-in-Time Learning with a SOM-based latent space, the method delivers locally adaptive prediction intervals with group-conditional coverage, no distributional assumptions, no retraining required.
                 </p>
             </div>
         </div>
@@ -117,7 +124,9 @@ nav: false
                     {% include author_link.liquid first="Guillaume" last="Ramelet" %}
                 </p>
                 <p class="card-text small">
-                    A unified framework for interpretable quality prediction and uncertainty quantification in large-scale industrial batch processes. Gradient boosted models paired with SHAP attribution and conformal coverage guarantees translate black-box predictions into actionable, uncertainty-aware process insights — enabling data-driven knowledge discovery at production scale. Awarded Best Poster in the Mathematics category.
+                    How do you turn a black-box quality prediction into something a process engineer can act on?  
+                    This poster presents a unified framework pairing gradient boosted models with SHAP attribution and conformal coverage guarantees, translating raw predictions into interpretable, uncertainty-aware process insights at production scale.  
+                    <strong>Awarded Best Poster in the Mathematics category.</strong>
                 </p>
                 <div class="row justify-content-sm-center mt-3 mb-2">
                     <div class="col-md-10 text-center">
@@ -140,7 +149,8 @@ nav: false
                     {% include author_link.liquid first="Guillaume" last="Ramelet" %}
                 </p>
                 <p class="card-text small">
-                    An offline knowledge discovery pipeline for rubber compounding batch processes, combining gradient boosted regression with SHAP-based feature attribution and prediction-interval calibration via conformal prediction. The framework surfaces the most influential process variables and their interaction effects, translating model predictions into interpretable, uncertainty-aware insights for industrial process engineers.
+                    The first iteration of my knowledge discovery framework, focused on offline analysis.  
+                    Gradient boosted regression combined with SHAP attribution and conformal prediction intervals surfaces the most influential process variables and their interactions, giving rubber compounding engineers a clear, quantified view of what drives product quality.
                 </p>
             </div>
         </div>
@@ -158,7 +168,9 @@ nav: false
                     {% include author_link.liquid first="Baptiste" last="Magnier" %}
                 </p>
                 <p class="card-text small">
-                    Introduces the 2D Semi Bi-Gaussian (2DSBG) filter, an anisotropic convolution kernel for sub-pixel accurate line feature detection in images. Its asymmetric Gaussian cross-section selectively enhances elongated structures while suppressing isotropic noise, improving localization precision over classical symmetric approaches such as Laplacian-of-Gaussian — demonstrated across synthetic and real-world benchmarks at ICASSP, the flagship IEEE signal processing conference.
+                    How do you detect thin line features in noisy images with sub-pixel accuracy?  
+                    The 2DSBG filter uses an asymmetric Gaussian kernel that selectively enhances elongated structures while suppressing background noise, outperforming classical symmetric approaches like the Laplacian-of-Gaussian on both synthetic and real-world benchmarks.  
+                    Presented at ICASSP, the flagship IEEE conference on signal processing.
                 </p>
             </div>
         </div>
