@@ -65,6 +65,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/talks/";
               },
+            },{id: "dropdown-hackathons",
+              title: "Hackathons",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/hackathons/";
+              },
             },{id: "nav-cv",
           title: "CV",
           description: "",
@@ -77,6 +84,16 @@ ninja.data = [{
           description: "An AI interviewer that replaces resume screening with adaptive voice interviews, structured scoring, and actionable candidate feedback.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_cerno/";
+            },},{id: "projects-webi",
+          title: 'WEBI',
+          description: "An AI copilot for structured bond products, built at the Paris Fintech Hackathon.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_paris_fintech/";
+            },},{id: "projects-wiring-the-fly-brain-into-a-world-model",
+          title: 'Wiring the Fly Brain into a World Model',
+          description: "A JEPA world model built on a complete fly-brain connectome. 2nd place with team Piaget at Hack the World(s).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_hack_the_worlds/";
             },},{
         id: 'social-email',
         title: 'email',
