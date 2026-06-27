@@ -10,11 +10,13 @@ giscus_comments: false
 
 Tech hiring is slow, biased, and opaque. Candidates are ghosted after lengthy processes; companies drown in unqualified applications. We asked: *what if the first interview was instant, fair, and gave everyone feedback?*
 
-Cerno rethinks recruitment end-to-end. A voice-AI agent interviews every candidate in real time, adapts questions to their actual skills, and delivers structured, bias-free evaluations to recruiters — no resume screening, no weeks of back-and-forth.
+Cerno reimagines the technical rounds of hiring. A voice-AI agent interviews every candidate in real time, adapts its questions to their actual skills, and gives recruiters structured, rubric-based evaluations designed to reduce bias, with no resume screening and no weeks of back-and-forth.
 
-Built in 36 hours at the [Mistral Worldwide Hackathon — Paris Edition](https://luma.com/mistralhack-paris?tk=ADiTrW) (February 28 - March 1, 2026), where our team was among the 100 participants selected from over 1,700 applicants in Paris alone.
+Built in 36 hours at the [Mistral Worldwide Hackathon: Paris Edition](https://luma.com/mistralhack-paris?tk=ADiTrW) (February 28 - March 1, 2026), where our team was among the 100 participants selected from over 1,700 applicants in Paris alone.
 
 **Team:** Louis Berthier, [Saad Souilmi](https://www.linkedin.com/in/saad-souilmi-388348205/), and [Hamza Zerouali](https://www.linkedin.com/in/hamza-zerouali/).
+
+Cerno is a 36-hour proof of concept rather than a finished product. The natural next steps would be piloting it with real hiring teams and measuring its impact on time-to-decision and candidate experience.
 
 ---
 
@@ -76,7 +78,7 @@ Built in 36 hours at the [Mistral Worldwide Hackathon — Paris Edition](https:/
 ---
 
 <div class="text-center mt-3">
-    <a href="/outreach/#hackathons" class="btn btn-sm btn-outline-secondary">
-        See the Hackathon entry
+    <a href="/hackathons/" class="btn btn-sm btn-outline-secondary">
+        See all Hackathons
     </a>
 </div>

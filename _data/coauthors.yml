@@ -1,4 +1,4 @@
-# TODO (LouisTier): Update coauthors in _data/coauthors.yml
+# Maps author surnames (lowercase) to display name + profile URL for publication author links.
 
 "berthier":
   - firstname: ["Louis"]
@@ -79,3 +79,11 @@
 "magnier":
   - firstname: ["Baptiste"]
     url: https://www.researchgate.net/profile/Magnier-Baptiste
+
+"hegazy":
+  - firstname: ["Mahmoud"]
+    url: https://mahegz.github.io/
+
+"jordan":
+  - firstname: ["Michael I."]
+    url: https://www.linkedin.com/in/michael-jordan-767032125/

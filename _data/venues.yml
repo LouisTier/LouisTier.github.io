@@ -1,14 +1,5 @@
-# TODO (LouisTier): Update color and URL for venues in _data/venues.yml
-# https://htmlcolorcodes.com/
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+# Venue colors and URLs for publication badges (rendered in _layouts/bib.liquid).
+# Color reference: https://htmlcolorcodes.com/
 
 "arXiv":
   url: https://arxiv.org/
@@ -28,3 +19,7 @@
 "Systems & Control T.":
   url: https://psecommunity.org/sct
   color: "#E07D0D"
+
+"IEEE ETFA":
+  url: https://ieeexplore.ieee.org/xpl/conhome/1000260/all-proceedings
+  color: "#005baa"

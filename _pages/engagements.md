@@ -15,4 +15,7 @@ children:
   - title: divider
   - title: Talks
     permalink: /talks/
+  - title: divider
+  - title: Hackathons
+    permalink: /hackathons/
 ---

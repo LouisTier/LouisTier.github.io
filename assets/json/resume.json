@@ -34,7 +34,8 @@
         "Working alongside <a href=\"https://www.sachahu.com/\">Sacha Hu</a> (Senior CV Engineer), <a href=\"https://www.linkedin.com/in/ashleyanapier/\">Ashley Napier</a> (CV Group Lead), and <a href=\"https://www.linkedin.com/in/shubhamwagh/\">Shubham Wagh</a> (Senior CV Engineer).",
         "Building uncertainty-aware classifiers for product identification with test-time augmentation, reducing manual QC workload by selectively accepting high-confidence predictions.",
         "Developing an RGB+depth pipeline to flag empty shelf areas, focusing human review on genuinely uncertain cases.",
-        "Designing low-cost dataset relabeling strategies to update legacy bounding box annotations at scale using improved detectors."
+        "Designing low-cost dataset relabeling strategies to update legacy bounding box annotations at scale using improved detectors.",
+        "Fine-tuning object detectors (YOLO and the transformer-based RF-DETR) for empty shelf-area detection, leveraging hard-negative examples to push detection performance; handling training and fine-tuning on cloud GPUs."
       ]
     },
     {
@@ -46,9 +47,21 @@
       "summary": "Adaptive soft sensing and conformal prediction for real-time quality monitoring in rubber manufacturing.",
       "highlights": [
         "Supervised by <a href=\"https://www.linkedin.com/in/desroziers/\">Dr. Sylvain Desroziers</a>, <a href=\"https://www.linkedin.com/in/moreaudmaxime/\">Dr. Maxime Moreaud</a>, and <a href=\"https://www.linkedin.com/in/guillaume-ramelet-7696081/\">Guillaume Ramelet</a>.",
-        "Developed <a href=\"https://github.com/michelin/TorchSOM\">TorchSOM</a>, an open-source PyTorch library for Self-Organizing Maps (77-99% faster than MiniSom, scikit-learn API).",
-        "Designed five adaptive soft sensing strategies for real-time quality monitoring, validated on 35,125 production batches with up to 61% MSE reduction.",
-        "Developed JiT-CP and AnyhowCP, two conformal prediction frameworks for locally adaptive and anytime uncertainty quantification in industrial settings."
+        "Developed <a href=\"https://github.com/michelin/TorchSOM\">TorchSOM</a>, the reference PyTorch library for Self-Organizing Maps, released under Apache 2.0 via Michelin's open-source organization (74-98% faster than MiniSom on CPU, GPU-accelerated, scikit-learn API, 90% test coverage).",
+        "Designed and benchmarked five adaptive soft sensing strategies for real-time quality monitoring, validated on 35,125 production batches, cutting prediction error by around 59% short-term and over 90% under year-long drift.",
+        "Developed Self-Organized CP and Masked CP, two conformal prediction frameworks for locally adaptive and mask-valid sequential uncertainty quantification in industrial settings."
+      ]
+    },
+    {
+      "name": "ENSTA Paris",
+      "position": "Teaching Assistant (Machine Learning & Data Science)",
+      "url": "https://www.ensta-paris.fr/",
+      "startDate": "2024",
+      "endDate": "2025",
+      "summary": "Led machine learning lab sessions for first-year engineering students, with 20 to 25 students per session.",
+      "highlights": [
+        "Taught the fundamentals of machine learning, from data preprocessing and feature engineering to model training and evaluation, under <a href=\"https://perso.ensta-paris.fr/~philippe.xu/\">Pr. Philippe Xu</a>.",
+        "Guided students through their first hands-on experience building and validating predictive models."
       ]
     },
     {
@@ -136,6 +149,29 @@
       ]
     }
   ],
+  // "certificates": [
+  //   {
+  //     "name": "RJS 2026: 11èmes Rencontres des Jeunes Statisticien·ne·s (Speaker)",
+  //     "date": "2026",
+  //     "issuer": "Société Française de Statistique (SFdS)",
+  //     "icon": "fa-solid fa-graduation-cap",
+  //     "url": "https://rjs2026.sciencesconf.org/"
+  //   },
+  //   {
+  //     "name": "MBZUAI ML Winter School: Representation Learning & GenAI",
+  //     "date": "2026",
+  //     "issuer": "Mohamed bin Zayed University of Artificial Intelligence",
+  //     "icon": "fa-solid fa-graduation-cap",
+  //     "url": "https://mlws.mbzuai.ac.ae/"
+  //   },
+  //   {
+  //     "name": "ECAS-SFdS Summer School: Reliable Machine Learning",
+  //     "date": "2025",
+  //     "issuer": "Société Française de Statistique (SFdS)",
+  //     "icon": "fa-solid fa-graduation-cap",
+  //     "url": "https://www.sfds.asso.fr/fr/ecas_2025/748-home/"
+  //   }
+  // ],
   "skills": [
     {
       "name": "Programming & Scripting",
@@ -252,7 +288,7 @@
       "summary": "Best poster in the Mathematics category at the IP Paris Welcome PhD Day, for work on explainable quality prediction with uncertainty quantification."
     },
     {
-      "title": "Winner — Manufacturing IT Hackathon AI’NNOV (€500)",
+      "title": "Winner, Manufacturing IT Hackathon AI’NNOV (€500)",
       "date": "2024",
       "awarder": "Michelin",
       "summary": "First place at Michelin’s internal AI hackathon for manufacturing innovation."
@@ -276,7 +312,7 @@
       "summary": "Academic excellence scholarship."
     },
     {
-      "title": "Creativity Laureate — Communication & Media (€80)",
+      "title": "Creativity Laureate, Communication & Media (€80)",
       "date": "2021",
       "awarder": "Cora Hypermarket",
       "summary": "Creativity laureate for a Communication & Media competition."
@@ -317,7 +353,7 @@
       "startDate": "2021.04",
       "endDate": "2022.04",
       "highlights": [
-        "Led a team of 10 photographers to cover 25 university events.", 
+        "Led a team of 10 photographers to cover 25 university events.",
         "Edited and produced multiple videos and over 10,000 photos."
       ]
     },
@@ -384,7 +420,6 @@
     }
   ],
   "interests": [
-    
     {
       "name": "Machine Learning Research",
       "icon": "fa-solid fa-brain",

@@ -18,6 +18,55 @@
 % - `website`: Adds a "Website" button redirecting to the specified link
 ---
 
+@unpublished{berthier2026selforganized_cp,
+    bibtex_show={true},
+    title={Self-Organized Conformal Prediction: Reducing Regional Coverage Gaps with Unsupervised Group Discovery},
+    author={Berthier, Louis and Shokry, Ahmed and Moreaud, Maxime and Ramelet, Guillaume and Dieuleveut, Aymeric},
+    year={2026},
+    note={Under Review},
+    abstract={Conformal prediction guarantees marginal coverage, but pooled calibration averages over heterogeneous regions and can mask regional undercoverage in safety-critical subgroups. We introduce Self-Organized Conformal Prediction (SOCP), a calibration scheme that discovers input-space groups with a Self-Organizing Map (SOM) and, at test time, draws a local calibration buffer from the query's Best Matching Unit (BMU) cell or a fixed grid neighborhood. The same retrieval rule applies to regression and classification tasks across tabular features and image embeddings, leaving the predictor and nonconformity score untouched. SOCP gives exact validity for BMU-cell retrieval and fixed retrieved-set validity for neighborhood buffers; central-cell validity for neighborhood retrieval holds up to a Kolmogorov-Smirnov (KS) bias term. A split-routed extension recovers fixed retrieved-set validity conditional on the routing split. On eight regression and classification benchmarks, SO-SCP reduces the weighted regional coverage gap on 7/8 datasets (mean paired change -7.1%) for a mean prediction-set size increase of 6.2%, with negligible overhead on the largest six datasets; SO-CQR yields smaller gains, since quantile regression already absorbs much of the heterogeneity. By learning groups directly from the input geometry, SOCP provides group-local calibration with exact fixed-group guarantees and approximate central-cell guarantees, without supervised partitions or predictor retraining.},
+}
+
+@unpublished{berthier2026unified_online_soft_sensing,
+    bibtex_show={true},
+    title={A Unified Online Framework for Adaptive Soft Sensing in High-Dimensional Batch Processes},
+    author={Berthier, Louis and Shokry, Ahmed and Moreaud, Maxime and Ramelet, Guillaume and Moulines, Eric},
+    year={2026},
+    note={To be Submitted},
+    abstract={Adaptive soft sensing is crucial for real-time quality prediction in high-dimensional batch manufacturing processes, where evolving process dynamics, sensor degradation, and multi-mode operation render conventional static models ineffective. Existing adaptive strategies, including moving-window (MW), ensemble (ENS), and just-in-time learning (JITL), have been predominantly evaluated in isolation on low-dimensional benchmarks. At the same time, traditional distance metrics and static feature selection fail to address high-dimensional, time-varying industrial conditions. This work introduces a unified online framework integrating three key contributions: (i) topology-preserving dimensionality reduction via self-organizing maps (SOMs) for robust data-retrieval through similarity computation, (ii) dual feature selection mechanisms combining explicit online SHAP-based Feature Selection (SFS) with implicit ensemble diversity, and (iii) comprehensive comparison of five adaptive strategies. Illustrated on an industrial large-scale rubber-mixing dataset with 35,125 observations, 167 features, and three sub-quality indicators across a short-term horizon of one month and a half and a long-term horizon of one year, the framework demonstrates that tree-based models outperform shallow neural networks like multilayer perceptron (MLP), with XGBoost (XGB) consistently surpassing CatBoost (CTB). All adaptive strategies substantially outperform static baselines, with hybrid approaches balancing short-term reactivity and long-term memory, achieving accurate, interpretable, and computationally feasible quality prediction for real-time industrial deployment even in the presence of process drifts.},
+}
+
+@unpublished{berthier2026masked_cp,
+    bibtex_show={true},
+    title={Beyond Anytime: Mask-Valid Conformal Prediction},
+    author={Hegazy, Mahmoud and Berthier, Louis and Dieuleveut, Aymeric and Jordan, Michael I.},
+    year={2026},
+    note={To be Submitted},
+    abstract={When conformal prediction is deployed over sequential batches, practitioners need coverage guarantees that localize to flexible evaluation windows, renew after failures, and do not require past test labels. We introduce mask-valid conformal prediction, a framework that interpolates between marginal and anytime guarantees through binary monitoring masks. We formalize two desiderata, restart validity and calibration-data measurability, identify a class of feasible threshold policies satisfying both, and show that the design of cost-optimal schedules reduces to an optimization problem with linear constraints. When costs are forecasted rather than known in advance, we propose a replanning procedure and bound its hindsight suboptimality in terms of forecast errors. In the anytime setting, under a parametric statistical model, we show that feasible threshold schedules remain informative for polynomially many steps in the calibration size, whereas e-processes can collapse to uninformative prediction sets after only logarithmically many. Experiments on classification and regression tasks validate the framework.},
+}
+
+@unpublished{berthier2026explainable_offline_analytics,
+    bibtex_show={true},
+    title={Explainable Offline Process Analytics for Within-Grade Quality Variability in Industrial Rubber Mixing},
+    author={Berthier, Louis and Shokry, Ahmed and Moreaud, Maxime and Ramelet, Guillaume and Desroziers, Sylvain and Moulines, Eric},
+    year={2026},
+    note={Under Review},
+    abstract={In rubber mixing, the nominal quality grade of a compound is largely governed by the production recipe and understood by experienced operators. However, batches manufactured within the same grade may exhibit quality fluctuations whose origins are difficult to interpret due to the combined effects of recipe settings, raw material characteristics, process variables, equipment conditions, and environmental factors. This work addresses an upstream offline analysis problem aimed at extracting model-supported process insights into within-grade quality variability from high-dimensional industrial production records. The proposed framework uses predictive modeling as an analytical backbone for robust feature selection, explainability, interaction analysis, and uncertainty-aware interpretation. It combines Ranked Frequency Feature Selection (RFFS), SHapley Additive exPlanations (SHAP)-based global, local, and pairwise interaction explainability, and Conformal Prediction (CP)-based Uncertainty Quantification (UQ). The framework is evaluated on a large-scale Michelin rubber-mixing dataset comprising 35,125 records and 316 input variables, including Production Recipe Settings (PRS), Process Variables (PV), Weather Conditions (WC), and Raw Material Characteristics (RMC). The feature-selection strategy retains 53 variables, corresponding to 83% input-space reduction, while reducing Mean Squared Error (MSE) by 17%; the selected variables indicate that PRS and RMC, rather than traditional PV, are dominant predictive feature groups associated with quality variability. SHAP provides model-based explanations of influential variables, threshold-like response patterns, and interactions, while CP provides statistically calibrated prediction intervals with guaranteed marginal coverage. The framework provides an offline, explainable, and uncertainty-aware methodology for supporting high-level process management activities, such as variable prioritization, process investigation, and quality-improvement studies.},
+}
+
+@inproceedings{berthier2026etfa_adaptive_soft_sensing,
+    bibtex_show={true},
+    title={Adaptive Soft Sensing: A Just-in-Time Approach with Self-Organizing Maps and Online Feature Selection},
+    author={Berthier, Louis and Shokry, Ahmed and Moreaud, Maxime and Ramelet, Guillaume and Moulines, Eric},
+    booktitle={2026 IEEE 31st International Conference on Emerging Technologies and Factory Automation (ETFA)},
+    year={2026},
+    address={Västerås, Sweden},
+    organization={IEEE},
+    note={Accepted, to appear},
+    abbr={IEEE ETFA},
+    abstract={ML-based soft sensors are essential in chemical manufacturing, where real-time quality measurements are often unavailable. Among existing approaches, JITL is widely adopted for its ability to model nonlinear, multimodal, and locally varying behavior, especially in batch processes. However, JITL-based soft sensors remain difficult to scale to industrial systems characterized by high-dimensional data, limited interpretability, and time-varying operating conditions driven by process drifts. To overcome these limitations, this work proposes a novel, adaptive JITL soft-sensor framework tailored for large-scale, evolving industrial environments. First, a SOM is adopted as a topology-preserving latent-space representation to embed both historical and query samples. This projection preserves local neighborhood relationships and reveals latent data structures, enabling effective selection of relevant training samples based on process topology rather than point-wise distance calculations in the original data space. Second, a real-time SHAP-based Feature Selection mechanism identifies and updates the most influential process variables, ensuring continuous interpretability and adaptation. The proposed methodology is validated on a real industrial rubber production line at Michelin. Experimental results demonstrate substantial improvements, reducing mean squared error (MSE) by up to 61.1% and raising the coefficient of determination (R2) from -0.14 to 0.56 compared to global learning baselines.},
+}
+
 @misc{berthier2025torchsom,
     bibtex_show={true},
     title={torchsom: The Reference PyTorch Library for Self-Organizing Maps},
@@ -27,7 +76,7 @@
     archivePrefix={arXiv},
     primaryClass={stat.ML},
     abstract={This paper introduces torchsom, an open-source Python library that provides a reference implementation of the Self-Organizing Map (SOM) in PyTorch. This package offers three main features: (i) dimensionality reduction, (ii) clustering, and (iii) friendly data visualization. It relies on a PyTorch backend, enabling (i) fast and efficient training of SOMs through GPU acceleration, and (ii) easy and scalable integrations with PyTorch ecosystem. Moreover, torchsom follows the scikit-learn API for ease of use and extensibility. The library is released under the Apache 2.0 license with 90% test coverage, and its source code and documentation are available at this https URL: https://github.com/michelin/TorchSOM.},
-    note={Preprint submitted to Journal of Machine Learning Research},
+    note={Preprint, Under Review},
     url={https://arxiv.org/abs/2510.11147},
     abbr={arXiv},
     arxiv={2510.11147},
@@ -63,8 +112,8 @@
   url          = {https://doi.org/10.69997/sct.183525},
   abstract     = {Rubber mixing (RM) is a vital batch process producing high-quality composites, which serve as input material for manufacturing different types of final products, such as tires. Due to its complexity, this process faces two main challenges regarding the final quality: i) lack of online measurement and ii) limited comprehension of the influence of the different factors involved in the process. While data-driven and machine learning (ML) based soft-sensing methods have been widely applied to address the first challenge, the second challenge, to the best of the author's knowledge, has not yet been addressed in the rubber industry. This work presents a data-driven method for extracting knowledge and providing explainability in the quality prediction in RM processes. The method centers on an XGBoost model while leveraging high-dimensional data collected over extended time periods from one of Michelins complex mixing processes. First, a recursive feature elimination-based procedure is used for selecting relevant features, which reduces the number of input features used for building the ML model by 82% while improving its predictive performance by 17%. Secondly, SHapley Additive exPlanations (SHAP) techniques are employed to explain the ML models predictions through global and local analyses of feature interactions. The selected quality-related variables can be leveraged to improve process control and supervision. Finally, an uncertainty quantification (UQ) module, based on Split Conformal Prediction (SCP), is combined with the ML model, providing confidence intervals with 90% coverage and empirically verified theoretical guarantees. This module ensures prediction reliability and robustness in real applications.},
   abbr         = {Systems & Control T.},
+  note         = {Published June 27, 2025; archive record: LAPSE:2025.0396},
 }
-note         = {Published June 27, 2025; archive record: LAPSE:2025.0396},
 
 @article{gardy2025fast_ripples,
     bibtex_show={true},
@@ -100,7 +149,7 @@ note         = {Published June 27, 2025; archive record: LAPSE:2025.0396},
     bibtex_show={true},
     title={2DSBG: A 2D Semi Bi-Gaussian Filter Adapted for Adjacent and Multi-Scale Line Feature Detection},
     author={Magnier, Baptiste and Shokouh, Ghulam Sakhi and Berthier, Louis and Pie, Marcel and Ruggiero, Adrien},
-    booktitle={ICASSP 2023–2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+    booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
     pages={1--5},
     year={2023},
     organization={IEEE},

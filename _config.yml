@@ -15,7 +15,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: applied-mathematics, machine-learning, phd, uncertainty-quantification, soft-sensing
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 💿 # LB initials as text favicon
+icon: favicon.svg # LB monogram (assets/img/favicon.svg)
 
 url: https://LouisTier.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -54,8 +54,6 @@ bib_search: true
 
 # Dimensions
 max_width: 930px
-
-# TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -590,7 +588,7 @@ jsonresume:
   - projects
   - volunteer
   - awards
-  - certificates
+  # - certificates
   - skills
   - languages
   - interests

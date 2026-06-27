@@ -6,94 +6,186 @@
     - name: Position
       value: PhD Candidate, Applied Mathematics & Machine Learning
     - name: Affiliation
-      value: <a href="https://cmap.ip-paris.fr/">CMAP</a>, Ecole Polytechnique (IP Paris) — in collaboration with <a href="https://www.michelin.com/">Michelin</a>
+      value: <a href="https://cmap.ip-paris.fr/">CMAP</a>, École Polytechnique (IP Paris), in collaboration with <a href="https://www.michelin.com/">Michelin</a>
+    - name: Email
+      value: <a href="mailto:louis.berthier@polytechnique.edu">louis.berthier@polytechnique.edu</a>
+    - name: Website
+      value: <a href="https://louistier.github.io/">louistier.github.io</a>
     - name: Languages
       value: French (native), English (fluent), Spanish (professional)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD in Applied Mathematics and Machine Learning
-      institution: Ecole Polytechnique (CMAP), Palaiseau, France — with Michelin, Clermont-Ferrand
+    - title: PhD Candidate in Applied Mathematics and Machine Learning
+      institution: <a href="https://cmap.ip-paris.fr/">École Polytechnique (CMAP)</a>, Paris, France
       year: 2024 - now
       description:
         - "Conformal and adaptive soft sensors for real-time quality prediction in industrial batch processes."
-        - "Supervised by Pr. Eric Moulines, Dr. Ahmed Shokry, Dr. Maxime Moreaud, and Guillaume Ramelet."
-    - title: MSc Advanced Computing (Machine Learning)
-      institution: Imperial College London, UK
+        - Under the supervision of <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a>, <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>, <a href="https://www.linkedin.com/in/desroziers/">Dr. Sylvain Desroziers</a>, <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a>, and <a href="https://www.linkedin.com/in/guillaume-ramelet-7696081/">Guillaume Ramelet</a>.
+        - "Adaptive Soft Sensing, Conformal Prediction, Explainability, Self-Organizing Maps, Online Learning, Dimensionality Reduction."
+    - title: MSc Advanced Computing in Machine Learning
+      institution: <a href="https://www.imperial.ac.uk/">Imperial College London</a>, London, UK
       year: 2022 - 2023
       description:
-        - "Merit (2:1). Thesis with distinction (1st)."
-        - "Research internship at the Adaptive & Intelligent Robotics Lab (AIRL) under Pr. Antoine Cully."
-    - title: "Diplôme d'Ingénieur — MSc Artificial Intelligence & Data Science"
-      institution: IMT Mines Alès, France
+        - "Diploma with merit (2:1), and thesis with distinction (1st)."
+        - Research internship at the <a href="https://www.imperial.ac.uk/adaptive-intelligent-robotics/">Adaptive & Intelligent Robotics Lab (AIRL)</a>, under <a href="https://www.imperial.ac.uk/people/a.cully">Pr. Antoine Cully</a>.
+        - "Machine & Deep Learning, Reinforcement Learning, Computer Vision, Natural Language Processing, Mathematics for Machine Learning, Computational Finance, Robot Learning."
+    - title: "Diplôme d'Ingénieur, MSc Artificial Intelligence & Data Science"
+      institution: <a href="https://www.imt-mines-ales.fr/">IMT Mines Alès</a>, Alès, France
       year: 2020 - 2023
       description:
-        - "First class honours with jury's congratulations. Ranked 2nd in CS & AI department."
+        - "First class honours with jury's congratulations. Ranked 2nd in CS & AI department, top 5% of the class."
+        - Research internship at the <a href="https://cerco.cnrs.fr/">CNRS (CerCo)</a>, under <a href="https://www.linkedin.com/in/ludovic-gardy/">Dr. Ludovic Gardy</a>, <a href="https://www.linkedin.com/in/christophe-hurter-2514393/">Pr. Christophe Hurter</a>, and <a href="https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/">Pr. Emmanuel Barbeau</a>.
+        - "Advanced Probabilities & Statistics, Operational Research, Algorithms & Complexity, Machine & Deep Learning, Software Engineering."
 
-- title: Research Experience
+- title: Experience
   type: time_table
   contents:
     - title: Computer Vision Scientist
-      institution: Augmodo (part-time alongside PhD)
+      institution: <a href="https://www.augmodo.com/">Augmodo</a> (part-time alongside PhD)
       year: 2025 - now
+      maindescription: Uncertainty-aware computer vision for open-world retail deployments, processing millions of images daily.
       description:
-        - Uncertainty-aware CV models for open-world retail deployments. QC automation, empty shelf flagging, low-cost dataset relabeling.
+        - Working alongside <a href="https://www.sachahu.com/">Sacha Hu</a> (Senior CV Engineer), <a href="https://www.linkedin.com/in/ashleyanapier/">Ashley Napier</a> (CV Group Lead), and <a href="https://www.linkedin.com/in/shubhamwagh/">Shubham Wagh</a> (Senior CV Engineer).
+        - "Building uncertainty-aware classifiers for product identification with test-time augmentation, reducing manual QC workload by selectively accepting high-confidence predictions."
+        - "Developing an RGB+depth pipeline to flag empty shelf areas, focusing human review on genuinely uncertain cases."
+        - "Designing low-cost dataset relabeling strategies to update legacy bounding box annotations at scale using improved detectors."
+        - "Fine-tuning object detectors (YOLO and the transformer-based RF-DETR) for empty shelf-area detection, leveraging hard-negative examples to push detection performance; handling training and fine-tuning on cloud GPUs."
     - title: Research Engineer (CIFRE PhD)
-      institution: Michelin, Clermont-Ferrand
+      institution: <a href="https://www.michelin.com/">Michelin</a>, Clermont-Ferrand, France
       year: 2024 - now
+      maindescription: Adaptive soft sensing and conformal prediction for real-time quality monitoring in rubber manufacturing.
       description:
-        - Adaptive soft sensing, online uncertainty quantification (JiT-CP, AnyhowCP), and TorchSOM for industrial quality prediction.
+        - Supervised by <a href="https://www.linkedin.com/in/desroziers/">Dr. Sylvain Desroziers</a>, <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a>, and <a href="https://www.linkedin.com/in/guillaume-ramelet-7696081/">Guillaume Ramelet</a>.
+        - Developed <a href="https://github.com/michelin/TorchSOM">TorchSOM</a>, the reference PyTorch library for Self-Organizing Maps, released under Apache 2.0 via Michelin's open-source organization (74-98% faster than MiniSom on CPU, GPU-accelerated, scikit-learn API, 90% test coverage).
+        - "Designed and benchmarked five adaptive soft sensing strategies for real-time quality monitoring, validated on 35,125 production batches, cutting prediction error by around 59% short-term and over 90% under year-long drift."
+        - "Developed Self-Organized CP and Masked CP, two conformal prediction frameworks for locally adaptive and mask-valid sequential uncertainty quantification in industrial settings."
+    - title: Teaching Assistant (Machine Learning & Data Science)
+      institution: <a href="https://www.ensta-paris.fr/">ENSTA Paris</a>
+      year: 2024 - 2025
+      maindescription: Led machine learning lab sessions for first-year engineering students, with 20 to 25 students per session.
+      description:
+        - Taught the fundamentals of machine learning, from data preprocessing and feature engineering to model training and evaluation, under <a href="https://perso.ensta-paris.fr/~philippe.xu/">Pr. Philippe Xu</a>.
+        - "Guided students through their first hands-on experience building and validating predictive models."
     - title: Research Assistant (ML & Optimization)
-      institution: Adaptive & Intelligent Robotics Lab (AIRL), Imperial College London
+      institution: <a href="https://www.imperial.ac.uk/adaptive-intelligent-robotics/">Adaptive & Intelligent Robotics Lab (AIRL)</a>, Imperial College London
       year: 2023
+      maindescription: Sample-efficient Quality-Diversity optimization using surrogate models for robotic control in uncertain environments.
       description:
-        - Model-based Quality-Diversity optimization with surrogate models and active sampling.
+        - Supervised by <a href="https://www.imperial.ac.uk/people/a.cully">Pr. Antoine Cully</a>.
+        - "Tackled the data-hunger of MAP-Elites by integrating probabilistic surrogate models, achieving significant gains in sample efficiency on a robotic arm control task."
+        - "Benchmarked eight algorithmic variants combining different surrogate architectures and acquisition strategies in non-deterministic environments."
     - title: Research Intern (ML & Neuroscience)
-      institution: CNRS CerCo, Toulouse
+      institution: <a href="https://cerco.cnrs.fr/">CNRS (CerCo)</a>, Toulouse, France
       year: 2022
+      maindescription: Deep learning for detecting fast ripples, pathological biomarkers for epileptic tissue, in intracranial EEG signals.
       description:
-        - CNN-based detection of pathological oscillations (fast ripples) in epileptic EEG signals.
+        - Supervised by <a href="https://www.linkedin.com/in/ludovic-gardy/">Dr. Ludovic Gardy</a>, <a href="https://www.linkedin.com/in/christophe-hurter-2514393/">Pr. Christophe Hurter</a>, and <a href="https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/">Pr. Emmanuel Barbeau</a>.
+        - "Built a CNN pipeline converting raw EEG signals into time-frequency scalograms via continuous wavelet transform for automated fast ripple classification."
+        - "Applied Grad-CAM to provide clinicians with visual explanations of which signal features drive each prediction."
+        - "Accelerated the processing pipeline by 15% through Cython optimization; improved classification accuracy by 5% via hyperparameter tuning."
     - title: Research Assistant (ML & Computer Vision)
-      institution: EuroMov DHM, Montpellier
+      institution: <a href="https://dhm.euromov.eu/">EuroMov Digital Health in Motion (DHM)</a>, Montpellier, France
       year: 2022
+      maindescription: Anisotropic image filtering for sub-pixel accurate line feature detection, published at IEEE ICASSP 2023.
       description:
-        - 2D Semi Bi-Gaussian filter for line feature detection (published at IEEE ICASSP 2023).
+        - Supervised by <a href="https://cv.hal.science/baptiste-magnier">Pr. Baptiste Magnier</a> and <a href="https://www.researchgate.net/scientific-contributions/Binbin-Xu-2190252279">Pr. Binbin Xu</a>.
+        - "Designed the 2D Semi Bi-Gaussian (2DSBG) filter, an asymmetric convolution kernel that enhances elongated structures while suppressing isotropic noise."
+        - "Benchmarked against state-of-the-art edge detection models (DexiNed, RCF, Laplacian-of-Gaussian) on synthetic and real-world datasets."
 
 - title: Open Source
   type: time_table
   contents:
     - title: <a href="https://github.com/michelin/TorchSOM">TorchSOM</a>
       year: 2024 - now
-      description: PyTorch library for Self-Organizing Maps. 77-99% faster than MiniSom, scikit-learn API, GPU-accelerated.
+      maindescription: Reference PyTorch library for Self-Organizing Maps, released under Apache 2.0 via Michelin's open-source organization. 74-98% faster than MiniSom on CPU, GPU-accelerated, scikit-learn API, 90% test coverage.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2025
+    - title: <a href="https://www.youtube.com/watch?v=VjbWHeqfhMk">MT180 Public Award (€100)</a>
+      institution: Institut Polytechnique de Paris
+      year: 2025
+      maindescription: Won the audience vote for best 3-minute PhD presentation at Institut Polytechnique de Paris, selected to represent IP Paris at the national finals.
+    - title: Best PhD Poster Award (€500)
+      institution: Institut Polytechnique de Paris
+      year: 2024
+      maindescription: Best poster in the Mathematics category at the IP Paris Welcome PhD Day, for work on explainable quality prediction with uncertainty quantification.
+    - title: Winner, Manufacturing IT Hackathon AI'NNOV (€500)
+      institution: Michelin
+      year: 2024
+      maindescription: First place at Michelin's internal AI hackathon for manufacturing innovation.
+    - title: International Mobility Scholarship (€4000)
+      institution: Région Occitanie
+      year: 2022
+      maindescription: Scholarship supporting international academic mobility.
+    - title: Alumni Scholarship (€1300)
+      institution: Mines Alès Alumni
+      year: 2022
+      maindescription: Merit-based scholarship from the Mines Alès alumni association.
+    - title: Excellence Scholarship (€4000)
+      institution: IMT Mines Alès
+      year: 2022
+      maindescription: Academic excellence scholarship.
+    - title: Creativity Laureate, Communication & Media (€80)
+      institution: Cora Hypermarket
+      year: 2021
+      maindescription: Creativity laureate for a Communication & Media competition.
+
+- title: Skills
+  type: list_groups
+  contents:
+    - category: Programming & Scripting (Expert)
+      icon: fa-solid fa-code
       items:
-        - "MT180 Public's Choice Award — Institut Polytechnique de Paris"
-    - year: 2024
+        - name: Python, Cython
+        - name: SQL, NoSQL
+        - name: LaTeX, Markdown
+        - name: Bash, Shell
+    - category: ML/DL Frameworks (Master)
+      icon: fa-solid fa-gears
       items:
-        - "Best PhD Poster (Mathematics) — Institut Polytechnique de Paris"
-        - "1st place, AI'NNOV Manufacturing IT Hackathon — Michelin"
-    - year: 2022
+        - name: PyTorch, JAX, TensorFlow
+        - name: Scikit-learn
+        - name: OpenCV, PIL
+    - category: Scientific Computing & Data (Expert)
+      icon: fa-solid fa-chart-line
       items:
-        - "International Mobility Scholarship — Région Occitanie"
-        - "Excellence Scholarship — IMT Mines Alès"
-        - "Alumni Scholarship — Mines Alès Alumni"
+        - name: NumPy, Pandas, Polars
+        - name: SciPy, Matplotlib, Seaborn
+        - name: Streamlit
+    - category: MLOps & DevOps (Master)
+      icon: fa-solid fa-infinity
+      items:
+        - name: Git, GitHub/GitLab CI/CD
+        - name: Docker, Singularity
+        - name: Kubernetes
+        - name: Azure ML, SkyPilot
+    - category: Monitoring & Development Tools (Advanced)
+      icon: fa-solid fa-chart-bar
+      items:
+        - name: Weights & Biases
+        - name: Pytest, Unittest
+        - name: Grafana
+    - category: High-Performance Computing (Advanced)
+      icon: fa-solid fa-bolt
+      items:
+        - name: Triton
+        - name: SLURM
+        - name: Faiss
 
 - title: Research Interests
   type: nested_list
   contents:
     - title: Uncertainty Quantification
       items:
-        - Conformal prediction (split, local, anytime)
-        - Distribution-free coverage guarantees
+        - Conformal prediction (local, group-conditional, anytime)
+        - Distribution-free coverage under concept drift
     - title: Online and Adaptive Learning
       items:
-        - Soft sensing under concept drift
-        - Just-in-Time Learning
+        - Soft sensing for real-time quality monitoring
+        - Just-in-Time Learning and similarity-based retrieval
     - title: Explainability and Interpretability
       items:
         - SHAP-based feature attribution
@@ -102,3 +194,82 @@
       items:
         - Self-Organizing Maps
         - Topology-preserving dimensionality reduction
+
+- title: Interests
+  type: nested_list
+  contents:
+    - title: Machine Learning Research
+      items:
+        - Uncertainty Quantification
+        - Diffusion Models
+        - Explainability
+        - Unsupervised Learning
+        - Multimodal AI
+    - title: Entrepreneurship & Finance
+      items:
+        - Investments
+        - Product Development
+        - Podcasts
+        - Creator Economy
+    - title: Sports
+      items:
+        - NBA, MMA, E-sport
+        - Weight Training, Swimming
+        - Rugby, Handball
+
+- title: Volunteering & Extracurricular
+  type: time_table
+  contents:
+    - title: Handball Player
+      institution: University, France & UK
+      year: 2020 - 2023
+      description:
+        - "Achieved 3rd place in the highest national university league (BUCS, UK) and 4th place in the highest national university league (FFSU, France)."
+        - "Winner of the 49th Challenge Centrale Lyon and the 19th TRAMS."
+    - title: Vice President
+      institution: <a href="https://bdsminesales.fr/">Bureau des Sports</a>, Alès, France
+      year: 2021 - 2022
+      description:
+        - "Led a 25-person team to manage 5 tournaments and oversee 20 sports."
+        - Secured partnerships with major brands, including <a href="https://www.armorlux.com/">Armor Lux</a> and <a href="https://www.tonyparker.com/">Tony Parker</a>.
+        - "Managed the association's website and IT infrastructure."
+    - title: Vice President
+      institution: <a href="https://www.instagram.com/emavisual/">EmaVisual</a> (Photography & Video), Alès, France
+      year: 2021 - 2022
+      description:
+        - "Led a team of 10 photographers to cover 25 university events."
+        - "Edited and produced multiple videos and over 10,000 photos."
+    - title: Volunteer
+      institution: <a href="https://tsikyzanaka.org/">Tsiky Zanaka</a> (Humanitarian), Alès, France
+      year: 2020 - 2021
+      description:
+        - "Raised over €3500 to fund and support solidarity projects in Madagascar."
+        - "Organized and participated in fundraising events, including cooking for 300 students."
+    - title: Disc Jockey
+      institution: <a href="https://www.instagram.com/emamix_/?hl=fr">EmaMix</a> (DJs Association), Alès, France
+      year: 2020 - 2021
+      description:
+        - "Provided music and technical support for student events and gatherings."
+    - title: Logistics Volunteer
+      institution: <a href="https://www.instagram.com/trophee_orlandini/">Trophée Orlandini</a> (Rugby Tournament), Alès, France
+      year: 2020
+      description:
+        - "Prepared event logistics and setup for a multi-school rugby tournament."
+
+- title: References
+  type: time_table
+  contents:
+    - title: <a href="https://www.sachahu.com/">Sacha Hu</a>
+      maindescription: Senior CV Engineer at Augmodo. Co-supervised my work on uncertainty-aware computer vision for open-world retail deployments. Reach via name at augmodo dot com.
+    - title: <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a>
+      maindescription: Professor at École Polytechnique and MBZUAI, Member of the French Academy of Sciences. Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes. Reach via name dot surname at polytechnique dot edu.
+    - title: <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>
+      maindescription: Senior Research Engineer at École Polytechnique. Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes. Reach via name dot surname at polytechnique dot edu.
+    - title: <a href="https://www.linkedin.com/in/desroziers/">Dr. Sylvain Desroziers</a>
+      maindescription: Manager of the Michelin I4.0 Explore team and Fellow AI at Michelin. Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes. Reach via name dot surname at michelin dot com.
+    - title: <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a>
+      maindescription: Principal Data Scientist at Michelin. Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes. Reach via name dot surname at michelin dot com.
+    - title: <a href="https://www.linkedin.com/in/antoine-cully-3a4a36163/">Pr. Antoine Cully</a>
+      maindescription: Professor at Imperial College London and Director of the Adaptive & Intelligent Robotics Lab (AIRL). Supervised my independent research project and my MSc research internship on quality-diversity optimization. Reach via a dot surname at imperial dot ac dot uk.
+    - title: <a href="https://www.linkedin.com/in/ludovic-gardy/">Dr. Ludovic Gardy</a>
+      maindescription: Senior Data Scientist (Freelance), previously Research Engineer at CNRS. Co-supervised my MSc research internship on ML-based pathological oscillation detection in epilepsy. Reach via name dot g at sotisai dot com.

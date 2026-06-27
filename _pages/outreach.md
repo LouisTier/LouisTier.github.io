@@ -2,7 +2,7 @@
 layout: page
 title: "Outreach"
 permalink: /outreach/
-description: Science communication, winter schools, and hackathons.
+description: Science communication and schools.
 nav: false
 nav_order: 5
 ---
@@ -18,7 +18,7 @@ nav_order: 5
                     <span class="badge bg-warning text-dark"><i class="fa-solid fa-award me-1"></i> Competition </span>
                 </div>
                 <p class="card-text lead">
-                    <strong>Ma Thèse en 180 secondes</strong> is a national science communication competition where PhD students present their research — in just three minutes, to a general audience, with a single slide.
+                    <strong>Ma Thèse en 180 secondes</strong> is a national science communication competition where PhD students present their research in just three minutes, to a general audience, with a single slide.
                 </p>
                 <p class="card-text">
                     I took the stage to explain how machine learning can predict tire quality in real time on the factory floor, and why knowing *when not to trust* a prediction matters just as much as the prediction itself.
@@ -76,7 +76,7 @@ nav_order: 5
             <div class="card-body">
                 <h5 class="card-title"><i class="fa-solid fa-lightbulb me-2"></i> The Challenge</h5>
                 <p class="card-text">
-                    Soft sensors, latent spaces, conformal prediction — none of these mean anything to a general audience.
+                    Soft sensors, latent spaces, conformal prediction: none of these mean anything to a general audience.
                     The real challenge was finding the right image: a pastry chef who must consistently deliver the perfect dish, even though the recipe is unknown and the ingredients keep changing.
                     That's rubber manufacturing at Michelin, and the heart of my research.
                 </p>
@@ -99,29 +99,29 @@ nav_order: 5
 
 ---
 
-## Winter Schools
+## Schools
 
 <div class="row mt-3">
     <div class="col-md-6 mb-3">
         <div class="card h-100">
             <div class="card-body">
-                <h6 class="card-title mb-2">ECAS - SFdS 2025</h6>
+                <h6 class="card-title mb-2">RJS 2026: 11èmes Rencontres des Jeunes Statisticien·ne·s</h6>
                 <p class="card-text small">
-                    <strong>Towards Reliable Machine Learning</strong> — Transfer and Physics Informed Learning, and Conformal Prediction.
+                    <strong>Self-Organized Conformal Prediction</strong>, presented at the 11th Young Statisticians Meeting.
                 </p>
                 <p class="card-text small">
-                    A five-day deep dive organized by the French Statistical Society (SFdS) into two pillars of reliable ML: transfer and physics-informed learning for data-efficient models, and conformal prediction for distribution-free uncertainty quantification, both directly relevant to my PhD research.
+                    A week-long gathering of France's young statistics community, organized by the French Statistical Society (SFdS), bringing together PhD students and early-career researchers for talks, tutorials, and exchange. I presented Self-Organized Conformal Prediction, my work on closing regional coverage gaps in uncertainty quantification through unsupervised group discovery.
                 </p>
                 <p class="text-muted small mb-2">
-                    December 1-5, 2025 — La Villa Clythia, Frejus, France — Participant
+                    May 17-21, 2026 · Centre IGESA, Porquerolles, France · Speaker
                 </p>
                 <div class="row justify-content-sm-center mt-3 mb-2">
                     <div class="col-12 text-center">
-                        {% include figure.liquid path="assets/img/sfds-group.jpeg" title="ECAS SFdS 2025 — Group Photo" class="img-fluid rounded z-depth-1" zoomable=true %}
+                        {% include figure.liquid path="assets/img/rjs2026.jpg" title="RJS 2026 · Porquerolles" class="img-fluid rounded z-depth-1" zoomable=true %}
                     </div>
                 </div>
                 <div class="text-center">
-                    <a href="https://www.sfds.asso.fr/fr/ecas_2025/748-home/" class="btn btn-sm btn-outline-secondary" target="_blank">
+                    <a href="https://rjs2026.sciencesconf.org/" class="btn btn-sm btn-outline-secondary" target="_blank">
                         Event Page
                     </a>
                 </div>
@@ -133,17 +133,17 @@ nav_order: 5
             <div class="card-body">
                 <h6 class="card-title mb-2">MBZUAI ML Winter School 2026</h6>
                 <p class="card-text small">
-                    <strong>Representation Learning and GenAI</strong> — Mohamed bin Zayed University of Artificial Intelligence.
+                    <strong>Representation Learning and GenAI</strong>: Mohamed bin Zayed University of Artificial Intelligence.
                 </p>
                 <p class="card-text small">
-                    An intensive five-day program exploring the frontiers of representation learning and generative AI, from large language models to diffusion models for images and video. Lectures and hands-on sessions led by Michael Bronstein, Florence Forbes, Arthur Gretton, Eric Moulines, among others.
+                    An intensive five-day program exploring the frontiers of representation learning and generative AI, from large language models to diffusion models for images and video. Lectures and hands-on sessions led by Michael Bronstein, Florence Forbes, Arthur Gretton, Eric Moulines, among others. I attended to broaden toward generative modeling, which I am now exploring for live video generation and industrial simulation.
                 </p>
                 <p class="text-muted small mb-2">
-                    February 9-13, 2026 — MBZUAI, Abu Dhabi, UAE — Participant
+                    February 9-13, 2026 · MBZUAI, Abu Dhabi, UAE · Participant
                 </p>
                 <div class="row justify-content-sm-center mt-3 mb-2">
                     <div class="col-12 text-center">
-                        {% include figure.liquid path="assets/img/mbzuai-group.jpg" title="MBZUAI ML Winter School 2026 — Group Photo" class="img-fluid rounded z-depth-1" zoomable=true %}
+                        {% include figure.liquid path="assets/img/mbzuai-group.jpg" title="MBZUAI ML Winter School 2026 · Group Photo" class="img-fluid rounded z-depth-1" zoomable=true %}
                     </div>
                 </div>
                 <div class="text-center">
@@ -154,32 +154,26 @@ nav_order: 5
             </div>
         </div>
     </div>
-</div>
-
----
-
-<a id="hackathons"></a>
-
-## Hackathons
-
-<div class="row justify-content-sm-center mt-3">
-    <div class="col-md-10 mt-3 mt-md-0">
-        <div class="card">
+    <div class="col-md-6 mb-3">
+        <div class="card h-100">
             <div class="card-body">
-                <h5 class="card-title mb-3">Mistral Worldwide Hackathon — Paris Edition</h5>
-                <p class="card-text">
-                    Mistral AI's largest hackathon — 1,000+ participants across 7 cities worldwide, 36 hours of building with cutting-edge AI.
-                    With <a href="https://www.linkedin.com/in/saad-souilmi-388348205/">Saad Souilmi</a> and <a href="https://www.linkedin.com/in/hamza-zerouali/">Hamza Zerouali</a>, we built <strong><a href="/projects/1_cerno/">Cerno</a></strong>:
-                    an AI-powered recruitment platform where candidates interview with a voice-AI agent, and recruiters receive structured, bias-free evaluations — no resume screening, no ghosting.
+                <h6 class="card-title mb-2">ECAS - SFdS 2025</h6>
+                <p class="card-text small">
+                    <strong>Towards Reliable Machine Learning</strong>: Transfer and Physics Informed Learning, and Conformal Prediction.
                 </p>
-                <p class="text-muted small mb-3">
-                    February 28 - March 1, 2026 — Paris, France — Organized by Mistral AI and Iterate — Partners: NVIDIA, AWS, Weights and Biases
+                <p class="card-text small">
+                    A five-day deep dive organized by the French Statistical Society (SFdS) into two pillars of reliable ML: transfer and physics-informed learning for data-efficient models, and conformal prediction for distribution-free uncertainty quantification, both central to my PhD, with the uncertainty-quantification track feeding straight into my work on Self-Organized CP and Masked CP.
                 </p>
-                <div class="d-flex gap-2 justify-content-center mb-3">
-                    <a href="/projects/1_cerno/" class="btn btn-sm btn-outline-primary">
-                        Discover Cerno
-                    </a>
-                    <a href="https://luma.com/mistralhack-paris?tk=ADiTrW" class="btn btn-sm btn-outline-secondary" target="_blank">
+                <p class="text-muted small mb-2">
+                    December 1-5, 2025 · La Villa Clythia, Fréjus, France · Participant
+                </p>
+                <div class="row justify-content-sm-center mt-3 mb-2">
+                    <div class="col-12 text-center">
+                        {% include figure.liquid path="assets/img/sfds-group.jpeg" title="ECAS SFdS 2025 · Group Photo" class="img-fluid rounded z-depth-1" zoomable=true %}
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="https://www.sfds.asso.fr/fr/ecas_2025/748-home/" class="btn btn-sm btn-outline-secondary" target="_blank">
                         Event Page
                     </a>
                 </div>
@@ -188,8 +182,3 @@ nav_order: 5
     </div>
 </div>
 
-<div style="width: 100%; max-width: 900px; margin: 2rem auto 2rem;">
-    <div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/ZDvco9Ayla8" title="Cerno - Hackathon Presentation" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
-    </div>
-</div>
