@@ -94,8 +94,21 @@ Tracking list for the June 2026 refinement pass. Tick items as they're verified 
 - [x] `_data/cv.yml` kept fully populated as a maintained backup (now content-equal to `resume.json`, no longer the stale fallback)
 - [x] Live-verified `/cv/` renders from `resume.json` again (language flags present, cv.yml-only sections absent); teaching, shelf-attention, TorchSOM 74-98%, references all intact; PDF button intact
 
+### Paris Fintech project filled with WEBI (pass 10)
+- [x] Rewrote `_projects/2_paris_fintech.md` as the **WEBI** project page (AI copilot for structured bond products: Gemini 2.0 Flash + FAISS, three layers; team incl. Emile Jouannet + Roland Sosin linked; honest "no prize"); embedded the YouTube pitch; Devpost + deck buttons
+- [x] Hosted the deck at `assets/pdf/WEBI.pdf`; generated `assets/img/projects/webi_thumbnail.jpg` from the cover for the project card
+- [x] Filled the Paris Fintech card on `/hackathons/` with the WEBI blurb + a "Discover WEBI" link
+- [x] Live-verified: project page (layers, video, Devpost + deck), `/projects/` WEBI card + thumbnail, `/hackathons/` Discover WEBI, `WEBI.pdf` serves 200 (application/pdf); 0 dashes
+
+### Hack the World(s) filled with the Piaget fly-brain model (pass 11)
+- [x] Rewrote `_projects/3_hack_the_worlds.md` as **"Wiring the Fly Brain into a World Model"** (team Piaget, 2nd place): FlyWire connectome + NeuroMechFly closed loop, per-region EB-JEPA hierarchy, 96%-silent / spiking-encoder fix, the three results, Piaget quote; embedded the EON fly video with explicit **Eon Systems credit** (related work, not Piaget's output)
+- [x] Hosted the deck at `assets/pdf/the_fly.pdf`; generated `assets/img/projects/fly_thumbnail.jpg` from the cover
+- [x] Hackathons card: added a **2nd place** badge, the Piaget blurb, and a "Discover the project" button
+- [x] Live-verified: project page (all markers + credited video), `/projects/` fly card + thumbnail, `/hackathons/` badge + Discover link, `the_fly.pdf` serves 200; 0 dashes
+- [x] Added a **Recognition** section: Yann LeCun reposted the project ("2ème place au Hack The World hackathon") and commented "Bravo", plus researchers encouraging it as research, two screenshots (`yl_repost.jpg`, `yl_congrats.png`) + LinkedIn links; echoed on the hackathons card. Piaget teammate links (Lucas Thil, Daniel Nowak-Assis, Adam Jlidi) now added.
+
 ## 🙋 Louis needs to check
-- [ ] **Hackathons page + Projects placeholders**: provide the project details (name, one-liner, teammates with links, result) for **Hack the World(s)**, **Paris Fintech**, and **AI'NNOV**. The `[bracketed]` blanks on `/hackathons/` and the `TODO (LouisTier)` notes in `_projects/2_paris_fintech.md` + `_projects/3_hack_the_worlds.md` mark exactly where.
+- [ ] **AI'NNOV / Michelin** is the only hackathon left: still a placeholder (`TODO` on `_pages/hackathons.md:129`), needs the project name, what it did, and teammates (with links); optionally its own `_projects/` page. (Paris Fintech/WEBI and Hack the World(s)/Piaget, incl. all teammate links and the LeCun recognition, are done.)
 - [x] **Masked CP author list** resolved by Louis: Hegazy, Berthier, Dieuleveut, Jordan.
 - [x] **`cv.yml` decision** resolved: CV renders from `resume.json` (preferred rendering); `_data/cv.yml` kept fully populated as a maintained backup, in parity with `resume.json`. (Heads-up: two CV files now exist again on purpose, edit `resume.json` for the live CV.)
 - [ ] Sanity-check the SOCP / Masked CP / ETFA / C&CE / JIM titles, authors, and abstracts on `/publications/` against the papers.
