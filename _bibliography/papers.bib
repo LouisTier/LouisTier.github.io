@@ -23,8 +23,15 @@
     title={Self-Organized Conformal Prediction: Reducing Regional Coverage Gaps with Unsupervised Group Discovery},
     author={Berthier, Louis and Shokry, Ahmed and Moreaud, Maxime and Ramelet, Guillaume and Dieuleveut, Aymeric},
     year={2026},
-    note={Under Review},
+    eprint={2606.29403},
+    archivePrefix={arXiv},
+    primaryClass={stat.ML},
     abstract={Conformal prediction guarantees marginal coverage, but pooled calibration averages over heterogeneous regions and can mask regional undercoverage in safety-critical subgroups. We introduce Self-Organized Conformal Prediction (SOCP), a calibration scheme that discovers input-space groups with a Self-Organizing Map (SOM) and, at test time, draws a local calibration buffer from the query's Best Matching Unit (BMU) cell or a fixed grid neighborhood. The same retrieval rule applies to regression and classification tasks across tabular features and image embeddings, leaving the predictor and nonconformity score untouched. SOCP gives exact validity for BMU-cell retrieval and fixed retrieved-set validity for neighborhood buffers; central-cell validity for neighborhood retrieval holds up to a Kolmogorov-Smirnov (KS) bias term. A split-routed extension recovers fixed retrieved-set validity conditional on the routing split. On eight regression and classification benchmarks, SO-SCP reduces the weighted regional coverage gap on 7/8 datasets (mean paired change -7.1%) for a mean prediction-set size increase of 6.2%, with negligible overhead on the largest six datasets; SO-CQR yields smaller gains, since quantile regression already absorbs much of the heterogeneity. By learning groups directly from the input geometry, SOCP provides group-local calibration with exact fixed-group guarantees and approximate central-cell guarantees, without supervised partitions or predictor retraining.},
+    note={Preprint, Under Review},
+    url={https://arxiv.org/abs/2606.29403},
+    abbr={arXiv},
+    arxiv={2606.29403},
+    preview={socp_pipeline.png},
 }
 
 @unpublished{berthier2026unified_online_soft_sensing,
@@ -64,6 +71,7 @@
     organization={IEEE},
     note={Accepted, to appear},
     abbr={IEEE ETFA},
+    preview={ieee_etfa_pipeline.png},
     abstract={ML-based soft sensors are essential in chemical manufacturing, where real-time quality measurements are often unavailable. Among existing approaches, JITL is widely adopted for its ability to model nonlinear, multimodal, and locally varying behavior, especially in batch processes. However, JITL-based soft sensors remain difficult to scale to industrial systems characterized by high-dimensional data, limited interpretability, and time-varying operating conditions driven by process drifts. To overcome these limitations, this work proposes a novel, adaptive JITL soft-sensor framework tailored for large-scale, evolving industrial environments. First, a SOM is adopted as a topology-preserving latent-space representation to embed both historical and query samples. This projection preserves local neighborhood relationships and reveals latent data structures, enabling effective selection of relevant training samples based on process topology rather than point-wise distance calculations in the original data space. Second, a real-time SHAP-based Feature Selection mechanism identifies and updates the most influential process variables, ensuring continuous interpretability and adaptation. The proposed methodology is validated on a real industrial rubber production line at Michelin. Experimental results demonstrate substantial improvements, reducing mean squared error (MSE) by up to 61.1% and raising the coefficient of determination (R2) from -0.14 to 0.56 compared to global learning baselines.},
 }
 
