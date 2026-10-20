@@ -142,6 +142,8 @@ kramdown:
 include: ["_pages", "_scripts", "google3c73bf8192e43f5d.html"]
 exclude:
   - bin/
+  - CLAUDE.md
+  - PLAN.md
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile

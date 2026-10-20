@@ -21,7 +21,7 @@
       institution: <a href="https://cmap.ip-paris.fr/">École Polytechnique (CMAP)</a>, Paris, France
       year: 2024 - now
       description:
-        - "Conformal and adaptive soft sensors for real-time quality prediction in industrial batch processes."
+        - "Industrial PhD (CIFRE) with Michelin: adaptive and conformal soft sensors for real-time quality prediction in multistage industrial processes."
         - Under the supervision of <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a>, <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>, <a href="https://www.linkedin.com/in/desroziers/">Dr. Sylvain Desroziers</a>, <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a>, and <a href="https://www.linkedin.com/in/guillaume-ramelet-7696081/">Guillaume Ramelet</a>.
         - "Adaptive Soft Sensing, Conformal Prediction, Explainability, Self-Organizing Maps, Online Learning, Dimensionality Reduction."
     - title: MSc Advanced Computing in Machine Learning
@@ -35,7 +35,7 @@
       institution: <a href="https://www.imt-mines-ales.fr/">IMT Mines Alès</a>, Alès, France
       year: 2020 - 2023
       description:
-        - "First class honours with jury's congratulations. Ranked 2nd in CS & AI department, top 5% of the class."
+        - "First class honours with jury's congratulations. Ranked 2nd of 60 in the CS & AI department, top 5% of the school."
         - Research internship at the <a href="https://cerco.cnrs.fr/">CNRS (CerCo)</a>, under <a href="https://www.linkedin.com/in/ludovic-gardy/">Dr. Ludovic Gardy</a>, <a href="https://www.linkedin.com/in/christophe-hurter-2514393/">Pr. Christophe Hurter</a>, and <a href="https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/">Pr. Emmanuel Barbeau</a>.
         - "Advanced Probabilities & Statistics, Operational Research, Algorithms & Complexity, Machine & Deep Learning, Software Engineering."
 
@@ -45,26 +45,28 @@
     - title: Computer Vision Scientist
       institution: <a href="https://www.augmodo.com/">Augmodo</a> (part-time alongside PhD)
       year: 2025 - now
-      maindescription: Uncertainty-aware computer vision for open-world retail deployments, processing millions of images daily.
+      maindescription: Uncertainty-aware open-world computer vision for retail deployments, across 100k+ images a day.
       description:
-        - Working alongside <a href="https://www.sachahu.com/">Sacha Hu</a> (Senior CV Engineer), <a href="https://www.linkedin.com/in/ashleyanapier/">Ashley Napier</a> (CV Group Lead), and <a href="https://www.linkedin.com/in/shubhamwagh/">Shubham Wagh</a> (Senior CV Engineer).
-        - "Building uncertainty-aware classifiers for product identification with test-time augmentation, reducing manual QC workload by selectively accepting high-confidence predictions."
-        - "Developing an RGB+depth pipeline to flag empty shelf areas, focusing human review on genuinely uncertain cases."
-        - "Designing low-cost dataset relabeling strategies to update legacy bounding box annotations at scale using improved detectors."
-        - "Fine-tuning object detectors (YOLO and the transformer-based RF-DETR) for empty shelf-area detection, leveraging hard-negative examples to push detection performance; handling training and fine-tuning on cloud GPUs."
-    - title: Research Engineer (CIFRE PhD)
+        - Working alongside <a href="https://www.sachahu.com/">Sacha Hu</a> (Senior CV Engineer), <a href="https://www.linkedin.com/in/ashleyanapier/">Ashley Napier</a> (CV Group Lead), and <a href="https://www.linkedin.com/in/galenhan/">Galen Han</a>.
+        - "Developed uncertainty-aware open-world VLMs that recognize products, aisles, and price tags from images alone, trained on paired images and product descriptions for identification and planogram matching."
+        - "Deployed test-time augmentation to quantify confidence in open-world classifiers (product identification, QC automation, RGB+depth empty-shelf detection): confident predictions are auto-accepted and only uncertain ones reach human QC, across 100k+ images/day."
+        - "Fine-tuned YOLO and the transformer-based RF-DETR with hard-negative mining and multi-GPU cloud training, improving empty-shelf detection without regressing other shelf classes."
+        - "Designed automated relabeling pipelines that update legacy bounding-box annotations at scale, adapting large datasets to newer architectures without manual re-annotation."
+    - title: ML Research Engineer (CIFRE PhD)
       institution: <a href="https://www.michelin.com/">Michelin</a>, Clermont-Ferrand, France
       year: 2024 - now
-      maindescription: Adaptive soft sensing and conformal prediction for real-time quality monitoring in rubber manufacturing.
+      maindescription: Conformal and adaptive soft sensors for real-time quality prediction in industrial batch processes.
       description:
         - Supervised by <a href="https://www.linkedin.com/in/desroziers/">Dr. Sylvain Desroziers</a>, <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a>, and <a href="https://www.linkedin.com/in/guillaume-ramelet-7696081/">Guillaume Ramelet</a>.
-        - Developed <a href="https://github.com/michelin/TorchSOM">TorchSOM</a>, the reference PyTorch library for Self-Organizing Maps, released under Apache 2.0 via Michelin's open-source organization (74-98% faster than MiniSom on CPU, GPU-accelerated, scikit-learn API, 90% test coverage).
-        - "Designed and benchmarked five adaptive soft sensing strategies for real-time quality monitoring, validated on 35,125 production batches, cutting prediction error by around 59% short-term and over 90% under year-long drift."
-        - "Developed Self-Organized CP and Masked CP, two conformal prediction frameworks for locally adaptive and mask-valid sequential uncertainty quantification in industrial settings."
+        - Introduced <a href="https://arxiv.org/abs/2606.29403">Self-Organized Conformal Prediction</a> (<strong>NeurIPS 2026</strong>), unsupervised group discovery with a Self-Organizing Map for group-local calibration, cutting regional coverage gaps on all 10 datasets, by 14.8% on average, for only 3% larger prediction sets.
+        - "Co-developed Mask-Valid Conformal Prediction (with M. Hegazy, M. I. Jordan, A. Dieuleveut): binary monitoring masks that interpolate between marginal and anytime coverage, with restart validity after failures and no need for past test labels."
+        - Created and open-sourced <a href="https://github.com/michelin/TorchSOM">TorchSOM</a> (<strong>JMLR 2026</strong>), a PyTorch library for Self-Organizing Maps, 74-98% faster than MiniSom on CPU, about 8× faster than somoclu on GPU, and the lowest topographic error in every benchmark (34-81% below MiniSom).
+        - Developed adaptive Just-in-Time soft sensors pairing SOM similarity retrieval with online SHAP feature selection, cutting MSE by up to 61% over global baselines (<strong>IEEE ETFA 2026</strong>) and prediction error by over 90% under year-long drift on 35k production batches.
+        - Built an explainable, uncertainty-aware analytics framework (frequency-ranked feature selection, SHAP interactions, multi-split conformal prediction) on 35k rubber-mixing records, cutting 316 input variables to 20 at equal accuracy (<strong>Digital Chemical Engineering 2026</strong>).
     - title: Teaching Assistant (Machine Learning & Data Science)
       institution: <a href="https://www.ensta-paris.fr/">ENSTA Paris</a>
-      year: 2024 - 2025
-      maindescription: Led machine learning lab sessions for first-year engineering students, with 20 to 25 students per session.
+      year: 2024 - 2026
+      maindescription: "Led the lab sessions of Introduction to Machine Learning and Data Science for first-year engineering students (B3/MSc1): 20h a year for three consecutive years, 20 to 25 students per session."
       description:
         - Taught the fundamentals of machine learning, from data preprocessing and feature engineering to model training and evaluation, under <a href="https://perso.ensta-paris.fr/~philippe.xu/">Pr. Philippe Xu</a>.
         - "Guided students through their first hands-on experience building and validating predictive models."
@@ -74,17 +76,18 @@
       maindescription: Sample-efficient Quality-Diversity optimization using surrogate models for robotic control in uncertain environments.
       description:
         - Supervised by <a href="https://www.imperial.ac.uk/people/a.cully">Pr. Antoine Cully</a>.
-        - "Tackled the data-hunger of MAP-Elites by integrating probabilistic surrogate models, achieving significant gains in sample efficiency on a robotic arm control task."
+        - "Tackled the data-hunger of MAP-Elites by integrating probabilistic surrogate models on a robotic arm control task; the best variant beat MAP-Elites and came close to MAP-Elites with sampling."
         - "Benchmarked eight algorithmic variants combining different surrogate architectures and acquisition strategies in non-deterministic environments."
+        - "Introduced two metrics for the uncertainty of quality-diversity archives."
     - title: Research Intern (ML & Neuroscience)
       institution: <a href="https://cerco.cnrs.fr/">CNRS (CerCo)</a>, Toulouse, France
       year: 2022
       maindescription: Deep learning for detecting fast ripples, pathological biomarkers for epileptic tissue, in intracranial EEG signals.
       description:
         - Supervised by <a href="https://www.linkedin.com/in/ludovic-gardy/">Dr. Ludovic Gardy</a>, <a href="https://www.linkedin.com/in/christophe-hurter-2514393/">Pr. Christophe Hurter</a>, and <a href="https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/">Pr. Emmanuel Barbeau</a>.
-        - "Built a CNN pipeline converting raw EEG signals into time-frequency scalograms via continuous wavelet transform for automated fast ripple classification."
-        - "Applied Grad-CAM to provide clinicians with visual explanations of which signal features drive each prediction."
-        - "Accelerated the processing pipeline by 15% through Cython optimization; improved classification accuracy by 5% via hyperparameter tuning."
+        - Trained CNN fast-ripple detectors on wavelet time-frequency images of macro- and micro-electrode EEG, improving accuracy by 5% through systematic hyperparameter tuning (<strong>J. Neurosci. Methods 2025</strong>).
+        - "Applied Grad-CAM to localize high-frequency bursts in time-frequency maps, giving clinicians visual explanations anchored to known fast-ripple signatures."
+        - "Accelerated EEG signal and image processing by 15% with Cython, and built 7 NoSQL databases for multi-channel EEG at macro and micro electrode scales for batch retrieval and parallel processing."
     - title: Research Assistant (ML & Computer Vision)
       institution: <a href="https://dhm.euromov.eu/">EuroMov Digital Health in Motion (DHM)</a>, Montpellier, France
       year: 2022
@@ -99,12 +102,28 @@
   contents:
     - title: <a href="https://github.com/michelin/TorchSOM">TorchSOM</a>
       year: 2024 - now
-      maindescription: Reference PyTorch library for Self-Organizing Maps, released under Apache 2.0 via Michelin's open-source organization. 74-98% faster than MiniSom on CPU, GPU-accelerated, scikit-learn API, 90% test coverage.
+      maindescription: Reference PyTorch library for Self-Organizing Maps, released under Apache 2.0 via Michelin's open-source organization and published in JMLR (2026). 74-98% faster than MiniSom on CPU, GPU-accelerated, scikit-learn API, 90% test coverage.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - title: <a href="https://www.youtube.com/watch?v=VjbWHeqfhMk">MT180 Public Award (€100)</a>
+    - title: <a href="https://fellowship.unaite.fr/program">Unaite Fellowship for AI in Biology</a>
+      institution: Unaite, Paris
+      year: 2026
+      maindescription: 'Selected for the inaugural cohort of this year-long international research fellowship. Project: generative and world models for EEG, with fellow researchers and <a href="https://www.linkedin.com/in/paul-hellegouarch/">Paul Hellegouarch</a>, mentored by <a href="https://garridoq.com/">Dr. Quentin Garrido</a> and <a href="https://research.pasteur.fr/fr/member/jean-baptiste-masson/">Dr. Jean-Baptiste Masson</a>.'
+    - title: <a href="/projects/3_hack_the_worlds/">2nd of 25 teams, Hack the World(s)</a>
+      institution: ESIEE Paris, Mines Nancy/ACADI & PR[AI]RIE
+      year: 2026
+      maindescription: Built a hierarchical JEPA world model on the complete fly-brain connectome with team Piaget; reposted and congratulated by Yann LeCun.
+    - title: <a href="https://www.youtube.com/watch?v=ZDvco9Ayla8">Selected participant, Mistral Worldwide Hackathon</a>
+      institution: Mistral AI, Paris
+      year: 2026
+      maindescription: Selected from 1,700+ applicants; built Cerno, an AI recruitment platform with adaptive voice-AI interviews, in 36 hours.
+    - title: <a href="https://devpost.com/software/webi-we-buy-structured-bond-products">Paris Fintech Hackathon (Solve with AI)</a>
+      institution: HEC Paris
+      year: 2026
+      maindescription: Built WEBI, an AI copilot for structured bond products.
+    - title: <a href="https://www.youtube.com/watch?v=VjbWHeqfhMk">MT180 Audience Award (€100)</a>
       institution: Institut Polytechnique de Paris
       year: 2025
       maindescription: Won the audience vote for best 3-minute PhD presentation at Institut Polytechnique de Paris, selected to represent IP Paris at the national finals.
@@ -165,7 +184,7 @@
     - category: Monitoring & Development Tools (Advanced)
       icon: fa-solid fa-chart-bar
       items:
-        - name: Weights & Biases
+        - name: Weights & Biases, MLflow
         - name: Pytest, Unittest
         - name: Grafana
     - category: High-Performance Computing (Advanced)
@@ -201,7 +220,7 @@
     - title: Machine Learning Research
       items:
         - Uncertainty Quantification
-        - Diffusion Models
+        - World Models
         - Explainability
         - Unsupervised Learning
         - Multimodal AI

@@ -12,6 +12,41 @@ nav: false
     <div class="col-md-10 mt-3 mt-md-0">
         <div class="card">
             <div class="card-body">
+                <h5 class="card-title mb-3">IEEE ETFA 2026</h5>
+                <p class="card-text">
+                    <strong>Adaptive Soft Sensing: A Just-in-Time Approach with Self-Organizing Maps and Online Feature Selection</strong>
+                </p>
+                <p class="text-muted small mb-2">
+                    September 8-11, 2026 · Västerås, Sweden<br>
+                    {% include author_link.liquid first="Louis" last="Berthier" %}<sup>1,2</sup>,
+                    {% include author_link.liquid first="Ahmed" last="Shokry" %}<sup>1</sup>,
+                    {% include author_link.liquid first="Maxime" last="Moreaud" %}<sup>2</sup>,
+                    {% include author_link.liquid first="Guillaume" last="Ramelet" %}<sup>2</sup>,
+                    {% include author_link.liquid first="Eric" last="Moulines" %}<sup>1</sup><br>
+                    <small><sup>1</sup> CMAP, École Polytechnique &nbsp; <sup>2</sup> Michelin, Clermont-Ferrand</small>
+                </p>
+                <p class="card-text small">
+                    Just-in-Time soft sensors fit a local model for every new batch, but they struggle with hundreds of drifting process variables.  
+                    I presented our accepted paper, which retrieves similar batches in the latent space of a Self-Organizing Map (SOM) rather than in the raw sensor space, and keeps the model interpretable with an online SHAP-based feature selection that tracks the most influential variables as the process evolves.  
+                    On a Michelin rubber production line, it cuts the mean squared error by up to 61% and lifts R² from -0.14 to 0.56 over global baselines. Presented at the 31st IEEE International Conference on Emerging Technologies and Factory Automation, a premier conference on industrial automation sponsored by the IEEE Industrial Electronics Society.
+                </p>
+                <div class="d-flex gap-2 justify-content-center mt-3 mb-1">
+                    <a href="/publications/#berthier2026etfa_adaptive_soft_sensing" class="btn btn-sm btn-outline-primary">
+                        Read the abstract
+                    </a>
+                    <a href="https://etfa2026.ieee-ies.org/" class="btn btn-sm btn-outline-secondary" target="_blank">
+                        Event Page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-sm-center mt-3">
+    <div class="col-md-10 mt-3 mt-md-0">
+        <div class="card">
+            <div class="card-body">
                 <h5 class="card-title mb-3">Michelin DoctoBib'Day 2026</h5>
                 <p class="card-text">
                     <strong>A Unified Online Framework for Adaptive Soft Sensing in High-Dimensional Batch Processes</strong>

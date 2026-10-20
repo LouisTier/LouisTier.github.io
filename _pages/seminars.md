@@ -16,12 +16,12 @@ Reading and debating research is central to how I work. This page gathers the se
             <div class="card-body">
                 <h5 class="card-title mb-3">A Paper A Week (APAW)</h5>
                 <p class="card-text">
-                    I founded and organize a bi-monthly research seminar that brings together researchers and data scientists across Michelin.  
-                    Each session dives into a single paper or topic, recent ones ranging from conformal prediction and Self-Organizing Maps to long-range sequence models and the transformer architecture, always bridging the latest academic ideas and the industrial problems we face daily.  
-                    The goal is simple: keep learning together and spot opportunities to bring cutting-edge research into production.
+                    I founded and led a bi-monthly research seminar that brought together 20+ researchers and data scientists across Michelin.  
+                    Each session dove into a single paper or topic, from conformal prediction and Self-Organizing Maps to long-range sequence models and the transformer architecture, always bridging the latest academic ideas and the industrial problems we faced daily.  
+                    The goal was simple: keep learning together and spot opportunities to bring cutting-edge research into production.
                 </p>
                 <p class="text-muted small mb-2">
-                    April 2024 to Present · Clermont-Ferrand · Bi-monthly · Researchers and Data Scientists
+                    April 2024 to January 2026 · Clermont-Ferrand · Bi-monthly · 20+ Researchers and Data Scientists
                 </p>
             </div>
         </div>
@@ -105,6 +105,36 @@ A sample of the papers I have presented at A Paper A Week, chosen for how they c
 ## Invited Seminars
 
 Talks I was invited to give to research and data-science audiences.
+
+<div class="row justify-content-sm-center mt-3">
+    <div class="col-md-10 mt-3 mt-md-0">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-3">Wiring the Fly Brain into a World Model</h5>
+                <p class="text-muted small mb-2">
+                    July 2026 · ORAILIX team, <a href="https://www.lix.polytechnique.fr/" target="_blank">Computer Science Laboratory (LIX)</a>, École Polytechnique
+                </p>
+                <p class="card-text small">
+                    After our 2nd place at Hack the World(s), the ORAILIX team of LIX, where my teammate <a href="https://www.linkedin.com/in/lucas-andrei-thil/">Lucas Thil</a> is a PhD student, invited team Piaget to present the project.  
+                    We shared the motivation behind a JEPA world model built on a complete fly-brain connectome, the technical challenges we tackled, such as the 96% neural silence that pushes JEPA toward collapse, and the results we obtained.
+                </p>
+                <div class="row justify-content-sm-center mt-3 mb-2">
+                    <div class="col-md-10 mb-2">
+                        {% include figure.liquid path="assets/img/seminars/lix_orailix_2026.jpg" title="Team Piaget with the ORAILIX team at LIX, École Polytechnique" class="img-fluid rounded z-depth-1" zoomable=true %}
+                    </div>
+                </div>
+                <div class="d-flex gap-2 justify-content-center mt-2 mb-1">
+                    <a href="/projects/3_hack_the_worlds/" class="btn btn-sm btn-outline-primary">
+                        Discover the project
+                    </a>
+                    <a href="https://hal.science/hal-05674559" class="btn btn-sm btn-outline-secondary" target="_blank">
+                        Report (HAL)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="row mt-3">
     <div class="col-md-6 mb-3">

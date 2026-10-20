@@ -136,7 +136,7 @@ nav_order: 5
                     <strong>Representation Learning and GenAI</strong>: Mohamed bin Zayed University of Artificial Intelligence.
                 </p>
                 <p class="card-text small">
-                    An intensive five-day program exploring the frontiers of representation learning and generative AI, from large language models to diffusion models for images and video. Lectures and hands-on sessions led by Michael Bronstein, Florence Forbes, Arthur Gretton, Eric Moulines, among others. I attended to broaden toward generative modeling, which I am now exploring for live video generation and industrial simulation.
+                    An intensive five-day program exploring the frontiers of representation learning and generative AI, from large language models to diffusion models for images and video. Lectures and hands-on sessions led by Michael Bronstein, Florence Forbes, Arthur Gretton, Eric Moulines, among others. I attended to broaden toward representation learning and generative modeling, which now feed my work on world models.
                 </p>
                 <p class="text-muted small mb-2">
                     February 9-13, 2026 · MBZUAI, Abu Dhabi, UAE · Participant
@@ -162,7 +162,7 @@ nav_order: 5
                     <strong>Towards Reliable Machine Learning</strong>: Transfer and Physics Informed Learning, and Conformal Prediction.
                 </p>
                 <p class="card-text small">
-                    A five-day deep dive organized by the French Statistical Society (SFdS) into two pillars of reliable ML: transfer and physics-informed learning for data-efficient models, and conformal prediction for distribution-free uncertainty quantification, both central to my PhD, with the uncertainty-quantification track feeding straight into my work on Self-Organized CP and Masked CP.
+                    A five-day deep dive organized by the French Statistical Society (SFdS) into two pillars of reliable ML: transfer and physics-informed learning for data-efficient models, and conformal prediction for distribution-free uncertainty quantification, both central to my PhD, with the uncertainty-quantification track feeding straight into my work on Self-Organized CP and Mask-Valid CP.
                 </p>
                 <p class="text-muted small mb-2">
                     December 1-5, 2025 · La Villa Clythia, Fréjus, France · Participant

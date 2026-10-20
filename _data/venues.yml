@@ -1,25 +1,44 @@
 # Venue colors and URLs for publication badges (rendered in _layouts/bib.liquid).
 # Color reference: https://htmlcolorcodes.com/
 
-"arXiv":
-  url: https://arxiv.org/
-  color: "#9e0e40"
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#4b44ce"
 
-"Software":
-  color: "#1dadc0"
+"JMLR":
+  url: https://jmlr.org/
+  color: "#8b1e3f"
+
+"IEEE ETFA":
+  url: https://ieeexplore.ieee.org/xpl/conhome/1000260/all-proceedings
+  color: "#005baa"
+
+"Digit. Chem. Eng.":
+  url: https://www.sciencedirect.com/journal/digital-chemical-engineering
+  color: "#0c7d9d"
+
+"ESCAPE":
+  url: https://psecommunity.org/sct4
+  color: "#E07D0D"
 
 "J. Neurosci. Methods":
   url: https://www.sciencedirect.com/journal/journal-of-neuroscience-methods
   color: "#178243"
 
-"ICASSP":
+"IEEE ICASSP":
   url: https://ieeexplore.ieee.org/xpl/conhome/1000002/all-proceedings
   color: "#291782"
 
-"Systems & Control T.":
-  url: https://psecommunity.org/sct
-  color: "#E07D0D"
+"Software":
+  color: "#1dadc0"
 
-"IEEE ETFA":
-  url: https://ieeexplore.ieee.org/xpl/conhome/1000260/all-proceedings
-  color: "#005baa"
+# Status badges for work without a venue yet (no venue is named before acceptance).
+"Under Review":
+  color: "#6c757d"
+
+"In Preparation":
+  color: "#9aa0a6"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#9e0e40"

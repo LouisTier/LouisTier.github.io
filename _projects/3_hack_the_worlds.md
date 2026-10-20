@@ -26,6 +26,8 @@ To our knowledge, this is the first JEPA world model built on a complete brain: 
 
 **Team Piaget:** Louis Berthier, [Lucas Thil](https://www.linkedin.com/in/lucas-andrei-thil/), [Daniel Nowak-Assis](https://www.linkedin.com/in/daniel-nowak-assis-77a6311a2/), and [Adam Jlidi](https://www.linkedin.com/in/adam-jlidi-1a9504296/).
 
+We wrote the work up as a working paper, [*Wiring the Fly Brain into a Hierarchical World Model: A Self-Supervised JEPA World Model of a Complete Connectome*](https://hal.science/hal-05674559), available on HAL.
+
 ---
 
 ## Recognition
@@ -44,6 +46,8 @@ To our knowledge, this is the first JEPA world model built on a complete brain: 
     <a href="https://www.linkedin.com/posts/yann-lecun_worldmodels-jepa-ai-activity-7474507808990896128-vYgV">Yann LeCun's repost</a> and <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7474427943495208960/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287474507559685623808%2Curn%3Ali%3AugcPost%3A7474427943495208960%29">his comment</a> on LinkedIn.
 </p>
 
+In July 2026, the ORAILIX team of [LIX](https://www.lix.polytechnique.fr/), École Polytechnique's Computer Science Laboratory, invited us to [present the project](/seminars/) to its researchers.
+
 ---
 
 ## The embodied fly
@@ -60,6 +64,7 @@ The connectome-driven, simulated fly is the substrate our world model learns fro
 ---
 
 <div class="d-flex gap-2 justify-content-center mt-3">
+    <a href="https://hal.science/hal-05674559" class="btn btn-sm btn-outline-primary" target="_blank">Report (HAL)</a>
     <a href="/assets/pdf/the_fly.pdf" class="btn btn-sm btn-outline-primary" target="_blank">Pitch deck (PDF)</a>
     <a href="https://hacktheworlds.fr/" class="btn btn-sm btn-outline-secondary" target="_blank">Event Page</a>
     <a href="/hackathons/" class="btn btn-sm btn-outline-secondary">See all Hackathons</a>

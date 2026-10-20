@@ -25,6 +25,7 @@ A space where I step out of the lab to build fast, ship something real in 24-36 
                 </p>
                 <p class="card-text">
                     With team <strong>Piaget</strong>, I built <strong><a href="/projects/3_hack_the_worlds/">Wiring the Fly Brain into a World Model</a></strong>, a JEPA world model trained on a complete fly-brain connectome (FlyWire, ~140k neurons) embodied in a simulated fly, built region by region on the EB-JEPA framework. <strong>We placed 2nd</strong>, and the project was reposted and congratulated by <strong>Yann LeCun</strong>.
+                    We later wrote it up as a <a href="https://hal.science/hal-05674559">working paper on HAL</a> and <a href="/seminars/">presented it at LIX</a>, École Polytechnique's Computer Science Laboratory.
                     With <a href="https://www.linkedin.com/in/lucas-andrei-thil/">Lucas Thil</a>, <a href="https://www.linkedin.com/in/daniel-nowak-assis-77a6311a2/">Daniel Nowak-Assis</a>, and <a href="https://www.linkedin.com/in/adam-jlidi-1a9504296/">Adam Jlidi</a>.
                 </p>
                 <p class="text-muted small mb-3">
@@ -33,6 +34,9 @@ A space where I step out of the lab to build fast, ship something real in 24-36 
                 <div class="d-flex gap-2 justify-content-center mb-3">
                     <a href="/projects/3_hack_the_worlds/" class="btn btn-sm btn-outline-primary">
                         Discover the project
+                    </a>
+                    <a href="https://hal.science/hal-05674559" class="btn btn-sm btn-outline-secondary" target="_blank">
+                        Report (HAL)
                     </a>
                     <a href="https://hacktheworlds.fr/" class="btn btn-sm btn-outline-secondary" target="_blank">
                         Event Page
@@ -86,7 +90,7 @@ A space where I step out of the lab to build fast, ship something real in 24-36 
             <div class="card-body">
                 <h5 class="card-title mb-3">Mistral Worldwide Hackathon: Paris Edition</h5>
                 <p class="card-text">
-                    Mistral AI's largest hackathon, 1,000+ participants across 7 cities worldwide, 36 hours of building with cutting-edge AI.
+                    Mistral AI's largest hackathon, 1,000+ participants across 7 cities worldwide, 36 hours of building with cutting-edge AI. I was selected from 1,700+ applicants.
                     With <a href="https://www.linkedin.com/in/saad-souilmi-388348205/">Saad Souilmi</a> and <a href="https://www.linkedin.com/in/hamza-zerouali/">Hamza Zerouali</a>, we built <strong><a href="/projects/1_cerno/">Cerno</a></strong>:
                     an AI-powered recruitment platform where candidates interview with a voice-AI agent, and recruiters receive structured, bias-reducing evaluations, with no resume screening and no ghosting.
                 </p>
