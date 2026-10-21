@@ -3,6 +3,7 @@ layout: page
 title: "Talks"
 permalink: /talks/
 description: My conference presentations and poster sessions at academic venues.
+seo_description: "Talks and posters by Louis Berthier at IEEE ETFA 2026 and ESCAPE 35 on soft sensors, self-organizing maps and conformal prediction, with a best poster award."
 nav: false
 ---
 

@@ -3,6 +3,7 @@ layout: page
 permalink: /teaching/
 title: Teaching
 description: Teaching assistant positions alongside my PhD.
+seo_description: "Louis Berthier's lab sessions in Introduction to Machine Learning and Data Science at ENSTA Paris, 2024 to 2026, for first-year engineering students."
 nav: false
 ---
 

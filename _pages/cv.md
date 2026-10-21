@@ -6,6 +6,7 @@ nav: true
 nav_order: 6
 cv_pdf: cv_lb.pdf # you can also use external links here
 description: 
+seo_description: "CV of Louis Berthier: PhD candidate at École Polytechnique and Michelin, MSc from Imperial College London, publications, talks, teaching and awards."
 # This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
 # The website's sections, in this order and with these titles
 cv_sections:

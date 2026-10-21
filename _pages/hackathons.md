@@ -3,6 +3,7 @@ layout: page
 title: "Hackathons"
 permalink: /hackathons/
 description: Intensive build sprints where research meets rapid prototyping.
+seo_description: "Hackathon builds by Louis Berthier: a fly-brain JEPA world model (2nd place at Hack the World(s)), Cerno at the Mistral hackathon and WEBI at Paris Fintech."
 nav: false
 ---
 

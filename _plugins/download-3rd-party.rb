@@ -139,7 +139,8 @@ Jekyll::Hooks.register :site, :after_init do |site|
     # get the file name from the url
     file_name = url.split('/').last.split('?').first
 
-    if file_name == 'css'
+    # Google Fonts serves its stylesheet from /css (API v1) or /css2 (API v2)
+    if file_name == 'css' || file_name == 'css2'
       file_name = 'google-fonts.css'
     end
 
@@ -214,7 +215,7 @@ Jekyll::Hooks.register :site, :after_init do |site|
               # get the file name from the url
               file_name = url.split('/').last.split('?').first
 
-              if file_name.end_with?('css')
+              if file_name.end_with?('css') || file_name == 'css2'
                 # if the file is a css file, download the css file, the fonts from it, and change information on the css file
                 file_name = download_fonts_from_css(site.config, url, File.join(site.source, 'assets', 'libs', key), key, font_file_types)
                 # change the url to the local file, considering baseurl

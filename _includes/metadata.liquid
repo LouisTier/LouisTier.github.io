@@ -21,7 +21,11 @@
   {% capture title %}{{ site.title }}{% endcapture %}
 {% endif %}
 
-{% comment %} One title and one description per page, shared by the title tag, Open Graph and Schema.org {% endcomment %}
+{% comment %}
+  One title and one description per page, shared by the title tag, Open Graph and Schema.org.
+  seo_title and seo_description in a page's front matter replace them for search engines and link previews only;
+  the title and description shown on the page itself stay as they are.
+{% endcomment %}
 {% capture page_title %}
   {% if page.seo_title %}
     {{ page.seo_title }}
@@ -38,7 +42,7 @@
   {% endif %}
 {% endcapture %}
 {% assign page_title = page_title | strip %}
-{% capture page_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+{% capture page_description %}{% if page.seo_description %}{{ page.seo_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
 {% assign page_description = page_description | strip %}
 
 <!-- Standard metadata -->

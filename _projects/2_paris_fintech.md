@@ -2,6 +2,7 @@
 layout: page
 title: "WEBI"
 description: "An AI copilot for structured bond products, built at the Paris Fintech Hackathon."
+seo_description: "WEBI, an AI copilot that turns bank deal flow into mandate-matched structured bond offers, built at the Paris Fintech Hackathon by Louis Berthier's team."
 img: assets/img/projects/webi_thumbnail.jpg
 importance: 2
 category: hackathon

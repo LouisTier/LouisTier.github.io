@@ -3,6 +3,7 @@ layout: page
 title: "Seminars"
 permalink: /seminars/
 description: My seminar presentations and paper discussions.
+seo_description: "A Paper A Week, the research seminar Louis Berthier founded at Michelin, and paper talks on conformal prediction, self-organizing maps and transformers."
 nav: false
 ---
 

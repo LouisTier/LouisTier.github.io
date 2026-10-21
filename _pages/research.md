@@ -3,6 +3,7 @@ layout: page
 title: "Research"
 permalink: /research/
 description: Applied mathematics and machine learning for industrial systems.
+seo_description: "Research by Louis Berthier: conformal prediction and soft sensors for tire manufacturing at Michelin, computer vision at Augmodo, and world models for EEG."
 nav: true
 nav_order: 1
 toc:

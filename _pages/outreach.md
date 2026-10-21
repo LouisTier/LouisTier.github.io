@@ -3,6 +3,7 @@ layout: page
 title: "Outreach"
 permalink: /outreach/
 description: Science communication and schools.
+seo_description: "Science communication by Louis Berthier: Audience Award at Ma Thèse en 180 secondes (IP Paris, 2025), speaker at RJS 2026, MBZUAI and SFdS research schools."
 nav: false
 nav_order: 5
 ---

@@ -3,6 +3,7 @@ layout: page
 permalink: /repositories/
 title: Repositories
 description: Open-source code for my papers and libraries.
+seo_description: "Open-source code by Louis Berthier: TorchSOM, a PyTorch library for self-organizing maps (JMLR), and the code of SOCP (NeurIPS 2026) and xopa."
 # Edit `_data/repositories.yml`: `repos` lists the repositories shown as cards (name, description, language, links).
 nav: false
 ---
