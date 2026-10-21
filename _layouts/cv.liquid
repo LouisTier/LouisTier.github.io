@@ -2,6 +2,16 @@
 layout: default
 ---
 {% unless site.data.resume %}
+  {% comment %}
+    Local builds only: when assets/json/resume.json can't be parsed (a comma before ] or },
+    a missing quote), al-folio silently falls back to the old CV from _data/cv.yml; say so
+  {% endcomment %}
+  {% if jekyll.environment != 'production' %}
+    <div class="alert alert-warning mt-3" role="alert">
+      <strong>assets/json/resume.json could not be read</strong>, so this page shows the old CV from _data/cv.yml. Look for a comma
+      before a closing ] or }, or a missing quote. This notice only appears on local builds.
+    </div>
+  {% endif %}
   <div class="post">
     <header class="post-header">
       <h1 class="post-title">
@@ -53,46 +63,82 @@ layout: default
     </article>
   </div>
 {% else %}
+  {% comment %}
+    JSON Resume branch. The header carries the title, the contact line and the PDF, so
+    Basics is not repeated as a section. Sections come in a fixed order (lb_cv_order),
+    each under an h2 for the table of contents; work, education and volunteer entries
+    fold (see resume/lb_entries.liquid), and "Expand all" opens them all (common.js).
+  {% endcomment %}
+  {% assign lb_basics = site.data.resume.basics %}
+  {% assign lb_pdf_name = lb_basics.name | replace: ' ', '_' | append: '_CV.pdf' %}
   <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            {% if page.cv_pdf contains '://' %}
-              href="{{ page.cv_pdf }}"
-            {% else %}
-              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
+    <header class="post-header lb-cv-header">
+      <div class="lb-cv-identity">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-description">{{ page.description | default: lb_basics.label }}</p>
+        <p class="lb-cv-contact">
+          {% if lb_basics.email %}<a href="mailto:{{ lb_basics.email | encode_email }}">{{ lb_basics.email }}</a>{% endif %}
+          {% if lb_basics.phone %}<br><a href="tel:{{ lb_basics.phone | remove: ' ' }}">{{ lb_basics.phone }}</a>{% endif %}
+        </p>
+      </div>
+      {% if page.cv_pdf %}
+        {% comment %} the PDF as a small document card on the right, saved under a readable name {% endcomment %}
+        <a
+          class="lb-cv-pdf"
+          {% if page.cv_pdf contains '://' %}
+            href="{{ page.cv_pdf }}"
+          {% else %}
+            href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}" download="{{ lb_pdf_name }}"
+          {% endif %}
+        >
+          <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+          <span class="lb-cv-pdf-text">
+            <span class="lb-cv-pdf-title">Download PDF</span>
+            <span class="lb-cv-pdf-file">{{ lb_pdf_name }}</span>
+          </span>
+        </a>
       {% endif %}
     </header>
 
     <article>
       <div class="cv">
-        {% for data in site.data.resume %}
-          {% if site.jsonresume and site.jsonresume.size > 0 %}
-            {% unless site.jsonresume contains data[0] %}
-              {% continue %}
-            {% endunless %}
-          {% endif %}
-          {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
-            <div>
+        {% comment %}
+          Order and titles of the sections come from the page's cv_sections (key and title,
+          see _pages/cv.md); without it, a default order with the JSON keys as titles
+        {% endcomment %}
+        {% if page.cv_sections %}
+          {% assign lb_cv_order = page.cv_sections | map: 'key' %}
+        {% else %}
+          {% assign lb_cv_order = 'work,education,awards,skills,languages,volunteer,interests,references,projects,publications,certificates' | split: ',' %}
+        {% endif %}
+        {% assign lb_first = true %}
+        {% for lb_key in lb_cv_order %}
+          {% assign lb_title = lb_key | capitalize %}
+          {% for lb_s in page.cv_sections %}
+            {% if lb_s.key == lb_key and lb_s.title %}{% assign lb_title = lb_s.title %}{% endif %}
+          {% endfor %}
+          {% for data in site.data.resume %}
+            {% if data[0] != lb_key %}{% continue %}{% endif %}
+            {% if site.jsonresume and site.jsonresume.size > 0 %}
+              {% unless site.jsonresume contains data[0] %}
+                {% continue %}
+              {% endunless %}
+            {% endif %}
+            {% if data[1].size == 0 %}{% continue %}{% endif %}
+            <section class="lb-cv-section">
+              {% if lb_first %}
+                {% comment %} "Expand all" sits on the first section's heading row, over everything below {% endcomment %}
+                <div class="lb-cv-section-head">
+                  <h2 id="{{ data[0] }}">{{ lb_title }}</h2>
+                  <div class="lb-research-links">
+                    <button type="button" class="btn btn-sm z-depth-0 lb-expand-all">Expand all</button>
+                  </div>
+                </div>
+                {% assign lb_first = false %}
+              {% else %}
+                <h2 id="{{ data[0] }}">{{ lb_title }}</h2>
+              {% endif %}
               {% case data[0] %}
-                {% when 'basics' %}
-                  {% include resume/basics.liquid %}
                 {% when 'education' %}
                   {% include resume/education.liquid %}
                 {% when 'work' %}
@@ -115,11 +161,9 @@ layout: default
                   {% include resume/certificates.liquid %}
                 {% when 'references' %}
                   {% include resume/references.liquid %}
-                {% else %}
-
               {% endcase %}
-            </div>
-          </div>
+            </section>
+          {% endfor %}
         {% endfor %}
       </div>
     </article>

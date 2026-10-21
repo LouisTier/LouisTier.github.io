@@ -1,0 +1,31 @@
+{%- comment -%}
+  Dates of a CV entry in the site's style: "since August 2025", "April 2023 to September 2023",
+  "2024 to 2026". Dates come as "YYYY" or "YYYY.MM" (or "YYYY-MM"); an end of "now",
+  "present" or nothing means the entry is ongoing.
+  Usage: {% include resume/lb_dates.liquid start=content.startDate end=content.endDate %}
+{%- endcomment -%}
+{%- assign lb_months = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' -%}
+{%- assign lb_start_raw = include.start | default: '' | strip | replace: '-', '.' -%}
+{%- assign lb_end_raw = include.end | default: '' | strip | replace: '-', '.' -%}
+{%- assign lb_end_key = lb_end_raw | downcase -%}
+{%- if lb_start_raw != '' -%}
+  {%- assign lb_p = lb_start_raw | split: '.' -%}
+  {%- if lb_p.size > 1 -%}
+    {%- assign lb_i = lb_p[1] | plus: 0 | minus: 1 -%}
+    {%- capture lb_start -%}{{ lb_months[lb_i] }} {{ lb_p[0] }}{%- endcapture -%}
+  {%- else -%}
+    {%- assign lb_start = lb_p[0] -%}
+  {%- endif -%}
+  {%- if lb_end_key == '' or lb_end_key == 'now' or lb_end_key == 'present' -%}
+    since {{ lb_start }}
+  {%- else -%}
+    {%- assign lb_q = lb_end_raw | split: '.' -%}
+    {%- if lb_q.size > 1 -%}
+      {%- assign lb_j = lb_q[1] | plus: 0 | minus: 1 -%}
+      {%- capture lb_end -%}{{ lb_months[lb_j] }} {{ lb_q[0] }}{%- endcapture -%}
+    {%- else -%}
+      {%- assign lb_end = lb_q[0] -%}
+    {%- endif -%}
+    {%- if lb_end == lb_start -%}{{ lb_start }}{%- else -%}{{ lb_start }} to {{ lb_end }}{%- endif -%}
+  {%- endif -%}
+{%- endif -%}

@@ -1,31 +1,38 @@
-<div class="list-groups">
+{% comment %}
+  References fold like the other CV entries: the name, then the role stay visible; the
+  relationship, the email pattern and a profile link fold below. Each reference text is
+  "email <br></br> role line(s) <br></br> relationship" in resume.json (icons are stripped).
+{% endcomment %}
+<div class="lb-topics lb-cv-entries">
   {% for content in data[1] %}
-    <div class="list-group col-md-6">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            {% if content.icon %}
-              <td class="list-group-category-icon">
-                <i class="{{ content.icon }}"></i>
-              </td>
-            {% else %}
-              <td class="list-group-category-icon"></td>
-            {% endif %}
-            <!-- Calculate colspan number for category title -->
-            {% assign i = 1 %}
-            {% for item in content.items %}
-              {% assign i = i | plus: 1 %}
-            {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">{{ content.name }}</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="list-group-name">
-              <b>{{ content.reference }}</b>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    {% assign lb_id = 'references-' | append: forloop.index %}
+    {% assign lb_parts = content.reference | split: '<br></br>' %}
+    {% assign lb_email = lb_parts.first | strip_html | strip %}
+    {% assign lb_about = lb_parts.last | strip_html | strip %}
+    {% capture lb_role %}{% for lb_part in lb_parts %}{% unless forloop.first or forloop.last %}{{ lb_part | strip_html | strip }} {% endunless %}{% endfor %}{% endcapture %}
+    {% assign lb_role = lb_role | strip %}
+    {% assign lb_href = '' %}
+    {% if content.name contains 'href="' %}
+      {% assign lb_href = content.name | split: 'href="' | last | split: '"' | first %}
+    {% endif %}
+    <h3 class="lb-fold-title" id="{{ lb_id }}" data-toc-skip="">
+      <button type="button" aria-expanded="false" aria-controls="fold-{{ lb_id }}"><span>{{ content.name | strip_html | strip }}</span></button>
+    </h3>
+    {% if lb_role != '' %}
+      <p class="lb-fold-meta">{{ lb_role }}</p>
+    {% endif %}
+    <div class="lb-fold-body" id="fold-{{ lb_id }}" hidden="until-found">
+      {% if lb_parts.size > 1 and lb_about != '' %}
+        <p class="lb-cv-summary">{{ lb_about }}</p>
+      {% endif %}
+      {% if lb_email != '' %}
+        <p class="lb-cv-email">Email: {{ lb_email }}</p>
+      {% endif %}
+      {% if lb_href != '' %}
+        <div class="lb-research-links">
+          <a class="btn btn-sm z-depth-0" href="{{ lb_href }}" role="button">Profile</a>
+        </div>
+      {% endif %}
     </div>
   {% endfor %}
 </div>

@@ -22,7 +22,7 @@
       year: 2024 - now
       description:
         - "Industrial PhD (CIFRE) with Michelin: adaptive and conformal soft sensors for real-time quality prediction in multistage industrial processes."
-        - Under the supervision of <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a>, <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>, <a href="https://www.linkedin.com/in/desroziers/">Dr. Sylvain Desroziers</a>, <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a>, and <a href="https://www.linkedin.com/in/guillaume-ramelet-7696081/">Guillaume Ramelet</a>.
+        - Under the supervision of <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a> and <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>.
         - "Adaptive Soft Sensing, Conformal Prediction, Explainability, Self-Organizing Maps, Online Learning, Dimensionality Reduction."
     - title: MSc Advanced Computing in Machine Learning
       institution: <a href="https://www.imperial.ac.uk/">Imperial College London</a>, London, UK
@@ -37,7 +37,7 @@
       description:
         - "First class honours with jury's congratulations. Ranked 2nd of 60 in the CS & AI department, top 5% of the school."
         - Research internship at the <a href="https://cerco.cnrs.fr/">CNRS (CerCo)</a>, under <a href="https://www.linkedin.com/in/ludovic-gardy/">Dr. Ludovic Gardy</a>, <a href="https://www.linkedin.com/in/christophe-hurter-2514393/">Pr. Christophe Hurter</a>, and <a href="https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/">Pr. Emmanuel Barbeau</a>.
-        - "Advanced Probabilities & Statistics, Operational Research, Algorithms & Complexity, Machine & Deep Learning, Software Engineering."
+        - "Advanced Probability & Statistics, Operations Research, Algorithms & Complexity, Machine & Deep Learning, Software Engineering."
 
 - title: Experience
   type: time_table
@@ -45,24 +45,25 @@
     - title: Computer Vision Scientist
       institution: <a href="https://www.augmodo.com/">Augmodo</a> (part-time alongside PhD)
       year: 2025 - now
-      maindescription: Uncertainty-aware open-world computer vision for retail deployments, across 100k+ images a day.
+      maindescription: "Real-time Spatial AI for retail: open-world computer vision across 100k+ images a day."
       description:
-        - Working alongside <a href="https://www.sachahu.com/">Sacha Hu</a> (Senior CV Engineer), <a href="https://www.linkedin.com/in/ashleyanapier/">Ashley Napier</a> (CV Group Lead), and <a href="https://www.linkedin.com/in/galenhan/">Galen Han</a>.
-        - "Developed uncertainty-aware open-world VLMs that recognize products, aisles, and price tags from images alone, trained on paired images and product descriptions for identification and planogram matching."
-        - "Deployed test-time augmentation to quantify confidence in open-world classifiers (product identification, QC automation, RGB+depth empty-shelf detection): confident predictions are auto-accepted and only uncertain ones reach human QC, across 100k+ images/day."
-        - "Fine-tuned YOLO and the transformer-based RF-DETR with hard-negative mining and multi-GPU cloud training, improving empty-shelf detection without regressing other shelf classes."
+        - Working alongside <a href="https://www.sachahu.com/">Sacha Hu</a> (Senior CV Engineer), <a href="https://www.linkedin.com/in/ashleyanapier/">Ashley Napier</a> (CV Group Lead), and <a href="https://www.linkedin.com/in/galenhan/">Galen Han</a> (Senior CV Engineer).
+        - "Developed open-world VLMs that recognize products, aisles, and price tags from images alone, trained on paired images and product descriptions for identification and planogram matching."
+        - "Used test-time augmentation to estimate the confidence of open-world classifiers (product identification, QC automation) and flag the uncertain predictions for human QC, across 100k+ images/day."
+        - "Fine-tuned YOLO and the transformer-based RF-DETR with hard-negative mining and multi-GPU cloud training, to suppress confirmed empty-shelf false positives without degrading other shelf classes."
+        - "Built the RGB+depth version of a classifier that checks empty-shelf alerts, with depth estimated by Depth Anything V2 as a fourth input channel, to tell true gaps from dark or shadowed shelves."
         - "Designed automated relabeling pipelines that update legacy bounding-box annotations at scale, adapting large datasets to newer architectures without manual re-annotation."
     - title: ML Research Engineer (CIFRE PhD)
       institution: <a href="https://www.michelin.com/">Michelin</a>, Clermont-Ferrand, France
       year: 2024 - now
       maindescription: Conformal and adaptive soft sensors for real-time quality prediction in industrial batch processes.
       description:
-        - Supervised by <a href="https://www.linkedin.com/in/desroziers/">Dr. Sylvain Desroziers</a>, <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a>, and <a href="https://www.linkedin.com/in/guillaume-ramelet-7696081/">Guillaume Ramelet</a>.
+        - Supervised by <a href="https://www.linkedin.com/in/guillaume-ramelet-7696081/">Guillaume Ramelet</a> and <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a>.
         - Introduced <a href="https://arxiv.org/abs/2606.29403">Self-Organized Conformal Prediction</a> (<strong>NeurIPS 2026</strong>), unsupervised group discovery with a Self-Organizing Map for group-local calibration, cutting regional coverage gaps on all 10 datasets, by 14.8% on average, for only 3% larger prediction sets.
         - "Co-developed Mask-Valid Conformal Prediction (with M. Hegazy, M. I. Jordan, A. Dieuleveut): binary monitoring masks that interpolate between marginal and anytime coverage, with restart validity after failures and no need for past test labels."
-        - Created and open-sourced <a href="https://github.com/michelin/TorchSOM">TorchSOM</a> (<strong>JMLR 2026</strong>), a PyTorch library for Self-Organizing Maps, 74-98% faster than MiniSom on CPU, about 8× faster than somoclu on GPU, and the lowest topographic error in every benchmark (34-81% below MiniSom).
+        - Created and open-sourced <a href="https://github.com/michelin/TorchSOM">TorchSOM</a> (<strong>JMLR 2026</strong>), a PyTorch library for Self-Organizing Maps, 81-98% faster than MiniSom on CPU, up to about 12× faster than somoclu on GPU, and the lowest topographic error in every rectangular-map benchmark (62-100% below MiniSom).
         - Developed adaptive Just-in-Time soft sensors pairing SOM similarity retrieval with online SHAP feature selection, cutting MSE by up to 61% over global baselines (<strong>IEEE ETFA 2026</strong>) and prediction error by over 90% under year-long drift on 35k production batches.
-        - Built an explainable, uncertainty-aware analytics framework (frequency-ranked feature selection, SHAP interactions, multi-split conformal prediction) on 35k rubber-mixing records, cutting 316 input variables to 20 at equal accuracy (<strong>Digital Chemical Engineering 2026</strong>).
+        - Built an explainable analytics framework (frequency-ranked feature selection, SHAP interactions, multi-split conformal prediction) on 35k rubber-mixing records, cutting 316 input variables to 20 at equal accuracy (<strong>Digital Chemical Engineering 2026</strong>).
     - title: Teaching Assistant (Machine Learning & Data Science)
       institution: <a href="https://www.ensta-paris.fr/">ENSTA Paris</a>
       year: 2024 - 2026
@@ -102,7 +103,7 @@
   contents:
     - title: <a href="https://github.com/michelin/TorchSOM">TorchSOM</a>
       year: 2024 - now
-      maindescription: Reference PyTorch library for Self-Organizing Maps, released under Apache 2.0 via Michelin's open-source organization and published in JMLR (2026). 74-98% faster than MiniSom on CPU, GPU-accelerated, scikit-learn API, 90% test coverage.
+      maindescription: Reference PyTorch library for Self-Organizing Maps, released under Apache 2.0 via Michelin's open-source organization and published in JMLR (2026). 81-98% faster than MiniSom on CPU, GPU-accelerated, scikit-learn API, 90% test coverage.
 
 - title: Honors and Awards
   type: time_table
@@ -119,10 +120,11 @@
       institution: Mistral AI, Paris
       year: 2026
       maindescription: Selected from 1,700+ applicants; built Cerno, an AI recruitment platform with adaptive voice-AI interviews, in 36 hours.
-    - title: <a href="https://devpost.com/software/webi-we-buy-structured-bond-products">Paris Fintech Hackathon (Solve with AI)</a>
-      institution: HEC Paris
-      year: 2026
-      maindescription: Built WEBI, an AI copilot for structured bond products.
+    # No prize at the Paris Fintech Hackathon, so it is not an award; it stays on /hackathons/.
+    # - title: <a href="https://devpost.com/software/webi-we-buy-structured-bond-products">Paris Fintech Hackathon (Solve with AI)</a>
+    #   institution: HEC Paris
+    #   year: 2026
+    #   maindescription: Built WEBI, an AI copilot for structured bond products.
     - title: <a href="https://www.youtube.com/watch?v=VjbWHeqfhMk">MT180 Audience Award (€100)</a>
       institution: Institut Polytechnique de Paris
       year: 2025
@@ -243,7 +245,7 @@
       institution: University, France & UK
       year: 2020 - 2023
       description:
-        - "Achieved 3rd place in the highest national university league (BUCS, UK) and 4th place in the highest national university league (FFSU, France)."
+        - "Achieved 3rd place in the national university league in the UK (BUCS) and 4th place in the national university league in France (FFSU)."
         - "Winner of the 49th Challenge Centrale Lyon and the 19th TRAMS."
     - title: Vice President
       institution: <a href="https://bdsminesales.fr/">Bureau des Sports</a>, Alès, France
@@ -279,16 +281,16 @@
   type: time_table
   contents:
     - title: <a href="https://www.sachahu.com/">Sacha Hu</a>
-      maindescription: Senior CV Engineer at Augmodo. Co-supervised my work on uncertainty-aware computer vision for open-world retail deployments. Reach via name at augmodo dot com.
+      maindescription: Senior CV Engineer at Augmodo. Co-supervised my work on computer vision for open-world retail deployments. Reach via name at augmodo dot com.
     - title: <a href="https://www.linkedin.com/in/eric-moulines-61512860/">Pr. Eric Moulines</a>
       maindescription: Professor at École Polytechnique and MBZUAI, Member of the French Academy of Sciences. Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes. Reach via name dot surname at polytechnique dot edu.
     - title: <a href="https://www.linkedin.com/in/ahmed-shokry-aa705075/">Dr. Ahmed Shokry</a>
       maindescription: Senior Research Engineer at École Polytechnique. Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes. Reach via name dot surname at polytechnique dot edu.
     - title: <a href="https://www.linkedin.com/in/desroziers/">Dr. Sylvain Desroziers</a>
-      maindescription: Manager of the Michelin I4.0 Explore team and Fellow AI at Michelin. Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes. Reach via name dot surname at michelin dot com.
+      maindescription: Fellow AI at Michelin, previously Manager of the Michelin I4.0 Explore team. Co-supervised the start of my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes. Reach via name dot surname at michelin dot com.
     - title: <a href="https://www.linkedin.com/in/moreaudmaxime/">Dr. Maxime Moreaud</a>
       maindescription: Principal Data Scientist at Michelin. Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes. Reach via name dot surname at michelin dot com.
-    - title: <a href="https://www.linkedin.com/in/antoine-cully-3a4a36163/">Pr. Antoine Cully</a>
+    - title: <a href="https://www.linkedin.com/in/antoine-cully-40731136/">Pr. Antoine Cully</a>
       maindescription: Professor at Imperial College London and Director of the Adaptive & Intelligent Robotics Lab (AIRL). Supervised my independent research project and my MSc research internship on quality-diversity optimization. Reach via a dot surname at imperial dot ac dot uk.
     - title: <a href="https://www.linkedin.com/in/ludovic-gardy/">Dr. Ludovic Gardy</a>
       maindescription: Senior Data Scientist (Freelance), previously Research Engineer at CNRS. Co-supervised my MSc research internship on ML-based pathological oscillation detection in epilepsy. Reach via name dot g at sotisai dot com.

@@ -1,0 +1,1100 @@
+/*******************************************************************************
+ * Polish, October 2026: typography, accent contrast, publication list, cards
+ * and small fixes, layered on top of al-folio. Everything lives in this one
+ * partial (imported last) so the upstream al-folio files stay easy to update.
+ ******************************************************************************/
+
+:root {
+  --lb-font-text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --lb-font-ui: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --lb-text-size: 18px;
+
+  // today's pink, darkened just enough for AA on white (5.9:1 instead of 4.35:1)
+  --global-theme-color: #c2185b;
+  --global-hover-color: #c2185b;
+  // muted text, from #828282 (3.95:1) to 5.3:1
+  --global-text-color-light: #6b6b6b;
+}
+
+html[data-theme="dark"] {
+  // teal stays as it is; muted text from 4.4:1 to 6:1
+  --global-text-color-light: #9a9a9a;
+}
+
+// Typography: a serif for reading, a sans for navigation, labels and metadata
+
+body {
+  font-family: var(--lb-font-text);
+  font-size: var(--lb-text-size);
+  font-weight: 400;
+  line-height: 1.6;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--lb-font-text);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.post-title {
+  font-weight: 400;
+
+  .font-weight-bold {
+    font-weight: 700 !important;
+  }
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.navbar,
+.dropdown-menu,
+.btn,
+.badge,
+abbr.badge,
+.post-header .desc,
+.post-description,
+.caption,
+footer,
+.contact-note,
+.profile .more-info,
+nav[data-toggle="toc"],
+.text-muted,
+small {
+  font-family: var(--lb-font-ui);
+}
+
+.navbar-brand {
+  font-family: var(--lb-font-text);
+}
+
+.post-header .desc,
+.post-description {
+  color: var(--global-text-color-light);
+}
+
+// Photo credit: small, so the floated photo ends before the lists beside it
+.profile .more-info {
+  font-size: 0.8rem;
+  line-height: 1.4;
+
+  p {
+    margin: 0.4rem 0 0;
+  }
+}
+
+// Buttons: sentence case and a readable weight instead of MDB's tracked capitals
+
+.btn {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+// MDB sets small buttons at about 10 px; 13 px reads without growing the cards much
+.btn.btn-sm {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.9rem;
+}
+
+.btn-outline-primary {
+  color: var(--global-theme-color) !important;
+  border-color: var(--global-theme-color) !important;
+
+  &:hover,
+  &:focus {
+    color: var(--global-bg-color) !important;
+    background-color: var(--global-theme-color) !important;
+  }
+}
+
+.btn-outline-secondary {
+  color: var(--global-text-color) !important;
+  border-color: var(--global-text-color-light) !important;
+
+  &:hover,
+  &:focus {
+    color: var(--global-theme-color) !important;
+    border-color: var(--global-theme-color) !important;
+    background-color: transparent !important;
+  }
+}
+
+.badge.bg-secondary {
+  background-color: #5c636a !important;
+}
+
+// Publication list: same layout as before, cleaner details
+
+.publications {
+  h2.bibliography {
+    font-family: var(--lb-font-ui);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--global-text-color-light);
+  }
+
+  ol.bibliography li {
+    margin-bottom: 1.75rem;
+
+    // venue colors are all dark enough for white text (see _data/venues.yml)
+    .abbr abbr,
+    .abbr abbr * {
+      color: #fff !important;
+    }
+
+    .abbr abbr {
+      font-family: var(--lb-font-ui);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0;
+      border-radius: 3px;
+      padding: 0.3em 0.6em;
+    }
+
+    .title {
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 0.2rem;
+    }
+
+    .author {
+      font-family: var(--lb-font-ui);
+      font-size: 0.85em;
+      line-height: 1.5;
+    }
+
+    .periodical {
+      font-size: 0.95em;
+    }
+
+    .links {
+      margin-top: 0.4rem;
+
+      a.btn {
+        font-family: var(--lb-font-ui);
+        font-size: 0.8rem;
+        min-height: 28px;
+        padding: 0.25rem 0.75rem;
+        margin: 0 0.35rem 0.35rem 0;
+        border-color: var(--global-text-color-light);
+        border-radius: 3px;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+// Authors: co-authors in the text color (still links, dotted underline), my own name in bold
+.publications ol.bibliography li .author {
+  a {
+    color: inherit;
+    border-bottom: 1px dotted var(--global-text-color-light);
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-bottom: 1px solid var(--global-theme-color);
+    }
+  }
+
+  > em {
+    border-bottom: 0;
+    font-weight: 600;
+  }
+}
+
+// Abstracts open as full-size, left-aligned text with a thin rule, not small justified text in a box
+.publications ol.bibliography li div.abstract.hidden {
+  font-size: 1rem;
+  text-align: left;
+  border: 0;
+  border-left: 2px solid transparent;
+  padding-left: 1rem;
+
+  &.open {
+    margin-top: 0.6rem;
+    border-left-color: var(--global-divider-color);
+  }
+
+  p {
+    margin: 0 0 0.5rem;
+    line-height: 1.6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publications ol.bibliography li .hidden {
+    transition: none;
+  }
+}
+
+// Links to a paper (/publications/#key) land below the fixed navbar, as al-folio does for headings
+.publications ol.bibliography li div[id] {
+  scroll-margin-top: 66px;
+}
+
+// Lists next to the floated photo start below it instead of wrapping one short line beside it
+.profile ~ .clearfix > ul {
+  clear: right;
+}
+
+// On phones the portrait no longer fills the first screen: centered at a fixed width, it
+// leaves room for the name, the title and the first paragraph
+@media (max-width: 575.98px) {
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    max-width: 230px;
+    margin: 0 auto 1rem;
+  }
+}
+
+// Contact icons at the bottom of Home: about two-thirds of al-folio's size (4rem was heavy,
+// 1.6rem too small), in the muted color, the theme color on hover (al-folio's rule), and a
+// 44px tap area around each icon
+.social {
+  .contact-icons {
+    font-size: 2.6rem;
+    margin-top: 0.5rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 44px;
+      min-height: 44px;
+      margin: 0 0.25rem;
+
+      i::before {
+        color: var(--global-text-color-light);
+      }
+
+      // logo files, for socials without an icon class
+      img,
+      svg {
+        width: 2.3rem;
+        height: 2.3rem;
+        margin-bottom: 0;
+      }
+
+      svg image {
+        width: 2.3rem;
+        height: 2.3rem;
+      }
+    }
+  }
+
+  .contact-note {
+    color: var(--global-text-color-light);
+  }
+}
+
+// on phones the six icons stay on one row (at 2.6rem the sixth wrapped alone)
+@media (max-width: 575.98px) {
+  .social .contact-icons {
+    font-size: 2.1rem;
+
+    a {
+      margin: 0;
+    }
+  }
+}
+
+// Selected publications on Home, between About and Collaboration
+.lb-selected {
+  clear: both;
+
+  h2 a {
+    color: inherit;
+  }
+
+  .publications {
+    margin-top: 1rem;
+  }
+
+  // the rule before Collaboration gets the same space as the rule above this block
+  ol.bibliography li:last-child {
+    margin-bottom: 1rem;
+  }
+
+  // "All publications" under the list, apart from the last paper's own buttons
+  > .lb-research-links {
+    margin: 0.75rem 0 1.25rem;
+  }
+}
+
+// Embedded publication videos (the Video button): the SOCP video is portrait,
+// so keep it at a phone-like width instead of the full entry column
+.publications ol.bibliography li .video.hidden video {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0.75rem auto;
+}
+
+// Research page: the same three levels everywhere.
+// Period (Current, Previous) > organization (name, logo card, intro paragraph)
+// > topics, a list of titles that each fold open in place (see common.js)
+
+// (the Research-only rules below key on its period headings, h2.lb-period: Talks and Seminars
+// also use folding lists, and must not inherit them)
+// The rule before a period is the largest break on the page, larger than between organizations
+article:has(h2.lb-period) hr {
+  margin: 3rem 0 2rem;
+}
+
+// Periods are group labels, like the year headings on Publications
+h2.lb-period {
+  font-family: var(--lb-font-ui);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.6rem;
+}
+
+// Organizations: the name in the heading color (it links to the organization), more space
+// above it than anywhere inside an organization (fold titles are never organizations)
+article:has(h2.lb-period) h3:not(.lb-fold-title) {
+  margin-top: 3rem;
+
+  a,
+  a:hover {
+    color: inherit;
+  }
+}
+
+// Logo cards: the logos are transparent and drawn for white, so dark mode keeps a white card
+// (the black Augmodo wordmark disappeared on the dark background)
+html[data-theme="dark"] article:has(h2.lb-period) img.z-depth-1 {
+  background-color: #fff;
+}
+
+// Topics: titles between hairlines, each opening its text in place below it
+.lb-topics {
+  margin-top: 1.25rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+// a section heading right after a list (Talks: Posters) or a row of cards (Outreach: Schools)
+// gets air instead of a second rule
+.lb-topics + h2,
+.lb-steps + h2 {
+  margin-top: 2.75rem;
+}
+
+.lb-fold-title {
+  margin: 0;
+  font-size: 1.2rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    padding: 0.8rem 0;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    // chevron at the end of the row: down while folded, up once open
+    &::after {
+      content: "";
+      flex: none;
+      width: 0.5em;
+      height: 0.5em;
+      margin-right: 0.35em;
+      border-right: 2px solid var(--global-text-color-light);
+      border-bottom: 2px solid var(--global-text-color-light);
+      transform: translateY(-0.2em) rotate(45deg);
+    }
+
+    &[aria-expanded="true"]::after {
+      transform: translateY(0.15em) rotate(-135deg);
+    }
+
+    &:hover {
+      color: var(--global-theme-color);
+
+      &::after {
+        border-color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// Talks: under each title, a line that stays visible while folded (venue, date, place);
+// clicking it opens the item like the title does (common.js)
+.lb-fold-meta {
+  font-family: var(--lb-font-ui);
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  margin: -0.45rem 0 0.85rem;
+  cursor: pointer;
+}
+
+.lb-fold-title .badge {
+  font-family: var(--lb-font-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  vertical-align: 2px;
+}
+
+// a photo opens on the left of its item's text, as on the event cards
+// (`.lb-fold-body` in the selector outranks Bootstrap's `.no-gutters > [class*="col-"]`)
+.lb-fold-body .lb-fold-image {
+  padding: 0.25rem 1.25rem 1rem 0;
+
+  figure {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lb-fold-body .lb-fold-image {
+    padding-right: 0;
+  }
+}
+
+// the same space closes every open topic, whether it ends with text or with buttons
+.lb-fold-body {
+  padding-bottom: 1.5rem;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.lb-research-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: -0.2rem;
+
+  .btn {
+    font-family: var(--lb-font-ui);
+    font-size: 0.8rem;
+    min-height: 28px;
+    margin: 0;
+    padding: 0.25rem 0.75rem;
+    color: var(--global-text-color);
+    background: transparent;
+    border: 1px solid var(--global-text-color-light);
+    border-radius: 3px;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .lb-fold-title button::after {
+    transition: transform 0.15s ease;
+  }
+}
+
+@media (max-width: 575.98px) {
+  article:has(h2.lb-period) h3:not(.lb-fold-title) {
+    font-size: 1.5rem;
+  }
+
+  .lb-fold-title {
+    font-size: 1.125rem;
+  }
+}
+
+// On phones al-folio hides the table of contents with visibility, which the theme's
+// load-time transition animates, so its links flashed over the page title; hide it outright
+@media (max-width: 576px) {
+  #toc-sidebar {
+    display: none;
+  }
+}
+
+// Printing keeps every topic complete
+@media print {
+  .lb-fold-body[hidden] {
+    display: block !important;
+    content-visibility: visible !important;
+  }
+}
+
+// On phones the preview image no longer fills the screen width
+@media (max-width: 575.98px) {
+  .publications ol.bibliography li .preview {
+    max-width: 112px;
+  }
+}
+
+// Cards (talks, hackathons, teaching, outreach)
+
+.card {
+  .card-title {
+    font-weight: 600;
+  }
+
+  // MDB (loaded after this file) greys card text to #747373, 3.3:1 on dark cards;
+  // keep the muted look with the theme's AA-safe muted color
+  .card-text {
+    color: var(--global-text-color-light) !important;
+  }
+
+  .card-text.small,
+  p.small {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+// Bootstrap's muted grey fails on dark cards (3.3:1); use the theme's muted color
+.text-muted {
+  color: var(--global-text-color-light) !important;
+}
+
+// Amber badges ("1st place") need dark text: white on #ffbb33 is 1.7:1
+.badge.bg-warning {
+  color: #1a1a1a !important;
+}
+
+// Project category headings were divider-colored (1.3:1)
+.projects h2.category {
+  color: var(--global-text-color-light);
+  font-family: var(--lb-font-ui);
+  font-weight: 500;
+}
+
+// Portfolio pages (Projects, Hackathons, Repositories): cards stacked one under another
+
+// Projects: image on the left, then title, event and result, and description
+.projects {
+  .card {
+    overflow: hidden;
+
+    figure {
+      margin: 0;
+      height: 100%;
+    }
+
+    picture,
+    img.card-img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    // al-folio's `.card .card-img` adds 20px of top padding, a white band above dark images
+    img.card-img {
+      min-height: 170px;
+      padding-top: 0;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .card-title {
+      font-size: 1.35rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .card-text {
+      color: var(--global-text-color) !important;
+      font-size: 1rem !important;
+    }
+  }
+
+}
+
+// Event and result of a hackathon build: on its card, and under the title of its page
+.lb-project-event {
+  font-family: var(--lb-font-ui);
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.6rem;
+
+  .badge {
+    margin-left: 0.35rem;
+    vertical-align: 1px;
+  }
+}
+
+// under a page title, the event line belongs to the subtitle (al-folio leaves 2rem after it)
+.post-header .post-description:has(+ .lb-project-event) {
+  margin-bottom: 0.4rem;
+}
+
+.post-header .lb-project-event {
+  font-size: 0.9rem;
+  margin: 0 0 1.1rem;
+}
+
+// Project pages: resources right under the header, steps cards in body text,
+// screenshots stacked like a post and its comment, and videos that load on play
+.lb-project-links {
+  margin: 0 0 1.75rem;
+}
+
+.lb-steps {
+  // `.card` in the selector outranks MDB's `.card .card-title`, which loads after this file
+  .card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .card-text {
+    color: var(--global-text-color) !important;
+    font-size: var(--lb-text-size) !important;
+    line-height: 1.6;
+  }
+}
+
+.lb-shots {
+  max-width: 460px;
+  margin: 1rem auto 0.5rem;
+
+  figure {
+    margin: 0 0 0.75rem;
+  }
+}
+
+.lb-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin: 1rem 0 0.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+
+  button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  picture,
+  img,
+  iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  // play button drawn in CSS: a dark rounded tab with a white triangle
+  .lb-video-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 68px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.72);
+    transform: translate(-50%, -50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border-style: solid;
+      border-width: 10px 0 10px 17px;
+      border-color: transparent transparent transparent #fff;
+      transform: translate(-35%, -50%);
+    }
+  }
+
+  button:hover .lb-video-icon,
+  button:focus-visible .lb-video-icon {
+    background: var(--global-theme-color);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .projects .card img.card-img {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+// Hackathons: the award sits next to the event's heading; cards as wide as the headings,
+// with the project image on the left and the text at body size and color
+// (.lb-award is also used next to card titles, e.g. MT180 on Outreach)
+.lb-award {
+  font-family: var(--lb-font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.lb-event {
+  .card-text {
+    color: var(--global-text-color) !important;
+    font-size: var(--lb-text-size) !important;
+    line-height: 1.6;
+  }
+
+  .lb-event-image {
+    padding: 1.25rem 0 0 1.25rem;
+
+    figure {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lb-event .lb-event-image {
+    padding: 1.25rem 1.25rem 0;
+  }
+}
+
+// Talks and Seminars use the same event cards: a title per card, the same space at the
+// bottom of every card, and calm author lines (co-authors in the text color, my name bold)
+.lb-event h3.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.lb-event .card-body > :last-child {
+  margin-bottom: 0;
+}
+
+.lb-authors {
+  a {
+    color: inherit;
+    border-bottom: 1px dotted var(--global-text-color-light);
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-bottom-color: var(--global-theme-color);
+    }
+  }
+
+  em {
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+// CV page: the same system as the other pages. The header puts the title and contact on the
+// left and the PDF as a small document card on the right; sections are plain h2 headings;
+// experience, education, awards and volunteer entries fold like the Research topics; skills,
+// languages and interests are "label: items" rows, as the PDF prints them
+.lb-cv-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-bottom: 2rem;
+
+  .lb-cv-identity {
+    flex: 1 1 22rem;
+    min-width: 0;
+  }
+
+  .post-description {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.lb-cv-contact {
+  font-family: var(--lb-font-ui);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.lb-cv-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.1rem 0.8rem 0.95rem;
+  color: var(--global-text-color);
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+
+  i {
+    font-size: 2rem;
+    color: var(--global-theme-color);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--global-text-color);
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+
+    .lb-cv-pdf-title {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+.lb-cv-pdf-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.lb-cv-pdf-title {
+  font-family: var(--lb-font-ui);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.lb-cv-pdf-file {
+  font-family: var(--lb-font-ui);
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+}
+
+.cv {
+  .lb-cv-section > h2 {
+    margin: 2.75rem 0 0.25rem;
+  }
+
+  // the first heading shares its row with "Expand all"
+  .lb-cv-section-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    margin-top: 0.25rem;
+
+    h2 {
+      margin: 0;
+    }
+
+    .lb-research-links {
+      margin: 0;
+    }
+  }
+
+  .lb-topics {
+    margin-top: 0.75rem;
+  }
+
+  .lb-fold-body ul {
+    margin-bottom: 0;
+    padding-left: 1.25rem;
+  }
+
+  .lb-cv-summary {
+    margin-bottom: 0.5rem;
+  }
+
+  // a reference's email, written as a pattern ("name dot surname at ..."), in the meta style
+  .lb-cv-email {
+    font-family: var(--lb-font-ui);
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.6rem;
+  }
+
+  // al-folio's two-column groups (no longer used by the sections above), in regular weight
+  .list-groups {
+    margin-top: 1rem;
+  }
+
+  div.list-group {
+    padding-left: 0;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  td.list-group-category-icon,
+  .list-group-table td:empty,
+  .list-group-name i {
+    display: none;
+  }
+
+  td.list-group-category {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+
+  td.list-group-name {
+    font-family: var(--lb-font-ui);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--global-text-color);
+
+    b {
+      font-weight: 400;
+    }
+  }
+}
+
+// Skills, languages and interests: a label column and the items, between the same hairlines
+// as the folding rows
+.lb-cv-rows {
+  margin: 0.75rem 0 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.lb-cv-row {
+  display: grid;
+  grid-template-columns: 13rem 1fr;
+  align-items: baseline;
+  gap: 0.15rem 1.25rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--global-divider-color);
+
+  dt {
+    font-weight: 600;
+  }
+
+  dd {
+    margin: 0;
+    font-family: var(--lb-font-ui);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+// links inside a meta line (organization on the CV, LIX on Seminars) stay calm like co-author
+// names: text color with a dotted underline, the theme color on hover
+.lb-fold-meta a {
+  color: inherit;
+  border-bottom: 1px dotted var(--global-text-color-light);
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-bottom-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cv div.list-group {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .lb-cv-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .lb-cv-pdf,
+  .lb-expand-all {
+    display: none !important;
+  }
+}
+
+// Repositories: cards in the site's fonts and colors, instead of external GitHub images
+.lb-repo {
+  margin-bottom: 1.25rem;
+
+  .lb-repo-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.25rem 1rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+
+    i {
+      margin-right: 0.4rem;
+    }
+  }
+
+  .lb-repo-lang {
+    font-family: var(--lb-font-ui);
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
+
+  .lb-lang-dot {
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    margin-right: 0.4em;
+  }
+
+  .card-text {
+    color: var(--global-text-color) !important;
+    font-size: 1rem !important;
+  }
+}
+
+// Keyboard focus, consistent everywhere
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+// BibTeX keys in the light code theme: #008080 reached only 4.36:1 on the code background
+html:not([data-theme="dark"]) .highlight .na {
+  color: #006666;
+}
+
+// and the dark code theme's entry type (#447fcf on #404040 was 2.6:1)
+html[data-theme="dark"] .highlight .nc {
+  color: #8cb4ee;
+}
+
+// MDB removes the outline on the phone menu button; restore it for keyboards
+.navbar-toggler:focus-visible {
+  outline: 2px solid var(--global-theme-color) !important;
+  outline-offset: 2px;
+}
+
+// Footer links: a larger hit area without changing the line
+footer a {
+  padding: 6px 0;
+}

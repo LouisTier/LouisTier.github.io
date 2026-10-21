@@ -15,18 +15,17 @@
 {% endif %}
 
 {% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% if site.title == 'blank' %}
+  {% capture title %}{{ author_name }}{% endcapture %}
+{% else %}
+  {% capture title %}{{ site.title }}{% endcapture %}
+{% endif %}
 
-<!-- Standard metadata -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>
-  {% if site.title == 'blank' %}
-    {% capture title %}{{ author_name }}{% endcapture %}
-  {% else %}
-    {% capture title %}{{ site.title }}{% endcapture %}
-  {% endif %}
-  {% if page.url == '/blog/index.html' %}
+{% comment %} One title and one description per page, shared by the title tag, Open Graph and Schema.org {% endcomment %}
+{% capture page_title %}
+  {% if page.seo_title %}
+    {{ page.seo_title }}
+  {% elsif page.url == '/blog/index.html' %}
     {{ page.title }} | {{ title }}
   {% elsif page.title != 'blank' and page.url != '/' %}
     {% if page.title == null or page.title == '' %}
@@ -37,9 +36,18 @@
   {% else %}
     {{ title }}
   {% endif %}
-</title>
+{% endcapture %}
+{% assign page_title = page_title | strip %}
+{% capture page_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+{% assign page_description = page_description | strip %}
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ page_title }}</title>
 <meta name="author" content="{{ author_name }}">
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="description" content="{{ page_description }}">
 {% if page.keywords or site.keywords %}
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 {% endif %}
@@ -52,23 +60,24 @@
 {% endif %}
 
 {% if site.serve_og_meta %}
+  {% assign share_image = page.og_image | default: site.og_image %}
   <!-- OpenGraph -->
   <meta property="og:site_name" content="{{ title }}">
   <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta property="og:title" content="{{ page_title }}">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  {% if page.og_image or site.og_image %}
-    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+  <meta property="og:description" content="{{ page_description }}">
+  {% if share_image %}
+    <meta property="og:image" content="{{ share_image | absolute_url }}">
   {% endif %}
   <meta property="og:locale" content="{{ site.lang }}">
 
   <!-- Twitter card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  {% if page.og_image or site.og_image %}
-    <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+  <meta name="twitter:card" content="{% if share_image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description }}">
+  {% if share_image %}
+    <meta name="twitter:image" content="{{ share_image | absolute_url }}">
   {% endif %}
   {% if site.x_username %}
     <meta name="twitter:site" content="@{{ site.x_username }}">
@@ -223,22 +232,62 @@
     {% endcase %}
   {% endfor %}
 
-  <script type="application/ld+json">
+  {% comment %}
+    The home page is a ProfilePage about the Person, and declares the WebSite so Google can show its name
+    instead of "GitHub"; every other page is a WebPage by the same Person. Strings go through jsonify so quotes
+    and accents stay valid JSON.
+  {% endcomment %}
+  {% assign home_url = '/' | absolute_url %}
+  {% capture schema_person %}
     {
-        "author":
-        {
-            "@type": "Person",
-            "name": "{{ author_name }}"
-        },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks | jsonify }},
-        {% endif %}
-        "name": "{{ author_name }}",
-        "@context": "https://schema.org"
+        "@type": "Person",
+        "@id": {{ home_url | append: '#person' | jsonify }},
+        {% if site.schema_person.alternate_name %}"alternateName": {{ site.schema_person.alternate_name | jsonify }},{% endif %}
+        {% if site.schema_person.job_title %}"jobTitle": {{ site.schema_person.job_title | jsonify }},{% endif %}
+        {% if site.schema_person.image %}"image": {{ site.schema_person.image | absolute_url | jsonify }},{% endif %}
+        {% if site.schema_person.affiliation %}"affiliation": {{ site.schema_person.affiliation | jsonify }},{% endif %}
+        {% if site.schema_person.alumni_of %}"alumniOf": {{ site.schema_person.alumni_of | jsonify }},{% endif %}
+        {% if site.schema_person.knows_about %}"knowsAbout": {{ site.schema_person.knows_about | jsonify }},{% endif %}
+        {% if sameaslinks != blank %}"sameAs": {{ sameaslinks | jsonify }},{% endif %}
+        "url": {{ home_url | jsonify }},
+        "name": {{ author_name | strip | jsonify }}
     }
+  {% endcapture %}
+  {% capture schema_website %}
+    {
+        "@type": "WebSite",
+        "@id": {{ home_url | append: '#website' | jsonify }},
+        "url": {{ home_url | jsonify }},
+        "name": {{ title | strip | jsonify }}
+    }
+  {% endcapture %}
+  <script type="application/ld+json">
+    {% if page.url == '/' %}
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {{ schema_website }},
+            {
+                "@type": "ProfilePage",
+                "url": {{ home_url | jsonify }},
+                "name": {{ page_title | jsonify }},
+                "description": {{ page_description | jsonify }},
+                "isPartOf": {{ schema_website }},
+                "mainEntity": {{ schema_person }}
+            }
+        ]
+    }
+    {% else %}
+    {
+        "@context": "https://schema.org",
+        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebPage{% endif %}",
+        "url": {{ page.url | absolute_url | remove_first: 'index.html' | jsonify }},
+        "name": {{ page_title | jsonify }},
+        "headline": {{ page.title | default: page_title | jsonify }},
+        "description": {{ page_description | jsonify }},
+        "isPartOf": {{ schema_website }},
+        "author": {{ schema_person }}
+    }
+    {% endif %}
   </script>
 {% endif %}

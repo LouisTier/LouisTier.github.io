@@ -1,5 +1,24 @@
-repo_description_lines_max: 2
-
-# Open-source repositories shown on the /repositories/ page.
-github_repos:
-  - michelin/TorchSOM
+# Open-source repositories shown on the /repositories/ page, as cards in the site's style.
+# name: owner/repo on GitHub (the card title links there); description: one or two sentences;
+# language: shown with GitHub's color for it; links: buttons, the paper first.
+repos:
+  - name: michelin/TorchSOM
+    description: "torchsom: The Reference PyTorch Library for Self-Organizing Maps (JMLR 2026). GPU-accelerated SOMs with a scikit-learn API, clustering and visualization."
+    language: Python
+    links:
+      - label: Journal paper
+        url: https://jmlr.org/papers/v27/25-2467.html
+      - label: Documentation
+        url: https://opensource.michelin.io/TorchSOM/
+  - name: LouisTier/SOCP
+    description: "Self-Organized Conformal Prediction (NeurIPS 2026): local conformal calibration on groups discovered by a self-organizing map."
+    language: Python
+    links:
+      - label: Conference paper
+        url: https://arxiv.org/abs/2606.29403
+  - name: LouisTier/xopa
+    description: "Explainable offline process analytics (Digital Chemical Engineering 2026): feature selection, SHAP explanations, and conformal prediction intervals, with an open-data run on the UCI Superconductivity dataset."
+    language: Jupyter Notebook
+    links:
+      - label: Journal paper
+        url: /publications/#berthier2026explainable_offline_analytics

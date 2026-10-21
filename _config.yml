@@ -9,7 +9,7 @@ last_name: Berthier
 contact_note: >
   Feel free to reach out to me via email or LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  PhD Candidate in Applied Mathematics and Machine Learning at École Polytechnique.
+  PhD candidate in ML at École Polytechnique and Michelin (conformal prediction, soft sensors). Computer vision at Augmodo. Unaite Fellow (AI in biology).
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -17,7 +17,7 @@ keywords: applied-mathematics, machine-learning, phd, uncertainty-quantification
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.svg # LB monogram (assets/img/favicon.svg)
 
-url: https://LouisTier.github.io # the base hostname & protocol for your site
+url: https://louistier.github.io # the base hostname & protocol for your site (lowercase, as Google and the sitemap show it)
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -46,7 +46,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: false # TODO (LouisTier): set to true if you want to enable search
 socials_in_search: true
 posts_in_search: true
@@ -60,9 +60,35 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: /assets/img/lb_og.jpg # The site-wide (default for all links) Open Graph preview image, 1200x630 crop of the profile photo
+
+# Who the site is about, for search engines (Schema.org Person built in _includes/metadata.liquid)
+schema_person:
+  alternate_name: LouisTier
+  job_title: PhD Candidate in Applied Mathematics and Machine Learning
+  image: /assets/img/lb_bw_cropped.jpeg
+  affiliation:
+    "@type": CollegeOrUniversity
+    name: École Polytechnique
+    url: https://www.polytechnique.edu/
+  alumni_of:
+    - "@type": CollegeOrUniversity
+      name: Imperial College London
+      url: https://www.imperial.ac.uk/
+    - "@type": CollegeOrUniversity
+      name: IMT Mines Alès
+      url: https://www.imt-mines-ales.fr/
+  knows_about:
+    - Machine learning
+    - Applied mathematics
+    - Uncertainty quantification
+    - Conformal prediction
+    - Explainable AI
+    - Soft sensors
+    - Self-organizing maps
+    - Computer vision
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -192,6 +218,10 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: "google3c73bf8192e43f5d.html" # Search Console ownership file, not a page
+    values:
+      sitemap: false
 
 sass:
   style: compressed
@@ -284,12 +314,14 @@ filtered_bibtex_keywords:
     selected,
     slides,
     supp,
+    venue_name,
     video,
+    video_poster,
     website,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit: # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
@@ -355,7 +387,7 @@ enable_navbar_social: false # enables displaying social links in the navbar on t
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
-enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
+enable_video_embedding: true # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------
 # Library versions
@@ -406,7 +438,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400..700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&family=Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

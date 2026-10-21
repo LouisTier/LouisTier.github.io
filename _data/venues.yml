@@ -19,7 +19,7 @@
 
 "ESCAPE":
   url: https://psecommunity.org/sct4
-  color: "#E07D0D"
+  color: "#b35c00" # darkened for AA with white text (was #E07D0D, 2.95:1)
 
 "J. Neurosci. Methods":
   url: https://www.sciencedirect.com/journal/journal-of-neuroscience-methods
@@ -30,14 +30,14 @@
   color: "#291782"
 
 "Software":
-  color: "#1dadc0"
+  color: "#0f7c8a" # darkened for AA with white text (was #1dadc0, 2.7:1)
 
 # Status badges for work without a venue yet (no venue is named before acceptance).
 "Under Review":
   color: "#6c757d"
 
 "In Preparation":
-  color: "#9aa0a6"
+  color: "#6f767d" # darkened for AA with white text (was #9aa0a6, 2.6:1)
 
 "arXiv":
   url: https://arxiv.org/

@@ -3,18 +3,32 @@ layout: page
 title: "Wiring the Fly Brain into a World Model"
 description: "A JEPA world model built on a complete fly-brain connectome. 2nd place with team Piaget at Hack the World(s)."
 img: assets/img/projects/fly_thumbnail.jpg
-importance: 3
+importance: 1
 category: hackathon
+event: "Hack the World(s), June 2026"
+award: "2nd place"
 giscus_comments: false
 ---
 
+<div class="lb-research-links lb-project-links">
+  <a class="btn btn-sm z-depth-0" href="https://hal.science/hal-05674559" role="button">Working paper</a>
+  <a class="btn btn-sm z-depth-0" href="/assets/pdf/the_fly.pdf" role="button">Pitch deck</a>
+  <a class="btn btn-sm z-depth-0" href="https://hacktheworlds.fr/" role="button">Event page</a>
+</div>
+
 Can a self-supervised world model learn the dynamics of a *real* brain, not a metaphor for one, but an actual, complete wiring diagram? At Hack the World(s), under the patronage of Philippe Baptiste and sponsored by Yann LeCun (who introduced the JEPA architecture at the heart of the event), our team **Piaget** spent 24 hours answering that question, and placed **2nd**.
 
+## The setup
+
 The fruit fly (Drosophila) is the only animal whose entire connectome has been mapped. We took **FlyWire**, the first complete wiring diagram of an adult brain (about 140,000 neurons and 50 million synapses), embodied it in a physics simulation of the fly's body (**NeuroMechFly v2**, in MuJoCo), and closed the sensorimotor loop. Every 50 ms: light and odours reach the sensory organs, neurons fire across the connectome, and descending neurons drive the legs, which changes what the senses receive next.
+
+## The model
 
 Rather than treating the brain as a single block, we followed its anatomy. **Each region gets its own predictive sub-model**, and the sub-models are chained in the order the real lobes talk to one another: senses first, integration next, movement last. All of it runs on the **EB-JEPA** framework by Basile Terver.
 
 One biological quirk made this hard. A fly's brain is almost silent: about **96% of its neurons stay quiet at any instant**, and that sparsity pushes JEPA toward collapse. Our answer was anatomical too, a *spiking* encoder that lets each firing neuron listen to its synaptic neighbours through the real wiring, so the connectome itself becomes the cure for collapse.
+
+## Results
 
 Three results:
 
@@ -24,31 +38,25 @@ Three results:
 
 To our knowledge, this is the first JEPA world model built on a complete brain: decodable, predictive, and anatomically grounded. As Jean Piaget wrote, *"intelligence organizes the world by organizing itself."* For 24 hours, so did we.
 
+## Team and paper
+
 **Team Piaget:** Louis Berthier, [Lucas Thil](https://www.linkedin.com/in/lucas-andrei-thil/), [Daniel Nowak-Assis](https://www.linkedin.com/in/daniel-nowak-assis-77a6311a2/), and [Adam Jlidi](https://www.linkedin.com/in/adam-jlidi-1a9504296/).
 
 We wrote the work up as a working paper, [*Wiring the Fly Brain into a Hierarchical World Model: A Self-Supervised JEPA World Model of a Complete Connectome*](https://hal.science/hal-05674559), available on HAL.
-
----
 
 ## Recognition
 
 **Yann LeCun**, who sponsored the event and introduced the JEPA architecture, reposted the project to his followers ("2ème place au Hack The World hackathon") and left a comment: *"Bravo 👏👏👏"*. Several researchers and professors also encouraged us to take the work further as a research project.
 
-<div class="row justify-content-sm-center mt-3 mb-2">
-    <div class="col-md-7 mb-2">
-        {% include figure.liquid path="assets/img/projects/yl_repost.jpg" title="Yann LeCun reposting the project" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-    <div class="col-md-5 mb-2">
-        {% include figure.liquid path="assets/img/projects/yl_congrats.png" title="Yann LeCun's congratulations" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
+<div class="lb-shots">
+    {% include figure.liquid path="assets/img/projects/yl_repost.jpg" title="Yann LeCun reposting the project" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid path="assets/img/projects/yl_congrats.png" title="Yann LeCun's congratulations" class="img-fluid rounded z-depth-1" zoomable=true %}
 </div>
 <p class="text-muted small text-center">
     <a href="https://www.linkedin.com/posts/yann-lecun_worldmodels-jepa-ai-activity-7474507808990896128-vYgV">Yann LeCun's repost</a> and <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7474427943495208960/?dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287474507559685623808%2Curn%3Ali%3AugcPost%3A7474427943495208960%29">his comment</a> on LinkedIn.
 </p>
 
-In July 2026, the ORAILIX team of [LIX](https://www.lix.polytechnique.fr/), École Polytechnique's Computer Science Laboratory, invited us to [present the project](/seminars/) to its researchers.
-
----
+In July 2026, the ORAILIX team of [LIX](https://www.lix.polytechnique.fr/), École Polytechnique's Computer Science Laboratory, invited us to [present the project](/seminars/#seminar-lix-2026) to its researchers.
 
 ## The embodied fly
 
@@ -63,9 +71,6 @@ The connectome-driven, simulated fly is the substrate our world model learns fro
 
 ---
 
-<div class="d-flex gap-2 justify-content-center mt-3">
-    <a href="https://hal.science/hal-05674559" class="btn btn-sm btn-outline-primary" target="_blank">Report (HAL)</a>
-    <a href="/assets/pdf/the_fly.pdf" class="btn btn-sm btn-outline-primary" target="_blank">Pitch deck (PDF)</a>
-    <a href="https://hacktheworlds.fr/" class="btn btn-sm btn-outline-secondary" target="_blank">Event Page</a>
-    <a href="/hackathons/" class="btn btn-sm btn-outline-secondary">See all Hackathons</a>
+<div class="lb-research-links">
+  <a class="btn btn-sm z-depth-0" href="/hackathons/" role="button">All hackathons</a>
 </div>

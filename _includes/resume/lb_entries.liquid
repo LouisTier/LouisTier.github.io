@@ -1,0 +1,36 @@
+{%- comment -%}
+  CV entries (work, education, volunteer) as folding rows, like the Research topics:
+  the role, then "Organization · place · dates" stay visible; the summary and bullets fold.
+  Parameters: entries (sorted list), key (section name, for ids), and the field names of
+  role, org, summary and items, which differ between JSON Resume sections.
+{%- endcomment -%}
+<div class="lb-topics lb-cv-entries">
+  {% for content in include.entries %}
+    {% assign lb_id = include.key | append: '-' | append: forloop.index %}
+    {% capture lb_when %}{% include resume/lb_dates.liquid start=content.startDate end=content.endDate %}{% endcapture %}
+    {% assign lb_when = lb_when | strip %}
+    {% assign lb_org = content[include.org] | strip_html | strip %}
+    {% assign lb_summary = content[include.summary] %}
+    <h3 class="lb-fold-title" id="{{ lb_id }}" data-toc-skip="">
+      <button type="button" aria-expanded="false" aria-controls="fold-{{ lb_id }}"><span>{{ content[include.role] }}</span></button>
+    </h3>
+    <p class="lb-fold-meta">
+      {% if content.url and content.url != '' %}<a href="{{ content.url }}">{{ lb_org }}</a>{% else %}{{ lb_org }}{% endif %}
+      {% if content.location and content.location != '' %}· {{ content.location }}{% endif %}
+      {% if lb_when != '' %}· {{ lb_when }}{% endif %}
+    </p>
+    <div class="lb-fold-body" id="fold-{{ lb_id }}" hidden="until-found">
+      {% if lb_summary and lb_summary != '' %}
+        <p class="lb-cv-summary">{{ lb_summary }}</p>
+      {% endif %}
+      {% assign lb_items = content[include.items] %}
+      {% if lb_items and lb_items.size > 0 %}
+        <ul>
+          {% for item in lb_items %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

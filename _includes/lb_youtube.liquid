@@ -1,0 +1,19 @@
+{% comment %}
+  A YouTube video that loads only when played (see common.js): its poster, a play button,
+  then the player from youtube-nocookie.com on click.
+  Usage: {% include lb_youtube.liquid id="VIDEO_ID" poster="assets/img/....jpg" label="Play the ... video" %}
+{% endcomment %}
+{% assign poster_base = include.poster | remove: '.jpg' | remove: '.png' %}
+<div class="lb-video" data-youtube="{{ include.id }}">
+  <button type="button" aria-label="{{ include.label }}">
+    <picture>
+      <source
+        srcset="{{ poster_base | relative_url }}-800.webp 800w, {{ poster_base | relative_url }}-1400.webp 1400w"
+        sizes="(min-width: 930px) 900px, 100vw"
+        type="image/webp"
+      >
+      <img src="{{ include.poster | relative_url }}" alt="" loading="lazy">
+    </picture>
+    <span class="lb-video-icon" aria-hidden="true"></span>
+  </button>
+</div>

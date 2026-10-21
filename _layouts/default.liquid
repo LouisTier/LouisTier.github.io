@@ -10,7 +10,8 @@
       {% else %}
         {% assign redirect = page.redirect | relative_url %}
       {% endif %}
-      <meta http-equiv="refresh" content="3; url={{ redirect }}">
+      {% comment %} redirect_delay (seconds) lets a page forward at once; the 404 page keeps 3 {% endcomment %}
+      <meta http-equiv="refresh" content="{{ page.redirect_delay | default: 3 }}; url={{ redirect }}">
     {% endif %}
     {% include head.liquid %}
   </head>

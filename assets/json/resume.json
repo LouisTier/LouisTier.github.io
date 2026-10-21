@@ -27,14 +27,17 @@
       "name": "Augmodo",
       "position": "Computer Vision Scientist (part-time)",
       "url": "https://www.augmodo.com/",
+      "location": "Seattle, WA, USA (remote)",
       "startDate": "2025.08",
       "endDate": "NOW",
-      "summary": "Uncertainty-aware open-world computer vision for retail deployments, across 100k+ images a day.",
+      // "summary": "Real-time Spatial AI for retail: open-world computer vision across 100k+ images a day.",
+      "summary": "Real-time Spatial AI for retail: open-world computer vision, with <a href=\"https://www.sachahu.com/\">Sacha Hu</a>, <a href=\"https://www.linkedin.com/in/ashleyanapier/\">Ashley Napier</a>, and <a href=\"https://www.linkedin.com/in/galenhan/\">Galen Han</a>.",
       "highlights": [
-        "Working alongside <a href=\"https://www.sachahu.com/\">Sacha Hu</a> (Senior CV Engineer), <a href=\"https://www.linkedin.com/in/ashleyanapier/\">Ashley Napier</a> (CV Group Lead), and <a href=\"https://www.linkedin.com/in/galenhan/\">Galen Han</a>.",
-        "Developed uncertainty-aware open-world VLMs that recognize products, aisles, and price tags from images alone, trained on paired images and product descriptions for identification and planogram matching.",
-        "Deployed test-time augmentation to quantify confidence in open-world classifiers (product identification, QC automation, RGB+depth empty-shelf detection): confident predictions are auto-accepted and only uncertain ones reach human QC, across 100k+ images/day.",
-        "Fine-tuned YOLO and the transformer-based RF-DETR with hard-negative mining and multi-GPU cloud training, improving empty-shelf detection without regressing other shelf classes.",
+        // "Working alongside <a href=\"https://www.sachahu.com/\">Sacha Hu</a> (Senior CV Engineer), <a href=\"https://www.linkedin.com/in/ashleyanapier/\">Ashley Napier</a> (CV Group Lead), and <a href=\"https://www.linkedin.com/in/galenhan/\">Galen Han</a> (Senior CV Engineer).",
+        "Developed open-world VLMs that recognize products, aisles, and price tags from images alone, trained on paired images and product descriptions for identification and planogram matching.",
+        "Used test-time augmentation to estimate the confidence of open-world classifiers (product identification, QC automation) and flag the uncertain predictions for human QC, across 100k+ images/day.",
+        "Fine-tuned YOLO and the transformer-based RF-DETR with hard-negative mining and multi-GPU cloud training, to suppress confirmed empty-shelf false positives without degrading other shelf classes.",
+        "Built the RGB+depth version of a classifier that checks empty-shelf alerts, with depth estimated by Depth Anything V2 as a fourth input channel, to tell true gaps from dark or shadowed shelves.",
         "Designed automated relabeling pipelines that update legacy bounding-box annotations at scale, adapting large datasets to newer architectures without manual re-annotation."
       ]
     },
@@ -42,67 +45,68 @@
       "name": "Michelin",
       "position": "ML Research Engineer (CIFRE PhD)",
       "url": "https://www.michelin.com/",
+      "location": "Clermont-Ferrand, France",
       "startDate": "2024.03",
-      "endDate": "NOW",
-      "summary": "Conformal and adaptive soft sensors for real-time quality prediction in industrial batch processes.",
+      "endDate": "2027.02",
+      "summary": "Conformal and adaptive soft sensors for real-time quality prediction in industrial batch processes. Supervised by <a href=\"https://www.linkedin.com/in/guillaume-ramelet-7696081/\">Guillaume Ramelet</a> and <a href=\"https://www.linkedin.com/in/moreaudmaxime/\">Dr. Maxime Moreaud</a>.",
       "highlights": [
-        "Supervised by <a href=\"https://www.linkedin.com/in/desroziers/\">Dr. Sylvain Desroziers</a>, <a href=\"https://www.linkedin.com/in/moreaudmaxime/\">Dr. Maxime Moreaud</a>, and <a href=\"https://www.linkedin.com/in/guillaume-ramelet-7696081/\">Guillaume Ramelet</a>.",
         "Introduced <a href=\"https://arxiv.org/abs/2606.29403\">Self-Organized Conformal Prediction</a> (<strong>NeurIPS 2026</strong>): unsupervised group discovery with a Self-Organizing Map for group-local calibration, cutting regional coverage gaps on all 10 datasets, by 14.8% on average, for only 3% larger prediction sets.",
         "Co-developed Mask-Valid Conformal Prediction (with M. Hegazy, M. I. Jordan, A. Dieuleveut): binary monitoring masks that interpolate between marginal and anytime coverage, with restart validity after failures and no need for past test labels.",
-        "Created and open-sourced <a href=\"https://github.com/michelin/TorchSOM\">TorchSOM</a> (<strong>JMLR 2026</strong>), a PyTorch library for Self-Organizing Maps: 74-98% faster than MiniSom on CPU, about 8× faster than somoclu on GPU, and the lowest topographic error in every benchmark (34-81% below MiniSom).",
+        "Created and open-sourced <a href=\"https://github.com/michelin/TorchSOM\">TorchSOM</a> (<strong>JMLR 2026</strong>), a PyTorch library for Self-Organizing Maps: 81-98% faster than MiniSom on CPU, up to about 12× faster than somoclu on GPU, and the lowest topographic error in every rectangular-map benchmark (62-100% below MiniSom).",
         "Developed adaptive Just-in-Time soft sensors pairing SOM similarity retrieval with online SHAP feature selection, cutting MSE by up to 61% over global baselines (<strong>IEEE ETFA 2026</strong>) and prediction error by over 90% under year-long drift on 35k production batches.",
-        "Built an explainable, uncertainty-aware analytics framework (frequency-ranked feature selection, SHAP interactions, multi-split conformal prediction) on 35k rubber-mixing records, cutting 316 input variables to 20 at equal accuracy (<strong>Digital Chemical Engineering 2026</strong>)."
+        "Built an explainable analytics framework (frequency-ranked feature selection, SHAP interactions, multi-split conformal prediction) on 35k rubber-mixing records, cutting 316 input variables to 20 at equal accuracy (<strong>Digit. Chem. Eng. 2026</strong>)."
       ]
     },
     {
       "name": "ENSTA Paris",
-      "position": "Teaching Assistant (Machine Learning & Data Science)",
+      "position": "Teaching Assistant",
       "url": "https://www.ensta-paris.fr/",
-      "startDate": "2024",
-      "endDate": "2026",
-      "summary": "Led the lab sessions of Introduction to Machine Learning and Data Science for first-year engineering students (B3/MSc1): 20h a year for three consecutive years, 20 to 25 students per session.",
+      "location": "Paris, France",
+      "startDate": "2024.09",
+      "endDate": "2026.10",
+      "summary": "Led the lab sessions of Introduction to Machine Learning and Data Science for first-year engineering students (B3/MSc1): 20h a year for three consecutive years, 20 to 25 students per session. Supervised by <a href=\"https://perso.ensta-paris.fr/~philippe.xu/\">Pr. Philippe Xu</a>.",
       "highlights": [
-        "Taught the fundamentals of machine learning, from data preprocessing and feature engineering to model training and evaluation, under <a href=\"https://perso.ensta-paris.fr/~philippe.xu/\">Pr. Philippe Xu</a>.",
+        "Taught the fundamentals of machine learning, from data preprocessing and feature engineering to model training and evaluation.",
         "Guided students through their first hands-on experience building and validating predictive models."
       ]
     },
     {
-      "name": "Adaptive & Intelligent Robotics Lab (AIRL)",
-      "position": "Research Assistant (ML & Optimization)",
+      "name": "AIRL, Imperial College London",
+      "position": "ML Research Assistant",
       "url": "https://www.imperial.ac.uk/adaptive-intelligent-robotics/",
+      "location": "London, UK",
       "startDate": "2023.04",
       "endDate": "2023.09",
-      "summary": "Sample-efficient Quality-Diversity optimization using surrogate models for robotic control in uncertain environments.",
+      "summary": "Sample-efficient Quality-Diversity optimization using surrogate models for robotic control in uncertain environments. Supervised by <a href=\"https://www.imperial.ac.uk/people/a.cully\">Pr. Antoine Cully</a>.",
       "highlights": [
-        "Supervised by <a href=\"https://www.imperial.ac.uk/people/a.cully\">Pr. Antoine Cully</a>.",
         "Tackled the data-hunger of MAP-Elites by integrating probabilistic surrogate models on a robotic arm control task; the best variant beat MAP-Elites and came close to MAP-Elites with sampling.",
         "Benchmarked eight algorithmic variants combining different surrogate architectures and acquisition strategies in non-deterministic environments.",
         "Introduced two metrics for the uncertainty of quality-diversity archives."
       ]
     },
     {
-      "name": "Centre National de la Recherche Scientifique (CNRS)",
-      "position": "Research Intern (ML & Neuroscience)",
+      "name": "CNRS (CerCo)",
+      "position": "ML Research Intern",
       "url": "https://cerco.cnrs.fr/",
+      "location": "Toulouse, France",
       "startDate": "2022.05",
       "endDate": "2022.07",
-      "summary": "Deep learning for detecting fast ripples, pathological biomarkers for epileptic tissue, in intracranial EEG signals.",
+      "summary": "Deep learning for detecting fast ripples, pathological biomarkers for epileptic tissue, in intracranial EEG signals. Supervised by <a href=\"https://www.linkedin.com/in/ludovic-gardy/\">Dr. Ludovic Gardy</a>, <a href=\"https://www.linkedin.com/in/christophe-hurter-2514393/\">Pr. Christophe Hurter</a>, and <a href=\"https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/\">Pr. Emmanuel Barbeau</a>.",
       "highlights": [
-        "Supervised by <a href=\"https://www.linkedin.com/in/ludovic-gardy/\">Dr. Ludovic Gardy</a>, <a href=\"https://www.linkedin.com/in/christophe-hurter-2514393/\">Pr. Christophe Hurter</a>, and <a href=\"https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/\">Pr. Emmanuel Barbeau</a>.",
         "Trained CNN fast-ripple detectors on wavelet time-frequency images of macro- and micro-electrode EEG, improving accuracy by 5% through systematic hyperparameter tuning (<strong>J. Neurosci. Methods 2025</strong>).",
         "Applied Grad-CAM to localize high-frequency bursts in time-frequency maps, giving clinicians visual explanations anchored to known fast-ripple signatures.",
         "Accelerated EEG signal and image processing by 15% with Cython, and built 7 NoSQL databases for multi-channel EEG at macro and micro electrode scales for batch retrieval and parallel processing."
       ]
     },
     {
-      "name": "EuroMov Digital Health in Motion (DHM)",
-      "position": "Research Assistant (ML & CV)",
+      "name": "EuroMov DHM",
+      "position": "ML Research Assistant",
       "url": "https://dhm.euromov.eu/",
+      "location": "Alès, France",
       "startDate": "2022.01",
       "endDate": "2022.04",
-      "summary": "Anisotropic image filtering for sub-pixel accurate line feature detection, published at IEEE ICASSP 2023.",
+      "summary": "Anisotropic image filtering for sub-pixel accurate line feature detection, published at IEEE ICASSP 2023. Supervised by <a href=\"https://cv.hal.science/baptiste-magnier\">Pr. Baptiste Magnier</a> and <a href=\"https://www.researchgate.net/scientific-contributions/Binbin-Xu-2190252279\">Pr. Binbin Xu</a>.",
       "highlights": [
-        "Supervised by <a href=\"https://cv.hal.science/baptiste-magnier\">Pr. Baptiste Magnier</a> and <a href=\"https://www.researchgate.net/scientific-contributions/Binbin-Xu-2190252279\">Pr. Binbin Xu</a>.",
         "Designed the 2D Semi Bi-Gaussian (2DSBG) filter, an asymmetric convolution kernel that enhances elongated structures while suppressing isotropic noise.",
         "Benchmarked against state-of-the-art edge detection models (DexiNed, RCF, Laplacian-of-Gaussian) on synthetic and real-world datasets."
       ]
@@ -110,16 +114,16 @@
   ],
   "education": [
     {
-      "institution": "<i class=\"fa-solid fa-building-columns\"></i> École Polytechnique",
-      "location": "Paris, FR",
+      "institution": "<i class=\"fa-solid fa-building-columns\"></i> École Polytechnique (CMAP)",
+      "location": "Paris, France",
       "url": "https://cmap.ip-paris.fr/",
       "area": "Applied Mathematics, Machine Learning, Research",
-      "studyType": "PhD Candidate in Applied Mathematics and Machine Learning",
-      "startDate": "2024",
-      "endDate": "Now",
+      "studyType": "PhD in Applied Mathematics and Machine Learning",
+      "startDate": "2024.03",
+      "endDate": "2027.02",
       "courses": [
         "Industrial PhD (CIFRE) with Michelin: adaptive and conformal soft sensors for real-time quality prediction in multistage industrial processes.",
-        "Under the supervision of <a href=\"https://www.linkedin.com/in/eric-moulines-61512860/\">Pr. Eric Moulines</a>, <a href=\"https://www.linkedin.com/in/ahmed-shokry-aa705075/\">Dr. Ahmed Shokry</a>, <a href=\"https://www.linkedin.com/in/desroziers/\">Dr. Sylvain Desroziers</a>, <a href=\"https://www.linkedin.com/in/moreaudmaxime/\">Dr. Maxime Moreaud</a>, and <a href=\"https://www.linkedin.com/in/guillaume-ramelet-7696081/\">Guillaume Ramelet</a>.",
+        "Under the supervision of <a href=\"https://www.linkedin.com/in/eric-moulines-61512860/\">Pr. Eric Moulines</a> and <a href=\"https://www.linkedin.com/in/ahmed-shokry-aa705075/\">Dr. Ahmed Shokry</a>.",
         "Adaptive Soft Sensing, Conformal Prediction, Explainability, Self-Organizing Maps, Online Learning, Dimensionality Reduction"
       ]
     },
@@ -128,7 +132,7 @@
       "location": "London, UK",
       "url": "https://www.imperial.ac.uk/",
       "area": "Computer Science, Mathematics, Research",
-      "studyType": "MSc Advanced Computing in Machine Learning",
+      "studyType": "MSc Advanced Computing (Machine Learning)",
       "startDate": "2022",
       "endDate": "2023",
       "courses": [
@@ -139,17 +143,17 @@
     },
     {
       "institution": "<i class=\"fa-solid fa-building-columns\"></i> IMT Mines Alès",
-      "location": "Alès, FR",
+      "location": "Alès, France",
       "url": "https://www.imt-mines-ales.fr/",
       "area": "Mathematics, Data Science, Research",
-      "studyType": "Diplôme d'Ingénieur - MSc Artificial Intelligence & Data Science",
+      "studyType": "Diplôme d'Ingénieur (MSc), Artificial Intelligence & Data Science",
       "startDate": "2020",
       "endDate": "2023",
       "courses": [
-        "First class honours with jury's congratulations",
+        "First-class honours with jury's congratulations",
         "Ranked 2nd of 60 in the CS & AI department, top 5% of the school",
-        "Research internship at the <a href=\"https://cerco.cnrs.fr/\">Centre National de la Recherche Scientifique (CNRS)</a>, under the supervision of <a href=\"https://www.linkedin.com/in/ludovic-gardy/\">Dr. Ludovic Gardy</a>, <a href=\"https://www.linkedin.com/in/christophe-hurter-2514393/\">Pr. Christophe Hurter</a> and <a href=\"https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/\">Pr. Emmanuel Barbeau</a>.",
-        "Advanced Probabilities & Statistics, Operational Research, Algorithms & Complexity, Machine & Deep Learning, Software Engineering"
+        "Research internship at the <a href=\"https://cerco.cnrs.fr/\">CNRS (CerCo)</a>, under the supervision of <a href=\"https://www.linkedin.com/in/ludovic-gardy/\">Dr. Ludovic Gardy</a>, <a href=\"https://www.linkedin.com/in/christophe-hurter-2514393/\">Pr. Christophe Hurter</a> and <a href=\"https://www.linkedin.com/in/emmanuel-barbeau-153b151b9/\">Pr. Emmanuel Barbeau</a>.",
+        "Advanced Probability & Statistics, Operations Research, Algorithms & Complexity, Machine & Deep Learning, Software Engineering"
       ]
     }
   ],
@@ -244,7 +248,7 @@
     {
       "name": "<a href=\"https://www.sachahu.com/\">Sacha Hu</a>",
       "icon": "fa-solid fa-industry",
-      "reference": "<i class=\"fa-solid fa-envelope\"></i> name at augmodo dot com <br></br> <i class=\"fa-solid fa-user-tie\"></i> Senior CV Engineer at Augmodo. <br></br> <i class=\"fa-solid fa-file-lines\"></i> Co-supervised my work on uncertainty-aware computer vision for open-world retail deployments."
+      "reference": "<i class=\"fa-solid fa-envelope\"></i> name at augmodo dot com <br></br> <i class=\"fa-solid fa-user-tie\"></i> Senior CV Engineer at Augmodo. <br></br> <i class=\"fa-solid fa-file-lines\"></i> Co-supervised my work on computer vision for open-world retail deployments."
     },
     {
       "name": "<a href=\"https://www.linkedin.com/in/eric-moulines-61512860/\">Pr. Eric Moulines</a>",
@@ -259,7 +263,7 @@
     {
       "name": "<a href=\"https://www.linkedin.com/in/desroziers/\">Dr. Sylvain Desroziers</a>",
       "icon": "fa-solid fa-industry",
-      "reference": "<i class=\"fa-solid fa-envelope\"></i> name dot surname at michelin dot com <br></br> <i class=\"fa-solid fa-user-tie\"></i> Manager of the Michelin I4.0 Explore team, and Fellow AI at Michelin. <br></br> <i class=\"fa-solid fa-file-lines\"></i> Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes."
+      "reference": "<i class=\"fa-solid fa-envelope\"></i> name dot surname at michelin dot com <br></br> <i class=\"fa-solid fa-user-tie\"></i> Fellow AI at Michelin, previously Manager of the Michelin I4.0 Explore team. <br></br> <i class=\"fa-solid fa-file-lines\"></i> Co-supervised the start of my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes."
     },
     {
       "name": "<a href=\"https://www.linkedin.com/in/moreaudmaxime/\">Dr. Maxime Moreaud</a>",
@@ -267,7 +271,7 @@
       "reference": "<i class=\"fa-solid fa-envelope\"></i> name dot surname at michelin dot com <br></br> <i class=\"fa-solid fa-user-tie\"></i> Principal Data Scientist at Michelin. <br></br> <i class=\"fa-solid fa-file-lines\"></i> Co-supervised my PhD thesis on conformal and adaptive soft sensors for real-time quality prediction in multistage industrial processes."
     },
     {
-      "name": "<a href=\"https://www.linkedin.com/in/antoine-cully-3a4a36163/\">Pr. Antoine Cully</a>",
+      "name": "<a href=\"https://www.linkedin.com/in/antoine-cully-40731136/\">Pr. Antoine Cully</a>",
       "icon": "fa-solid fa-building-columns",
       "reference": "<i class=\"fa-solid fa-envelope\"></i> a dot surname at imperial dot ac dot uk <br></br> <i class=\"fa-solid fa-user-tie\"></i> Professor at Imperial College London, and Director of the Adaptive & Intelligent Robotics Lab (AIRL). <br></br> <i class=\"fa-solid fa-file-lines\"></i> Supervised my independent research project and my MSc research internship on quality-diversity optimization."
     },
@@ -299,46 +303,47 @@
       "url": "https://www.youtube.com/watch?v=ZDvco9Ayla8",
       "summary": "Selected from 1,700+ applicants; built Cerno, an AI recruitment platform with adaptive voice-AI interviews, in 36 hours."
     },
-    {
-      "title": "Paris Fintech Hackathon (Solve with AI)",
-      "date": "2026",
-      "awarder": "HEC Paris",
-      "url": "https://devpost.com/software/webi-we-buy-structured-bond-products",
-      "summary": "Built WEBI, an AI copilot for structured bond products."
-    },
+    // No prize at the Paris Fintech Hackathon, so it is not an award; it stays on /hackathons/.
+    // {
+    //   "title": "Paris Fintech Hackathon (Solve with AI)",
+    //   "date": "2026",
+    //   "awarder": "HEC Paris",
+    //   "url": "https://devpost.com/software/webi-we-buy-structured-bond-products",
+    //   "summary": "Built WEBI, an AI copilot for structured bond products."
+    // },
     {
       "title": "MT180 Audience Award (€100)",
       "date": "2025",
       "awarder": "Institut Polytechnique de Paris",
       "url": "https://www.youtube.com/watch?v=VjbWHeqfhMk",
-      "summary": "Won the audience vote for best 3-minute PhD presentation at Institut Polytechnique de Paris, selected to represent IP Paris at the national finals."
+      "summary": "Won the audience vote for best 3-minute PhD presentation at Institut Polytechnique de Paris, selected to represent IP Paris in the national round."
     },
     {
       "title": "Best PhD Poster Award (€500)",
       "date": "2024",
       "awarder": "Institut Polytechnique de Paris",
-      "summary": "Best poster in the Mathematics category at the IP Paris Welcome PhD Day, for work on explainable quality prediction with uncertainty quantification."
+      "summary": "Best poster in the Mathematics category at the IP Paris Welcome Day, for work on explainable quality prediction with uncertainty quantification."
     },
     {
-      "title": "Winner, Manufacturing IT Hackathon AI’NNOV (€500)",
+      "title": "Winner, AI’NNOV Manufacturing IT Hackathon (€500)",
       "date": "2024",
       "awarder": "Michelin",
       "summary": "First place at Michelin’s internal AI hackathon for manufacturing innovation."
     },
     {
-      "title": "International Mobility Scholarship (€4000)",
+      "title": "International Mobility Scholarship (€4,000)",
       "date": "2022",
       "awarder": "Région Occitanie",
       "summary": "Scholarship supporting international academic mobility."
     },
     {
-      "title": "Alumni Scholarship (€1300)",
+      "title": "Alumni Scholarship (€1,300)",
       "date": "2022",
       "awarder": "Mines Alès Alumni",
       "summary": "Merit-based scholarship from the Mines Alès alumni association."
     },
     {
-      "title": "Excellence Scholarship (€4000)",
+      "title": "Excellence Scholarship (€4,000)",
       "date": "2022",
       "awarder": "IMT Mines Alès",
       "summary": "Academic excellence scholarship."
@@ -352,16 +357,16 @@
   ],
   "volunteer": [
     {
-      "organization": "University",
-      "location": "FR & UK",
-      "position": "Handball Player",
+      "organization": "University Handball",
+      "location": "France & UK",
+      "position": "Player",
       "startDate": "2020.10",
       "endDate": "2023.11",
       "highlights": [
-        "Achieved 3rd place in the highest national university league (BUCS, UK).",
-        "Achieved 4th place in the highest national university league (FFSU, France).",
-        "Winner of the 49th Challenge Centrale Lyon",
-        "Winner of the 19th TRAMS"
+        "Achieved 3rd place in the national university league in the UK (BUCS).",
+        "Achieved 4th place in the national university league in France (FFSU).",
+        "Won the 49th Challenge Centrale Lyon",
+        "Won the 19th TRAMS"
       ]
     },
     {
@@ -372,9 +377,9 @@
       "startDate": "2021.02",
       "endDate": "2022.04",
       "highlights": [
-        "Led a 25-person team to manage 5 tournaments and oversee 20 sports",
-        "Secured partnerships with major brands, including <a href=\"https://www.armorlux.com/\">Armor Lux</a> and <a href=\"https://www.tonyparker.com/\">Tony Parker</a>.",
-        "Managed the association’s website and IT infrastructure."
+        "Led a 25-person team running 5 tournaments across 20 sports",
+        "Secured partnerships with brands, including <a href=\"https://www.armorlux.com/\">Armor Lux</a> and <a href=\"https://www.tonyparker.com/\">Tony Parker</a>.",
+        "Managed the website and IT infrastructure."
       ]
     },
     {
@@ -385,8 +390,8 @@
       "startDate": "2021.04",
       "endDate": "2022.04",
       "highlights": [
-        "Led a team of 10 photographers to cover 25 university events.",
-        "Edited and produced multiple videos and over 10,000 photos."
+        "Led a team of 10 photographers covering 25 university events.",
+        "Edited and produced videos and 10,000+ photos."
       ]
     },
     {
@@ -397,7 +402,7 @@
       "startDate": "2020.10",
       "endDate": "2021.10",
       "highlights": [
-        "Raised over €3500 to fund and support solidarity projects in Madagascar.",
+        "Raised over €3,500 for solidarity projects in Madagascar.",
         "Organized and participated in fundraising events, including cooking for 300 students."
       ]
     },
@@ -424,7 +429,7 @@
       ]
     },
     {
-      "organization": "Modelling Contest | Socute Models",
+      "organization": "Socute Models",
       "location": "Toulouse, France",
       "position": "Contestant",
       "startDate": "2019",
@@ -481,7 +486,7 @@
         "MMA",
         "Weight Training",
         "Swimming",
-        "E-sport",
+        "E-sports",
         "Rugby",
         "Handball"
       ]

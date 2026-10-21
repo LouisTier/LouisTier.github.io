@@ -7,10 +7,11 @@ linkedin_username: louis-tier # your LinkedIn user name
 github_username: LouisTier # your GitHub user name
 scholar_userid: cFVpOmcAAAAJ # your Google Scholar ID
 arxiv:
-  logo: assets/img/arxiv-logomark-small-black.svg # can be png, svg, jpg
+  icon: ai ai-arxiv # academicons glyph: takes the text color in both themes (the black logo below was half invisible in dark mode)
+  logo: assets/img/arxiv-logomark-small-black.svg # can be png, svg, jpg; used only without "icon"
   title: arXiv
   url: https://arxiv.org/search/stat?searchtype=author&query=Berthier,+L
-leetcode_id: Louis_Brthr # your LeetCode id
+# leetcode_id: Louis_Brthr # your LeetCode id (hidden on the website, kept for later)
 # research_gate_profile: Louis-Berthier-3 # your profile on ResearchGate
 
 # academia_edu:  your organization and your username Ex. https://organization.academia.edu/UserName

@@ -5,10 +5,19 @@ description: "An AI copilot for structured bond products, built at the Paris Fin
 img: assets/img/projects/webi_thumbnail.jpg
 importance: 2
 category: hackathon
+event: "Paris Fintech Hackathon, April 2026"
 giscus_comments: false
 ---
 
+<div class="lb-research-links lb-project-links">
+  <a class="btn btn-sm z-depth-0" href="/assets/pdf/WEBI.pdf" role="button">Pitch deck</a>
+  <a class="btn btn-sm z-depth-0" href="https://devpost.com/software/webi-we-buy-structured-bond-products" role="button">Devpost</a>
+  <a class="btn btn-sm z-depth-0" href="https://luma.com/630cpew5?tk=CG90NF" role="button">Event page</a>
+</div>
+
 Walk onto any asset-management or family-office desk in Paris, Geneva, or Luxembourg and you will find a structured-products analyst three monitors deep, scrolling hundreds of Bloomberg messages and bank emails. Each one pitches a structured bond product that has to be cross-checked against the fund's mandate, risk tolerance, sector exposures, and a dozen mostly-implicit constraints. Talking to people who do this job during the hackathon, the pattern was stark: roughly 70% of their day goes to manually filtering offers that will never match, and real opportunities get buried in the wrong inbox.
+
+## The product
 
 **WEBI** ("We buy") is *the SaaS platform that filters deal flow and helps shape the right products*, an AI copilot that turns fragmented bank deal flow into a curated, mandate-matched, negotiation-ready pipeline. It works in three layers:
 
@@ -18,24 +27,19 @@ Walk onto any asset-management or family-office desk in Paris, Geneva, or Luxemb
 
 Built with Gemini 2.0 Flash, Cerebras, FAISS, Python, and TypeScript.
 
+## At the hackathon
+
 Built in 24 hours at the **Paris Fintech Hackathon (Solve with AI)** at HEC Paris, France's premier student Generative AI and Fintech hackathon: 150 selected hackers, hosted by SP AI (Sciences Po), ASES France (HEC & Stanford), and Google Developer Groups. We pitched WEBI to a jury of VCs and founders. No prize this round, but a crash course in finance, negotiation, and shipping a product overnight.
 
 **Team:** Louis Berthier, [Emile Jouannet](https://www.linkedin.com/in/emile-jouannet-1225aa251/), [Mathilde Anita Thierry](https://mathildeanitathierry.com/), [Elie de Baudus](https://www.linkedin.com/in/elie-de-baudus/), and [Roland Sosin](https://www.linkedin.com/in/roland-sosin/).
 
----
-
 ## Pitch
 
-<div style="width: 100%; margin: 0 auto 2rem;">
-    <div style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/P7xl16s4qR4" title="WEBI - Pitch" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
-    </div>
-</div>
+{% include lb_youtube.liquid id="P7xl16s4qR4" poster="assets/img/projects/video_webi_pitch.jpg" label="Play the WEBI pitch video" %}
+<p class="text-muted small text-center">Video: the WEBI pitch, Paris Fintech Hackathon, April 2026.</p>
 
 ---
 
-<div class="d-flex gap-2 justify-content-center mt-3">
-    <a href="https://devpost.com/software/webi-we-buy-structured-bond-products" class="btn btn-sm btn-outline-primary" target="_blank">Devpost</a>
-    <a href="/assets/pdf/WEBI.pdf" class="btn btn-sm btn-outline-primary" target="_blank">Pitch deck (PDF)</a>
-    <a href="/hackathons/" class="btn btn-sm btn-outline-secondary">See all Hackathons</a>
+<div class="lb-research-links">
+  <a class="btn btn-sm z-depth-0" href="/hackathons/" role="button">All hackathons</a>
 </div>

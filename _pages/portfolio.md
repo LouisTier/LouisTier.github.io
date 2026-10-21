@@ -4,20 +4,15 @@ title: "Portfolio"
 permalink: /portfolio/
 description: Publications, projects, repositories, and teaching.
 nav: true
-nav_order: 2
+nav_order: 3
 dropdown: true
+sitemap: false # menu-only page, no content of its own
 children:
-  - title: Publications
-    permalink: /publications/
-  - title: divider
-  - title: Projects
-    permalink: /projects/
+  - title: Hackathons
+    permalink: /hackathons/
   - title: divider
   - title: Repositories
     permalink: /repositories/
-  - title: divider
-  - title: Teaching
-    permalink: /teaching/
 ---
 
 My publications, side projects, open-source work, and teaching.
