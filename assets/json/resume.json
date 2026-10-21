@@ -77,7 +77,8 @@
       "location": "London, UK",
       "startDate": "2023.04",
       "endDate": "2023.09",
-      "summary": "Sample-efficient Quality-Diversity optimization using surrogate models for robotic control in uncertain environments. Supervised by <a href=\"https://www.imperial.ac.uk/people/a.cully\">Pr. Antoine Cully</a>.",
+      // "summary": "Sample-efficient Quality-Diversity optimization using surrogate models for robotic control in uncertain environments. Supervised by <a href=\"https://www.imperial.ac.uk/people/a.cully\">Pr. Antoine Cully</a>.",
+      "summary": "Model-based uncertainty quantification for sample-efficient quality-diversity optimization in robotics. Supervised by <a href=\"https://www.imperial.ac.uk/people/a.cully\">Pr. Antoine Cully</a>.",
       "highlights": [
         "Tackled the data-hunger of MAP-Elites by integrating probabilistic surrogate models on a robotic arm control task; the best variant beat MAP-Elites and came close to MAP-Elites with sampling.",
         "Benchmarked eight algorithmic variants combining different surrogate architectures and acquisition strategies in non-deterministic environments.",
