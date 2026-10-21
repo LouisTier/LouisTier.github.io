@@ -16,19 +16,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/research/";
           },
-        },{id: "dropdown-publications",
-              title: "Publications",
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "Peer-reviewed articles, preprints, and open-source software in uncertainty quantification, adaptive learning, and interpretable machine learning.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "dropdown-hackathons",
+              title: "Hackathons",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/publications/";
-              },
-            },{id: "dropdown-projects",
-              title: "Projects",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/projects/";
+                window.location.href = "/hackathons/";
               },
             },{id: "dropdown-repositories",
               title: "Repositories",
@@ -36,6 +36,20 @@ ninja.data = [{
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/repositories/";
+              },
+            },{id: "dropdown-talks",
+              title: "Talks",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/talks/";
+              },
+            },{id: "dropdown-seminars",
+              title: "Seminars",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/seminars/";
               },
             },{id: "dropdown-teaching",
               title: "Teaching",
@@ -50,27 +64,6 @@ ninja.data = [{
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/outreach/";
-              },
-            },{id: "dropdown-seminars",
-              title: "Seminars",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/seminars/";
-              },
-            },{id: "dropdown-talks",
-              title: "Talks",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/talks/";
-              },
-            },{id: "dropdown-hackathons",
-              title: "Hackathons",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/hackathons/";
               },
             },{id: "nav-cv",
           title: "CV",
@@ -128,13 +121,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://arxiv.org/search/stat?searchtype=author&query=Berthier,+L", "_blank");
-        },
-      },{
-        id: 'social-leetcode',
-        title: 'LeetCode',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://leetcode.com/u/Louis_Brthr/", "_blank");
         },
       },{
       id: 'light-theme',
