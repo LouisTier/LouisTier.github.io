@@ -40,10 +40,10 @@ Before predicting quality online, one has to understand what drives it. Batches 
 
 On 35,125 Michelin rubber-mixing records with 316 input variables, I built an offline analytics framework that combines explainability with uncertainty quantification: ranked frequency feature selection **keeps only 20 variables (94% fewer) at equal accuracy**, SHAP (which scores how much each variable drives a prediction) reveals the influential variables, their threshold-like effects, and their interactions, and multi-split conformal prediction adds calibrated prediction intervals with subgroup diagnostics that expose undercoverage.
 
-This work has been accepted for publication in [Digital Chemical Engineering](/publications/#berthier2026explainable_offline_analytics) (2026) and extends the paper I presented at [ESCAPE 35](/publications/#berthier2025knowledge_discovery_rubber_mixing) (2025).
+This work is published in [Digital Chemical Engineering](/publications/#berthier2026explainable_offline_analytics) (2026) and extends the paper I presented at [ESCAPE 35](/publications/#berthier2025knowledge_discovery_rubber_mixing) (2025).
 
 <div class="lb-research-links">
-  <a class="btn btn-sm z-depth-0" href="/publications/#berthier2026explainable_offline_analytics" role="button">Journal paper</a>
+  <a class="btn btn-sm z-depth-0" href="https://doi.org/10.1016/j.dche.2026.100351" role="button">Journal paper</a>
   <a class="btn btn-sm z-depth-0" href="https://doi.org/10.69997/sct.183525" role="button">Conference paper</a>
   <a class="btn btn-sm z-depth-0" href="https://github.com/LouisTier/xopa" role="button">Code</a>
   <a class="btn btn-sm z-depth-0" href="/talks/#escape-35" role="button">Talk</a>

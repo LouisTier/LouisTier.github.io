@@ -21,4 +21,4 @@ repos:
     language: Jupyter Notebook
     links:
       - label: Journal paper
-        url: /publications/#berthier2026explainable_offline_analytics
+        url: https://doi.org/10.1016/j.dche.2026.100351

@@ -117,6 +117,10 @@ Tracking list for the June 2026 refinement pass. Tick items as they're verified 
 - [x] **CV page**: `resume.json` and `cv.yml` aligned with the LaTeX CV (Michelin and Augmodo bullets, ENSTA 2024-2026, CNRS, AIRL, Unaite + hackathon awards, MLflow, World Models); `assets/pdf/cv_lb.pdf` replaced by the 20 October 2026 build of `CV/out/Louis_Berthier_CV.pdf`
 - [x] **Teaching / Outreach**: three years, B3/MSc1; MBZUAI card no longer refers to the diffusion project; "Masked CP" renamed Mask-Valid CP
 
+### DCHE published, November 2026 (pass 13)
+- [x] **Publications**: Explainable Offline Process Analytics is now final in Digital Chemical Engineering 21, 100351 (open access, DOI 10.1016/j.dche.2026.100351): "Accepted, to appear" note removed, DOI + open-access PDF added (no HTML button: the DOI already opens the ScienceDirect page)
+- [x] **Links**: the DOI now backs the Journal paper button on `/research/`, the xopa card on `/repositories/`, and the Michelin bullet in `resume.json` / `cv.yml`; `/research/` says "is published in"; `assets/pdf/cv_lb.pdf` rebuilt from the LaTeX CV
+
 ## 🙋 Louis needs to check
 - [ ] **AI'NNOV / Michelin** is the only hackathon left: still a placeholder (`TODO` on `_pages/hackathons.md:129`), needs the project name, what it did, and teammates (with links); optionally its own `_projects/` page. (Paris Fintech/WEBI and Hack the World(s)/Piaget, incl. all teammate links and the LeCun recognition, are done.)
 - [x] **Masked CP author list** resolved by Louis: Hegazy, Berthier, Dieuleveut, Jordan.

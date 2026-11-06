@@ -54,7 +54,7 @@
         "Co-developed Mask-Valid Conformal Prediction (with M. Hegazy, M. I. Jordan, A. Dieuleveut): binary monitoring masks that interpolate between marginal and anytime coverage, with restart validity after failures and no need for past test labels.",
         "Created and open-sourced <a href=\"https://github.com/michelin/TorchSOM\">TorchSOM</a> (<strong>JMLR 2026</strong>), a PyTorch library for Self-Organizing Maps: 81-98% faster than MiniSom on CPU, up to about 12× faster than somoclu on GPU, and the lowest topographic error in every rectangular-map benchmark (62-100% below MiniSom).",
         "Developed adaptive Just-in-Time soft sensors pairing SOM similarity retrieval with online SHAP feature selection, cutting MSE by up to 61% over global baselines (<strong>IEEE ETFA 2026</strong>) and prediction error by over 90% under year-long drift on 35k production batches.",
-        "Built an explainable analytics framework (frequency-ranked feature selection, SHAP interactions, multi-split conformal prediction) on 35k rubber-mixing records, cutting 316 input variables to 20 at equal accuracy (<strong>Digit. Chem. Eng. 2026</strong>)."
+        "Built an <a href=\"https://doi.org/10.1016/j.dche.2026.100351\">explainable analytics framework</a> (frequency-ranked feature selection, SHAP interactions, multi-split conformal prediction) on 35k rubber-mixing records, cutting 316 input variables to 20 at equal accuracy (<strong>Digit. Chem. Eng. 2026</strong>)."
       ]
     },
     {
