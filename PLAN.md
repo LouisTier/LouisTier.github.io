@@ -118,7 +118,7 @@ Tracking list for the June 2026 refinement pass. Tick items as they're verified 
 - [x] **Teaching / Outreach**: three years, B3/MSc1; MBZUAI card no longer refers to the diffusion project; "Masked CP" renamed Mask-Valid CP
 
 ### DCHE published, November 2026 (pass 13)
-- [x] **Publications**: Explainable Offline Process Analytics is now final in Digital Chemical Engineering 21, 100351 (open access, DOI 10.1016/j.dche.2026.100351): "Accepted, to appear" note removed, DOI + open-access PDF added (no HTML button: the DOI already opens the ScienceDirect page)
+- [x] **Publications**: Explainable Offline Process Analytics is now final in Digital Chemical Engineering 21, 100351 (open access, DOI 10.1016/j.dche.2026.100351): "Accepted, to appear" note removed, DOI + open-access PDF added (no HTML button: the DOI already opens the ScienceDirect page); same cleanup on the J. Neurosci. Methods entry (open access: HTML replaced by the PDF, DOI kept) and on ESCAPE 35 (its HTML was the DOI landing page); every DOI was resolved and no other HTML button duplicates one
 - [x] **Links**: the DOI now backs the Journal paper button on `/research/`, the xopa card on `/repositories/`, and the Michelin bullet in `resume.json` / `cv.yml`; `/research/` says "is published in"; `assets/pdf/cv_lb.pdf` rebuilt from the LaTeX CV
 
 ## 🙋 Louis needs to check
